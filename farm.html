@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+        rel="stylesheet">
     <link rel="stylesheet" href="/css/stylev2.css">
-    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
@@ -19,14 +20,25 @@
     <div class="clouds"></div>
     <div class="clouds clouds-small"></div>
     <div class="clouds clouds-small2"></div>
-    <div class="container-main">
-        <canvas style="grid-column: center;grid-row:center;" id="game-canvas" width="1920" height="1080"></canvas>
+    <div class="controls">
+        <button id="save-canvas">Save</button>
+        <button>Paint</button>
+        <input type="number" id="size-x" data-type="size" value="1">
+        <input type="number" id="size-y" data-type="size" value="1">
+        <input type="number" id="total-corn" value="0">
+    </div>
+    <div class="container-main" style="position: relative;">
+        <div style="grid-column: center;grid-row:center;width:1920px;height:1080px;position: relative;background-color:transparent;padding:0px;margin:0px;">
+            <canvas style="position:absolute" id="game-canvas" width="1920" height="1080"></canvas>
+            <canvas style="position:absolute;pointer-events: none;" id="sprite-objects-canvas" width="1920" height="1080"></canvas>
+            <canvas style="position:absolute;pointer-events: none;" id="sprite-preview-canvas" width="1920" height="1080"></canvas>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
         crossorigin="anonymous"></script>
     <script src="js/js.js"></script>
-    <script src="js/farm.js"></script>
+    <script src="js/farm.js" type="module"></script>
 </body>
 
 </html>

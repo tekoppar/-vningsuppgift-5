@@ -72,6 +72,12 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.controls {
+    position: sticky;
+    top: 0%;
+    z-index:9999999999;
+}
+
 .container-main {
     display: grid;
     grid-template-columns: [left] auto [center] 60% [right] auto;
