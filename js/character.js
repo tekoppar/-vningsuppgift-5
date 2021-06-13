@@ -2,8 +2,9 @@ import { GameObject } from './gameObject.js';
 import { Inventory, Item } from './inventory.js';
 import { Vector2D } from './vectors.js';
 import { femaleAnimations } from './AllAnimations.js';
+import { BoxCollision } from './collision.js';
 import { CustomEventHandler } from './customEvents.js';
-import { CanvasDrawer } from './customDrawer.js';
+import { CanvasDrawer, OperationType } from './customDrawer.js';
 import { MasterObject } from './masterObject.js';
 
 const FacingDirection = {
@@ -14,13 +15,12 @@ const FacingDirection = {
 }
 
 class CharacterAttachments extends GameObject {
-    constructor(spriteSheet, name) {
-        super();
+    constructor(spriteSheet, name, drawIndex = 0) {
+        super(name, new Vector2D(0, 0), false, drawIndex);
         this.spriteSheet = spriteSheet;
         this.currentAnimation = undefined;
         this.name = name;
-
-        this.LoadAtlas();
+        this.BoxCollision.overlapEvents = false;
     }
 
     ChangeAnimation(animation) {
@@ -35,33 +35,48 @@ class CharacterAttachments extends GameObject {
 
 
 class Character extends GameObject {
-    constructor(spriteSheet) {
-        super();
+    constructor(spriteSheet, spriteSheetName, drawIndex = 0) {
+        super(spriteSheetName, new Vector2D(0, 0), true, drawIndex);
         this.characterData = new CharacterData();
         this.spriteSheet = spriteSheet;
         this.name = "NewCharacter";
         this.currentAnimation = undefined;
         this.shadowAttachment = new CharacterAttachments('./content/sprites/lpc_shadow.png', 'shadow');
-        this.attachments = [];
+        this.attachments = {};
         this.isRunning = false;
         this.inventory = new Inventory(this);
-
-        this.LoadAtlas();
+        this.activeItem;
     }
 
-    AddAttachment(atlas, name) {
-        this.attachments.push(new CharacterAttachments(atlas, name));
+    AddAttachment(atlas, name, drawIndex) {
+        this.attachments[name] = new CharacterAttachments(atlas, name, drawIndex);
     }
 
     ChangeAnimation(animation) {
-        if (this.currentAnimation != animation) {
+        if (this.currentAnimation === undefined || this.currentAnimation.name != animation.name) {
             this.currentAnimation = animation;
-            this.shadowAttachment.ChangeAnimation(animation);
+            this.shadowAttachment.ChangeAnimation(animation.Clone());
             this.BoxCollision.size = new Vector2D(animation.h, animation.w);
 
-            for (let i = 0; i < this.attachments.length; i++) {
-                this.attachments[i].ChangeAnimation(animation);
+            let keys = Object.keys(this.attachments);
+            for (let i = 0; i < keys.length; i++) {
+                this.attachments[keys[i]].ChangeAnimation(animation.Clone());
             }
+        }
+    }
+
+    NeedsRedraw(position) {
+        super.NeedsRedraw(position);
+        if (this.drawingOperation !== undefined)
+            this.drawingOperation.Update(position);
+
+        if (this.shadowAttachment.drawingOperation !== undefined)
+            this.shadowAttachment.drawingOperation.Update(position);
+
+        let keys = Object.keys(this.attachments);
+        for (let i = 0; i < keys.length; i++) {
+            if (this.attachments[keys[i]].drawingOperation !== undefined)
+                this.attachments[keys[i]].drawingOperation.Update(position);
         }
     }
 
@@ -69,18 +84,31 @@ class Character extends GameObject {
         let frame = this.currentAnimation.GetFrame();
 
         if (frame !== null) {
-            CanvasDrawer.GCD.AddDrawOperation(this.CreateDrawOperation(this.shadowAttachment.currentAnimation.GetFrame(), this.position, false, this.shadowAttachment.canvas));
-            CanvasDrawer.GCD.AddDrawOperation(this.CreateDrawOperation(frame, this.position, false, this.canvas));
+            this.NeedsRedraw(this.position);
+
+            CanvasDrawer.GCD.AddDrawOperation(this.shadowAttachment.CreateDrawOperation(this.shadowAttachment.currentAnimation.GetFrame(), this.position, false, this.shadowAttachment.canvas), OperationType.gameObjects);
+            CanvasDrawer.GCD.AddDrawOperation(this.CreateDrawOperation(frame, this.position, false, this.canvas), OperationType.gameObjects);
 
             let facingDirection = this.GetFacingDirection();
+
             if (facingDirection === FacingDirection.Up) {
-                for (let i = this.attachments.length; i > 0; i--) {
-                    CanvasDrawer.GCD.AddDrawOperation(this.CreateDrawOperation(this.attachments[i - 1].currentAnimation.GetFrame(), this.position, false, this.attachments[i - 1].canvas));
-                }
+                this.attachments.redHair.drawIndex = 1;
+                this.attachments.underDress.drawIndex = 0;
             } else {
-                for (let i = 0; i < this.attachments.length; i++) {
-                    CanvasDrawer.GCD.AddDrawOperation(this.CreateDrawOperation(this.attachments[i].currentAnimation.GetFrame(), this.position, false, this.attachments[i].canvas));
-                }
+                this.attachments.redHair.drawIndex = 0;
+                this.attachments.underDress.drawIndex = 1;
+            }
+
+            let keys = Object.keys(this.attachments);
+            for (let i = 0; i < keys.length; i++) {
+                CanvasDrawer.GCD.AddDrawOperation(this.attachments[keys[i]].CreateDrawOperation(this.attachments[keys[i]].currentAnimation.GetFrame(), this.position, false, this.attachments[keys[i]].canvas), OperationType.gameObjects);
+            }
+        } else {
+            this.shadowAttachment.currentAnimation.GetFrame();
+
+            let keys = Object.keys(this.attachments);
+            for (let i = 0; i < keys.length; i++) {
+                this.attachments[keys[i]].currentAnimation.GetFrame();
             }
         }
     }
@@ -92,27 +120,27 @@ class Character extends GameObject {
             switch (facingDirection) {
                 case FacingDirection.Left:
                     if (this.Velocity.x == 1)
-                        this.ChangeAnimation(this.isRunning === true ? femaleAnimations.runLeft : femaleAnimations.walkLeft);
+                        this.ChangeAnimation(this.isRunning === true ? femaleAnimations.runLeft.Clone() : femaleAnimations.walkLeft.Clone());
                     else
-                        this.ChangeAnimation(femaleAnimations.walkLeftIdle);
+                        this.ChangeAnimation(femaleAnimations.walkLeftIdle.Clone());
                     break;
                 case FacingDirection.Right:
                     if (this.Velocity.x == -1)
-                        this.ChangeAnimation(this.isRunning === true ? femaleAnimations.runRight : femaleAnimations.walkRight);
+                        this.ChangeAnimation(this.isRunning === true ? femaleAnimations.runRight.Clone() : femaleAnimations.walkRight.Clone());
                     else
-                        this.ChangeAnimation(femaleAnimations.walkRightIdle);
+                        this.ChangeAnimation(femaleAnimations.walkRightIdle.Clone());
                     break;
                 case FacingDirection.Up:
                     if (this.Velocity.y == 1)
-                        this.ChangeAnimation(this.isRunning === true ? femaleAnimations.runUp : femaleAnimations.walkUp);
+                        this.ChangeAnimation(this.isRunning === true ? femaleAnimations.runUp.Clone() : femaleAnimations.walkUp.Clone());
                     else
-                        this.ChangeAnimation(femaleAnimations.walkUpIdle);
+                        this.ChangeAnimation(femaleAnimations.walkUpIdle.Clone());
                     break;
                 case FacingDirection.Down:
                     if (this.Velocity.y == -1)
-                        this.ChangeAnimation(this.isRunning === true ? femaleAnimations.runDown : femaleAnimations.walkDown);
+                        this.ChangeAnimation(this.isRunning === true ? femaleAnimations.runDown.Clone() : femaleAnimations.walkDown.Clone());
                     else
-                        this.ChangeAnimation(femaleAnimations.walkDownIdle);
+                        this.ChangeAnimation(femaleAnimations.walkDownIdle.Clone());
                     break;
             }
         }
@@ -137,7 +165,7 @@ class Character extends GameObject {
         this.CheckAnimation();
 
         if (this.currentAnimation !== undefined) {
-            this.PlayAnimation(this.currentAnimation);
+            this.PlayAnimation();
         }
 
         this.UpdateMovement();
@@ -146,28 +174,44 @@ class Character extends GameObject {
     CEvent(eventType, key, data) {
         switch (eventType) {
             case 'input':
-                if (data == 0) {
+                if (data.eventType == 0) {
                     switch (key) {
-                        case 'a': this.Velocity.x = this.Direction.x = 1; this.Direction.y = 0; break;
-                        case 'w': this.Velocity.y = this.Direction.y = 1; this.Direction.x = 0; break;
-                        case 'd': this.Velocity.x = this.Direction.x = -1; this.Direction.y = 0; break;
-                        case 's': this.Velocity.y = this.Direction.y = -1; this.Direction.x = 0; break;
-                        case 'leftShift': this.isRunning = true; this.MovementSpeed = new Vector2D(-3, -3); break;
+                        case 'a': this.Velocity.x = this.Direction.x = 1; this.Direction.y = 0; this.NeedsRedraw(this.position.Clone()); break;
+                        case 'w': this.Velocity.y = this.Direction.y = 1; this.Direction.x = 0; this.NeedsRedraw(this.position.Clone()); break;
+                        case 'd': this.Velocity.x = this.Direction.x = -1; this.Direction.y = 0; this.NeedsRedraw(this.position.Clone()); break;
+                        case 's': this.Velocity.y = this.Direction.y = -1; this.Direction.x = 0; this.NeedsRedraw(this.position.Clone()); break;
+                        case 'leftShift': this.isRunning = true; this.MovementSpeed = new Vector2D(-3, -3); this.NeedsRedraw(this.position.Clone()); break;
                     }
-                } else if (data == 1) {
+                }
+                if (data.eventType == 1) {
+                    switch (key) {
+                        case 'a': this.Velocity.x = this.Direction.x = 1; this.Direction.y = 0; this.NeedsRedraw(this.position.Clone()); break;
+                        case 'w': this.Velocity.y = this.Direction.y = 1; this.Direction.x = 0; this.NeedsRedraw(this.position.Clone()); break;
+                        case 'd': this.Velocity.x = this.Direction.x = -1; this.Direction.y = 0; this.NeedsRedraw(this.position.Clone()); break;
+                        case 's': this.Velocity.y = this.Direction.y = -1; this.Direction.x = 0; this.NeedsRedraw(this.position.Clone()); break;
+                        case 'leftShift': this.isRunning = true; this.MovementSpeed = new Vector2D(-3, -3); this.NeedsRedraw(this.position.Clone()); break;
+                        case 'leftMouse':
+                            if (data.eventType === 0 && this.activeItem !== undefined)
+                                this.activeItem.UseItem(new BoxCollision(data.position, this.size, this.enableCollision, this));
+                            break;
+                    }
+                } else if (data.eventType == 2 || data.eventType == 3) {
                     switch (key) {
                         case 'a':
                         case 'w':
                         case 'd':
                         case 's':
                             this.Velocity.x = this.Velocity.y = 0;
+                            this.NeedsRedraw(this.position.Clone());
                             break;
 
                         case 'e':
-                            CustomEventHandler.NewCustomEvent('use', this);
+                            if (data.eventType == 2) {
+                                CustomEventHandler.NewCustomEvent('use', this);
+                            }
                             break;
 
-                        case 'leftShift': this.isRunning = false; this.MovementSpeed = new Vector2D(-1, -1); break;
+                        case 'leftShift': this.isRunning = false; this.MovementSpeed = new Vector2D(-1, -1); this.NeedsRedraw(this.position.Clone()); break;
                     }
                 }
                 break;

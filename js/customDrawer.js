@@ -1,8 +1,14 @@
 import { Vector2D as Vector2D, Vector as Vector, Vector4D as Vector4D } from './vectors.js';
+import { Tile } from './tile.js';
 
 const brushTypes = {
     circle: 'circle',
     box: 'box',
+}
+
+const OperationType = {
+    terrain: 0,
+    gameObjects: 1,
 }
 
 let mouseToAtlasRectMap = {};
@@ -31,14 +37,14 @@ class Brush {
     SplitMultiSelection(sprite) {
         let newSprites = [];
 
-        if (sprite.width > 32 || sprite.height > 32) {
-            for (let x = 0; x < sprite.width / 32; x++) {
-                for (let y = 0; y < sprite.height / 32; y++) {
+        if (sprite.size.x > 32 || sprite.size.y > 32) {
+            for (let x = 0; x < sprite.size.y / 32; x++) {
+                for (let y = 0; y < sprite.size.x / 32; y++) {
                     let cloned = sprite.Clone();
-                    cloned.x += x;
-                    cloned.y += y;
-                    cloned.width = 32;
-                    cloned.height = 32;
+                    cloned.position.x += x;
+                    cloned.position.y += y;
+                    cloned.size.x = 32;
+                    cloned.size.y = 32;
                     newSprites.push(cloned);
                 }
             }
@@ -60,7 +66,7 @@ class Brush {
                 break;
 
             case brushTypes.box:
-                let orgSize = new Vector2D(this.canvasSprite.height, this.canvasSprite.width);
+                let orgSize = new Vector2D(this.canvasSprite.size.y, this.canvasSprite.size.x);
                 let splitSprites = this.SplitMultiSelection(this.canvasSprite);
                 let x = this.size.x === 1 ? 0 : Math.ceil(this.size.x / 2 * -1);
 
@@ -76,13 +82,13 @@ class Brush {
                             for (let orgX = 0; orgX < (orgSize.x / 32); orgX++) {
                                 drawingOperations.push(
                                     new DrawingOperation(
-                                        splitSprites[index],
-                                        drawingCanvas,
-                                        new Vector2D(
-                                            tempPos.x + (splitSprites[index].width * orgY),
-                                            tempPos.y + (splitSprites[index].height * orgX)
+                                        new Tile(
+                                            new Vector2D(tempPos.x + (splitSprites[index].size.y * orgY), tempPos.y + (splitSprites[index].size.x * orgX)),
+                                            new Vector2D(splitSprites[index].position.x, splitSprites[index].position.y),
+                                            new Vector2D(splitSprites[index].size.x, splitSprites[index].size.y),
+                                            false
                                         ),
-                                        false,
+                                        drawingCanvas,
                                         targetCanvas
                                     )
                                 );
@@ -106,7 +112,7 @@ class BrushSettings {
 }
 
 class TextOperation {
-    constructor(text, pos, clear, drawingCanvas, font = 'sans-serif', size = 18, color = 'rgb(243, 197, 47)') {
+    constructor(text, pos, clear, drawingCanvas, font = 'sans-serif', size = 18, color = 'rgb(243, 197, 47)', drawIndex = 0) {
         this.text = text;
         this.pos = new Vector2D(pos.x, pos.y + (size / 2) - 5);
         this.clear = clear;
@@ -114,24 +120,51 @@ class TextOperation {
         this.font = font;
         this.size = size;
         this.color = color;
+        this.drawIndex = drawIndex;
+    }
+
+    GetDrawIndex() {
+        return this.drawIndex;
+    }
+
+    GetPosition() {
+        return this.pos;
     }
 }
 
 class DrawingOperation {
-    constructor(canvasSprite, drawingCanvas, pos = { x: 0, y: 0 }, clear = false, targetCanvas) {
-        this.canvasSprite = canvasSprite;
+    constructor(tile, drawingCanvas, targetCanvas) {
+        this.tile = tile;
         this.drawingCanvas = drawingCanvas;
-        this.pos = pos;
-        this.clear = clear;
         this.targetCanvas = targetCanvas;
+        this.oldPosition = undefined;
+    }
+
+    Clone() {
+        return new DrawingOperation(
+            this.tile,
+            this.drawingCanvas,
+            this.targetCanvas
+        )
+    }
+
+    Update(position) {
+        this.oldPosition = position;
+        this.tile.needsToBeRedrawn = true;
+    }
+
+    GetDrawIndex() {
+        return this.tile.drawIndex;
+    }
+
+    GetPosition() {
+        return this.tile.position;
     }
 
     toJSON() {
         return {
-            canvasSprite: JSON.stringify(this.canvasSprite),
+            tile: this.tile,
             drawingCanvas: this.drawingCanvas.id,
-            pos: this.pos,
-            clear: this.clear,
             targetCanvas: this.targetCanvas.id
         }
     }
@@ -263,11 +296,11 @@ class CanvasAtlas {
                 calcCoords.Sub(this.startDrag);
                 calcCoords.Add({ x: 1, y: 1 });
 
-                this.CanvasDrawer.selectedSprite = new CanvasSprite(
-                    this.startDrag.x,
-                    this.startDrag.y,
-                    calcCoords.x * this.atlasSize,
-                    calcCoords.y * this.atlasSize,
+                this.CanvasDrawer.selectedSprite = new Tile(
+                    new Vector2D(this.startDrag.x, this.startDrag.y),
+                    new Vector2D(0, 0),
+                    new Vector2D(calcCoords.x * this.atlasSize, calcCoords.y * this.atlasSize),
+                    false,
                     this.name
                 );
                 break;
@@ -289,7 +322,7 @@ class UIElement {
 
     AddOperations(canvasDrawer) {
         for (let i = 0; i < this.drawingOperations.length; i++) {
-            canvasDrawer.AddDrawOperation(this.drawingOperations[i]);
+            canvasDrawer.AddDrawOperation(this.drawingOperations[i], OperationType.gameObjects);
         }
         this.lifeTime--;
     }
@@ -305,7 +338,7 @@ class UIDrawer {
     AddUIElements() {
         if (this.uiElements.length > 0) {
             for (let i = 0; i < this.uiElements.length; i++) {
-                this.uiElements[i].AddOperations(this.canvasDrawer)
+                this.uiElements[i].AddOperations(this.canvasDrawer, OperationType.gameObjects);
             }
 
             let tempUIElements = this.uiElements;
@@ -323,29 +356,46 @@ class UIDrawer {
     DrawUIElement(sprite, text, position) {
         let newUiElement = new UIElement();
 
-        newUiElement.drawingOperations.push(new DrawingOperation(
-            new CanvasSprite(
-                15.05,
-                2.6,
-                42,
-                32,
-                'uipieces'
-            ),
-            this.canvasDrawer.spriteObjectCanvas, position, false, this.canvasDrawer.canvasAtlases['uipieces'].canvas
-        )
+        newUiElement.drawingOperations.push(
+            new DrawingOperation(
+                new Tile(
+                    new Vector2D(position.x, position.y),
+                    new Vector2D(15.05, 2.6),
+                    new Vector2D(42, 32),
+                    false,
+                    'uipieces'
+                ),
+                this.canvasDrawer.spriteObjectCanvas,
+                this.canvasDrawer.canvasAtlases['uipieces'].canvas
+            )
         );
-        newUiElement.drawingOperations.push(new DrawingOperation(
-            new CanvasSprite(
-                17.05,
-                2.6,
-                42,
-                32,
-                'uipieces'
-            ),
-            this.canvasDrawer.spriteObjectCanvas, new Vector2D(position.x + 42, position.y), false, this.canvasDrawer.canvasAtlases['uipieces'].canvas)
+        newUiElement.drawingOperations.push(
+            new DrawingOperation(
+                new Tile(
+                    new Vector2D(position.x + 42, position.y),
+                    new Vector2D(17.05, 2.6),
+                    new Vector2D(42, 32),
+                    false,
+                    'uipieces'
+                ),
+                this.canvasDrawer.spriteObjectCanvas,
+                this.canvasDrawer.canvasAtlases['uipieces'].canvas
+            )
         );
 
-        newUiElement.drawingOperations.push(new DrawingOperation(sprite, this.canvasDrawer.spriteObjectCanvas, new Vector2D(position.x + 10, position.y), false, this.canvasDrawer.canvasAtlases[sprite.canvas].canvas));
+        newUiElement.drawingOperations.push(
+            new DrawingOperation(
+                new Tile(
+                    new Vector2D(position.x + 10, position.y),
+                    new Vector2D(sprite.x, sprite.y),
+                    new Vector2D(sprite.width, sprite.height),
+                    false,
+                    sprite.canvas
+                ),
+                this.canvasDrawer.spriteObjectCanvas,
+                this.canvasDrawer.canvasAtlases[sprite.canvas].canvas
+            )
+        );
         newUiElement.drawingOperations.push(new TextOperation(text, new Vector2D(position.x + 42, position.y + (32 / 2)), false, this.canvasDrawer.spriteObjectCanvas));
         this.uiElements.push(newUiElement);
     }
@@ -378,28 +428,28 @@ class CanvasSave {
     }
 
     putElephantInDb(blob, index, key = "saveData") {
-        let transaction = this.db.transaction([index], "readwrite");
-        let put = transaction.objectStore(index).put(blob, key);
+        if (index !== undefined) {
+            let transaction = this.db.transaction([index], "readwrite");
+            let put = transaction.objectStore(index).put(blob, key);
 
-        this.request.onerror = function (event) {
-            console.log("Error creating/accessing IndexedDB database");
-        };
+            this.request.onerror = function (event) {
+                console.log("Error creating/accessing IndexedDB database");
+            };
+        }
     };
 
     UpdateOperation(operations) {
         for (let i = 0; i < operations.length; i++) {
             if (operations[i].drawingCanvas.id === 'game-canvas') {
-                if (operations[i].canvasSprite.IsTransparent() === true) {
-                    this.drawingOperations[operations[i].pos.y / 32][operations[i].pos.x / 32].push(operations[i]);
-                } else if (this.drawingOperations[operations[i].pos.y / 32] !== undefined) {
-                    this.drawingOperations[operations[i].pos.y / 32][operations[i].pos.x / 32] = [];
-                    this.drawingOperations[operations[i].pos.y / 32][operations[i].pos.x / 32].push(
+                if (operations[i].tile.IsTransparent() === true) {
+                    this.drawingOperations[operations[i].tile.position.y / 32][operations[i].tile.position.x / 32].push(operations[i]);
+                } else if (this.drawingOperations[operations[i].tile.position.y / 32] !== undefined) {
+                    this.drawingOperations[operations[i].tile.position.y / 32][operations[i].tile.position.x / 32] = [];
+                    this.drawingOperations[operations[i].tile.position.y / 32][operations[i].tile.position.x / 32].push(
                         new DrawingOperation(
-                            operations[i].canvasSprite,
+                            operations[i].tile,
                             operations[i].drawingCanvas,
-                            operations[i].pos,
-                            operations[i].clear,
-                            operations[i].targetCanvas
+                            this.CanvasDrawer.canvasAtlases[operations[i].tile.atlas].canvas
                         )
                     );
                 }
@@ -409,12 +459,13 @@ class CanvasSave {
     }
 
     LoadOperations() {
-        for (let y = 0; y < Math.ceil(this.CanvasDrawer.mainCanvas.height / 32); y++) {
+        /*for (let y = 0; y < Math.ceil(this.CanvasDrawer.mainCanvas.height / 32); y++) {
             this.drawingOperations[y] = {};
             for (let x = 0; x < Math.ceil(this.CanvasDrawer.mainCanvas.width / 32); x++) {
                 this.drawingOperations[y][x] = [];
             }
-        }
+        }*/
+
         for (let y = 0; y < Math.ceil(this.CanvasDrawer.mainCanvas.height / 32); y++) {
             this.drawingOperations[y] = {};
             for (let x = 0; x < Math.ceil(this.CanvasDrawer.mainCanvas.width / 32); x++) {
@@ -492,21 +543,17 @@ class CanvasSave {
                     for (let i = 0; i < jsonOperation.length; i++) {
                         let newSprite = JSON.parse(jsonOperation[i].canvasSprite);
                         let drawingOperationTemp = new DrawingOperation(
-                            new CanvasSprite(
-                                newSprite.x,
-                                newSprite.y,
-                                newSprite.width,
-                                newSprite.height,
-                                newSprite.canvas,
-                                (newSprite.isTransparent !== undefined ? newSprite.isTransparent : false)
+                            new Tile(
+                                new Vector2D(jsonOperation[i].pos.x, jsonOperation[i].pos.y),
+                                new Vector2D(newSprite.x, newSprite.y),
+                                new Vector2D(newSprite.width, newSprite.height),
+                                (newSprite.isTransparent !== undefined ? newSprite.isTransparent : false),
+                                newSprite.canvas
                             ),
                             (jsonOperation[i].drawingCanvas === 'game-canvas' ? this.CanvasDrawer.mainCanvas : this.CanvasDrawer.canvasAtlases[jsonOperation[i].drawingCanvas].canvas),
-                            jsonOperation[i].pos,
-                            jsonOperation[i].clear,
                             this.CanvasDrawer.canvasAtlases[jsonOperation[i].targetCanvas].canvas
                         );
-
-                        this.drawingOperations[drawingOperationTemp.pos.y / 32][drawingOperationTemp.pos.x / 32].push(drawingOperationTemp);
+                        this.drawingOperations[drawingOperationTemp.tile.position.y / 32][drawingOperationTemp.tile.position.x / 32].push(drawingOperationTemp);
                     }
 
                     let operationsLoaded = true;
@@ -518,7 +565,7 @@ class CanvasSave {
 
                     if (operationsLoaded === true) {
                         this.loadOperationsDone = true;
-                        this.CanvasDrawer.drawingOperations = this.GetOperations();
+                        this.CanvasDrawer.drawingOperations = this.drawingOperations;// this.GetOperations();
                     }
                 }
                 break;
@@ -556,8 +603,18 @@ class CanvasDrawer {
         this.spritePreviewCanvasCtx.msImageSmoothingEnabled = false;
         this.spritePreviewCanvasCtx.imageSmoothingEnabled = false;
 
+        this.drawingOperations = {};
+
+        for (let y = 0; y < Math.ceil(this.mainCanvas.height / 32); y++) {
+            this.drawingOperations[y] = {};
+            for (let x = 0; x < Math.ceil(this.mainCanvas.width / 32); x++) {
+                this.drawingOperations[y][x] = [];
+            }
+        }
+
+        this.gameObjectDrawingOperations = [];
+
         this.canvasAtlases = {};
-        this.drawingOperations = [];
         this.loadedImages = [];
         this.hasLoadedAllImages = {};
         this.isLoadingFinished = false;
@@ -636,40 +693,63 @@ class CanvasDrawer {
 
             if (this.isLoadingFinished === true) {
                 this.canvasSave.LoadOperations();
-                this.drawingOperations = this.canvasSave.GetOperations();
+                this.drawingOperations = this.canvasSave.drawingOperations;// GetOperations();
                 this.isLoadingFinished = null;
             }
         }
     }
 
     DrawLoop() {
-
-        //var brush = new Brush(brushTypes.box, 1, new CanvasSprite(0, 0, 32, 32, 'terrain'));
-        //var operations = brush.GenerateDrawingOperations({ x: 3 * 32, y: 3 * 32 }, this.mainCanvas, this.canvasAtlases['terrain'].canvas);
-        //this.drawingOperations = operations;
-
         this.CheckIfFinishedLoading();
         this.UIDrawer.AddUIElements();
-        let tempDrawingOperations = this.drawingOperations;
-        this.drawingOperations = [];
-
-        tempDrawingOperations.sort(function (a, b) {
-            if (a.pos.y > b.pos.y)
-                return 1;
-            else if (a.pos.y < b.pos.y)
-                return -1;
-            else return 0;
-        });
-
-        this.spriteObjectCanvasCtx.clearRect(0, 0, this.spriteObjectCanvas.width, this.spriteObjectCanvas.height);
+        let tempDrawingOperations = this.GetOperations();
 
         if (tempDrawingOperations.length > 0) {
-            this.UpdateDrawingOperations(tempDrawingOperations);
+            //this.UpdateDrawingOperations(tempDrawingOperations);
 
             for (let i = 0; i < tempDrawingOperations.length; i++) {
-                this.DrawOnCanvas(tempDrawingOperations[i]);
+                if (tempDrawingOperations[i].tile.needsToBeRedrawn === true)
+                    this.DrawOnCanvas(tempDrawingOperations[i]);
             }
         }
+
+        this.gameObjectDrawingOperations.sort(function (a, b) {
+            if (a.GetPosition().y > b.GetPosition().y) return 1;
+            if (a.GetPosition().y < b.GetPosition().y) return -1;
+            if (a.GetDrawIndex() > b.GetDrawIndex()) return 1;
+            if (a.GetDrawIndex() < b.GetDrawIndex()) return -1;
+            
+            return 0;
+        });
+
+        for (let i = 0; i < this.gameObjectDrawingOperations.length; i++) {
+            if (this.gameObjectDrawingOperations[i].tile.needsToBeRedrawn === true) {
+                if (this.gameObjectDrawingOperations[i].oldPosition !== undefined)
+                    this.ClearCanvas(this.gameObjectDrawingOperations[i]);
+            }
+        }
+
+        for (let i = 0; i < this.gameObjectDrawingOperations.length; i++) {
+            if (this.gameObjectDrawingOperations[i].tile.needsToBeRedrawn === true) {
+                this.DrawOnCanvas(this.gameObjectDrawingOperations[i]);
+            }
+        }
+    }
+
+    GetOperations() {
+        let operations = [];
+
+        let keysY = Object.keys(this.drawingOperations);
+        for (let y = 0; y < keysY.length; y++) {
+            let keysX = Object.keys(this.drawingOperations[keysY[y]]);
+            for (let x = 0; x < keysX.length; x++) {
+                for (let i = 0; i < this.drawingOperations[keysY[y]][keysX[x]].length; i++) {
+                    operations.push(this.drawingOperations[keysY[y]][keysX[x]][i]);
+                }
+            }
+        }
+
+        return operations;
     }
 
     UpdateDrawingOperations(operations) {
@@ -679,9 +759,20 @@ class CanvasDrawer {
         this.canvasSave.UpdateOperation(operations);
     }
 
-    DrawOnCanvas(drawingOperation) {
+    ClearCanvas(drawingOperation) {
         if (drawingOperation instanceof DrawingOperation) {
-            if (drawingOperation.canvasSprite == undefined || this.canvasAtlases[drawingOperation.canvasSprite.canvas] === undefined)
+            if (drawingOperation.tile == undefined || this.canvasAtlases[drawingOperation.tile.atlas] === undefined)
+                return;
+        }
+
+        let context = drawingOperation.drawingCanvas.getContext('2d');
+        context.clearRect(drawingOperation.oldPosition.x, drawingOperation.oldPosition.y, drawingOperation.tile.size.x, drawingOperation.tile.size.y);
+    }
+
+    DrawOnCanvas(drawingOperation) {
+
+        if (drawingOperation instanceof DrawingOperation) {
+            if (drawingOperation.tile == undefined || this.canvasAtlases[drawingOperation.tile.atlas] === undefined)
                 return;
 
             if (drawingOperation.targetCanvas === undefined || this.mainCanvasCtx === undefined)
@@ -689,21 +780,22 @@ class CanvasDrawer {
         }
 
         let context = drawingOperation.drawingCanvas.getContext('2d');
-        if (drawingOperation.clear) {
-            context.clearRect(0, 0, drawingOperation.drawingCanvas.width, drawingOperation.drawingCanvas.height);
+        if (drawingOperation instanceof TextOperation && drawingOperation.clear === true || drawingOperation instanceof DrawingOperation && drawingOperation.tile.clear === true) {
+            //context.clearRect(0, 0, drawingOperation.drawingCanvas.width, drawingOperation.drawingCanvas.height);
         }
 
         if (drawingOperation instanceof DrawingOperation) {
+            drawingOperation.tile.needsToBeRedrawn = false;
             context.drawImage(
                 drawingOperation.targetCanvas,
-                drawingOperation.canvasSprite.GetPosX(),
-                drawingOperation.canvasSprite.GetPosY(),
-                drawingOperation.canvasSprite.width,
-                drawingOperation.canvasSprite.height,
-                drawingOperation.pos.x,
-                drawingOperation.pos.y,
-                drawingOperation.canvasSprite.width,
-                drawingOperation.canvasSprite.height
+                drawingOperation.tile.GetPosX(),
+                drawingOperation.tile.GetPosY(),
+                drawingOperation.tile.size.x,
+                drawingOperation.tile.size.y,
+                drawingOperation.tile.position.x,
+                drawingOperation.tile.position.y,
+                drawingOperation.tile.size.x,
+                drawingOperation.tile.size.y
             );
         } else if (drawingOperation instanceof TextOperation) {
             context.font = drawingOperation.size + 'px ' + drawingOperation.font;
@@ -717,18 +809,62 @@ class CanvasDrawer {
             let brush = new Brush(brushTypes.box, this.brushSettings.brushSize, this.selectedSprite),
                 canvasPos = mouseToAtlas(event, 32);// this.selectedSprite.width);
 
-            this.drawingOperations = this.drawingOperations.concat(
+            this.AddDrawOperations(
                 brush.GenerateDrawingOperations(
                     { x: canvasPos.x * 32, y: canvasPos.y * 32 },
                     this.mainCanvas,
-                    this.canvasAtlases[this.selectedSprite.canvas].canvas
-                )
+                    this.canvasAtlases[this.selectedSprite.atlas].canvas
+                ),
+                OperationType.terrain
             );
         }
     }
 
-    AddDrawOperation(operation) {
-        this.drawingOperations.push(operation);
+    AddDrawOperation(operation, operationType = OperationType.terrain) {
+        if (operation === undefined)
+            return;
+
+        switch (operationType) {
+            case OperationType.terrain:
+                if (operation.tile.IsTransparent() === false) {
+                    let newOperations = [operation];
+
+                    for (let i = 0; i < this.drawingOperations[operation.tile.GetDrawPosY()][operation.tile.GetDrawPosX()].length; i++) {
+                        if (this.drawingOperations[operation.tile.GetDrawPosY()][operation.tile.GetDrawPosX()][i].tile.IsTransparent() === true)
+                            newOperations.push(this.drawingOperations[operation.tile.GetDrawPosY()][operation.tile.GetDrawPosX()][i]);
+                    }
+
+                    newOperations.sort(function (a, b) {
+                        if (a.GetPosition().y > b.GetPosition().y)
+                            return 1;
+                        else if (a.GetPosition().y < b.GetPosition().y)
+                            return -1;
+                        else return 0;
+                    });
+
+                    this.drawingOperations[operation.tile.GetDrawPosY()][operation.tile.GetDrawPosX()] = newOperations;
+                } else {
+                    this.drawingOperations[operation.tile.GetDrawPosY()][operation.tile.GetDrawPosX()].push(operation);
+                    
+                    this.drawingOperations[operation.tile.GetDrawPosY()][operation.tile.GetDrawPosX()].sort(function (a, b) {
+                        if (a.GetPosition().y > b.GetPosition().y)
+                            return 1;
+                        else if (a.GetPosition().y < b.GetPosition().y)
+                            return -1;
+                        else return 0;
+                    });
+                }
+                break;
+
+            case OperationType.gameObjects:
+                this.gameObjectDrawingOperations.push(operation);
+                break;
+        }
+    }
+
+    AddDrawOperations(operations, operationType = OperationType.terrain) {
+        for (let i = 0; i < operations.length; i++)
+            this.AddDrawOperation(operations[i], operationType);
     }
 
     handleEvent(e) {
@@ -764,7 +900,7 @@ class CanvasDrawer {
                     let brush = new Brush(brushTypes.box, this.brushSettings.brushSize, this.selectedSprite),
                         canvasPos = mouseToAtlas(e, 32);// this.selectedSprite.width);
 
-                    let atlasCoords = mouseToAtlas(e, this.canvasAtlases[this.selectedSprite.canvas].atlasSize);
+                    let atlasCoords = mouseToAtlas(e, this.canvasAtlases[this.selectedSprite.atlas].atlasSize);
 
                     if (this.lastAtlasCoords.Equal(atlasCoords) == false) {
                         this.spritePreviewCanvasCtx.clearRect(0, 0, this.spritePreviewCanvas.width, this.spritePreviewCanvas.height);
@@ -774,13 +910,11 @@ class CanvasDrawer {
 
                     //let previewDrawingOperation = new DrawingOperation(this.selectedSprite, this.spritePreviewCanvas, posCoords, true, this.canvasAtlases[this.selectedSprite.canvas].canvas);
                     //this.drawingOperations.push(previewDrawingOperation);
-                    this.drawingOperations = this.drawingOperations.concat(
-                        brush.GenerateDrawingOperations(
-                            posCoords,
-                            this.spritePreviewCanvas,
-                            this.canvasAtlases[this.selectedSprite.canvas].canvas
-                        )
-                    );
+                    this.AddDrawOperations(brush.GenerateDrawingOperations(
+                        posCoords,
+                        this.spritePreviewCanvas,
+                        this.canvasAtlases[this.selectedSprite.atlas].canvas
+                    ), OperationType.terrain);
 
                     this.lastAtlasCoords = new Vector2D(atlasCoords.x, atlasCoords.y);
                 }
@@ -792,4 +926,4 @@ class CanvasDrawer {
     }
 }
 
-export { CanvasDrawer, CanvasSave, CanvasAtlas, CanvasSprite, DrawingOperation, BrushSettings, Brush, UIDrawer }
+export { CanvasDrawer, CanvasSave, CanvasAtlas, CanvasSprite, DrawingOperation, BrushSettings, Brush, UIDrawer, OperationType }

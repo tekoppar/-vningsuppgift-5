@@ -1,0 +1,158 @@
+<style>
+    .panel-container {
+        display: none;
+        min-width: 256px;
+        width: 256px;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .panel {
+        background-image: url(/content/sprites/ui_big_pieces_mod.png);
+        background-position: -64px 0px;
+        background-size: calc(64px * 27) calc(64px * 18.2);
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border: none;
+        display: block;
+        min-width: 64px;
+        min-height: 64px;
+        width: 64px;
+        height: 64px;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+    }
+
+    .panel:nth-child(1) {
+        background-position: 0px 0px;
+    }
+
+    .panel:nth-child(4) {
+        background-position: -128px 0px;
+    }
+
+    .panel:nth-child(4n+5) {
+        background-position: calc(-64px * 3) 0px;
+    }
+
+    .panel:nth-child(4n+6) {
+        background-position: calc(-64px * 4) 0px;
+    }
+
+    .panel:nth-child(4n+7) {
+        background-position: calc(-64px * 4) 0px;
+    }
+
+    .panel:nth-child(4n+8) {
+        background-position: calc(-64px * 5) 0px;
+    }
+
+    .panel:nth-last-child(4) {
+        background-position: calc(-64px * 6) 0px;
+    }
+
+    .panel:nth-last-child(3) {
+        background-position: calc(-64px * 7) 0px;
+    }
+
+    .panel:nth-last-child(2) {
+        background-position: calc(-64px * 7) 0px;
+    }
+
+    .panel:nth-last-child(1) {
+        background-position: calc(-64px * 8) 0px;
+    }
+
+    .inventory-item {
+        background-image: url(/content/sprites/ui_big_pieces_mod.png);
+        background-position: calc(-64px * 15) 0px;
+        background-size: calc(64px * 27) calc(64px * 18.2);
+        background-repeat: no-repeat;
+        background-color: transparent;
+        display: block;
+        min-width: 64px;
+        min-height: 64px;
+        width: 64px;
+        height: 64px;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inventory-item:hover {
+        cursor: pointer;
+        filter: brightness(1.2);
+    }
+
+    .inventory-item-sprite {
+        width: 42px;
+        height: 42px;
+        pointer-events: none;
+    }
+
+    .inventory-item-text {
+        color: #f3c52f;
+        font-size: 24px;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        position: absolute;
+        font-weight: 800;
+        bottom: 10%;
+        right: 20%;
+        pointer-events: none;
+    }
+
+    .inventory-item-list {
+        position: absolute;
+        width: 275px;
+        max-height: 330px;
+        margin: 10px;
+        z-index: 1;
+        display: none;
+        flex-direction: row;
+        flex-wrap: wrap;
+        transform: scale(92%);
+        transform-origin: top left;
+        overflow-y: auto;
+    }
+</style>
+<template id="inventory-panel-item">
+    <div class="inventory-item">
+        <div class="inventory-item-sprite"></div>
+        <label class="inventory-item-text"></label>
+    </div>
+</template>
+<template id="inventory-panel">
+    <div style="position: relative;">
+        <div class="inventory-item-list"></div>
+        <div class="panel-container">
+            <button class="panel"></button>
+            <button class="panel"></button>
+            <button class="panel"></button>
+            <button class="panel"></button>
+            <button class="panel"></button>
+            <button class="panel"></button>
+            <button class="panel"></button>
+            <button class="panel"></button>
+            <button class="panel"></button>
+            <button class="panel"></button>
+            <button class="panel"></button>
+            <button class="panel"></button>
+            <button class="panel"></button>
+            <button class="panel"></button>
+            <button class="panel"></button>
+            <button class="panel"></button>
+            <button class="panel"></button>
+            <button class="panel"></button>
+            <button class="panel"></button>
+            <button class="panel"></button>
+        </div>
+    </div>
+</template>

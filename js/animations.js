@@ -27,7 +27,7 @@ class Animation {
         this.currentFrame = 0;
         this.animationType = animationType;
         this.animationSpeed = animationSpeed;
-        this.cooldown = animationSpeed;
+        this.cooldown = 0;
         this.animationFinished = false;
 
         this.ConstructAnimation(this.start, this.end, this.w, this.h);
@@ -45,35 +45,43 @@ class Animation {
         );
     }
 
+    SetSpeed(speed) {
+        this.cooldown = this.animationSpeed = speed;
+    }
+
     GetFrame() {
         let frameIndex = this.currentFrame;
 
-        if (this.cooldown === 0) {
-            this.cooldown = this.animationSpeed;
-
-            if (this.currentFrame === this.frames.length - 1)
+        if (this.cooldown === 0 && this.animationFinished !== true) {
+            if (this.currentFrame === this.frames.length)
                 this.animationFinished = true;
 
             switch (this.animationType) {
-
                 case AnimationType.Cycle:
                 case AnimationType.Idle:
-                    if (this.currentFrame == this.frames.length - 1)
+                    if (this.currentFrame == this.frames.length) {
                         this.currentFrame = 0;
-                    else
+                        frameIndex = 0;
+                        this.animationFinished = false;
+                    }
+                    else {
                         this.currentFrame++;
+                        this.cooldown = this.animationSpeed;
+                    }
                     break;
 
                 case AnimationType.Single:
-
-                    if (this.currentFrame < this.frames.length - 1)
+                    if (this.currentFrame < this.frames.length) {
                         this.currentFrame++;
+                        this.cooldown = this.animationSpeed;
+                    }
                     break;
             }
+
             return this.frames[frameIndex];
         } else {
             this.cooldown--;
-            return this.frames[frameIndex];
+            //return this.frames[frameIndex];
         }
 
         return null;

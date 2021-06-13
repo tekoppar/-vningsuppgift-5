@@ -39,6 +39,14 @@ class Vector2D {
     Distance(a) {
         return Math.sqrt(Math.pow(this.x - a.x, 2)) + Math.sqrt(Math.pow(this.y - a.y, 2));
     }
+
+    CheckInRange(checkPos, range = 100.0) {
+        return this.Distance(checkPos) < range;
+    }
+
+    Clone() {
+        return new Vector2D(this.x, this.y);
+    }
 }
 
 class Vector {

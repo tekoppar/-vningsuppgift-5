@@ -1,4 +1,5 @@
 import { MasterObject } from './masterObject.js';
+import { PageFetcher } from './pageFetcher.js';
 
 class SpriteObject {
     constructor(x, y, w, h, canvas, name) {
@@ -24,6 +25,14 @@ function gridToPos(pid, columns = link.columns) {
     y = link.height * y;
     return { x: x, y: y };
 }
+
+let includeTemplates = function appendTemplates(content) {
+    let container = document.createElement('div');
+    container.innerHTML = content;
+    document.head.appendChild(container);
+}
+
+PageFetcher.GPF.AddRequest(includeTemplates, '/html/inventory.html');
 
 window.onload = function () {
     window.requestAnimationFrame(() => MasterObject.MO.GameLoop());

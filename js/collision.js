@@ -5,19 +5,51 @@ class CollisionHandler {
 
     constructor() {
         this.Collisions = [];
+        this.EnabledCollisions = [];
     }
 
     AddCollision(collision) {
         this.Collisions.push(collision);
+
+        if (collision.enableCollision === true)
+            this.EnabledCollisions.push(collision);
     }
 
     CheckCollisions(collision) {
-        for (let i = 0; i < this.Collisions.length; i++) {
-            if (collision.DoIntersect(this.Collisions[i]) === true || collision.GetIntersections(this.Collisions[i].GetPoints()) > 0)
-                return false;
+        for (let i = 0; i < this.EnabledCollisions.length; i++) {
+            if (collision.collisionOwner !== this.EnabledCollisions[i].collisionOwner) {
+                if (collision.DoIntersect(this.EnabledCollisions[i]) === true || collision.GetIntersections(this.EnabledCollisions[i].GetPoints()) > 0) {
+                    return false;
+                }
+            }
         }
 
         return true;
+    }
+
+    GetOverlap(collision) {
+        for (let i = 0; i < this.Collisions.length; i++) {
+            if (collision.collisionOwner !== this.Collisions[i].collisionOwner && this.Collisions[i].overlapEvents === true) {
+                if (collision.DoIntersect(this.Collisions[i], true) === true) {
+                    return this.Collisions[i];
+                }
+            }
+        }
+
+        return false;
+    }
+
+    GetOverlaps(collision) {
+        let overlaps = [];
+        for (let i = 0; i < this.Collisions.length; i++) {
+            if (collision.collisionOwner !== this.Collisions[i].collisionOwner && this.Collisions[i].overlapEvents === true) {
+                if (collision.DoIntersect(this.Collisions[i], true) === true) {
+                    overlaps.push(this.Collisions[i]);
+                }
+            }
+        }
+
+        return overlaps;
     }
 
     GetPoints() {
@@ -26,10 +58,21 @@ class CollisionHandler {
 }
 
 class Collision {
-    constructor(position, size) {
+    constructor(position, size, enableCollision, owner = undefined) {
         this.position = new Vector2D(position.x, position.y);
         this.size = new Vector2D(size.x, size.y);
-        this.overlapEvents = false;
+        this.overlapEvents = true;
+        this.enableCollision = enableCollision;
+        this.collisionOwner = owner;
+
+        CollisionHandler.GCH.AddCollision(this);
+    }
+
+    CheckInRange(collision, range = 25) {
+        let tempPos = new Vector2D(this.position.x + (this.size.x / 2), this.position.y + this.size.y);
+        let checkPos = new Vector2D(collision.position.x + (collision.size.x / 2), collision.position.y + (collision.size.y / 2));
+
+        return tempPos.CheckInRange(checkPos, range);
     }
 
     CheckOverlap() {
@@ -45,9 +88,12 @@ class Collision {
         ]
     }
 
-    DoIntersect(b) {
+    DoIntersect(b, overlap = false) {
         //wthis.CheckIntersection(new Vector4D(b.position.x, b.position.y, b.size.x, b.size.y));
-        return (Math.abs(this.position.x - b.position.x) * 2 < (this.size.x + b.size.x)) && (Math.abs(this.position.y - b.position.y) * 2 < (this.size.y + b.size.y));
+        if (this.enableCollision === true || overlap === true)
+            return (Math.abs(this.position.x - b.position.x) * 1 < (this.size.x + b.size.x)) && (Math.abs(this.position.y - b.position.y) * 1 < (this.size.y + b.size.y));
+        else
+            return false;
     }
 
     GetIntersections(points) {
@@ -123,14 +169,14 @@ class Collision {
 }
 
 class BoxCollision extends Collision {
-    constructor(position, size) {
-        super(position, size);
+    constructor(position, size, enableCollision, owner = undefined) {
+        super(position, size, enableCollision, owner);
     }
 }
 
 class PolygonCollision extends Collision {
-    constructor(position, size, points = []) {
-        super(position, size);
+    constructor(position, size, points = [], enableCollision, owner = undefined) {
+        super(position, size, enableCollision, owner);
         this.points = points;
     }
 
@@ -139,7 +185,7 @@ class PolygonCollision extends Collision {
     }
 }
 
-let newCollision = new BoxCollision(new Vector2D(256, 320), new Vector2D(64, 64));
+//let newCollision = new BoxCollision(new Vector2D(256, 320), new Vector2D(64, 64), true);
 //collisionHandler.AddCollision(newCollision);
 let polygonCollision = new PolygonCollision(new Vector2D(256, 320), new Vector2D(0, 0), [
     new Vector2D(100, 100),
@@ -148,7 +194,7 @@ let polygonCollision = new PolygonCollision(new Vector2D(256, 320), new Vector2D
     new Vector2D(150, 300),
     new Vector2D(100, 200),
     new Vector2D(100, 100)
-]);
-CollisionHandler.GCH.AddCollision(polygonCollision);
+], true);
+//CollisionHandler.GCH.AddCollision(polygonCollision);
 
 export { CollisionHandler, Collision, BoxCollision };
