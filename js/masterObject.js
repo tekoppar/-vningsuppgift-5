@@ -6,6 +6,7 @@ import { Vector2D } from './vectors.js';
 import { plantAnimations } from './AllAnimations.js';
 import { CanvasSprite, CanvasDrawer, CanvasAtlas } from './customDrawer.js';
 import { Cobject } from './object.js';
+import { TileData } from './tile.js';
 
 var GlobalFrameCounter = 0;
 
@@ -64,6 +65,8 @@ class MasterObject {
             }
 
             character.inventory.SetupHTML();
+
+            TileData.tileData.CreateTileLUTEditor();
 
             this.gameHasBegun = true;
         }

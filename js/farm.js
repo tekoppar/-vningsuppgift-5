@@ -33,6 +33,7 @@ let includeTemplates = function appendTemplates(content) {
 }
 
 PageFetcher.GPF.AddRequest(includeTemplates, '/html/inventory.html');
+PageFetcher.GPF.AddRequest(includeTemplates, '/html/tileLUTEditor.html');
 
 window.onload = function () {
     window.requestAnimationFrame(() => MasterObject.MO.GameLoop());

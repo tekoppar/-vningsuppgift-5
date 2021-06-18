@@ -1,0 +1,97 @@
+<style>
+    .tile-lut-editor-container {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        width: max-content;
+        top: 10%;
+        right: 0;
+        background-color: black;
+        border-radius: 3px;
+        padding: 5px;
+    }
+
+    .tile-lut-editor-filter-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    .tile-lut-editor-container label {
+        color: white;
+    }
+
+    .tile-lut-editor-tiles {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 256px;
+        max-height: 512px;
+        overflow-y: auto;
+        background-color: #60b3f6;
+        border: 5px solid rgb(92, 92, 92);
+        margin: 5px;
+    }
+
+    .tile-lut-editor-tiles-setcontainer {
+        color: white;
+        max-width: 110px;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin:2px;
+        height:max-content;
+    }
+
+    .tile-lut-editor-tiles-setcontainer[data-tileset$='Corner'] {
+        max-width: 80px;
+    }
+
+    .tile-lut-editor-filter-container {
+        color: white;
+        margin: 3px;
+        max-width: 256px;
+        flex-wrap: wrap;
+    }
+
+    .tile-lut-editor-filter-container legend:hover {
+        cursor: pointer;
+    }
+
+    .tile-lut-editor-filter-container label {
+        font-size: 9px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        margin: 1px;
+    }
+
+    .tile-lut-editor-tiles-selected {
+        border:2px solid #f3c52f;
+    }
+</style>
+<template id="template-tile-lut-editor">
+    <div class="tile-lut-editor-container">
+        <input type="text" id="tile-lut-editor-name" placeholder="Select a tile">
+        <label id="tile-lut-editor-selection">Nothing Selected</label>
+        <label id="tile-lut-editor-atlas">No Atlas Selected</label>
+        <label id="tile-lut-editor-transparent">No Atlas Selected</label>
+        <input type="text" id="tile-lut-editor-tileset">
+        <select name="tileULDR" id="tile-lut-editor-tileuldr"></select>
+        <select name="tiletype" id="tile-lut-editor-tiletype"></select>
+        <select name="tileterrain" id="tile-lut-editor-tileterrain"></select>
+        <button id="tile-lut-editor-add">New Tile LUT</button>
+        <button id="tile-lut-editor-export">Export LUT</button>
+        <div class="tile-lut-editor-filter-container">
+            <fieldset id="tile-lut-editor-filter-bool-tiletype" class="tile-lut-editor-filter-container">
+                <legend id="tile-lut-editor-filter-bool-tiletype-legend">Tile Type</legend>
+            </fieldset>
+            <fieldset id="tile-lut-editor-filter-bool-tileterrain" class="tile-lut-editor-filter-container">
+                <legend id="tile-lut-editor-filter-bool-tileterrain-legend">Tile Terrain</legend>
+            </fieldset>
+        </div>
+        <div id="tile-lut-editor-tiles" class="tile-lut-editor-tiles"></div>
+    </div>
+</template>

@@ -1,5 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+    .container-main {
+        position: relative;
+    }
+    .container-game {
+        grid-column: center;
+        grid-row: center;
+        width: 1920px;
+        height: 1080px;
+        position: relative;
+        background-color: transparent;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .absolute-canvas {
+        position: absolute;
+        pointer-events: none;
+    }
+</style>
 
 <head>
     <meta charset="UTF-8">
@@ -23,16 +43,16 @@
     <div class="clouds clouds-small2"></div>
     <div class="controls">
         <button id="save-canvas">Save</button>
-        <button>Paint</button>
+        <button id="enable-painting">Paint</button>
         <input type="number" id="size-x" data-type="size" value="1">
         <input type="number" id="size-y" data-type="size" value="1">
         <input type="number" id="total-corn" value="0">
     </div>
-    <div class="container-main" style="position: relative;">
-        <div id="container-game" style="grid-column: center;grid-row:center;width:1920px;height:1080px;position: relative;background-color:transparent;padding:0px;margin:0px;">
+    <div class="container-main">
+        <div id="container-game" class="container-game">
             <canvas style="position:absolute" id="game-canvas" width="1920" height="1080"></canvas>
-            <canvas style="position:absolute;pointer-events: none;" id="sprite-objects-canvas" width="1920" height="1080"></canvas>
-            <canvas style="position:absolute;pointer-events: none;" id="sprite-preview-canvas" width="1920" height="1080"></canvas>
+            <canvas class="absolute-canvas" id="sprite-objects-canvas" width="1920" height="1080"></canvas>
+            <canvas class="absolute-canvas" id="sprite-preview-canvas" width="1920" height="1080"></canvas>
             <div id="game-gui">
                 <div id="game-gui-toolbar" class="game-gui-toolbar">
                     <div class="toolbar-item">

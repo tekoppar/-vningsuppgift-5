@@ -1,7 +1,7 @@
 class Vector2D {
     constructor(x, y) {
-        this.x = x;
-        this.y = y;
+        this.x = Number(x);
+        this.y = Number(y);
     }
 
     Add(a) {
@@ -26,6 +26,16 @@ class Vector2D {
     Div(a) {
         this.x /= a.x;
         this.y /= a.y;
+    }
+
+    Ceil() {
+        this.x = Math.ceil(this.x);
+        this.y = Math.ceil(this.y);
+    }
+
+    Floor() {
+        this.x = Math.floor(this.x);
+        this.y = Math.floor(this.y);
     }
 
     Equal(a) {
@@ -126,4 +136,196 @@ class Vector4D {
     }
 }
 
-export {Vector2D, Vector, Vector4D};
+class Matrix {
+    constructor(x1, y1, z1, x2, y2, z2, x3, y3, z3) {
+        this.x1 = x1;
+        this.y1 = y1;
+        this.z1 = z1;
+        this.x2 = x2;
+        this.y2 = y2;
+        this.z2 = z2;
+        this.x3 = x3;
+        this.y3 = y3;
+        this.z3 = z3;
+    }
+
+    Null(b) {
+        if (b === undefined)
+            return;
+        if (b.x1 === 0)
+            this.x1 = null;
+        if (b.y1 === 0)
+            this.y1 = null;
+        if (b.z1 === 0)
+            this.z1 = null;
+        if (b.x2 === 0)
+            this.x2 = null;
+        if (b.y2 === 0)
+            this.y2 = null;
+        if (b.z2 === 0)
+            this.z2 = null;
+        if (b.x3 === 0)
+            this.x3 = null;
+        if (b.y3 === 0)
+            this.y3 = null;
+        if (b.z3 === 0)
+            this.z3 = null;
+    }
+
+    Filter(keys, filter) {
+        let arr = this.ToArray();
+
+        for (let i = 0; i < arr.length; i++) {
+            let temp = arr[i];
+            for (let k = 0; k < keys.length; k++) {
+                if (temp !== undefined && temp[keys[k]] !== undefined)
+                    temp = temp[keys[k]];
+                else
+                    arr[i] = null;
+            }
+
+            if (temp !== undefined && temp !== filter)
+                arr[i] = null;
+        }
+
+        return Matrix.FromArray(arr);
+    }
+
+    FilterNot(keys, filter) {
+        let arr = this.ToArray();
+
+        for (let i = 0; i < arr.length; i++) {
+            let temp = arr[i];
+            for (let k = 0; k < keys.length; k++) {
+                if (temp !== undefined && temp[keys[k]] !== undefined)
+                    temp = temp[keys[k]];
+            }
+
+            if (temp === undefined || temp === filter)
+                arr[i] = null;
+        }
+
+        return Matrix.FromArray(arr);
+    }
+
+    ToArray() {
+        return [this.x1, this.y1, this.z1, this.x2, this.y2, this.z2, this.x3, this.y3, this.z3];
+    }
+
+    To3DArray() {
+        return [
+            [
+                this.x1 instanceof Matrix ? this.x1.To3DArray() : this.x1,
+                this.y1 instanceof Matrix ? this.y1.To3DArray() : this.y1,
+                this.z1 instanceof Matrix ? this.z1.To3DArray() : this.z1
+            ],
+            [
+                this.x2 instanceof Matrix ? this.x2.To3DArray() : this.x2,
+                this.y2 instanceof Matrix ? this.y2.To3DArray() : this.y2,
+                this.z2 instanceof Matrix ? this.z2.To3DArray() : this.z2
+            ],
+            [
+                this.x3 instanceof Matrix ? this.x3.To3DArray() : this.x3,
+                this.y3 instanceof Matrix ? this.y3.To3DArray() : this.y3,
+                this.z3 instanceof Matrix ? this.z3.To3DArray() : this.z3
+            ]
+        ];
+    }
+
+    ToBinary() {
+        return '0x' + this.y1 + '' + this.y3 + '' + this.x2 + '' + this.z2 + '' + this.z3 + '' + this.x1 + '' + this.z1 + '' + this.x3;
+    }
+
+    InvertMatrix() {
+        this.x1 = this.x1 == 0 ? 1 : 0;
+        this.y1 = this.y1 == 0 ? 1 : 0;
+        this.z1 = this.z1 == 0 ? 1 : 0;
+        this.x2 = this.x2 == 0 ? 1 : 0;
+        this.y2 = this.y2 == 0 ? 1 : 0;
+        this.z2 = this.z2 == 0 ? 1 : 0;
+        this.x3 = this.x3 == 0 ? 1 : 0;
+        this.y3 = this.y3 == 0 ? 1 : 0;
+        this.z3 = this.z3 == 0 ? 1 : 0;
+    }
+
+    ConvertToBinary() {
+        this.x1 = this.x1 !== null ? 1 : 0;
+        this.y1 = this.y1 !== null ? 1 : 0;
+        this.z1 = this.z1 !== null ? 1 : 0;
+        this.x2 = this.x2 !== null ? 1 : 0;
+        this.y2 = this.y2 !== null ? 1 : 0;
+        this.z2 = this.z2 !== null ? 1 : 0;
+        this.x3 = this.x3 !== null ? 1 : 0;
+        this.y3 = this.y3 !== null ? 1 : 0;
+        this.z3 = this.z3 !== null ? 1 : 0;
+    }
+
+    OffsetMatrix(vector2D) {
+        let arr3D = this.To3DArray();
+
+        for (let i = 0; i < arr3D.length; i++) {
+            if (vector2D.x === -1) {
+                arr3D[i].shift();
+                arr3D[i].push(0);
+            }
+            if (vector2D.x === 1) {
+                arr3D[i].pop();
+                arr3D[i] = [0].concat(arr3D[i]);
+            }
+        }
+
+        if (vector2D.y === -1) {
+            arr3D.shift();
+            arr3D.push([0, 0, 0]);
+        }
+        if (vector2D.y === 1) {
+            arr3D.pop();
+            arr3D = [[0, 0, 0]].concat(arr3D);
+        }
+
+        return arr3D;
+    }
+
+    IsOne(b) {
+        if (b === undefined)
+            return;
+        if (b.x1 === 1)
+            this.x1 = 1;
+        if (b.y1 === 1)
+            this.y1 = 1;
+        if (b.z1 === 1)
+            this.z1 = 1;
+        if (b.x2 === 1)
+            this.x2 = 1;
+        if (b.y2 === 1)
+            this.y2 = 1;
+        if (b.z2 === 1)
+            this.z2 = 1;
+        if (b.x3 === 1)
+            this.x3 = 1;
+        if (b.y3 === 1)
+            this.y3 = 1;
+        if (b.z3 === 1)
+            this.z3 = 1;
+    }
+
+    Clone() {
+        return new Matrix(this.x1, this.y1, this.z1, this.x2, this.y2, this.z2, this.x3, this.y3, this.z3);
+    }
+
+    /*
+    526
+    1?0
+    734
+    */
+
+    static FromBinary(binary) {
+        return new Matrix(binary[5], binary[2], binary[6], binary[1], 1, binary[0], binary[7], binary[3], binary[4]);
+    }
+
+    static FromArray(array) {
+        return new Matrix(array[0], array[1], array[2], array[3], array[4], array[5], array[6], array[7], array[8]);
+    }
+}
+
+export { Vector2D, Vector, Vector4D, Matrix };

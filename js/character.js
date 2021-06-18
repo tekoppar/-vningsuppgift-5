@@ -181,6 +181,10 @@ class Character extends GameObject {
                         case 'd': this.Velocity.x = this.Direction.x = -1; this.Direction.y = 0; this.NeedsRedraw(this.position.Clone()); break;
                         case 's': this.Velocity.y = this.Direction.y = -1; this.Direction.x = 0; this.NeedsRedraw(this.position.Clone()); break;
                         case 'leftShift': this.isRunning = true; this.MovementSpeed = new Vector2D(-3, -3); this.NeedsRedraw(this.position.Clone()); break;
+                        case 'leftMouse':
+                            if (data.eventType === 0 && this.activeItem !== undefined)
+                                this.activeItem.UseItem(new BoxCollision(data.position, this.size, this.enableCollision, this));
+                            break;
                     }
                 }
                 if (data.eventType == 1) {
@@ -190,10 +194,6 @@ class Character extends GameObject {
                         case 'd': this.Velocity.x = this.Direction.x = -1; this.Direction.y = 0; this.NeedsRedraw(this.position.Clone()); break;
                         case 's': this.Velocity.y = this.Direction.y = -1; this.Direction.x = 0; this.NeedsRedraw(this.position.Clone()); break;
                         case 'leftShift': this.isRunning = true; this.MovementSpeed = new Vector2D(-3, -3); this.NeedsRedraw(this.position.Clone()); break;
-                        case 'leftMouse':
-                            if (data.eventType === 0 && this.activeItem !== undefined)
-                                this.activeItem.UseItem(new BoxCollision(data.position, this.size, this.enableCollision, this));
-                            break;
                     }
                 } else if (data.eventType == 2 || data.eventType == 3) {
                     switch (key) {

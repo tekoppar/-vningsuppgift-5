@@ -2,6 +2,9 @@ import { Cobject } from './object.js';
 import { Vector2D, Vector4D } from './vectors.js';
 import { CustomEventHandler } from './customEvents.js';
 import { CollisionHandler, BoxCollision } from './collision.js';
+import { CanvasDrawer } from './customDrawer.js';
+import { Tile, TileType, TileF } from './tile.js';
+import { TileLUT } from './TileLUT.js';
 
 let inventoryItemIcons = {
     corn: { sprite: new Vector4D(29, 10, 32, 32), atlas: new Vector2D(1024, 1536), url: '/content/sprites/fruits-veggies.png' },
@@ -58,6 +61,18 @@ class Hoe extends Item {
 
         if (overlap !== false) {
             console.log('hoeOverlap');
+        } else {
+            let pos = ownerCollision.position.Clone();
+            pos.Div(new Vector2D(32, 32));
+            pos.Floor();
+            let operations = CanvasDrawer.GCD.GetTileAtPosition(pos, false);
+
+            for (let i = 0; i < operations.length; i++) {
+                if (operations[i].tile.tileType === TileType.Ground) {
+                    TileF.PaintTile(new Tile(new Vector2D(0,0), new Vector2D(6, 18), new Vector2D(32, 32), TileLUT.terrain[18][6].transparent, 'terrain'), pos);
+                    operations[i].tile.ChangeSprite(new Tile(new Vector2D(0,0), new Vector2D(6, 18), new Vector2D(32, 32), TileLUT.terrain[18][6].transparent, 'terrain'));
+                }
+            }
         }
         CustomEventHandler.NewCustomEvent(this.name, this);
     }

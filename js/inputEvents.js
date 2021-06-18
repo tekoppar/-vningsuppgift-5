@@ -50,7 +50,8 @@ class InputHandler extends Cobject {
             'middleMouse': new Input('middleMouse', InputType.mouse),
             'rightMouse': new Input('rightMouse', InputType.mouse),
             'leftShift': new Input('leftShift'),
-            'rightShift': new Input('rightShift')
+            'rightShift': new Input('rightShift'),
+            'leftCtrl': new Input('leftCtrl'),
         };
         this.registeredListeners = [];
         this.AttachInputListener();
@@ -81,6 +82,7 @@ class InputHandler extends Cobject {
             case 'keydown':
                 switch (e.keyCode) {
                     case 16: this.AddInput(e.location === 1 ? 'leftShift' : 'rightShift', InputState.OnPressed); break;
+                    case 17: this.AddInput('leftCtrl', InputState.OnPressed); break;
                     case 49: this.AddInput('1', InputState.OnPressed); break;
                     case 50: this.AddInput('2', InputState.OnPressed); break;
                     case 51: this.AddInput('3', InputState.OnPressed); break;
@@ -97,6 +99,7 @@ class InputHandler extends Cobject {
             case 'keyup':
                 switch (e.keyCode) {
                     case 16: this.keysPressed[e.location === 1 ? 'leftShift' : 'rightShift'].State(InputState.OnReleased); break;
+                    case 17: this.AddInput('leftCtrl', InputState.OnReleased); break;
                     case 49: this.AddInput('1', InputState.OnReleased); break;
                     case 50: this.AddInput('2', InputState.OnReleased); break;
                     case 51: this.AddInput('3', InputState.OnReleased); break;
