@@ -1,14 +1,14 @@
 import { CMath } from './customMath.js';
 import { BoxCollision } from './collision.js';
 import { Prop } from './props.js';
-import { Inventory, Item } from './inventory.js';
+import { Item } from './item.js';
 import { CanvasDrawer, CanvasSprite, OperationType } from './customDrawer.js';
 import { Tile } from './tile.js';
 import { MasterObject } from './masterObject.js';
 import { Vector2D } from './vectors.js';
 
 class PlantData {
-    constructor(growthSpeed, regrowthSpeed, gatherRange = { low: 1, high: 4 }, plantIcon = new CanvasSprite(29, 10, 32, 32, 'fruitsveggies', true), price) {
+    constructor(growthSpeed, regrowthSpeed, gatherRange = { low: 1, high: 4 }, plantIcon = new CanvasSprite(29, 10, 32, 32, 'fruitsveggies', true)) {
         this.growthSpeed = growthSpeed;
         this.growth = 0;
         this.regrowthSpeed = regrowthSpeed;
@@ -16,13 +16,16 @@ class PlantData {
         this.hasFinishedGrowing = false;
         this.hasBeenPicked = false;
         this.plantIcon = plantIcon;
-        this.sellPrice = price;
+    }
+
+    Clone() {
+        return new PlantData(this.growthSpeed, this.regrowthSpeed, this.gatherRange, this.plantIcon);
     }
 }
 
 const AllPlantData = {
-    corn: new PlantData(600, 600, { low: 1, high: 4 }, new CanvasSprite(29, 10, 32, 32, 'fruitsveggies', true), 0.22),
-    potato: new PlantData(500, 0, { low: 5, high: 15 }, new CanvasSprite(0, 0, 32, 32, 'fruitsveggies', true), 0.28),
+    corn: new PlantData(60, 600, { low: 1, high: 4 }, new CanvasSprite(29, 10, 32, 32, 'fruitsveggies', true), 0.22),
+    potato: new PlantData(700, 0, { low: 5, high: 15 }, new CanvasSprite(0, 0, 32, 32, 'fruitsveggies', true), 0.28),
     watermelon: new PlantData(1300, 900, { low: 1, high: 2 }, new CanvasSprite(22, 0, 32, 32, 'fruitsveggies', true), 0.96),
     pumpkin: new PlantData(1200, 800, { low: 1, high: 3 }, new CanvasSprite(28, 0, 32, 32, 'fruitsveggies', true), 0.86),
     bellpepperGreen: new PlantData(1250, 1000, { low: 1, high: 2 }, new CanvasSprite(12, 0, 32, 32, 'fruitsveggies', true), 1.96),
@@ -48,10 +51,20 @@ const AllPlantData = {
 class Plant extends Prop {
     constructor(spriteSheet, spriteSheetName, name, position, animations, plantData, drawIndex = 0) {
         super(spriteSheet, name, position, animations, spriteSheetName, drawIndex);
-        this.plantData = plantData;
+        this.plantData = plantData.Clone();
         this.currentAnimation = this.animations.seed.Clone();
         this.currentAnimation.SetSpeed(this.plantData.growthSpeed);
-        this.BoxCollision.size = new Vector2D(this.currentAnimation.w, this.currentAnimation.h);
+        this.BoxCollision.size = this.currentAnimation.GetSize();
+    }
+
+    Delete() {
+        super.Delete();
+        this.currentAnimation = null;
+        this.plantData = null;
+    }
+
+    FixedUpdate() {
+        super.FixedUpdate();
     }
 
     CheckGrowth() {
@@ -59,46 +72,39 @@ class Plant extends Prop {
     }
 
     PlayAnimation() {
-        if (this.currentAnimation !== undefined) {
-            if (this.animations.grow !== undefined && this.currentAnimation.name === 'picked' && this.currentAnimation.animationFinished === true) {
+        if (this.currentAnimation !== null && this.currentAnimation !== undefined) {
+            if (this.animations !== null && this.animations.grow !== undefined && this.currentAnimation.name === 'picked' && this.currentAnimation.animationFinished === true) {
                 this.currentAnimation = this.animations.grow.Clone();
-                this.BoxCollision.size = new Vector2D(this.currentAnimation.w, this.currentAnimation.h);
                 this.currentAnimation.SetSpeed(this.plantData.growthSpeed);
             }
-
-            let frame = this.currentAnimation.GetFrame();
 
             if ((this.currentAnimation.name === 'grow' || this.currentAnimation.name === 'seed') && this.currentAnimation.animationFinished === true)
                 this.plantData.hasFinishedGrowing = true;
 
-            if (frame !== null) {
-                CanvasDrawer.GCD.AddDrawOperation(this.CreateDrawOperation(frame, this.position, false, this.canvas), OperationType.gameObjects);
-            }
+            super.PlayAnimation();
         }
     }
 
-    FixedUpdate() {
-        super.FixedUpdate();
-
-        this.PlayAnimation();
-    }
-
     PlantGathered(otherObject) {
-        if (this.plantData.hasFinishedGrowing === true && this.CheckInRange(otherObject.position, 30.0) === true) {
+        if (this.plantData.hasFinishedGrowing === true && this.plantData.hasBeenPicked === false && this.CheckInRange(otherObject.position, 32.0) === true) {
             let gatherAmount = CMath.RandomInt(this.plantData.gatherRange.low, this.plantData.gatherRange.high);
+            
             otherObject.inventory.AddItem(new Item(this.name, gatherAmount));
             this.plantData.hasFinishedGrowing = false;
             this.plantData.hasBeenPicked = true;
 
             if (this.animations.picked !== undefined) {
                 this.currentAnimation = this.animations.picked.Clone();
-                this.currentAnimation.SetSpeed(this.plantData.growthSpeed);
             } else if (this.animations.grow !== undefined) {
                 this.currentAnimation = this.animations.grow.Clone();
-                this.currentAnimation.SetSpeed(this.plantData.growthSpeed);
             }
 
+            let frame = this.currentAnimation.GetFrame();
+            this.CreateDrawOperation(frame, this.position, true, this.canvas);
+            this.currentAnimation.SetSpeed(this.plantData.growthSpeed);
+
             CanvasDrawer.GCD.UIDrawer.DrawUIElement(this.plantData.plantIcon, '+' + gatherAmount, this.position);
+            super.NeedsRedraw(this.position);
         }
     }
 

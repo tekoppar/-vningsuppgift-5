@@ -1,5 +1,7 @@
 import { GameObject } from './gameObject.js';
+import { CanvasDrawer, CanvasSprite, OperationType } from './customDrawer.js';
 import { Vector2D } from './vectors.js';
+import { BoxCollision } from './collision.js';
 
 class Prop extends GameObject {
     constructor(spriteSheet, name, position, animations, canvasName, drawIndex = 0) {
@@ -11,17 +13,34 @@ class Prop extends GameObject {
         this.currentAnimation;
     }
 
-    FixedUpdate() {
-        super.FixedUpdate();
+    Delete() {
+        super.Delete();
+        this.animations = null;
+        this.currentAnimation = null;
+        this.position = null;
+        this.name = null;
+    }
 
-        if (this.animation !== undefined) {
+    FixedUpdate() {
+        if (this.currentAnimation !== undefined) {
             this.PlayAnimation();
         }
+        super.FixedUpdate();
+    }
+
+    NeedsRedraw(position) {
+        super.NeedsRedraw(position);
     }
 
     PlayAnimation() {
-        if (this.canvas !== undefined) {
-            MasterObject.MO.canvasDrawer.AddDrawOperation(this.CreateDrawOperation(this.animation.GetFrame(), this.position, true, this.canvas), OperationType.gameObjects);
+        if (this.currentAnimation !== undefined) {
+            let frame = this.currentAnimation.GetFrame();
+
+            if (frame !== null) {
+                this.BoxCollision.size = this.currentAnimation.GetSize();
+
+                this.CreateDrawOperation(frame, this.position, true, this.canvas, OperationType.gameObjects);
+            }
         }
     }
 }

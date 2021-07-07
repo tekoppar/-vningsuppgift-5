@@ -35,17 +35,23 @@ class InputHandler extends Cobject {
         super();
         this.gameCanvas = document.getElementById('game-canvas');
         this.keysPressed = {
+            '0': new Input('0'),
             '1': new Input('1'),
             '2': new Input('2'),
             '3': new Input('3'),
             '4': new Input('4'),
             '5': new Input('5'),
+            '6': new Input('6'),
+            '7': new Input('7'),
+            '8': new Input('8'),
+            '9': new Input('9'),
             'a': new Input('a'),
             'd': new Input('d'),
             'w': new Input('w'),
             's': new Input('s'),
             'e': new Input('e'),
             'i': new Input('i'),
+            'backspace': new Input('backspace'),
             'leftMouse': new Input('leftMouse', InputType.mouse),
             'middleMouse': new Input('middleMouse', InputType.mouse),
             'rightMouse': new Input('rightMouse', InputType.mouse),
@@ -81,13 +87,19 @@ class InputHandler extends Cobject {
         switch (e.type) {
             case 'keydown':
                 switch (e.keyCode) {
+                    case 8: this.AddInput('backspace', InputState.OnPressed); break;
                     case 16: this.AddInput(e.location === 1 ? 'leftShift' : 'rightShift', InputState.OnPressed); break;
                     case 17: this.AddInput('leftCtrl', InputState.OnPressed); break;
+                    case 48: this.AddInput('0', InputState.OnPressed); break;
                     case 49: this.AddInput('1', InputState.OnPressed); break;
                     case 50: this.AddInput('2', InputState.OnPressed); break;
                     case 51: this.AddInput('3', InputState.OnPressed); break;
                     case 52: this.AddInput('4', InputState.OnPressed); break;
                     case 53: this.AddInput('5', InputState.OnPressed); break;
+                    case 54: this.AddInput('6', InputState.OnPressed); break;
+                    case 55: this.AddInput('7', InputState.OnPressed); break;
+                    case 56: this.AddInput('8', InputState.OnPressed); break;
+                    case 57: this.AddInput('9', InputState.OnPressed); break;
                     case 65: this.AddInput('a', InputState.OnPressed); break;
                     case 68: this.AddInput('d', InputState.OnPressed); break;
                     case 69: this.AddInput('e', InputState.OnPressed); break;
@@ -98,13 +110,19 @@ class InputHandler extends Cobject {
                 break;
             case 'keyup':
                 switch (e.keyCode) {
+                    case 8: this.AddInput('backspace', InputState.OnReleased); break;
                     case 16: this.keysPressed[e.location === 1 ? 'leftShift' : 'rightShift'].State(InputState.OnReleased); break;
                     case 17: this.AddInput('leftCtrl', InputState.OnReleased); break;
+                    case 48: this.AddInput('0', InputState.OnReleased); break;
                     case 49: this.AddInput('1', InputState.OnReleased); break;
                     case 50: this.AddInput('2', InputState.OnReleased); break;
                     case 51: this.AddInput('3', InputState.OnReleased); break;
                     case 52: this.AddInput('4', InputState.OnReleased); break;
                     case 53: this.AddInput('5', InputState.OnReleased); break;
+                    case 54: this.AddInput('6', InputState.OnReleased); break;
+                    case 55: this.AddInput('7', InputState.OnReleased); break;
+                    case 56: this.AddInput('8', InputState.OnReleased); break;
+                    case 57: this.AddInput('9', InputState.OnReleased); break;
                     case 65: this.keysPressed['a'].State(InputState.OnReleased); break;
                     case 68: this.keysPressed['d'].State(InputState.OnReleased); break;
                     case 69: this.keysPressed['e'].State(InputState.OnReleased); break;

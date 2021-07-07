@@ -1,5 +1,6 @@
 import { Vector2D, Vector, Vector4D } from './vectors.js';
 import { plantAnimations, femaleAnimations } from './AllAnimations.js';
+import { Tile } from './tile.js';
 
 var AnimationType = {
     Idle: 0, /* Loops forever */
@@ -13,6 +14,20 @@ class CFrame {
         this.y = y;
         this.w = w;
         this.h = h;
+    }
+}
+
+class TileOffset {
+    constructor(tileOffset) {
+        this.tileOffset = tileOffset;
+        this.tileOffset.Mult(new Vector2D(32, 32));
+        this.position = new Vector2D(0, 0);
+    }
+
+    GetPosition(position) {
+        this.position.x = position.x + this.tileOffset.x;
+        this.position.y = position.y + this.tileOffset.y;
+        return this.position;
     }
 }
 
@@ -71,9 +86,11 @@ class Animation {
                     break;
 
                 case AnimationType.Single:
-                    if (this.currentFrame < this.frames.length) {
+                    if (this.currentFrame < this.frames.length - 1) {
                         this.currentFrame++;
                         this.cooldown = this.animationSpeed;
+                    } else {
+                        this.animationFinished = true;
                     }
                     break;
             }
@@ -81,7 +98,6 @@ class Animation {
             return this.frames[frameIndex];
         } else {
             this.cooldown--;
-            //return this.frames[frameIndex];
         }
 
         return null;
@@ -116,6 +132,10 @@ class Animation {
             }
         }
     }
+
+    GetSize() {
+        return new Vector2D(this.w, this.h);
+    }
 }
 
-export { CFrame, Animation, plantAnimations, femaleAnimations, AnimationType };
+export { CFrame, TileOffset, Animation, plantAnimations, femaleAnimations, AnimationType };

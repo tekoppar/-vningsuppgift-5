@@ -1,5 +1,5 @@
 import { InputHandler } from './inputEvents.js';
-import { Hoe, Shovel } from './inventory.js';
+import { Hoe, Shovel } from './item.js';
 import { Cobject } from './object.js';
 import { character } from './masterObject.js';
 
@@ -11,10 +11,22 @@ class GameToolbar extends Cobject {
         this.toolbar = document.getElementById('game-gui-toolbar');
         this.toolbar.addEventListener('click', this);
         this.activeToolbar;
-        this.toolbarItems = [];
+        this.toolbarItems = {};
         this.didToolbarChange = false;
+
+        this.SetupHTML();
     }
 
+    SetupHTML() {
+        let count = this.toolbar.children.length;
+
+        for (let i = 0; i < count; i++) {
+            let div = this.toolbar.children[i];
+            div.dataset.toolbarIndex = i;
+            div.addEventListener('drop', this);
+            div.addEventListener('dragover', this);
+        }
+    }
 
     FixedUpdate() {
         if (this.didToolbarChange === true) {
@@ -22,6 +34,26 @@ class GameToolbar extends Cobject {
         }
 
         super.FixedUpdate();
+    }
+
+    AddToolbarItem(slot, item) {
+        this.toolbarItems[slot] = item;
+        this.didToolbarChange = true;
+    }
+
+    static RemoveToolbarItem(item) {
+        let keys = Object.keys(GameToolbar.GGT.toolbarItems);
+        for (let i = 0; i < keys.length; i++) {
+            if (GameToolbar.GGT.toolbarItems[keys[i]].name === item.name) {
+                delete GameToolbar.GGT.toolbarItems[keys[i]];
+                GameToolbar.GGT.RemoveToolbarGUIItem(keys[i]);
+            }
+        }
+        GameToolbar.GGT.didToolbarChange = true;
+
+        if (character.activeItem === item) {
+            character.activeItem = undefined;
+        }
     }
 
     SetActiveToolbar(element) {
@@ -39,13 +71,20 @@ class GameToolbar extends Cobject {
         }
     }
 
-    DisplayToolbar() {
-        for (let i = 0; i < this.toolbarItems.length; i++) {
+    RemoveToolbarGUIItem(index) {
+        let div = this.toolbar.children[index].querySelector('div.toolbar-item-sprite');
+        div.style.backgroundImage = 'unset';
+        this.activeToolbar.classList.remove('toolbar-item-active');
+    }
 
-            let div = this.toolbar.children[i].querySelector('div.toolbar-item-sprite');
-            div.style.backgroundPosition = '-' + (this.toolbarItems[i].sprite.x * this.toolbarItems[i].sprite.z) * 1.35 + 'px -' + (this.toolbarItems[i].sprite.y * this.toolbarItems[i].sprite.a) * 1.5 + 'px';
-            div.style.backgroundSize = this.toolbarItems[i].atlas.x * 1.35 + 'px ' + this.toolbarItems[i].atlas.y * 1.5 + 'px';
-            div.style.backgroundImage = 'url(' + this.toolbarItems[i].url + ')';
+    DisplayToolbar() {
+        let keys = Object.keys(this.toolbarItems);
+        for (let i = 0; i < keys.length; i++) {
+            let item = this.toolbarItems[keys[i]];
+            let div = this.toolbar.children[keys[i]].querySelector('div.toolbar-item-sprite');
+            div.style.backgroundPosition = '-' + (item.sprite.x * item.sprite.z) * 1.35 + 'px -' + (item.sprite.y * item.sprite.a) * 1.5 + 'px';
+            div.style.backgroundSize = item.atlas.x * 1.35 + 'px ' + item.atlas.y * 1.5 + 'px';
+            div.style.backgroundImage = 'url(' + item.url + ')';
         }
 
         this.didToolbarChange = false;
@@ -57,6 +96,21 @@ class GameToolbar extends Cobject {
                 if (e.target.classList.contains('toolbar-item')) {
                     this.SetActiveToolbar(e.target);
                 }
+                break;
+
+            case 'dragover':
+                e.preventDefault();
+                e.dataTransfer.dropEffect = 'move';
+                break;
+
+            case 'drop':
+                e.preventDefault();
+                const data = JSON.parse(e.dataTransfer.getData('text/plain'));
+                let droppedItem = document.getElementById(data.id);
+                let item = Cobject.GetObjectFromUID(data.item);
+                
+                droppedItem.id = '';
+                this.AddToolbarItem(e.target.dataset.toolbarIndex, item);
                 break;
         }
     }
@@ -71,7 +125,8 @@ class GameToolbar extends Cobject {
                         case '3':
                         case '4':
                         case '5':
-                            this.SetActiveToolbar(this.toolbar.children[key - 1]);
+                            if (character.inventory.isVisible === false)
+                                this.SetActiveToolbar(this.toolbar.children[key - 1]);
                             break;
                     }
                 } else if (data.eventType == 3) {
@@ -89,11 +144,11 @@ class GameToolbar extends Cobject {
     }
 }
 
-GameToolbar.GGT.toolbarItems = [
+/* GameToolbar.GGT.toolbarItems = [
     new Shovel('shovel', 1),
     new Hoe('hoe', 1),
 ];
-GameToolbar.GGT.didToolbarChange = true;
+GameToolbar.GGT.didToolbarChange = true; */
 
 InputHandler.GIH.AddListener(GameToolbar.GGT);
 

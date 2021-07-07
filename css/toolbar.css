@@ -5,9 +5,9 @@
 }
 
 .toolbar-item {
-    background-image: url(/content/sprites/ui_big_pieces_mod.png);
-    background-position: calc(-64px * 15) 0px;
-    background-size: calc(64px * 27) calc(64px * 18.2);
+    background-image: url(/content/sprites/ui/panel_slot.png);
+    background-position: 0 0;
+    background-size: 64px 64px;
     background-repeat: no-repeat;
     background-color: transparent;
     display: block;

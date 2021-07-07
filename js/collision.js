@@ -15,6 +15,20 @@ class CollisionHandler {
             this.EnabledCollisions.push(collision);
     }
 
+    RemoveCollision(collision) {
+        for (let i = 0; i < this.Collisions.length; i++) {
+            if (collision === this.Collisions[i]) {
+                this.Collisions.splice(i, 1);
+            }
+        }
+
+        for (let i = 0; i < this.EnabledCollisions.length; i++) {
+            if (collision === this.EnabledCollisions[i]) {
+                this.EnabledCollisions.splice(i, 1);
+            }
+        }
+    }
+
     CheckCollisions(collision) {
         for (let i = 0; i < this.EnabledCollisions.length; i++) {
             if (collision.collisionOwner !== this.EnabledCollisions[i].collisionOwner) {
@@ -30,7 +44,7 @@ class CollisionHandler {
     GetOverlap(collision) {
         for (let i = 0; i < this.Collisions.length; i++) {
             if (collision.collisionOwner !== this.Collisions[i].collisionOwner && this.Collisions[i].overlapEvents === true) {
-                if (collision.DoIntersect(this.Collisions[i], true) === true) {
+                if (collision.DoIntersect(this.Collisions[i], true) === true && this.Collisions[i].collisionOwner !== false) {
                     return this.Collisions[i];
                 }
             }
@@ -58,18 +72,27 @@ class CollisionHandler {
 }
 
 class Collision {
-    constructor(position, size, enableCollision, owner = undefined) {
+    constructor(position, size, enableCollision, owner = undefined, register = true) {
         this.position = new Vector2D(position.x, position.y);
         this.size = new Vector2D(size.x, size.y);
         this.overlapEvents = true;
         this.enableCollision = enableCollision;
         this.collisionOwner = owner;
 
-        CollisionHandler.GCH.AddCollision(this);
+        if (register === true)
+            CollisionHandler.GCH.AddCollision(this);
+    }
+
+    Delete() {
+        CollisionHandler.GCH.RemoveCollision(this);
+        this.collisionOwner = this.size = this.position = null;
+    }
+
+    GetBoundingBox() {
     }
 
     CheckInRange(collision, range = 25) {
-        let tempPos = new Vector2D(this.position.x + (this.size.x / 2), this.position.y + this.size.y);
+        let tempPos = new Vector2D(this.position.x + (this.size.x / 2), this.position.y + (this.size.y / 2));
         let checkPos = new Vector2D(collision.position.x + (collision.size.x / 2), collision.position.y + (collision.size.y / 2));
 
         return tempPos.CheckInRange(checkPos, range);
@@ -77,6 +100,22 @@ class Collision {
 
     CheckOverlap() {
         let overlapEvent = collisionHandler.CheckCollisions(this);
+    }
+
+    GetCenterTilePosition() {
+        let newPos = this.position.Clone();
+        newPos.x += this.size.x / 2;
+        newPos.y -= this.size.y + 32;
+
+        return newPos;
+    }
+
+    GetCenterPosition() {
+        let newPos = this.position.Clone();
+        newPos.x += this.size.x / 2 + 8;
+        newPos.y += this.size.y / 2 + 8;
+
+        return newPos;
     }
 
     GetPoints() {
@@ -88,10 +127,28 @@ class Collision {
         ]
     }
 
+    IsOverlaping1D(a, b) {
+        return a.y >= b.x && b.y >= a.x;
+    }
+
+    DoOverlap(b, overlap = false) {
+        if (this.enableCollision === true || overlap == true) {
+            let ABB = this.GetBoundingBox(),
+                BBB = b.GetBoundingBox();
+
+            return this.IsOverlaping1D(new Vector2D(ABB.x, ABB.z), new Vector2D(BBB.x, BBB.z)) && this.IsOverlaping1D(new Vector2D(ABB.y, ABB.a), new Vector2D(BBB.y, BBB.a));
+        }
+        else
+            return false;
+    }
+
     DoIntersect(b, overlap = false) {
         //wthis.CheckIntersection(new Vector4D(b.position.x, b.position.y, b.size.x, b.size.y));
-        if (this.enableCollision === true || overlap === true)
-            return (Math.abs(this.position.x - b.position.x) * 1 < (this.size.x + b.size.x)) && (Math.abs(this.position.y - b.position.y) * 1 < (this.size.y + b.size.y));
+        if (this.enableCollision === true || overlap === true) {
+            let centerTile = this.GetCenterPosition();
+            let bCenter = b.GetCenterPosition();
+            return this.DoOverlap(b, overlap);// (Math.abs(centerTile.x - bCenter.x) * -1 < (this.size.x + b.size.x)) && (Math.abs(centerTile.y - bCenter.y) * 1 < (this.size.y + b.size.y));
+        }
         else
             return false;
     }
@@ -169,15 +226,54 @@ class Collision {
 }
 
 class BoxCollision extends Collision {
-    constructor(position, size, enableCollision, owner = undefined) {
-        super(position, size, enableCollision, owner);
+    constructor(position, size, enableCollision, owner = undefined, register = true) {
+        super(position, size, enableCollision, owner, register);
+    }
+
+    Delete() {
+        super.Delete();
+    }
+
+    GetBoundingBox() {
+        return new Vector4D(this.position.x, this.position.y, this.position.x + this.size.x, this.position.y + this.size.y);
     }
 }
 
 class PolygonCollision extends Collision {
-    constructor(position, size, points = [], enableCollision, owner = undefined) {
-        super(position, size, enableCollision, owner);
+    constructor(position, size, points = [], enableCollision, owner = undefined, register = true) {
+        super(position, size, enableCollision, owner, register);
         this.points = points;
+        this.boundingBox = new Vector4D(1, 1, 1, 1);
+    }
+
+    Delete() {
+        super.Delete();
+    }
+
+    UpdatePoints() {
+        for (let i = 0; i < this.points.length; i++) {
+            this.points[i].Add(this.position);
+        }
+    }
+
+    GetBoundingBox() {
+        return new Vector4D(this.boundingBox.x, this.boundingBox.y, this.boundingBox.x + this.boundingBox.z, this.boundingBox.y + this.boundingBox.a);
+    }
+
+    CalculateBoundingBox() {
+        let sX = 9999999999, sY = 9999999999, lX = -1, lY = -1;
+
+        for (let pos of this.points) {
+            if (pos.x > lX)
+                lX = pos.x;
+            if (pos.x < sX)
+                sX = pos.x;
+            if (pos.y > lY)
+                lY = pos.y;
+            if (pos.y < sY)
+                sY = pos.y;
+        }
+        this.boundingBox = new Vector4D(sX, sY, lX - sX, lY - sY);
     }
 
     GetPoints() {
@@ -187,7 +283,7 @@ class PolygonCollision extends Collision {
 
 //let newCollision = new BoxCollision(new Vector2D(256, 320), new Vector2D(64, 64), true);
 //collisionHandler.AddCollision(newCollision);
-let polygonCollision = new PolygonCollision(new Vector2D(256, 320), new Vector2D(0, 0), [
+let polygonCollision = new PolygonCollision(new Vector2D(-64, -64), new Vector2D(0, 0), [
     new Vector2D(100, 100),
     new Vector2D(200, 100),
     new Vector2D(200, 200),
@@ -197,4 +293,4 @@ let polygonCollision = new PolygonCollision(new Vector2D(256, 320), new Vector2D
 ], true);
 //CollisionHandler.GCH.AddCollision(polygonCollision);
 
-export { CollisionHandler, Collision, BoxCollision };
+export { CollisionHandler, Collision, BoxCollision, PolygonCollision };

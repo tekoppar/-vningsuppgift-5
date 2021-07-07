@@ -2,6 +2,7 @@ import { Matrix, Vector2D } from './vectors.js';
 import { CanvasDrawer } from './customDrawer.js';
 import { TileLUT } from './TileLUT.js';
 import { GetAtlasTileMatrix } from './atlasTileMatrix.js';
+import { CollisionEditor } from './collisionEditor.js';
 
 const TileType = {
     Water: 0,
@@ -80,6 +81,7 @@ class TileLUTData {
 class TileData {
     static TileLUT = TileLUT;
     static TileLUTSets = {};
+    static TilesSets = {};
     static tileData = new TileData();
     static tileGUI = {};
     static Selection;
@@ -113,8 +115,8 @@ class TileData {
             let canvas = CanvasDrawer.GCD.canvasAtlases[tile.atlas].canvas;
             let ctx = canvas.getContext('2d');
             let tempCanvas = document.createElement('canvas');
-            tempCanvas.width = tile.size.x;
-            tempCanvas.height = tile.size.y;
+            tempCanvas.setAttribute('height', tile.size.y);
+            tempCanvas.setAttribute('width', tile.size.x);
 
             tempCanvas.getContext('2d').drawImage(canvas, tile.GetPosX(), tile.GetPosY(), tile.size.x, tile.size.y, 0, 0, 32, 32);
 
@@ -141,18 +143,17 @@ class TileData {
                     if (tileLUT.tileSet === undefined)
                         tileLUT.tileSet = 'default';
 
-                    let newImage = TileData.CanvasPortionToImage(
-                        new Tile(
-                            new Vector2D(0, 0),
-                            new Vector2D(xKeys[x], yKeys[y]),
-                            new Vector2D(32, 32),
-                            tileLUT.transparent,
-                            typeKeys[iT],
-                            0,
-                            tileLUT.tileType,
-                            tileLUT.tileTerrain
-                        )
+                    let newTile = new Tile(
+                        new Vector2D(0, 0),
+                        new Vector2D(xKeys[x], yKeys[y]),
+                        new Vector2D(32, 32),
+                        tileLUT.transparent,
+                        typeKeys[iT],
+                        0,
+                        tileLUT.tileType,
+                        tileLUT.tileTerrain
                     );
+                    let newImage = TileData.CanvasPortionToImage(newTile);
 
                     if (newImage !== null) {
                         if (tileLUT.tileSet !== 'default') {
@@ -161,12 +162,15 @@ class TileData {
                                 setContainer.dataset.tileset = tileLUT.tileSet;
                                 setContainer.className = 'tile-lut-editor-tiles-setcontainer';
 
-                                if (TileData.TileLUTSets[tileLUT.tileSet] === undefined)
+                                if (TileData.TileLUTSets[tileLUT.tileSet] === undefined) {
                                     TileData.TileLUTSets[tileLUT.tileSet] = {};
+                                    TileData.TilesSets[tileLUT.tileSet] = {};
+                                }
 
                                 tileLUT.tilePosition = new Vector2D(xKeys[x], yKeys[y]);
                                 tileLUT.size = new Vector2D(32, 32);
                                 TileData.TileLUTSets[tileLUT.tileSet][tileLUT.tileULDR] = tileLUT;
+                                TileData.TilesSets[tileLUT.tileSet][tileLUT.tileULDR] = newTile;
 
                                 setContainer.appendChild(newImage);
                                 document.getElementById('tile-lut-editor-tiles').appendChild(setContainer);
@@ -174,6 +178,7 @@ class TileData {
                                 tileLUT.tilePosition = new Vector2D(xKeys[x], yKeys[y]);
                                 tileLUT.size = new Vector2D(32, 32);
                                 TileData.TileLUTSets[tileLUT.tileSet][tileLUT.tileULDR] = tileLUT;
+                                TileData.TilesSets[tileLUT.tileSet][tileLUT.tileULDR] = newTile;
                                 document.getElementById('tile-lut-editor-tiles').querySelector('div[data-tileset="' + tileLUT.tileSet + '"]').appendChild(newImage);
                             }
                         } else {
@@ -183,7 +188,6 @@ class TileData {
                 }
             }
         }
-        console.log(TileData.TileLUTSets);
     }
 
     CreateTileLUTEditor() {
@@ -218,12 +222,15 @@ class TileData {
         TileData.tileGUI.filtertileterrain = clone.getElementById('tile-lut-editor-filter-bool-tileterrain');
         TileData.tileGUI.filtertiletype = clone.getElementById('tile-lut-editor-filter-bool-tiletype');
 
+        TileData.tileGUI.collisionEditor = clone.getElementById('tile-lut-editor-collision-editor');
+
         document.body.appendChild(clone);
 
         TileData.tileGUI.tileterrain.addEventListener('change', this);
         TileData.tileGUI.tiletype.addEventListener('change', this);
         TileData.tileGUI.button.addEventListener('click', this);
         TileData.tileGUI.export.addEventListener('click', this);
+        TileData.tileGUI.collisionEditor.addEventListener('click', this);
 
         TileData.tileGUI.filtertileterrain.addEventListener('input', this);
         TileData.tileGUI.filtertileterrain.children[0].addEventListener('click', this);
@@ -351,6 +358,11 @@ class TileData {
                         }
                         this.FilterTiles();
                         break;
+
+                    case 'tile-lut-editor-collision-editor':
+                        if (CanvasDrawer.GCD.selectedSprite !== undefined)
+                            CollisionEditor.GCEditor.Open(CanvasDrawer.GCD.selectedSprite);
+                        break;
                 }
                 break;
 
@@ -416,7 +428,7 @@ class TileF {
             let trueMatrix = TileF.ConstructAtlasTileMatrix(operations[i].tile);
             trueMatrix.y2 = 0;
             let uldr = trueMatrix.ToBinary();
-            console.log(trueMatrix.To3DArray(), GetAtlasTileMatrix(uldr.replace('0x', '')));
+            //console.log(trueMatrix.To3DArray(), GetAtlasTileMatrix(uldr.replace('0x', '')));
             //uldr = GetAtlasTileMatrix(uldr.replace('0x', ''));
             //let aroundTiles = TileF.GetSurroundingTiles(operations[i].tile.position, trueMatrix);
             //console.log(aroundTiles);
@@ -433,12 +445,16 @@ class TileF {
                 let newTilePaintMatrix = TileF.ConstructAtlasTileMatrix(allTiles[i2].tile);
                 let temp = trueMatrix.Clone();
                 temp = temp.OffsetMatrix(offsetTileMatrix[i2]);
+
+                if (temp.length < 1)
+                    break;
+
                 newTilePaintMatrix.IsOne(temp);
-                console.log(newTilePaintMatrix.To3DArray(), newTilePaintMatrix.ToBinary());
+                //console.log(newTilePaintMatrix.To3DArray(), newTilePaintMatrix.ToBinary());
                 let uldr = newTilePaintMatrix.ToBinary();
-                console.log(GetAtlasTileMatrix(uldr.replace('0x', '')), newTilePaintMatrix.y2);
+                //console.log(GetAtlasTileMatrix(uldr.replace('0x', '')), newTilePaintMatrix.y2);
                 uldr = TileULDR.Get(Number(GetAtlasTileMatrix(uldr.replace('0x', ''), newTilePaintMatrix.y2)));
-                console.log(uldr);
+                //console.log(uldr);
 
                 let newTileData;
                 if (uldr !== undefined) {
@@ -459,7 +475,6 @@ class TileF {
                 //console.log(TileF.ConstructTilePaintMatrix(allTiles[i2].tile, TileF.ConstructPaintULDRMatrix(allTiles[i2].tile).ToArray()), TileF.ConstructPaintULDRMatrix(allTiles[i2].tile));
             }
 
-            //console.log(aroundTiles);
             for (let i2 = 0; i2 < allTiles.length; i2++) {
                 if (newTiles[i2] !== undefined && newTiles[i2] !== null) {
                     allTiles[i2].tile.ChangeSprite(newTiles[i2]);
@@ -492,10 +507,10 @@ class TileF {
         let tempM = surroundingTiles.Clone();
         tempM = tempM.ToBinary();
         let testM = GetAtlasTileMatrix(tempM.replace('0x', ''));
-        console.log(surroundingTiles.To3DArray(), tempM, testM);
+        //console.log(surroundingTiles.To3DArray(), tempM, testM);
         //surroundingTiles.InvertMatrix();
         let uldr = surroundingTiles.ToBinary();
-        console.log(uldr, TileULDR.Get(Number(uldr)), TileULDR.Get(GetAtlasTileMatrix(uldr.replace('0x', ''))));
+        //console.log(uldr, TileULDR.Get(Number(uldr)), TileULDR.Get(GetAtlasTileMatrix(uldr.replace('0x', ''))));
         let uldrText = TileULDR.Get(GetAtlasTileMatrix(uldr.replace('0x', '')));// TileULDR.Get(Number(uldr));
 
         if (uldrText !== undefined) {

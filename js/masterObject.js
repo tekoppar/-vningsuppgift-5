@@ -1,12 +1,18 @@
 import { CustomEventHandler } from './customEvents.js';
 import { Plant, PlantData, AllPlantData } from './plants.js';
-import { Character } from './character.js';
+import { Character, MainCharacter } from './character.js';
 import { InputHandler } from './inputEvents.js';
 import { Vector2D } from './vectors.js';
 import { plantAnimations } from './AllAnimations.js';
 import { CanvasSprite, CanvasDrawer, CanvasAtlas } from './customDrawer.js';
 import { Cobject } from './object.js';
 import { TileData } from './tile.js';
+import { Seed } from './plantitem.js';
+import { Shovel, Hoe, Item } from './item.js';
+import { Shop } from './shop.js';
+import { TileMaker } from './tilemaker.js';
+import { CollisionEditor } from './collisionEditor.js';
+import { PolygonCollision } from './collision.js';
 
 var GlobalFrameCounter = 0;
 
@@ -58,15 +64,49 @@ class MasterObject {
             delete this.classInitialization.CustomEventHandler;
     }
 
+    GameStart() {
+        this.CheckIfClassesInitialized();
+
+        if (this.classesHasBeenInitialized === true && this.objectsHasBeenInitialized === false) {
+            //this.canvasDrawer = new CanvasDrawer();
+
+            this.objectsHasBeenInitialized = true;
+        }
+
+        if (this.objectsHasBeenInitialized === true) {
+            this.GameBegin();
+            this.GameLoop();
+        } else {
+            GlobalFrameCounter++;
+            window.requestAnimationFrame(() => this.GameStart());
+        }
+    }
+
     GameBegin() {
         if (this.gameHasBegun === false) {
             for (let i = 0; i < AllPlants.length; i++) {
                 CustomEventHandler.AddListener(AllPlants[i]);
             }
 
-            character.inventory.SetupHTML();
+            character.inventory.SetupInventory();
+            character.inventory.AddItem(new Shovel('shovel', 0));
+            character.inventory.AddItem(new Hoe('hoe', 0));
+            character.inventory.AddItem(new Seed('cornSeed', 1));
+            character.inventory.AddMoney(5000);
 
             TileData.tileData.CreateTileLUTEditor();
+            CollisionEditor.GCEditor = new CollisionEditor();
+            TileMaker.GenerateCustomTiles();
+            shopTest.SetupMarket();
+
+            shopTest.NewCollision(new PolygonCollision(
+                shopTest.position.Clone(),
+                shopTest.size.Clone(),
+                [new Vector2D(0, 0), new Vector2D(95, 0), new Vector2D(95, 105), new Vector2D(0, 105)],
+                false,
+                shopTest,
+                true
+            ));
 
             this.gameHasBegun = true;
         }
@@ -81,29 +121,33 @@ class MasterObject {
     }
 
     GameLoop() {
-        this.CheckIfClassesInitialized();
-
-        if (this.classesHasBeenInitialized === true && this.objectsHasBeenInitialized === false) {
-            //this.canvasDrawer = new CanvasDrawer();
-
-            this.objectsHasBeenInitialized = true;
-        }
-
-        if (this.objectsHasBeenInitialized === true) {
-            this.GameBegin();
-            this.GameLoopActions();
-        }
+        this.GameLoopActions();
 
         GlobalFrameCounter++;
         window.requestAnimationFrame(() => this.GameLoop());
     }
 }
 
-var character = new Character("/content/sprites/lpcfemalelight_updated.png", 'femaleLight');
+var character = new MainCharacter("/content/sprites/lpcfemalelight_updated.png", 'femaleLight', 'mainP');
+var shopTest = new Shop('/content/sprites/farming_fishing.png', 'seedShop', new Vector2D(368, 256), undefined, 'pepoSeedShop');
+shopTest.AddItem(new Seed('cornSeed', 420));
+shopTest.AddItems([
+    new Seed('potatoSeed', 999), new Seed('watermelonSeed', 999),
+    new Seed('pumpkinSeed', 999), new Seed('bellpepperGreenSeed', 999),
+    new Seed('bellpepperRedSeed', 999), new Seed('bellpepperOrangeSeed', 999),
+    new Seed('bellpepperYellowSeed', 999), new Seed('carrotSeed', 999),
+    new Seed('parsnipSeed', 999), new Seed('radishSeed', 999),
+    new Seed('beetrootSeed', 999), new Seed('garlicSeed', 999),
+    new Seed('onionYellowSeed', 999), new Seed('onionRedSeed', 999),
+    new Seed('onionWhiteSeed', 999), new Seed('onionGreenSeed', 999),
+    new Seed('hotPepperSeed', 999), new Seed('chiliPepperSeed', 999),
+    new Seed('lettuceIcebergSeed', 999), new Seed('cauliflowerSeed', 999),
+    new Seed('broccoliSeed', 999)
+]);
+CustomEventHandler.AddListener(shopTest);
 InputHandler.GIH.AddListener(character);
 character.AddAttachment('/content/sprites/red.png', 'redHair');
 character.AddAttachment('/content/sprites/lpcfemaleunderdress.png', 'underDress');
-InputHandler.GIH.AddListener(character.inventory);
 
 var AllPlants = [
     new Plant("/content/sprites/crops.png", 'crops', 'corn', new Vector2D(576, 128), plantAnimations.corn, AllPlantData.corn),

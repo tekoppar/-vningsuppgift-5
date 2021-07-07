@@ -1,19 +1,16 @@
 <style>
     .panel-container {
-        display: none;
+        display: flex;
         min-width: 256px;
         width: 256px;
         flex-wrap: wrap;
-        position: absolute;
-        top: 0px;
-        left: 0px;
         overflow: hidden;
     }
 
     .panel {
-        background-image: url(/content/sprites/ui_big_pieces_mod.png);
-        background-position: -64px 0px;
-        background-size: calc(64px * 27) calc(64px * 18.2);
+        background-image: url(/content/sprites/ui/border_middle.png);
+        background-position: 0 0;
+        background-size: 64px 64px;
         background-repeat: no-repeat;
         background-color: transparent;
         border: none;
@@ -25,55 +22,126 @@
         margin: 0px;
         padding: 0px;
         position: relative;
+        flex-basis: 64px;
     }
 
-    .panel:nth-child(1) {
-        background-position: 0px 0px;
+    .panel-topmiddle {
+        background-image: url(/content/sprites/ui/panel/panel_topmiddle.png);
+        flex-grow: 2;
+        width: calc(100% - 14px);
+        background-size: 100% 7px;
+        flex-basis: auto;
+        position: relative;
+        margin-left:7px;
+        margin-right:7px;
+        height:max-content;
+        min-height: 7px;
     }
 
-    .panel:nth-child(4) {
-        background-position: -128px 0px;
+    .panel-topmiddle::before {
+        content:'';
+        width:7px;
+        height:7px;
+        display:block;
+        position: absolute;
+        background-image: url(/content/sprites/ui/panel/panel_topleft.png);
+        left:-7px;
+        background-size:7px 7px;
     }
 
-    .panel:nth-child(4n+5) {
-        background-position: calc(-64px * 3) 0px;
+    .panel-topmiddle::after {
+        content:'';
+        width:7px;
+        height:7px;
+        display:block;
+        position: absolute;
+        background-image: url(/content/sprites/ui/panel/panel_topright.png);
+        right:-7px;
+        background-size:7px 7px;
     }
 
-    .panel:nth-child(4n+6) {
-        background-position: calc(-64px * 4) 0px;
+    .panel-middle {
+        background-image: url(/content/sprites/ui/border_middle.png);
+        flex-grow: 2;
+        width: calc(100% - 14px);
+        background-size: 100% 100%;
+        flex-basis: auto;
+        position: relative;
+        margin-left:7px;
+        margin-right:7px;
+        height:calc(100% - 14px);
+        min-height:calc(100% - 14px);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
     }
 
-    .panel:nth-child(4n+7) {
-        background-position: calc(-64px * 4) 0px;
+    .panel-middle::before {
+        content:'';
+        width:7px;
+        height:100%;
+        min-height:100%;
+        display:block;
+        position: absolute;
+        background-image: url(/content/sprites/ui/panel/panel_middleleft.png);
+        left:-7px;
+        background-size:7px 100%;
     }
 
-    .panel:nth-child(4n+8) {
-        background-position: calc(-64px * 5) 0px;
+    .panel-middle::after {
+        content:'';
+        width:7px;
+        height:100%;
+        min-height:100%;
+        display:block;
+        position: absolute;
+        background-image: url(/content/sprites/ui/panel/panel_middleright.png);
+        right:-7px;
+        background-size:7px 100%;
     }
 
-    .panel:nth-last-child(4) {
-        background-position: calc(-64px * 6) 0px;
+    .panel-bottommiddle {
+        background-image: url(/content/sprites/ui/panel/panel_bottommiddle.png);
+        flex-grow: 2;
+        width: calc(100% - 14px);
+        background-size: 100% 7px;
+        flex-basis: auto;
+        position: relative;
+        margin-left:7px;
+        margin-right:7px;
+        height:max-content;
+        min-height: 7px;
     }
 
-    .panel:nth-last-child(3) {
-        background-position: calc(-64px * 7) 0px;
+    .panel-bottommiddle::before {
+        content:'';
+        width:7px;
+        height:7px;
+        display:block;
+        position: absolute;
+        background-image: url(/content/sprites/ui/panel/panel_bottomleft.png);
+        left:-7px;
+        background-size:7px 7px;
     }
 
-    .panel:nth-last-child(2) {
-        background-position: calc(-64px * 7) 0px;
-    }
-
-    .panel:nth-last-child(1) {
-        background-position: calc(-64px * 8) 0px;
+    .panel-bottommiddle::after {
+        content:'';
+        width:7px;
+        height:7px;
+        display:block;
+        position: absolute;
+        background-image: url(/content/sprites/ui/panel/panel_bottomright.png);
+        right:-7px;
+        background-size:7px 7px;
     }
 
     .inventory-item {
-        background-image: url(/content/sprites/ui_big_pieces_mod.png);
-        background-position: calc(-64px * 15) 0px;
-        background-size: calc(64px * 27) calc(64px * 18.2);
+        background-image: url(/content/sprites/ui/panel_slot.png);
+        background-position: 0 0;
+        background-size: 64px 64px;
         background-repeat: no-repeat;
         background-color: transparent;
-        display: block;
         min-width: 64px;
         min-height: 64px;
         width: 64px;
@@ -99,7 +167,7 @@
 
     .inventory-item-text {
         color: #f3c52f;
-        font-size: 24px;
+        font-size: 18px;
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: black;
         position: absolute;
@@ -107,6 +175,15 @@
         bottom: 10%;
         right: 20%;
         pointer-events: none;
+        -webkit-user-select: none;
+        /* Safari */
+        -moz-user-select: none;
+        /* Firefox */
+        -ms-user-select: none;
+        /* IE10+/Edge */
+        user-select: none;
+        /* Standard */
+
     }
 
     .inventory-item-list {
@@ -115,12 +192,243 @@
         max-height: 330px;
         margin: 10px;
         z-index: 1;
-        display: none;
+        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         transform: scale(92%);
         transform-origin: top left;
         overflow-y: auto;
+    }
+
+    .panel-item-list {
+        position: absolute;
+        width: 259px;
+        max-height: 330px;
+        margin: 10px;
+        z-index: 1;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        transform: scale(92%);
+        transform-origin: top left;
+        overflow-y: auto;
+    }
+
+    .button {
+        background-image: url(/content/sprites/ui/buttonMiddle.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        font-size: 24px;
+        color: #f3c52f;
+        margin-left: 24px;
+        margin-right: 24px;
+        filter: brightness(0.8);
+    }
+
+    .button:hover {
+        filter: brightness(1.0);
+        cursor: pointer;
+    }
+
+    .button::before {
+        content: '';
+        position: absolute;
+        background-image: url(/content/sprites/ui/buttonLeft.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        height: 100%;
+        width: 100%;
+        right: 100%;
+    }
+
+    .button::after {
+        content: '';
+        position: absolute;
+        background-image: url(/content/sprites/ui/buttonRight.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        height: 100%;
+        width: 100%;
+        left: 100%;
+    }
+
+    .input {
+        background-image: url(/content/sprites/ui/inputMiddle.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        font-size: 24px;
+        color: #f3c52f;
+        margin-left: 24px;
+        margin-right: 24px;
+        filter: brightness(0.8);
+    }
+
+    .input:hover {
+        filter: brightness(1.0);
+        cursor: pointer;
+    }
+
+    .input::before {
+        content: '';
+        position: absolute;
+        background-image: url(/content/sprites/ui/inputLeft.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        height: 100%;
+        width: 32px;
+        right: 100%;
+    }
+
+    .input::after {
+        content: '';
+        position: absolute;
+        background-image: url(/content/sprites/ui/inputRight.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        height: 100%;
+        width: 32px;
+        left: 100%;
+    }
+
+    .input input[type='number'] {
+        background: transparent;
+        border: none;
+        min-height: 26px;
+        color: white;
+        text-align: right;
+        max-width: 100px;
+    }
+
+    .input-value {
+        background-image: url(/content/sprites/ui/input_middle.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        font-size: 24px;
+        color: #f3c52f;
+        margin-left: 24px;
+        margin-right: 24px;
+        filter: brightness(0.8);
+        width: max-content;
+        justify-self: center;
+    }
+
+    .input-value:hover {
+        filter: brightness(1.0);
+        cursor: pointer;
+    }
+
+    .input-value::before {
+        content: '';
+        position: absolute;
+        background-image: url(/content/sprites/ui/input_left.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        height: 100%;
+        width: 32px;
+        right: 100%;
+    }
+
+    .input-value::after {
+        content: '';
+        position: absolute;
+        background-image: url(/content/sprites/ui/input_right.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        height: 100%;
+        width: 32px;
+        left: 100%;
+    }
+
+    .container-ui {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: max-content;
+        visibility: hidden;
+    }
+
+    .container-ui > .container-ui-horizontal {
+        visibility: inherit;
+    }
+
+    .container-ui > .container-ui {
+        visibility: inherit;
+    }
+
+    .container-ui-horizontal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: max-content;
+        visibility: hidden;
+    }
+
+    .blank-input {
+        border: none;
+        background-color: transparent;
+    }
+
+    .game-panel {
+        position: relative;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .inventory-input-value {
+        font-size: 14px;
+        color: #f3c52f;
+        text-align: right;
+        padding: 0px;
+    }
+
+    .label {
+        color: #f3c52f;
+        font-size: 18px;
+        width: 100%;
+        text-align: center;
+    }
+    .paragraph {
+        color: #f3c52f;
+        font-size: 14px;
+        width: 100%;
+        margin-bottom: 2px;
     }
 </style>
 <template id="inventory-panel-item">
@@ -130,29 +438,49 @@
     </div>
 </template>
 <template id="inventory-panel">
-    <div style="position: relative;">
-        <div class="inventory-item-list"></div>
-        <div class="panel-container">
-            <button class="panel"></button>
-            <button class="panel"></button>
-            <button class="panel"></button>
-            <button class="panel"></button>
-            <button class="panel"></button>
-            <button class="panel"></button>
-            <button class="panel"></button>
-            <button class="panel"></button>
-            <button class="panel"></button>
-            <button class="panel"></button>
-            <button class="panel"></button>
-            <button class="panel"></button>
-            <button class="panel"></button>
-            <button class="panel"></button>
-            <button class="panel"></button>
-            <button class="panel"></button>
-            <button class="panel"></button>
-            <button class="panel"></button>
-            <button class="panel"></button>
-            <button class="panel"></button>
+    <div class="game-panel">
+        <div class="panel-container" style="height:330px;width:270px;">
+            <div class="panel panel-topmiddle"></div>
+            <div class="panel panel-middle"></div>
+            <div class="panel panel-bottommiddle"></div>
         </div>
+        <div class="input-value" style="height:32px;align-self: center;">
+            <input class="blank-input inventory-input-value" type="tel" readonly>
+        </div>
+    </div>
+</template>
+<template id="game-panel">
+    <div class="game-panel">
+        <div class="panel-container" style="height:330px;width:270px;">
+            <div class="panel panel-topmiddle"></div>
+            <div class="panel panel-middle"></div>
+            <div class="panel panel-bottommiddle"></div>
+        </div>
+    </div>
+</template>
+<template id="gameui-panel">
+    <div class="game-panel">
+        <div class="panel-container" style="width:270px;">
+            <div class="panel panel-topmiddle"></div>
+            <div class="panel panel-middle"></div>
+            <div class="panel panel-bottommiddle"></div>
+        </div>
+    </div>
+</template>
+<template id="container-ui">
+    <div class="container-ui"></div>
+</template>
+<template id="button-ui">
+    <button class="button"></button>
+</template>
+<template id="label-ui">
+    <label class="label"></label>
+</template>
+<template id="paragraph-ui">
+    <label class="paragraph"></label>
+</template>
+<template id="input-ui">
+    <div class="input">
+        <input>
     </div>
 </template>

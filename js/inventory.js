@@ -1,131 +1,84 @@
 import { Cobject } from './object.js';
-import { Vector2D, Vector4D } from './vectors.js';
-import { CustomEventHandler } from './customEvents.js';
-import { CollisionHandler, BoxCollision } from './collision.js';
-import { CanvasDrawer } from './customDrawer.js';
-import { Tile, TileType, TileF } from './tile.js';
-import { TileLUT } from './TileLUT.js';
-
-let inventoryItemIcons = {
-    corn: { sprite: new Vector4D(29, 10, 32, 32), atlas: new Vector2D(1024, 1536), url: '/content/sprites/fruits-veggies.png' },
-    potato: { sprite: new Vector4D(0, 0, 32, 32), atlas: new Vector2D(1024, 1536), url: '/content/sprites/fruits-veggies.png' },
-    watermelon: { sprite: new Vector4D(22, 0, 32, 32), atlas: new Vector2D(1024, 1536), url: '/content/sprites/fruits-veggies.png' },
-    pumpkin: { sprite: new Vector4D(28, 0, 32, 32), atlas: new Vector2D(1024, 1536), url: '/content/sprites/fruits-veggies.png' },
-    bellpepperGreen: { sprite: new Vector4D(12, 0, 32, 32), atlas: new Vector2D(1024, 1536), url: '/content/sprites/fruits-veggies.png' },
-    bellpepperRed: { sprite: new Vector4D(13, 0, 32, 32), atlas: new Vector2D(1024, 1536), url: '/content/sprites/fruits-veggies.png' },
-    bellpepperOrange: { sprite: new Vector4D(14, 0, 32, 32), atlas: new Vector2D(1024, 1536), url: '/content/sprites/fruits-veggies.png' },
-    bellpepperYellow: { sprite: new Vector4D(15, 0, 32, 32), atlas: new Vector2D(1024, 1536), url: '/content/sprites/fruits-veggies.png' },
-    carrot: { sprite: new Vector4D(24, 20, 32, 32), atlas: new Vector2D(1024, 1536), url: '/content/sprites/fruits-veggies.png' },
-    parsnip: { sprite: new Vector4D(25, 20, 32, 32), atlas: new Vector2D(1024, 1536), url: '/content/sprites/fruits-veggies.png' },
-    radish: { sprite: new Vector4D(18, 5, 32, 32), atlas: new Vector2D(1024, 1536), url: '/content/sprites/fruits-veggies.png' },
-    beetroot: { sprite: new Vector4D(16, 15, 32, 32), atlas: new Vector2D(1024, 1536), url: '/content/sprites/fruits-veggies.png' },
-    garlic: { sprite: new Vector4D(23, 15, 32, 32), atlas: new Vector2D(1024, 1536), url: '/content/sprites/fruits-veggies.png' },
-    onionYellow: { sprite: new Vector4D(24, 15, 32, 32), atlas: new Vector2D(1024, 1536), url: '/content/sprites/fruits-veggies.png' },
-    onionRed: { sprite: new Vector4D(25, 15, 32, 32), atlas: new Vector2D(1024, 1536), url: '/content/sprites/fruits-veggies.png' },
-    onionWhite: { sprite: new Vector4D(26, 15, 32, 32), atlas: new Vector2D(1024, 1536), url: '/content/sprites/fruits-veggies.png' },
-    onionGreen: { sprite: new Vector4D(27, 15, 32, 32), atlas: new Vector2D(1024, 1536), url: '/content/sprites/fruits-veggies.png' },
-    hotPepper: { sprite: new Vector4D(11, 0, 32, 32), atlas: new Vector2D(1024, 1536), url: '/content/sprites/fruits-veggies.png' },
-    chiliPepper: { sprite: new Vector4D(19, 0, 32, 32), atlas: new Vector2D(1024, 1536), url: '/content/sprites/fruits-veggies.png' },
-    lettuceIceberg: { sprite: new Vector4D(11, 5, 32, 32), atlas: new Vector2D(1024, 1536), url: '/content/sprites/fruits-veggies.png' },
-    cauliflower: { sprite: new Vector4D(14, 5, 32, 32), atlas: new Vector2D(1024, 1536), url: '/content/sprites/fruits-veggies.png' },
-    broccoli: { sprite: new Vector4D(15, 5, 32, 32), atlas: new Vector2D(1024, 1536), url: '/content/sprites/fruits-veggies.png' },
-    shovel: { sprite: new Vector4D(1, 8, 32, 32), atlas: new Vector2D(512, 512), url: '/content/sprites/items/items1.png' },
-    hoe: { sprite: new Vector4D(4, 8, 32, 32), atlas: new Vector2D(512, 512), url: '/content/sprites/items/items1.png' },
-}
-
-class Item {
-    constructor(name, amount) {
-        this.name = name;
-        this.amount = amount;
-        this.sprite = inventoryItemIcons[name].sprite;
-        this.atlas = inventoryItemIcons[name].atlas;
-        this.url = inventoryItemIcons[name].url;
-    }
-
-    AddAmount(value) {
-        this.amount += value;
-    }
-
-    UseItem(ownerCollision) {
-
-    }
-}
-
-class Hoe extends Item {
-    constructor(name, amount) {
-        super(name, amount);
-    }
-
-    UseItem(ownerCollision) {
-        let overlap = CollisionHandler.GCH.GetOverlap(ownerCollision);
-
-        if (overlap !== false) {
-            console.log('hoeOverlap');
-        } else {
-            let pos = ownerCollision.position.Clone();
-            pos.Div(new Vector2D(32, 32));
-            pos.Floor();
-            let operations = CanvasDrawer.GCD.GetTileAtPosition(pos, false);
-
-            for (let i = 0; i < operations.length; i++) {
-                if (operations[i].tile.tileType === TileType.Ground) {
-                    TileF.PaintTile(new Tile(new Vector2D(0,0), new Vector2D(6, 18), new Vector2D(32, 32), TileLUT.terrain[18][6].transparent, 'terrain'), pos);
-                    operations[i].tile.ChangeSprite(new Tile(new Vector2D(0,0), new Vector2D(6, 18), new Vector2D(32, 32), TileLUT.terrain[18][6].transparent, 'terrain'));
-                }
-            }
-        }
-        CustomEventHandler.NewCustomEvent(this.name, this);
-    }
-}
-
-class Shovel extends Item {
-    constructor(name, amount) {
-        super(name, amount);
-    }
-
-    UseItem(ownerCollision) {
-        let overlap = CollisionHandler.GCH.GetOverlap(ownerCollision);
-
-        if (overlap !== false) {
-            console.log('shovelOverlap');
-        }
-        CustomEventHandler.NewCustomEvent(this.name, this);
-    }
-}
+import { Item, Shovel, Hoe } from './item.js';
+import { InputHandler } from './inputEvents.js';
+import { GameToolbar } from './toolbar.js';
+import { GUI } from './gui.js';
 
 class Inventory extends Cobject {
     constructor(owner) {
         super();
         this.inventory = {};
         this.characterOwner = owner;
-        this.isVisible = true;
+        this.isVisible = false;
         this.inventoryHTML;
         this.inventoryHTMLList;
+        this.inventoryHTMLValue;
         this.didInventoryChange = false;
+        this.inventorySetupDone = false;
+        this.selectedItem = undefined;
+        this.moneyAmount = 0;
     }
 
-    SetupHTML() {
+    SetupInventory() {
         if (document.getElementById('inventory-panel') !== null) {
+            this.inventoryHTML = GUI.CreateContainer();
+
             let template = document.getElementById('inventory-panel');
             let clone = template.content.cloneNode(true);
-            this.inventoryHTMLList = clone.children[0].children[0];
-            this.inventoryHTML = clone.children[0].children[1];
-            document.getElementById('game-gui').appendChild(clone);
+            this.inventoryHTMLList = clone.querySelector('div.panel-middle');
+            this.inventoryHTMLList.addEventListener('click', this);
+            this.inventoryHTMLValue = clone.querySelector('input.inventory-input-value');
+            
+            this.inventoryHTML.appendChild(clone);
+            document.getElementById('game-gui').appendChild(this.inventoryHTML);
+
+            InputHandler.GIH.AddListener(this);
+            this.inventorySetupDone = true;
         } else
-            window.requestAnimationFrame(() => this.SetupHTML());
+            window.requestAnimationFrame(() => this.SetupInventory());
+    }
+
+    HasMoney(amount) {
+        return this.moneyAmount !== 0 && this.moneyAmount >= amount;
+    }
+
+    SubtractMoney(amount) {
+        this.moneyAmount -= amount;
+
+        if (this.inventoryHTMLValue !== undefined)
+            this.inventoryHTMLValue.value = this.moneyAmount;
+    }
+
+    AddMoney(amount) {
+        this.moneyAmount += amount;
+        
+        if (this.inventoryHTMLValue !== undefined)
+            this.inventoryHTMLValue.value = this.moneyAmount;
     }
 
     AddItem(item) {
         if (this.inventory[item.name] !== undefined) {
-            this.inventory[item.name].AddAmount(item.amount);
+            this.inventory[item.name].AddAmount(Number(item.amount));
         } else {
+            item.inventory = this;
             this.inventory[item.name] = item;
         }
         this.didInventoryChange = true;
+    }
 
-        if (item.name === 'corn') {
-            document.getElementById('total-corn').value = this.inventory['corn'].amount;
+    RemoveItem(item) {
+        if (this.inventory[item.name] !== undefined) {
+            this.inventory[item.name].RemoveAmount(Number(item.amount));
+
+            if (this.inventory[item.name].GetAmount() === 0) {
+                delete this.inventory[item.name];
+                GameToolbar.RemoveToolbarItem(item);
+            }
+        } else {
+            delete this.inventory[item.name];
+            GameToolbar.RemoveToolbarItem(item);
         }
+        this.didInventoryChange = true;
     }
 
     DisplayInventory() {
@@ -140,15 +93,27 @@ class Inventory extends Cobject {
             div.style.backgroundSize = this.inventory[keys[i]].atlas.x * 1.35 + 'px ' + this.inventory[keys[i]].atlas.y * 1.5 + 'px';
             div.style.backgroundImage = 'url(' + this.inventory[keys[i]].url + ')';
 
-            clone.querySelector('label.inventory-item-text').innerHTML = this.inventory[keys[i]].amount;
+            if (this.inventory[keys[i]].amount > 0)
+                clone.querySelector('label.inventory-item-text').innerHTML = this.inventory[keys[i]].GetAmount();
+
+            clone.querySelector('div.inventory-item').dataset.inventoryItem = this.inventory[keys[i]].name;
+            clone.querySelector('div.inventory-item').setAttribute('draggable', true);
+            clone.querySelector('div.inventory-item').addEventListener('dragstart', this);
             this.inventoryHTMLList.appendChild(clone);
         }
 
         this.didInventoryChange = false;
     }
 
+    ShowInventory(visibility = !this.isVisible) {
+        this.inventoryHTML.style.visibility = (visibility === true ? 'visible' : 'hidden');
+        this.isVisible = visibility;
+        this.inventoryHTMLValue.value = this.moneyAmount;
+        this.selectedItem = undefined;
+    }
+
     FixedUpdate() {
-        if (this.didInventoryChange === true) {
+        if (this.didInventoryChange === true && this.inventorySetupDone === true) {
             this.DisplayInventory();
         }
 
@@ -159,9 +124,24 @@ class Inventory extends Cobject {
         switch (eventType) {
             case 'input':
                 if (key === 'i' && data.eventType === 2) {
-                    this.inventoryHTMLList.style.display = this.inventoryHTML.style.display = (this.isVisible === true ? 'flex' : 'none');
-                    this.isVisible = !this.isVisible;
+                    this.ShowInventory();
                 }
+                break;
+        }
+    }
+
+    handleEvent(e) {
+        switch (e.type) {
+            case 'click':
+                if (e.target.classList.contains('inventory-item') === true) {
+                    this.selectedItem = this.inventory[e.target.dataset.inventoryItem];
+                }
+                break;
+            case 'dragstart':
+                e.target.id = 'draggingItem';
+                let json = JSON.stringify({ id: e.target.id, item: this.inventory[e.target.dataset.inventoryItem].UID });
+                e.dataTransfer.setData('text/plain', json);
+                e.dataTransfer.dropEffect = 'copy';
                 break;
         }
     }

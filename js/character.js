@@ -1,5 +1,6 @@
 import { GameObject } from './gameObject.js';
-import { Inventory, Item } from './inventory.js';
+import { Inventory } from './inventory.js';
+import { Item } from './item.js';
 import { Vector2D } from './vectors.js';
 import { femaleAnimations } from './AllAnimations.js';
 import { BoxCollision } from './collision.js';
@@ -65,18 +66,32 @@ class Character extends GameObject {
         }
     }
 
-    NeedsRedraw(position) {
-        super.NeedsRedraw(position);
-        if (this.drawingOperation !== undefined)
-            this.drawingOperation.Update(position);
+    FlagDrawingUpdate(position) {
+        super.FlagDrawingUpdate(position);
 
         if (this.shadowAttachment.drawingOperation !== undefined)
-            this.shadowAttachment.drawingOperation.Update(position);
+            this.shadowAttachment.FlagDrawingUpdate(position);
 
         let keys = Object.keys(this.attachments);
         for (let i = 0; i < keys.length; i++) {
             if (this.attachments[keys[i]].drawingOperation !== undefined)
-                this.attachments[keys[i]].drawingOperation.Update(position);
+                this.attachments[keys[i]].FlagDrawingUpdate(position);
+        }
+    }
+
+    NeedsRedraw(position) {
+        super.NeedsRedraw(position);
+
+        if (this.drawingOperation !== undefined)
+            this.FlagDrawingUpdate(position);
+
+        if (this.shadowAttachment.drawingOperation !== undefined)
+            this.shadowAttachment.FlagDrawingUpdate(position);
+
+        let keys = Object.keys(this.attachments);
+        for (let i = 0; i < keys.length; i++) {
+            if (this.attachments[keys[i]].drawingOperation !== undefined)
+                this.attachments[keys[i]].FlagDrawingUpdate(position);
         }
     }
 
@@ -86,8 +101,8 @@ class Character extends GameObject {
         if (frame !== null) {
             this.NeedsRedraw(this.position);
 
-            CanvasDrawer.GCD.AddDrawOperation(this.shadowAttachment.CreateDrawOperation(this.shadowAttachment.currentAnimation.GetFrame(), this.position, false, this.shadowAttachment.canvas), OperationType.gameObjects);
-            CanvasDrawer.GCD.AddDrawOperation(this.CreateDrawOperation(frame, this.position, false, this.canvas), OperationType.gameObjects);
+            this.shadowAttachment.CreateDrawOperation(this.shadowAttachment.currentAnimation.GetFrame(), this.position, false, this.shadowAttachment.canvas, OperationType.gameObjects);
+            this.CreateDrawOperation(frame, this.position, false, this.canvas, OperationType.gameObjects);
 
             let facingDirection = this.GetFacingDirection();
 
@@ -101,7 +116,13 @@ class Character extends GameObject {
 
             let keys = Object.keys(this.attachments);
             for (let i = 0; i < keys.length; i++) {
-                CanvasDrawer.GCD.AddDrawOperation(this.attachments[keys[i]].CreateDrawOperation(this.attachments[keys[i]].currentAnimation.GetFrame(), this.position, false, this.attachments[keys[i]].canvas), OperationType.gameObjects);
+                this.attachments[keys[i]].CreateDrawOperation(
+                    this.attachments[keys[i]].currentAnimation.GetFrame(),
+                    this.position,
+                    false,
+                    this.attachments[keys[i]].canvas,
+                    OperationType.gameObjects
+                );
             }
         } else {
             this.shadowAttachment.currentAnimation.GetFrame();
@@ -183,7 +204,7 @@ class Character extends GameObject {
                         case 'leftShift': this.isRunning = true; this.MovementSpeed = new Vector2D(-3, -3); this.NeedsRedraw(this.position.Clone()); break;
                         case 'leftMouse':
                             if (data.eventType === 0 && this.activeItem !== undefined)
-                                this.activeItem.UseItem(new BoxCollision(data.position, this.size, this.enableCollision, this));
+                                this.activeItem.UseItem(new BoxCollision(data.position, this.size, this.enableCollision, this, false));
                             break;
                     }
                 }
@@ -226,4 +247,18 @@ class CharacterData {
     }
 }
 
-export { Character, CharacterAttachments, CharacterData };
+class MainCharacter extends  Character {
+    constructor(spriteSheet, spriteSheetName, name, drawIndex = 0) {
+        super(spriteSheet, spriteSheetName, drawIndex);
+        this.name = name;
+    }
+
+    FixedUpdate() {
+        let temp = this.BoxCollision.GetCenterPosition();
+        temp.SnapToGrid(32);
+        CanvasDrawer.GCD.UpdateTilePreview(temp);
+        super.FixedUpdate();
+    }
+}
+
+export { Character, CharacterAttachments, CharacterData, MainCharacter };

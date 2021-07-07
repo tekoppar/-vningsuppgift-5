@@ -5,13 +5,31 @@ class Vector2D {
     }
 
     Add(a) {
-        this.x += a.x;
-        this.y += a.y;
+        if (a.x !== undefined) {
+            this.x += a.x;
+            this.y += a.y;
+        } else {
+            this.x += a;
+            this.y += a;
+        }
+    }
+
+    static Add(a, b) {
+        return new Vector2D(a.x + b.x, a.y + b.y);
     }
 
     Sub(a) {
-        this.x -= a.x;
-        this.y -= a.y;
+        if (a.x !== undefined) {
+            this.x -= a.x;
+            this.y -= a.y;
+        } else {
+            this.x -= a;
+            this.y -= a;
+        }
+    }
+
+    static Sub(a, b) {
+        return new Vector2D(a.x - b.x, a.y - b.y);
     }
 
     Mult(a) {
@@ -28,9 +46,40 @@ class Vector2D {
         this.y /= a.y;
     }
 
+    static Div(a, b) {
+        return new Vector2D(a.x / b.x, a.y / b.y);
+    }
+
+    static DivX(a, b) {
+        return new Vector2D(a.x / b, a.y / b);
+    }
+
+    static Min(vec, a) {
+        return new Vector2D(vec.x < a ? a : vec.x, vec.y < a ? a : vec.y);
+    }
+
+    static Max(vec, a) {
+        return new Vector2D(vec.x > a ? a : vec.x, vec.y > a ? a : vec.y);
+    }
+
     Ceil() {
         this.x = Math.ceil(this.x);
         this.y = Math.ceil(this.y);
+    }
+
+    SnapToGrid(x = 32, y = 32) {
+        this.x = Math.floor(this.x / x) * x;
+        this.y = Math.floor(this.y / y) * y;
+    }
+
+    SnapToGrid(x = 32) {
+        this.x = Math.floor(this.x / x) * x;
+        this.y = Math.floor(this.y / x) * x;
+    }
+
+    ToGrid(x = 32) {
+        this.x = Math.floor(this.x / x);
+        this.y = Math.floor(this.y / x);
     }
 
     Floor() {
@@ -261,6 +310,9 @@ class Matrix {
     }
 
     OffsetMatrix(vector2D) {
+        if (vector2D === undefined)
+            return [];
+
         let arr3D = this.To3DArray();
 
         for (let i = 0; i < arr3D.length; i++) {
