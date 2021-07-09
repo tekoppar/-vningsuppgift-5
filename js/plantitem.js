@@ -15,25 +15,32 @@ class Seed extends Item {
 
     UseItem(ownerCollision) {
         let overlap = CollisionHandler.GCH.GetOverlap(ownerCollision);
+        let a = ownerCollision.collisionOwner.BoxCollision.GetCenterPosition();
+        a.SnapToGrid(32);
+        let b = ownerCollision.position.Clone();
+        b.SnapToGrid(32);
 
-        if (overlap === false && ownerCollision.CheckInRange(ownerCollision.collisionOwner.BoxCollision, 64)) {
+        CanvasDrawer.GCD.AddDebugOperation(a, 5);
+        CanvasDrawer.GCD.AddDebugOperation(b, 5, 'orange');
+        if (overlap === false && a.CheckInRange(b, 96)) {
 
-            let checkPos = ownerCollision.collisionOwner.BoxCollision.position.Clone();
+            let checkPos = ownerCollision.position.Clone();
             checkPos.ToGrid(32);
             let tiles = CanvasDrawer.GCD.GetTileAtPosition(checkPos, false);
 
-            for (let tile of tiles) {
-                if (tile.tile.tileSet !== 'soilTiled' && tile.tile.tileSet !== 'soilTiledCorner')
-                    return
+            if (tiles !== undefined) {
+                for (let tile of tiles) {
+                    if (tile.tile.tileSet !== 'soilTiled' && tile.tile.tileSet !== 'soilTiledCorner')
+                        return
+                }
+
+                let plantName = this.name.replace('Seed', '');
+                b.y -= 32;
+                let newPlant = new Plant("/content/sprites/crops.png", 'crops', plantName, b, plantAnimations[plantName], AllPlantData[plantName]);
+                CustomEventHandler.AddListener(newPlant);
+
+                super.UseItem(ownerCollision);
             }
-
-            let plantPos = ownerCollision.GetCenterTilePosition();
-            let plantName = this.name.replace('Seed', '');
-            plantPos.SnapToGrid(32);
-            let newPlant = new Plant("/content/sprites/crops.png", 'crops', plantName, plantPos, plantAnimations[plantName], AllPlantData[plantName]);
-            CustomEventHandler.AddListener(newPlant);
-
-            super.UseItem(ownerCollision);
         }
     }
 
@@ -41,7 +48,7 @@ class Seed extends Item {
         super.GetHTMLInformation();
         let sprite = GUI.CreateSprite(this);
         sprite.style.alignSelf = 'center';
-        return [sprite, GUI.CreateParagraph(this.GetRealName()), GUI.CreateParagraph('Amount: ' + this.amount),  GUI.CreateParagraph('Cost: ' + this.value)];
+        return [sprite, GUI.CreateParagraph(this.GetRealName()), GUI.CreateParagraph('Amount: ' + this.amount), GUI.CreateParagraph('Cost: ' + this.value)];
     }
 }
 

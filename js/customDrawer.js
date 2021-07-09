@@ -3,6 +3,7 @@ import { Tile, TileType, TileTerrain } from './tile.js';
 import { InputHandler } from './inputEvents.js';
 import { CollisionHandler, BoxCollision, PolygonCollision, Collision } from './collision.js';
 import { TileMaker } from './tilemaker.js';
+import { worldTiles } from './worldTiles.js';
 
 const brushTypes = {
     circle: 'circle',
@@ -157,6 +158,10 @@ class Operation {
     DrawState() {
 
     }
+
+    Tick() {
+
+    }
 }
 
 class TextOperation extends Operation {
@@ -200,7 +205,7 @@ class TextOperation extends Operation {
 }
 
 class RectOperation extends Operation {
-    constructor(pos, size = new Vector2D(32, 32), drawingCanvas, color = 'rgb(243, 197, 47)', clear, drawIndex = 0) {
+    constructor(pos, size = new Vector2D(32, 32), drawingCanvas, color = 'rgb(243, 197, 47)', clear, drawIndex = 0, lifetime = -1, alpha = 0.3) {
         super(drawingCanvas);
         this.position = pos;
         this.clear = clear;
@@ -208,7 +213,8 @@ class RectOperation extends Operation {
         this.color = color;
         this.drawIndex = drawIndex;
         this.needsToBeRedrawn = true;
-
+        this.lifeTime = lifetime;
+        this.alpha = alpha;
     }
 
     GetDrawIndex() {
@@ -238,6 +244,14 @@ class RectOperation extends Operation {
 
     DrawState() {
         return this.needsToBeRedrawn;
+    }
+
+    Tick(delta) {
+        this.lifeTime -= delta;
+
+        if (this.lifeTime <= 0) {
+            this.Delete();
+        }
     }
 }
 
@@ -584,6 +598,7 @@ class CanvasSave {
         this.db;
         this.request.addEventListener('success', this);
         this.request.addEventListener('upgradeneeded', this);
+        this.jsonOperations;
     }
 
     createObjectStore(database) {
@@ -756,7 +771,7 @@ class CanvasDrawer {
         document.getElementById('game-gui-canvas'));
 
     constructor(mainCanvas, spriteObjectCanvas, spritePreviewCanvas, gameGuiCanvas) {
-        this.canvasSave = new CanvasSave({}, this);
+        //this.canvasSave = new CanvasSave({}, this);
         this.DebugDraw = true;
 
         this.mainCanvas = mainCanvas;
@@ -834,12 +849,38 @@ class CanvasDrawer {
         this.DrawTilePreview();
     }
 
+    LoadWorldTiles() {
+        let keysY = Object.keys(worldTiles);
+        for (let y = 0; y < keysY.length; y++) {
+            let keysX = Object.keys(worldTiles[keysY[y]]);
+            for (let x = 0; x < keysX.length; x++) {
+                let tilesArr = worldTiles[keysY[y]][keysX[x]];
+                for (let i = 0; i < tilesArr.length; i++) {
+                    let newTile = tilesArr[i].tile;
+                    let drawingOperationTemp = new DrawingOperation(
+                        new Tile(
+                            new Vector2D(newTile.position.x, newTile.position.y),
+                            new Vector2D(newTile.tilePosition.x, newTile.tilePosition.y),
+                            new Vector2D(newTile.size.x, newTile.size.y),
+                            (newTile.isTransparent !== undefined ? newTile.isTransparent : false),
+                            newTile.canvas,
+                            newTile.drawIndex,
+                            newTile.tileType,
+                            newTile.tileTerrain
+                        ),
+                        (tilesArr[i].drawingCanvas === 'game-canvas' ? this.mainCanvas : this.canvasAtlases[tilesArr[i].drawingCanvas].canvas),
+                        this.canvasAtlases[tilesArr[i].targetCanvas].canvas
+                    );
+                    this.drawingOperations[drawingOperationTemp.tile.position.y / 32][drawingOperationTemp.tile.position.x / 32].push(drawingOperationTemp);
+                }
+            }
+        }
+    }
+
     BeginAtlasesLoaded() {
         if (this.isLoadingFinished === true) {
-            this.canvasSave.LoadOperations();
-            this.drawingOperations = this.canvasSave.drawingOperations;// GetOperations();
+            this.LoadWorldTiles();
             this.isLoadingFinished = null;
-
             TileMaker.CombineTilesToImage(TileMaker.CustomTiles.seedStand.tiles, TileMaker.CustomTiles.seedStand.tileLayout, 'pepoSeedShop');
         } else {
             window.requestAnimationFrame(() => this.BeginAtlasesLoaded());
@@ -940,7 +981,7 @@ class CanvasDrawer {
         }
     }
 
-    DrawLoop() {
+    DrawLoop(delta) {
         this.CheckIfFinishedLoading();
         this.UIDrawer.AddUIElements();
         let tempDrawingOperations = this.GetOperations();
@@ -997,7 +1038,7 @@ class CanvasDrawer {
                 } else if (this.gameObjectDrawingOperations[i] instanceof TextOperation) {
                     this.DrawOnCanvas(this.gameObjectDrawingOperations[i]);
                 } else if (this.gameObjectDrawingOperations[i] instanceof RectOperation) {
-                    this.DrawOnCanvas(this.gameObjectDrawingOperations[i]);
+                    this.DrawOnCanvas(this.gameObjectDrawingOperations[i], delta);
                 }
             }
         }
@@ -1034,7 +1075,7 @@ class CanvasDrawer {
         if (operations.length < 1)
             return;
 
-        this.canvasSave.UpdateOperation(operations);
+        //this.canvasSave.UpdateOperation(operations);
     }
 
     ClearCanvas(drawingOperation) {
@@ -1100,7 +1141,7 @@ class CanvasDrawer {
         }
     }
 
-    DrawOnCanvas(drawingOperation) {
+    DrawOnCanvas(drawingOperation, delta = 0) {
         if (drawingOperation instanceof DrawingOperation) {
             if (drawingOperation.tile == undefined || this.canvasAtlases[drawingOperation.tile.atlas] === undefined)
                 return;
@@ -1134,9 +1175,17 @@ class CanvasDrawer {
             context.fillStyle = drawingOperation.color;
             context.fillText(drawingOperation.text, drawingOperation.pos.x, drawingOperation.pos.y);
         } else if (drawingOperation instanceof RectOperation) {
+            this.gameDebugCanvasCtx.globalAlpha = drawingOperation.alpha;
+
             drawingOperation.needsToBeRedrawn = false;
             context.fillStyle = drawingOperation.color;
             context.fillRect(drawingOperation.position.x, drawingOperation.position.y, drawingOperation.size.x, drawingOperation.size.y);
+
+            if (drawingOperation.lifeTime !== -1) {
+                drawingOperation.Tick(delta);
+            }
+
+            this.gameDebugCanvasCtx.globalAlpha = 0.3;
         }
     }
 
@@ -1166,6 +1215,10 @@ class CanvasDrawer {
         if (this.drawingOperations[canvasPos.y] !== undefined && this.drawingOperations[canvasPos.y][canvasPos.x] !== undefined) {
             return this.drawingOperations[canvasPos.y][canvasPos.x];
         }
+    }
+
+    AddDebugOperation(position, lifetime = 5, color = 'purple') {
+        this.gameObjectDrawingOperations.push(new RectOperation(position, new Vector2D(5, 5), this.gameDebugCanvas, color, false, 0, lifetime, 1.0))
     }
 
     AddDrawOperation(operation, operationType = OperationType.terrain) {
@@ -1224,7 +1277,7 @@ class CanvasDrawer {
             case 'click':
                 switch (e.target.id) {
                     case 'save-canvas':
-                        this.canvasSave.SaveOperations();
+                        navigator.clipboard.writeText(JSON.stringify(this.drawingOperations));
                         break;
 
                     case 'enable-painting':

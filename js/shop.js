@@ -31,6 +31,7 @@ class Shop extends Prop {
         this.selectedShopHTML = undefined;
         this.gameObjectUsing = undefined;
         this.shopHTMLInfo;
+        this.valueAmount = '';
     }
 
     AddItem(item) {
@@ -67,6 +68,7 @@ class Shop extends Prop {
 
             let eventContainer = GUI.CreateContainer();
             this.shopAmountHTML = GUI.CreateInput();
+            this.shopAmountHTML.children[0].addEventListener('input', this);
 
             let buttonBuy = GUI.CreateButton('Buy');
             buttonBuy.classList.add('shop-buy');
@@ -201,25 +203,6 @@ class Shop extends Prop {
                     this.gameObjectUsing = this.isVisible === false ? key : undefined;
                 }
                 break;
-
-            case 'input':
-                if (data.eventType == 0) {
-                    let inputAmount = this.shopAmountHTML.querySelector('input');
-                    switch (key) {
-                        case '0': inputAmount.value = String(inputAmount.value) + '0'; break;
-                        case '1': inputAmount.value = String(inputAmount.value) + '1'; break;
-                        case '2': inputAmount.value = String(inputAmount.value) + '2'; break;
-                        case '3': inputAmount.value = String(inputAmount.value) + '3'; break;
-                        case '4': inputAmount.value = String(inputAmount.value) + '4'; break;
-                        case '5': inputAmount.value = String(inputAmount.value) + '5'; break;
-                        case '6': inputAmount.value = String(inputAmount.value) + '6'; break;
-                        case '7': inputAmount.value = String(inputAmount.value) + '7'; break;
-                        case '8': inputAmount.value = String(inputAmount.value) + '8'; break;
-                        case '9': inputAmount.value = String(inputAmount.value) + '9'; break;
-                        case 'backspace': inputAmount.value = String(inputAmount.value).chopRight(); break;
-                    }
-                }
-                break;
         }
     }
 
@@ -265,6 +248,14 @@ class Shop extends Prop {
             case 'mouseleave':
                 if (e.target.classList.contains('inventory-item') === true) {
                     this.shopHTMLInfo.RemoveHovered();
+                }
+                break;
+
+            case 'input':
+                if (isNaN(e.data) === true) {
+                    this.shopAmountHTML.children[0].value = this.valueAmount;
+                } else {
+                    this.valueAmount = e.target.value;
                 }
                 break;
         }

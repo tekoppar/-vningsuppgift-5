@@ -16,11 +16,34 @@ import { PolygonCollision } from './collision.js';
 
 var GlobalFrameCounter = 0;
 
+class Mastertime {
+    constructor() {
+        this.DeltaTime = Date.now();
+        this.PreviousTime = 0;
+        this.GlobalFrameCounter = 0;
+    }
+
+    Next() {
+        this.DeltaTime = Date.now() - this.PreviousTime;
+        this.PreviousTime = Date.now();
+        this.GlobalFrameCounter++;
+    }
+
+    Delta() {
+        return this.DeltaTime / 1000;
+    }
+
+    FC() {
+        return this.GlobalFrameCounter;
+    }
+}
+
 class MasterObject {
     static MO = new MasterObject();
 
     constructor() {
         this.gameHasBegun = false;
+        this.Mastertime = new Mastertime();
         this.classInitialization = {
             CanvasDrawer: false,
             Vector2D: false,
@@ -112,16 +135,17 @@ class MasterObject {
         }
     }
 
-    GameLoopActions() {
+    GameLoopActions(delta) {
         for (let i = 0; i < Cobject.AllCobjects.length; i++) {
-            Cobject.AllCobjects[i].FixedUpdate();
+            Cobject.AllCobjects[i].FixedUpdate(delta);
         }
 
-        CanvasDrawer.GCD.DrawLoop();
+        CanvasDrawer.GCD.DrawLoop(delta);
     }
 
     GameLoop() {
-        this.GameLoopActions();
+        this.Mastertime.Next();
+        this.GameLoopActions(this.Mastertime.Delta());
 
         GlobalFrameCounter++;
         window.requestAnimationFrame(() => this.GameLoop());

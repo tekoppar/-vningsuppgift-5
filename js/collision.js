@@ -98,6 +98,13 @@ class Collision {
         return tempPos.CheckInRange(checkPos, range);
     }
 
+    CheckInCenterRange(collision, range = 25) {
+        let a = this.GetCenterPosition(),
+            b = collision.position.Clone();
+
+        return a.CheckInRange(b, range);
+    }
+
     CheckOverlap() {
         let overlapEvent = collisionHandler.CheckCollisions(this);
     }
@@ -112,8 +119,8 @@ class Collision {
 
     GetCenterPosition() {
         let newPos = this.position.Clone();
-        newPos.x += this.size.x / 2 + 8;
-        newPos.y += this.size.y / 2 + 8;
+        newPos.x += this.size.x / 2;
+        newPos.y += this.size.y / 2 + 16;
 
         return newPos;
     }
