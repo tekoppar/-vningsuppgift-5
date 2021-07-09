@@ -772,7 +772,7 @@ class CanvasDrawer {
 
     constructor(mainCanvas, spriteObjectCanvas, spritePreviewCanvas, gameGuiCanvas) {
         //this.canvasSave = new CanvasSave({}, this);
-        this.DebugDraw = true;
+        this.DebugDraw = false;
 
         this.mainCanvas = mainCanvas;
         this.mainCanvasCtx = this.mainCanvas.getContext('2d');
