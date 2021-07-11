@@ -1,7 +1,7 @@
-import { InputHandler } from './inputEvents.js';
-import { Hoe, Shovel } from './item.js';
-import { Cobject } from './object.js';
-import { character } from './masterObject.js';
+import { InputHandler } from '../eventHandlers/inputEvents.js';
+import { Hoe, Shovel } from '../gameobjects/items/item.js';
+import { Cobject } from '../classes/baseClasses/object.js';
+import { MasterObject } from '../classes/masterObject.js';
 
 class GameToolbar extends Cobject {
     static GGT = new GameToolbar();
@@ -51,8 +51,8 @@ class GameToolbar extends Cobject {
         }
         GameToolbar.GGT.didToolbarChange = true;
 
-        if (character.activeItem === item) {
-            character.activeItem = undefined;
+        if (MasterObject.MO.playerController.playerCharacter.activeItem === item) {
+            MasterObject.MO.playerController.playerCharacter.activeItem = undefined;
         }
     }
 
@@ -63,11 +63,11 @@ class GameToolbar extends Cobject {
         if (this.activeToolbar == element) {
             this.activeToolbar.classList.remove('toolbar-item-active');
             this.activeToolbar = undefined;
-            character.activeItem = undefined;
+            MasterObject.MO.playerController.playerCharacter.activeItem = undefined;
         } else {
             element.classList.add('toolbar-item-active');
             this.activeToolbar = element;
-            character.activeItem = this.toolbarItems[element.querySelector('label.toolbar-item-text').innerText - 1];
+            MasterObject.MO.playerController.playerCharacter.activeItem = this.toolbarItems[element.querySelector('label.toolbar-item-text').innerText - 1];
         }
     }
 
@@ -125,7 +125,7 @@ class GameToolbar extends Cobject {
                         case '3':
                         case '4':
                         case '5':
-                            if (character.inventory.isVisible === false)
+                            if (MasterObject.MO.playerController.playerCharacter.inventory.isVisible === false)
                                 this.SetActiveToolbar(this.toolbar.children[key - 1]);
                             break;
                     }

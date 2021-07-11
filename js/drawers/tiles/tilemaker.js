@@ -1,6 +1,6 @@
-import { CanvasDrawer, CanvasAtlasObject } from './customDrawer.js';
-import { TileData, Tile, TileType, TileTerrain } from './tile.js';
-import { Vector2D } from './vectors.js';
+import { CanvasDrawer, CanvasAtlasObject } from '../customDrawer.js';
+import { TileData, Tile, TileType, TileTerrain } from '../tiles/tile.js';
+import { Vector2D } from '../../classes/vectors.js';
 
 class TileMaker {
     static CustomTiles;

@@ -1,8 +1,8 @@
-import { Matrix, Vector2D } from './vectors.js';
-import { CanvasDrawer } from './customDrawer.js';
-import { TileLUT } from './TileLUT.js';
-import { GetAtlasTileMatrix } from './atlasTileMatrix.js';
-import { CollisionEditor } from './collisionEditor.js';
+import { Matrix, Vector2D } from '../../classes/vectors.js';
+import { CanvasDrawer } from '../customDrawer.js';
+import { TileLUT } from '../tiles/TileLUT.js';
+import { GetAtlasTileMatrix } from '../atlasTileMatrix.js';
+import { CollisionEditor } from '../../editors/collisionEditor.js';
 
 const TileType = {
     Water: 0,

@@ -1,5 +1,5 @@
-import { MasterObject } from './masterObject.js';
-import { PageFetcher } from './pageFetcher.js';
+import { MasterObject } from './classes/masterObject.js';
+import { PageFetcher } from './classes/utility/pageFetcher.js';
 
 class SpriteObject {
     constructor(x, y, w, h, canvas, name) {

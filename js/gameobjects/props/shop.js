@@ -1,12 +1,12 @@
-import { CFrame } from './animations.js';
-import { CanvasDrawer, OperationType } from './customDrawer.js';
-import { InputHandler } from './inputEvents.js';
-import { Item } from './item.js';
-import { Prop } from './props.js';
-import { Vector2D } from './vectors.js';
-import { GUI } from './gui.js';
-import { HTMLInfo } from './htmlinfo.js';
-import { CollisionHandler, PolygonCollision } from './collision.js';
+import { CFrame } from '../../animations/animations.js';
+import { CanvasDrawer, OperationType } from '../../drawers/customDrawer.js';
+import { InputHandler } from '../../eventHandlers/inputEvents.js';
+import { Item } from '../items/item.js';
+import { Prop } from '../props/props.js';
+import { Vector2D } from '../../classes/vectors.js';
+import { GUI } from '../../gui/gui.js';
+import { HTMLInfo } from '../../gui/htmlinfo.js';
+import { CollisionHandler, PolygonCollision } from '../collision/collision.js';
 
 class MarketItem extends Item {
     constructor(itemCost, itemAmount, itemName) {
@@ -197,7 +197,7 @@ class Shop extends Prop {
     CEvent(eventType, key, data) {
         switch (eventType) {
             case 'use':
-                if (this.CheckInRange(key.position, 75.0) === true) {
+                if (this.BoxCollision.GetCenterPosition().CheckInRange(key.BoxCollision.GetCenterPosition(), 75.0) === true) {
                     this.ShowShop();
                     key.inventory.ShowInventory(!this.isVisible);
                     this.gameObjectUsing = this.isVisible === false ? key : undefined;

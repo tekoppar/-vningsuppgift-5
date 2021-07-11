@@ -1,11 +1,11 @@
-import { Item } from './item.js';
-import { plantAnimations } from './AllAnimations.js';
-import { Plant, AllPlantData } from './plants.js';
-import { CollisionHandler } from './collision.js';
-import { CustomEventHandler } from './customEvents.js';
-import { GUI } from './gui.js';
-import { Vector2D } from './vectors.js';
-import { CanvasDrawer } from './customDrawer.js';
+import { Item } from '../../items/item.js';
+import { plantAnimations } from '../../../animations/AllAnimations.js';
+import { Plant, AllPlantData } from '../plants/plants.js';
+import { CollisionHandler } from '../../collision/collision.js';
+import { CustomEventHandler } from '../../../eventHandlers/customEvents.js';
+import { GUI } from '../../../gui/gui.js';
+import { Vector2D } from '../../../classes/vectors.js';
+import { CanvasDrawer } from '../../../drawers/customDrawer.js';
 
 class Seed extends Item {
     constructor(name, amount, seedType) {

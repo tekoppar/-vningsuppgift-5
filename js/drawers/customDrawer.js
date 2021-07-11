@@ -1,9 +1,9 @@
-import { Vector2D as Vector2D, Vector as Vector, Vector4D as Vector4D } from './vectors.js';
-import { Tile, TileType, TileTerrain } from './tile.js';
-import { InputHandler } from './inputEvents.js';
-import { CollisionHandler, BoxCollision, PolygonCollision, Collision } from './collision.js';
-import { TileMaker } from './tilemaker.js';
-import { worldTiles } from './worldTiles.js';
+import { Vector2D as Vector2D, Vector as Vector, Vector4D as Vector4D } from '../classes/vectors.js';
+import { Tile, TileType, TileTerrain } from '../drawers/tiles/tile.js';
+import { InputHandler } from '../eventHandlers/inputEvents.js';
+import { CollisionHandler, BoxCollision, PolygonCollision, Collision } from '../gameobjects/collision/collision.js';
+import { TileMaker } from '../drawers/tiles/tilemaker.js';
+import { worldTiles } from '../drawers/tiles/worldTiles.js';
 
 const brushTypes = {
     circle: 'circle',

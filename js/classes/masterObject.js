@@ -1,18 +1,18 @@
-import { CustomEventHandler } from './customEvents.js';
-import { Plant, PlantData, AllPlantData } from './plants.js';
-import { Character, MainCharacter } from './character.js';
-import { InputHandler } from './inputEvents.js';
-import { Vector2D } from './vectors.js';
-import { plantAnimations } from './AllAnimations.js';
-import { CanvasSprite, CanvasDrawer, CanvasAtlas } from './customDrawer.js';
-import { Cobject } from './object.js';
-import { TileData } from './tile.js';
-import { Seed } from './plantitem.js';
-import { Shovel, Hoe, Item } from './item.js';
-import { Shop } from './shop.js';
-import { TileMaker } from './tilemaker.js';
-import { CollisionEditor } from './collisionEditor.js';
-import { PolygonCollision } from './collision.js';
+import { CustomEventHandler } from '../eventHandlers/customEvents.js';
+import { Plant, AllPlantData } from '../gameobjects/props/plants/plants.js';
+import { MainCharacter } from '../gameobjects/characters/character.js';
+import { InputHandler } from '../eventHandlers/inputEvents.js';
+import { Vector2D } from '../classes/vectors.js';
+import { plantAnimations } from '../animations/AllAnimations.js';
+import { CanvasSprite, CanvasDrawer, CanvasAtlas } from '../drawers/customDrawer.js';
+import { Cobject } from '../classes/baseClasses/object.js';
+import { TileData } from '../drawers/tiles/tile.js';
+import { Seed } from '../gameobjects/props/plants/plantitem.js';
+import { Shop } from '../gameobjects/props/shop.js';
+import { TileMaker } from '../drawers/tiles/tilemaker.js';
+import { CollisionEditor } from '../editors/collisionEditor.js';
+import { PolygonCollision } from '../gameobjects/collision/collision.js';
+import { PlayerController } from '../controllers/playerController.js';
 
 var GlobalFrameCounter = 0;
 
@@ -55,6 +55,7 @@ class MasterObject {
         }
         this.classesHasBeenInitialized = false;
         this.objectsHasBeenInitialized = false;
+        this.playerController;
     }
 
     CheckIfClassesInitialized() {
@@ -91,7 +92,10 @@ class MasterObject {
         this.CheckIfClassesInitialized();
 
         if (this.classesHasBeenInitialized === true && this.objectsHasBeenInitialized === false) {
-            //this.canvasDrawer = new CanvasDrawer();
+            this.playerController = new PlayerController(new MainCharacter("/content/sprites/lpcfemalelight_updated.png", 'femaleLight', 'mainP'));
+            this.playerController.playerCharacter.AddAttachment('/content/sprites/red.png', 'redHair');
+            this.playerController.playerCharacter.AddAttachment('/content/sprites/lpcfemaleunderdress.png', 'underDress');
+            InputHandler.GIH.AddListener(this.playerController);
 
             this.objectsHasBeenInitialized = true;
         }
@@ -111,12 +115,6 @@ class MasterObject {
                 CustomEventHandler.AddListener(AllPlants[i]);
             }
 
-            character.inventory.SetupInventory();
-            character.inventory.AddItem(new Shovel('shovel', 0));
-            character.inventory.AddItem(new Hoe('hoe', 0));
-            character.inventory.AddItem(new Seed('cornSeed', 1));
-            character.inventory.AddMoney(5000);
-
             TileData.tileData.CreateTileLUTEditor();
             CollisionEditor.GCEditor = new CollisionEditor();
             TileMaker.GenerateCustomTiles();
@@ -132,6 +130,10 @@ class MasterObject {
             ));
 
             this.gameHasBegun = true;
+
+            for (let i = 0; i < Cobject.AllCobjects.length; i++) {
+                Cobject.AllCobjects[i].GameBegin();
+            }
         }
     }
 
@@ -152,7 +154,6 @@ class MasterObject {
     }
 }
 
-var character = new MainCharacter("/content/sprites/lpcfemalelight_updated.png", 'femaleLight', 'mainP');
 var shopTest = new Shop('/content/sprites/farming_fishing.png', 'seedShop', new Vector2D(368, 256), undefined, 'pepoSeedShop');
 shopTest.AddItem(new Seed('cornSeed', 420));
 shopTest.AddItems([
@@ -169,9 +170,6 @@ shopTest.AddItems([
     new Seed('broccoliSeed', 999)
 ]);
 CustomEventHandler.AddListener(shopTest);
-InputHandler.GIH.AddListener(character);
-character.AddAttachment('/content/sprites/red.png', 'redHair');
-character.AddAttachment('/content/sprites/lpcfemaleunderdress.png', 'underDress');
 
 var AllPlants = [
     new Plant("/content/sprites/crops.png", 'crops', 'corn', new Vector2D(576, 128), plantAnimations.corn, AllPlantData.corn),
@@ -202,4 +200,4 @@ for (let i = 0; i < AllPlants.length; i++) {
     CustomEventHandler.AddListener(AllPlants[i]);
 }
 
-export { MasterObject, character, AllPlants, GlobalFrameCounter };
+export { MasterObject, AllPlants, GlobalFrameCounter };

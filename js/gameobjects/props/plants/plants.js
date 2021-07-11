@@ -1,11 +1,11 @@
-import { CMath } from './customMath.js';
-import { BoxCollision } from './collision.js';
-import { Prop } from './props.js';
-import { Item } from './item.js';
-import { CanvasDrawer, CanvasSprite, OperationType } from './customDrawer.js';
-import { Tile } from './tile.js';
-import { MasterObject } from './masterObject.js';
-import { Vector2D } from './vectors.js';
+import { CMath } from '../../../classes/math/customMath.js';
+import { BoxCollision } from '../../collision/collision.js';
+import { Prop } from '../props.js';
+import { Item } from '../../items/item.js';
+import { CanvasDrawer, CanvasSprite, OperationType } from '../../../drawers/customDrawer.js';
+import { Tile } from '../../../drawers/tiles/tile.js';
+import { MasterObject } from '../../../classes/masterObject.js';
+import { Vector2D } from '../../../classes/vectors.js';
 
 class PlantData {
     constructor(growthSpeed, regrowthSpeed, gatherRange = { low: 1, high: 4 }, plantIcon = new CanvasSprite(29, 10, 32, 32, 'fruitsveggies', true)) {
@@ -86,7 +86,7 @@ class Plant extends Prop {
     }
 
     PlantGathered(otherObject) {
-        if (this.plantData.hasFinishedGrowing === true && this.plantData.hasBeenPicked === false && this.CheckInRange(otherObject.position, 32.0) === true) {
+        if (this.plantData.hasFinishedGrowing === true && this.plantData.hasBeenPicked === false && this.BoxCollision.GetCenterPosition().CheckInRange(otherObject.BoxCollision.GetCenterPosition(), 32.0) === true) {
             let gatherAmount = CMath.RandomInt(this.plantData.gatherRange.low, this.plantData.gatherRange.high);
             
             otherObject.inventory.AddItem(new Item(this.name, gatherAmount));
@@ -97,6 +97,7 @@ class Plant extends Prop {
                 this.currentAnimation = this.animations.picked.Clone();
             } else if (this.animations.grow !== undefined) {
                 this.currentAnimation = this.animations.grow.Clone();
+                this.plantData.hasBeenPicked = false;
             }
 
             let frame = this.currentAnimation.GetFrame();
@@ -108,7 +109,7 @@ class Plant extends Prop {
         }
     }
 
-    CEvent(eventType, otherObject, key, data) {
+    CEvent(eventType, otherObject) {
         switch (eventType) {
             case 'use':
                 this.PlantGathered(otherObject);

@@ -1,6 +1,6 @@
 //import { Animation, AnimationType } from './animations.js';
-import { Animation, AnimationType } from './animations.js';
-import { Vector2D } from './vectors.js';
+import { Animation, AnimationType } from '../animations/animations.js';
+import { Vector2D } from '../classes/vectors.js';
 
 export let femaleAnimations = {
     walkUp: new Animation('walkUp', new Vector2D(1, 8), new Vector2D(8, 8), 64, 64, AnimationType.Cycle, 5),

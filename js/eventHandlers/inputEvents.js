@@ -1,5 +1,5 @@
-import { Cobject } from './object.js';
-import { Vector2D } from './vectors.js';
+import { Cobject } from '../classes/baseClasses/object.js';
+import { Vector2D } from '../classes/vectors.js';
 
 const InputState = {
     OnPressed: 0,
@@ -51,6 +51,9 @@ class InputHandler extends Cobject {
             's': new Input('s'),
             'e': new Input('e'),
             'i': new Input('i'),
+            'q': new Input('q'),
+            'tab': new Input('tab'),
+            'escape': new Input('escape'),
             'backspace': new Input('backspace'),
             'leftMouse': new Input('leftMouse', InputType.mouse),
             'middleMouse': new Input('middleMouse', InputType.mouse),
@@ -58,6 +61,10 @@ class InputHandler extends Cobject {
             'leftShift': new Input('leftShift'),
             'rightShift': new Input('rightShift'),
             'leftCtrl': new Input('leftCtrl'),
+            'arrowUp': new Input('arrowUp'),
+            'arrowLeft': new Input('arrowLeft'),
+            'arrowDown': new Input('arrowDown'),
+            'arrowRight': new Input('arrowRight'),
         };
         this.registeredListeners = [];
         this.AttachInputListener();
@@ -88,8 +95,14 @@ class InputHandler extends Cobject {
             case 'keydown':
                 switch (e.keyCode) {
                     case 8: this.AddInput('backspace', InputState.OnPressed); break;
+                    case 9: this.AddInput('tab', InputState.OnPressed); break;
                     case 16: this.AddInput(e.location === 1 ? 'leftShift' : 'rightShift', InputState.OnPressed); break;
                     case 17: this.AddInput('leftCtrl', InputState.OnPressed); break;
+                    case 27: this.AddInput('escape', InputState.OnPressed); break;
+                    case 37: this.AddInput('arrowLeft', InputState.OnPressed); break;
+                    case 38: this.AddInput('arrowUp', InputState.OnPressed); break;
+                    case 39: this.AddInput('arrowRight', InputState.OnPressed); break;
+                    case 40: this.AddInput('arrowDown', InputState.OnPressed); break;
                     case 48: this.AddInput('0', InputState.OnPressed); break;
                     case 49: this.AddInput('1', InputState.OnPressed); break;
                     case 50: this.AddInput('2', InputState.OnPressed); break;
@@ -104,6 +117,7 @@ class InputHandler extends Cobject {
                     case 68: this.AddInput('d', InputState.OnPressed); break;
                     case 69: this.AddInput('e', InputState.OnPressed); break;
                     case 73: this.AddInput('i', InputState.OnPressed); break;
+                    case 81: this.AddInput('q', InputState.OnPressed); break;
                     case 83: this.AddInput('s', InputState.OnPressed); break;
                     case 87: this.AddInput('w', InputState.OnPressed); break;
                 }
@@ -111,8 +125,14 @@ class InputHandler extends Cobject {
             case 'keyup':
                 switch (e.keyCode) {
                     case 8: this.AddInput('backspace', InputState.OnReleased); break;
+                    case 9: this.AddInput('tab', InputState.OnReleased); break;
                     case 16: this.keysPressed[e.location === 1 ? 'leftShift' : 'rightShift'].State(InputState.OnReleased); break;
                     case 17: this.AddInput('leftCtrl', InputState.OnReleased); break;
+                    case 27: this.AddInput('escape', InputState.OnReleased); break;
+                    case 37: this.AddInput('arrowLeft', InputState.OnReleased); break;
+                    case 38: this.AddInput('arrowUp', InputState.OnReleased); break;
+                    case 39: this.AddInput('arrowRight', InputState.OnReleased); break;
+                    case 40: this.AddInput('arrowDown', InputState.OnReleased); break;
                     case 48: this.AddInput('0', InputState.OnReleased); break;
                     case 49: this.AddInput('1', InputState.OnReleased); break;
                     case 50: this.AddInput('2', InputState.OnReleased); break;
@@ -127,6 +147,7 @@ class InputHandler extends Cobject {
                     case 68: this.keysPressed['d'].State(InputState.OnReleased); break;
                     case 69: this.keysPressed['e'].State(InputState.OnReleased); break;
                     case 73: this.keysPressed['i'].State(InputState.OnReleased); break;
+                    case 81: this.AddInput('q', InputState.OnReleased); break;
                     case 83: this.keysPressed['s'].State(InputState.OnReleased); break;
                     case 87: this.keysPressed['w'].State(InputState.OnReleased); break;
                 }

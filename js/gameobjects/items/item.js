@@ -1,11 +1,11 @@
-import { Cobject } from './object.js';
-import { Vector2D, Vector4D } from './vectors.js';
-import { CustomEventHandler } from './customEvents.js';
-import { CollisionHandler } from './collision.js';
-import { CanvasDrawer } from './customDrawer.js';
-import { Tile, TileType, TileF } from './tile.js';
-import { TileLUT } from './TileLUT.js';
-import { ItemValues } from './itemValue.js';
+import { Cobject } from '../../classes/baseClasses/object.js';
+import { Vector2D, Vector4D } from '../../classes/vectors.js';
+import { CustomEventHandler } from '../../eventHandlers/customEvents.js';
+import { CollisionHandler } from '../collision/collision.js';
+import { CanvasDrawer } from '../../drawers/customDrawer.js';
+import { Tile, TileType, TileF } from '../../drawers/tiles/tile.js';
+import { TileLUT } from '../../drawers/tiles/TileLUT.js';
+import { ItemValues } from '../items/itemValue.js';
 
 let inventoryItemIcons = {};
 
@@ -132,11 +132,11 @@ class Hoe extends Item {
         let overlap = CollisionHandler.GCH.GetOverlap(ownerCollision);
 
         if (overlap !== false) {
-            if (overlap.collisionOwner.plantData !== undefined && ownerCollision.collisionOwner.BoxCollision.CheckInRange(overlap, 25)) {
+            if (overlap.collisionOwner.plantData !== undefined && ownerCollision.collisionOwner.BoxCollision.CheckInRange(overlap, 64)) {
                 overlap.collisionOwner.Delete();
             }
         }
-        if (ownerCollision.CheckInRange(ownerCollision.collisionOwner.BoxCollision, 75)) {
+        if (ownerCollision.CheckInRange(ownerCollision.collisionOwner.BoxCollision, 64)) {
             let pos = ownerCollision.position.Clone();
             pos.Div(new Vector2D(32, 32));
             pos.Floor();

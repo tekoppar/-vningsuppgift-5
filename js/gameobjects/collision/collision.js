@@ -1,4 +1,4 @@
-import { Vector2D, Vector4D } from "./vectors.js";
+import { Vector2D, Vector4D } from "../../classes/vectors.js";
 
 class CollisionHandler {
     static GCH = new CollisionHandler();
@@ -39,6 +39,29 @@ class CollisionHandler {
         }
 
         return true;
+    }
+
+    GetInRangeType(collision, range, type) {
+        let inRange = this.GetInRange(collision, range),
+            newInRange = [];
+
+        for (let i = 0; i < inRange.length; i++) {
+            if (inRange[i] instanceof type)
+                newInRange.push(inRange[i]);
+        }
+
+        return newInRange;
+    }
+
+    GetInRange(collision, range) {
+        let inRange = [];
+        for (let i = 0; i < this.Collisions.length; i++) {
+            if (this.Collisions[i].collisionOwner !== undefined && collision.collisionOwner !== this.Collisions[i].collisionOwner && collision.position.CheckInRange(this.Collisions[i].position, range) === true) {
+                inRange.push(this.Collisions[i].collisionOwner);
+            }
+        }
+
+        return inRange;
     }
 
     GetOverlap(collision) {
@@ -251,6 +274,7 @@ class PolygonCollision extends Collision {
         super(position, size, enableCollision, owner, register);
         this.points = points;
         this.boundingBox = new Vector4D(1, 1, 1, 1);
+        this.CalculateBoundingBox();
     }
 
     Delete() {
@@ -281,6 +305,14 @@ class PolygonCollision extends Collision {
                 sY = pos.y;
         }
         this.boundingBox = new Vector4D(sX, sY, lX - sX, lY - sY);
+    }
+
+    GetCenterPosition() {
+        let newPos = new Vector2D(this.boundingBox.x, this.boundingBox.y);
+        newPos.x += this.boundingBox.z / 2;
+        newPos.y += this.boundingBox.a / 2 + 16;
+
+        return newPos;
     }
 
     GetPoints() {

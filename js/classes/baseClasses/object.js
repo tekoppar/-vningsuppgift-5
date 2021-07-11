@@ -1,4 +1,4 @@
-import { Vector2D } from './vectors.js';
+import { Vector2D } from '../vectors.js';
 
 class Cobject {
     static AllCobjects = [];
@@ -70,6 +70,8 @@ class Cobject {
     CheckInRange(checkPos, range = 100.0) {
         return this.position.Distance(checkPos) < range;
     }
+
+    GameBegin() {}
 }
 
 export { Cobject };

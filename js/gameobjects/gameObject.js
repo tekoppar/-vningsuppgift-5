@@ -1,9 +1,9 @@
-import { Vector2D } from './vectors.js';
-import { Cobject } from './object.js';
-import { BoxCollision, CollisionHandler, PolygonCollision } from './collision.js';
-import { DrawingOperation, CanvasDrawer, OperationType } from './customDrawer.js';
-import { MasterObject } from './masterObject.js';
-import { Tile } from './tile.js';
+import { Vector2D } from '../classes/vectors.js';
+import { Cobject } from '../classes/baseClasses/object.js';
+import { BoxCollision, CollisionHandler, PolygonCollision } from './collision/collision.js';
+import { DrawingOperation, CanvasDrawer, OperationType } from '../drawers/customDrawer.js';
+import { MasterObject } from '../classes/masterObject.js';
+import { Tile } from '../drawers/tiles/tile.js';
 
 class GameObject extends Cobject {
     constructor(canvasName, position, enableCollision = false, drawIndex = 0) {

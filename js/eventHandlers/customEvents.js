@@ -1,4 +1,4 @@
-import { Cobject} from './object.js';
+import { Cobject} from '../classes/baseClasses/object.js';
 
 class CustomEventData {
     constructor(eventName, otherObject) {

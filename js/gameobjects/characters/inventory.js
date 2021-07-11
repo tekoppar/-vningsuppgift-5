@@ -1,8 +1,8 @@
-import { Cobject } from './object.js';
-import { Item, Shovel, Hoe } from './item.js';
-import { InputHandler } from './inputEvents.js';
-import { GameToolbar } from './toolbar.js';
-import { GUI } from './gui.js';
+import { Cobject } from '../../classes/baseClasses/object.js';
+import { Item, Shovel, Hoe } from '../items/item.js';
+import { InputHandler } from '../../eventHandlers/inputEvents.js';
+import { GameToolbar } from '../../gui/toolbar.js';
+import { GUI } from '../../gui/gui.js';
 
 class Inventory extends Cobject {
     constructor(owner) {

@@ -1,5 +1,5 @@
-import { CanvasDrawer } from './customDrawer.js';
-import { Vector2D } from './vectors.js';
+import { CanvasDrawer } from '../drawers/customDrawer.js';
+import { Vector2D } from '../classes/vectors.js';
 
 class CollisionEditor {
     static GCEditor;

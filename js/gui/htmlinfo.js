@@ -1,4 +1,4 @@
-import { GUI } from './gui.js';
+import { GUI } from '../gui/gui.js';
 
 class HTMLInfo {
     constructor() {
