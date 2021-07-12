@@ -1,8 +1,5 @@
 import { GameObject } from '../gameObject.js';
-import { CanvasDrawer, CanvasSprite } from '../../drawers/canvas/customDrawer.js';
 import { OperationType } from '../../drawers/canvas/operation.js';
-import { Vector2D } from '../../classes/vectors.js';
-import { BoxCollision } from '../collision/collision.js';
 
 class Prop extends GameObject {
     constructor(spriteSheet, name, position, animations, canvasName, drawIndex = 0) {

@@ -643,7 +643,6 @@ class CanvasDrawer {
         if (this.isLoadingFinished === true) {
             this.LoadWorldTiles();
             this.isLoadingFinished = null;
-            TileMaker.CombineTilesToImage(TileMaker.CustomTiles.seedStand.tiles, TileMaker.CustomTiles.seedStand.tileLayout, 'pepoSeedShop');
         } else {
             window.requestAnimationFrame(() => this.BeginAtlasesLoaded());
         }
@@ -676,8 +675,11 @@ class CanvasDrawer {
     }
 
     AddAtlas(atlas, name) {
-        if (this.canvasAtlases[name] === undefined)
+        if (this.canvasAtlases[name] === undefined) {
             this.canvasAtlases[name] = atlas;
+            this.hasLoadedAllImages[name] = false;
+            this.isLoadingFinished = false;
+        }
     }
 
     LoadNewSpriteAtlas(url, atlasSize, name) {
@@ -689,8 +691,9 @@ class CanvasDrawer {
     }
 
     LoadSpriteAtlas(url, width, height, atlasSize, name) {
-        if (this.canvasAtlases[name] === undefined)
+        if (this.canvasAtlases[name] === undefined) {
             this.canvasAtlases[name] = new CanvasAtlas(this, url, width, height, atlasSize, name);
+        }
     }
 
     CheckIfFinishedLoading() {
@@ -743,7 +746,6 @@ class CanvasDrawer {
     }
 
     DrawLoop(delta) {
-        this.CheckIfFinishedLoading();
         this.UIDrawer.AddUIElements();
         let tempDrawingOperations = this.GetOperations();
 

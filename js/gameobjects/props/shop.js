@@ -9,6 +9,10 @@ import { GUI } from '../../gui/gui.js';
 import { HTMLInfo } from '../../gui/htmlinfo.js';
 import { CollisionHandler, PolygonCollision } from '../collision/collision.js';
 
+let ShopCollisions = {
+    seedShop: [new Vector2D(0, 0), new Vector2D(95, 0), new Vector2D(95, 105), new Vector2D(0, 105)],
+}
+
 class MarketItem extends Item {
     constructor(itemCost, itemAmount, itemName) {
         super(itemName, itemAmount);
@@ -63,7 +67,8 @@ class Shop extends Prop {
     }
 
     SetupMarket() {
-        if (document.getElementById('game-panel') !== null && CanvasDrawer.GCD.canvasAtlases[this.canvasName] !== undefined && CanvasDrawer.GCD.canvasAtlases[this.canvasName].canvas !== undefined) {
+        console.log(CanvasDrawer.GCD.canvasAtlases[this.canvasName].canvas);
+        //if (document.getElementById('game-panel') !== null && CanvasDrawer.GCD.canvasAtlases[this.canvasName] !== undefined && CanvasDrawer.GCD.canvasAtlases[this.canvasName].canvas !== undefined) {
             this.shopHTML = GUI.CreateContainer();
             this.shopHTML.addEventListener('mouseup', this);
 
@@ -114,9 +119,16 @@ class Shop extends Prop {
             this.shopHTML.style.top = (this.position.y - 352) + 'px';
             this.shopHTML.style.left = (this.position.x + 32) + 'px';
 
+            this.NewCollision(new PolygonCollision(
+                this.position.Clone(),
+                this.size.Clone(),
+                ShopCollisions[this.name],
+                false,
+                this,
+                true
+            ));
+
             this.shopSetupDone = true;
-        } else
-            window.requestAnimationFrame(() => this.SetupMarket());
     }
 
     DisplayShop() {
@@ -138,8 +150,6 @@ class Shop extends Prop {
                 clone.querySelector('label.inventory-item-text').innerHTML = this.marketItems[keys[i]].GetAmount();
 
             clone.querySelector('div.inventory-item').dataset.shopItem = this.marketItems[keys[i]].name;
-            //clone.querySelector('div.inventory-item').setAttribute('draggable', true);
-            //clone.querySelector('div.inventory-item').addEventListener('dragstart', this);
             this.shopHTMLList.appendChild(clone);
         }
 
@@ -169,6 +179,11 @@ class Shop extends Prop {
         this.gameObjectUsing.inventory.AddMoney(Number(item.value * amount));
         this.gameObjectUsing.inventory.RemoveItem(new Item(this.gameObjectUsing.inventory.selectedItem.name, Number(this.shopAmountHTML.firstElementChild.value)));
         this.didShopChange = true;
+    }
+
+    GameBegin() {
+        super.GameBegin();
+        this.SetupMarket();
     }
 
     FixedUpdate() {

@@ -1,4 +1,4 @@
-import { Vector2D } from '../classes/vectors.js';
+import { Vector2D, Vector4D } from '../classes/vectors.js';
 import { Cobject } from '../classes/baseClasses/object.js';
 import { BoxCollision, CollisionHandler, PolygonCollision } from './collision/collision.js';
 import { CanvasDrawer } from '../drawers/canvas/customDrawer.js';
@@ -34,15 +34,19 @@ class GameObject extends Cobject {
         }
     }
 
+    GameBegin() {
+        super.GameBegin();
+
+        if (CanvasDrawer.GCD.canvasAtlases[this.canvasName] !== undefined) {
+            this.canvas = CanvasDrawer.GCD.canvasAtlases[this.canvasName].canvas;
+        }
+    }
+
     FixedUpdate() {
         super.FixedUpdate();
 
         if (this.enableCollision === true)
             this.CheckCollision(this.position);
-
-        if (CanvasDrawer.GCD.canvasAtlases[this.canvasName] !== undefined) {
-            this.canvas = CanvasDrawer.GCD.canvasAtlases[this.canvasName].canvas;
-        }
     }
 
     LoadAtlas() {
@@ -179,4 +183,96 @@ class GameObject extends Cobject {
     }
 }
 
-export { GameObject };
+class Shadow extends Cobject {
+    constructor(parent, canvasName, position) {
+        super();
+        this.position = position;
+        this.size = new Vector2D(1, 1);
+        this.BoxCollision = new BoxCollision(position, this.size, false, this);
+        this.currentAnimation = undefined;
+        this.name = 'shadow' + this.UID;
+        this.parent = parent;
+        this.drawingOperation = undefined;
+        this.canvas;
+        this.canvasName = canvasName;
+        this.drawIndex = 0;
+        this.previousPosition = new Vector2D(-1, -1);
+    }
+
+    ChangeAnimation(animation) {
+        if (this.currentAnimation != animation)
+            this.currentAnimation = animation;
+    }
+
+    FixedUpdate() {
+        super.FixedUpdate();
+        this.drawingOperation.tile.needsToBeRedrawn = true;
+    }
+
+    GameBegin() {
+        super.GameBegin();
+
+        if (CanvasDrawer.GCD.canvasAtlases[this.canvasName] !== undefined) {
+            this.canvas = CanvasDrawer.GCD.canvasAtlases[this.canvasName].canvas;
+            this.size.x = this.canvas.width;
+            this.size.y = this.canvas.height;
+            this.BoxCollision.size = this.size;
+        }
+
+        this.CreateDrawOperation({x:0, y:0, w:this.size.x, h:this.size.y}, this.position.Clone(), false, this.canvas, OperationType.gameObjects);
+        this.drawingOperation.collisionSize = new Vector2D(this.size.x, 1);
+    }
+
+    NeedsRedraw(position) {
+        if (this.drawingOperation !== undefined && this.drawingOperation.DrawState() === false) {
+            this.FlagDrawingUpdate(position);
+            let overlaps = CollisionHandler.GCH.GetOverlaps(this.BoxCollision);//new BoxCollision(position, this.BoxCollision.size, this.enableCollision, this));
+
+            for (let i = 0; i < overlaps.length; i++) {
+                if (overlaps[i].collisionOwner !== undefined && overlaps[i].collisionOwner !== false && overlaps[i].collisionOwner.drawingOperation !== undefined) {
+                    overlaps[i].collisionOwner.FlagDrawingUpdate(overlaps[i].collisionOwner.position);
+                    //overlaps[i].collisionOwner.NeedsRedraw(overlaps[i].collisionOwner.position);
+                }
+            }
+        }
+    }
+
+    FlagDrawingUpdate(position) {
+        this.drawingOperation.Update(this.position);
+    }
+
+    CreateDrawOperation(frame, position, clear, canvas, operationType = OperationType.GameObject) {
+        if (this.drawingOperation === undefined) {
+            this.drawingOperation = new DrawingOperation(
+                new Tile(
+                    position,
+                    new Vector2D(frame.x, frame.y),
+                    new Vector2D(frame.w, frame.h),
+                    clear,
+                    this.canvasName,
+                    this.drawIndex
+                ),
+                CanvasDrawer.GCD.frameBuffer,//document.getElementById('sprite-objects-canvas'),
+                canvas
+            );
+
+            CanvasDrawer.GCD.AddDrawOperation(this.drawingOperation, operationType);
+        } else {
+            this.drawingOperation.tile.position = position;
+
+            if (frame !== undefined && frame !== null) {
+                this.drawingOperation.tile.tilePosition = new Vector2D(frame.x, frame.y);
+                this.drawingOperation.tile.size = new Vector2D(frame.w, frame.h);
+            }
+            this.drawingOperation.tile.clear = clear;
+            this.drawingOperation.tile.atlas = this.canvasName;
+            this.drawingOperation.tile.drawIndex = this.drawIndex;
+            this.drawingOperation.targetCanvas = canvas;
+            this.drawingOperation.Update();
+        }
+
+        this.NeedsRedraw(this.position);
+    }
+}
+
+export { GameObject, Shadow };

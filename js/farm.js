@@ -1,5 +1,6 @@
 import { MasterObject } from './classes/masterObject.js';
 import { PageFetcher } from './classes/utility/pageFetcher.js';
+import { Props } from './gameobjects/AllGameObjects.js';
 
 class SpriteObject {
     constructor(x, y, w, h, canvas, name) {

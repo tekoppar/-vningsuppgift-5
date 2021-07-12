@@ -99,8 +99,75 @@ class TileMaker {
                     [[17, 16, 18, 6], [19, 3], [3, 5]],
                     [2, 2, 2],
                 ],
+            },
+            treeBirch1: {
+                tiles: [
+                    new Tile(new Vector2D(0, 0), new Vector2D(24, 12), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Leaves),
+                    new Tile(new Vector2D(0, 0), new Vector2D(25, 12), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Leaves),
+                    new Tile(new Vector2D(0, 0), new Vector2D(26, 12), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Leaves),
+                    new Tile(new Vector2D(0, 0), new Vector2D(24, 13), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Leaves),
+                    new Tile(new Vector2D(0, 0), new Vector2D(25, 13), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Leaves),
+                    new Tile(new Vector2D(0, 0), new Vector2D(26, 13), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Leaves),
+                    new Tile(new Vector2D(0, 0), new Vector2D(24, 14), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Leaves),
+                    new Tile(new Vector2D(0, 0), new Vector2D(25, 14), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Leaves),
+                    new Tile(new Vector2D(0, 0), new Vector2D(26, 14), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Leaves),
+                    new Tile(new Vector2D(0, 0), new Vector2D(24, 18), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(25, 19), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(26, 19), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(27, 19), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(32, 32), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Water),
+                ],
+                tileLayout: [
+                    [0, 1, 2],
+                    [3, 4, 5],
+                    [6, [9, 7], 8],
+                    [13, 9, 13],
+                    [10, 11, 12],
+                ]
+            },
+            treeBirch2: {
+                tiles: [
+                    new Tile(new Vector2D(0, 0), new Vector2D(24, 12), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Leaves),
+                    new Tile(new Vector2D(0, 0), new Vector2D(25, 12), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Leaves),
+                    new Tile(new Vector2D(0, 0), new Vector2D(26, 12), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Leaves),
+                    new Tile(new Vector2D(0, 0), new Vector2D(24, 13), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Leaves),
+                    new Tile(new Vector2D(0, 0), new Vector2D(25, 13), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Leaves),
+                    new Tile(new Vector2D(0, 0), new Vector2D(26, 13), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Leaves),
+                    new Tile(new Vector2D(0, 0), new Vector2D(24, 14), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Leaves),
+                    new Tile(new Vector2D(0, 0), new Vector2D(25, 14), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Leaves),
+                    new Tile(new Vector2D(0, 0), new Vector2D(26, 14), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Leaves),
+                    new Tile(new Vector2D(0, 0), new Vector2D(24, 18), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(25, 19), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(26, 19), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(32, 32), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Water),
+                ],
+                tileLayout: [
+                    [0, 1, 2],
+                    [3, 4, 5],
+                    [6, [9, 7], 8],
+                    [10, 11, 12],
+                ],
+            },
+            treeBirchShadow: {
+                tiles: [
+                    new Tile(new Vector2D(0, 0), new Vector2D(2, 32), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(3, 32), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(4, 32), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(8, 32), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(9, 32), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(10, 32), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                ],
+                tileLayout: [
+                    [0, 1, 2],
+                    [3, 4, 5]
+                ]
             }
         };
+
+        this.CombineTilesToImage(TileMaker.CustomTiles.seedStand.tiles, TileMaker.CustomTiles.seedStand.tileLayout, 'pepoSeedShop');
+        this.CombineTilesToImage(TileMaker.CustomTiles.treeBirch1.tiles, TileMaker.CustomTiles.treeBirch1.tileLayout, 'treeBirch1');
+        this.CombineTilesToImage(TileMaker.CustomTiles.treeBirch2.tiles, TileMaker.CustomTiles.treeBirch2.tileLayout, 'treeBirch2');
+        this.CombineTilesToImage(TileMaker.CustomTiles.treeBirchShadow.tiles, TileMaker.CustomTiles.treeBirchShadow.tileLayout, 'treeBirchShadow');
     }
 }
 

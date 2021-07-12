@@ -11,7 +11,6 @@ import { Seed } from '../gameobjects/props/plants/plantitem.js';
 import { Shop } from '../gameobjects/props/shop.js';
 import { TileMaker } from '../drawers/tiles/tilemaker.js';
 import { CollisionEditor } from '../editors/collisionEditor.js';
-import { PolygonCollision } from '../gameobjects/collision/collision.js';
 import { PlayerController } from '../controllers/playerController.js';
 
 var GlobalFrameCounter = 0;
@@ -44,6 +43,7 @@ class MasterObject {
     constructor() {
         this.gameHasBegun = false;
         this.Mastertime = new Mastertime();
+        this.Mastertime.Next();
         this.classInitialization = {
             CanvasDrawer: false,
             Vector2D: false,
@@ -97,16 +97,22 @@ class MasterObject {
             this.playerController.playerCharacter.AddAttachment('/content/sprites/lpcfemaleunderdress.png', 'underDress');
             InputHandler.GIH.AddListener(this.playerController);
 
+            TileData.tileData.CreateTileLUTEditor();
+            CollisionEditor.GCEditor = new CollisionEditor();
+            TileMaker.GenerateCustomTiles();
+
             this.objectsHasBeenInitialized = true;
         }
 
-        if (this.objectsHasBeenInitialized === true) {
-            this.GameBegin();
-            this.GameLoop();
+        //console.log(this, CanvasDrawer.GCD);
+        if (this.objectsHasBeenInitialized === true && (CanvasDrawer.GCD.isLoadingFinished == null || CanvasDrawer.GCD.isLoadingFinished === true)) {
+            window.requestAnimationFrame(() => this.GameBegin());
         } else {
             GlobalFrameCounter++;
             window.requestAnimationFrame(() => this.GameStart());
         }
+
+        CanvasDrawer.GCD.CheckIfFinishedLoading();
     }
 
     GameBegin() {
@@ -115,26 +121,14 @@ class MasterObject {
                 CustomEventHandler.AddListener(AllPlants[i]);
             }
 
-            TileData.tileData.CreateTileLUTEditor();
-            CollisionEditor.GCEditor = new CollisionEditor();
-            TileMaker.GenerateCustomTiles();
-            shopTest.SetupMarket();
-
-            shopTest.NewCollision(new PolygonCollision(
-                shopTest.position.Clone(),
-                shopTest.size.Clone(),
-                [new Vector2D(0, 0), new Vector2D(95, 0), new Vector2D(95, 105), new Vector2D(0, 105)],
-                false,
-                shopTest,
-                true
-            ));
-
             this.gameHasBegun = true;
 
             for (let i = 0; i < Cobject.AllCobjects.length; i++) {
                 Cobject.AllCobjects[i].GameBegin();
             }
         }
+
+        window.requestAnimationFrame(() => this.GameLoop());
     }
 
     GameLoopActions(delta) {

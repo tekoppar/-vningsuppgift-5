@@ -21,6 +21,7 @@ const TileTerrain = {
     Plant: 5,
     Tree: 6,
     Fence: 7,
+    Leaves: 8,
 }
 
 class TileULDR {
