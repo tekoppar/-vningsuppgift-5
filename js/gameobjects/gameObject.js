@@ -1,7 +1,8 @@
 import { Vector2D } from '../classes/vectors.js';
 import { Cobject } from '../classes/baseClasses/object.js';
 import { BoxCollision, CollisionHandler, PolygonCollision } from './collision/collision.js';
-import { DrawingOperation, CanvasDrawer, OperationType } from '../drawers/customDrawer.js';
+import { CanvasDrawer } from '../drawers/canvas/customDrawer.js';
+import { DrawingOperation, OperationType } from '../drawers/canvas/operation.js';
 import { MasterObject } from '../classes/masterObject.js';
 import { Tile } from '../drawers/tiles/tile.js';
 
@@ -117,7 +118,7 @@ class GameObject extends Cobject {
                     this.canvasName,
                     this.drawIndex
                 ),
-                document.getElementById('sprite-objects-canvas'),
+                CanvasDrawer.GCD.frameBuffer,//document.getElementById('sprite-objects-canvas'),
                 canvas
             );
 
@@ -152,7 +153,7 @@ class GameObject extends Cobject {
                             this.canvasName,
                             this.drawIndex
                         ),
-                        document.getElementById('sprite-objects-canvas'),
+                        CanvasDrawer.GCD.frameBuffer,//document.getElementById('sprite-objects-canvas'),
                         canvas
                     )
                 );

@@ -5,7 +5,7 @@ import { CollisionHandler } from '../../collision/collision.js';
 import { CustomEventHandler } from '../../../eventHandlers/customEvents.js';
 import { GUI } from '../../../gui/gui.js';
 import { Vector2D } from '../../../classes/vectors.js';
-import { CanvasDrawer } from '../../../drawers/customDrawer.js';
+import { CanvasDrawer } from '../../../drawers/canvas/customDrawer.js';
 
 class Seed extends Item {
     constructor(name, amount, seedType) {

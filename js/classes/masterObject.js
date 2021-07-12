@@ -4,7 +4,7 @@ import { MainCharacter } from '../gameobjects/characters/character.js';
 import { InputHandler } from '../eventHandlers/inputEvents.js';
 import { Vector2D } from '../classes/vectors.js';
 import { plantAnimations } from '../animations/AllAnimations.js';
-import { CanvasSprite, CanvasDrawer, CanvasAtlas } from '../drawers/customDrawer.js';
+import { CanvasSprite, CanvasDrawer, CanvasAtlas } from '../drawers/canvas/customDrawer.js';
 import { Cobject } from '../classes/baseClasses/object.js';
 import { TileData } from '../drawers/tiles/tile.js';
 import { Seed } from '../gameobjects/props/plants/plantitem.js';
@@ -148,6 +148,7 @@ class MasterObject {
     GameLoop() {
         this.Mastertime.Next();
         this.GameLoopActions(this.Mastertime.Delta());
+        CanvasDrawer.DrawToMain(this.playerController.playerCamera);
 
         GlobalFrameCounter++;
         window.requestAnimationFrame(() => this.GameLoop());

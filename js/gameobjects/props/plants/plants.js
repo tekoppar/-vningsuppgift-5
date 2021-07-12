@@ -2,7 +2,7 @@ import { CMath } from '../../../classes/math/customMath.js';
 import { BoxCollision } from '../../collision/collision.js';
 import { Prop } from '../props.js';
 import { Item } from '../../items/item.js';
-import { CanvasDrawer, CanvasSprite, OperationType } from '../../../drawers/customDrawer.js';
+import { CanvasDrawer, CanvasSprite } from '../../../drawers/canvas/customDrawer.js';
 import { Tile } from '../../../drawers/tiles/tile.js';
 import { MasterObject } from '../../../classes/masterObject.js';
 import { Vector2D } from '../../../classes/vectors.js';

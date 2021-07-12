@@ -1,4 +1,4 @@
-import { CanvasDrawer } from '../drawers/customDrawer.js';
+import { CanvasDrawer } from '../drawers/canvas/customDrawer.js';
 import { Vector2D } from '../classes/vectors.js';
 
 class CollisionEditor {

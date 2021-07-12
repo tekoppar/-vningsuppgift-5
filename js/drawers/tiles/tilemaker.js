@@ -1,4 +1,4 @@
-import { CanvasDrawer, CanvasAtlasObject } from '../customDrawer.js';
+import { CanvasDrawer, CanvasAtlasObject } from '../canvas/customDrawer.js';
 import { TileData, Tile, TileType, TileTerrain } from '../tiles/tile.js';
 import { Vector2D } from '../../classes/vectors.js';
 

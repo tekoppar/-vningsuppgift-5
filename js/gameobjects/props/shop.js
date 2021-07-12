@@ -1,5 +1,6 @@
 import { CFrame } from '../../animations/animations.js';
-import { CanvasDrawer, OperationType } from '../../drawers/customDrawer.js';
+import { CanvasDrawer } from '../../drawers/canvas/customDrawer.js';
+import { OperationType } from '../../drawers/canvas/operation.js';
 import { InputHandler } from '../../eventHandlers/inputEvents.js';
 import { Item } from '../items/item.js';
 import { Prop } from '../props/props.js';

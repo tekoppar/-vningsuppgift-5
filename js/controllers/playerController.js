@@ -3,14 +3,18 @@ import { CustomEventHandler } from '../eventHandlers/customEvents.js';
 import { Hoe, Shovel } from '../gameobjects/items/item.js';
 import { Seed } from '../gameobjects/props/plants/plantitem.js';
 import { Controller } from './controller.js';
+import { Camera } from './camera.js';
+import { CanvasDrawer } from '../drawers/canvas/customDrawer.js';
 
 class PlayerController extends Controller {
     constructor(player) {
         super();
         this.playerCharacter = player;
+        this.playerCamera = new Camera(this, new Vector2D(CanvasDrawer.GCD.mainCanvas.width, CanvasDrawer.GCD.mainCanvas.height));
     }
 
     FixedUpdate() {
+        this.playerCamera.SetCameraPosition(this.playerCharacter.position);
         super.FixedUpdate();
     }
     

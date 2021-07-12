@@ -166,6 +166,14 @@ class Collision {
             let ABB = this.GetBoundingBox(),
                 BBB = b.GetBoundingBox();
 
+            ABB.x -= 2;
+            ABB.y -= 2;
+            ABB.z += 2;
+            ABB.a += 2;
+            BBB.x -= 2;
+            BBB.y -= 2;
+            BBB.z += 2;
+            BBB.a += 2;
             return this.IsOverlaping1D(new Vector2D(ABB.x, ABB.z), new Vector2D(BBB.x, BBB.z)) && this.IsOverlaping1D(new Vector2D(ABB.y, ABB.a), new Vector2D(BBB.y, BBB.a));
         }
         else

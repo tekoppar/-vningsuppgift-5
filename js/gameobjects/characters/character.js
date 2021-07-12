@@ -5,7 +5,8 @@ import { Vector2D } from '../../classes/vectors.js';
 import { femaleAnimations } from '../../animations/AllAnimations.js';
 import { BoxCollision, CollisionHandler } from '../collision/collision.js';
 import { CustomEventHandler } from '../../eventHandlers/customEvents.js';
-import { CanvasDrawer, OperationType } from '../../drawers/customDrawer.js';
+import { CanvasDrawer } from '../../drawers/canvas/customDrawer.js';
+import { OperationType } from '../../drawers/canvas/operation.js';
 import { MasterObject } from '../../classes/masterObject.js';
 
 const FacingDirection = {

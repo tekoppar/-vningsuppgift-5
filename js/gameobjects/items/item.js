@@ -2,7 +2,7 @@ import { Cobject } from '../../classes/baseClasses/object.js';
 import { Vector2D, Vector4D } from '../../classes/vectors.js';
 import { CustomEventHandler } from '../../eventHandlers/customEvents.js';
 import { CollisionHandler } from '../collision/collision.js';
-import { CanvasDrawer } from '../../drawers/customDrawer.js';
+import { CanvasDrawer } from '../../drawers/canvas/customDrawer.js';
 import { Tile, TileType, TileF } from '../../drawers/tiles/tile.js';
 import { TileLUT } from '../../drawers/tiles/TileLUT.js';
 import { ItemValues } from '../items/itemValue.js';

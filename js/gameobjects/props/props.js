@@ -1,5 +1,6 @@
 import { GameObject } from '../gameObject.js';
-import { CanvasDrawer, CanvasSprite, OperationType } from '../../drawers/customDrawer.js';
+import { CanvasDrawer, CanvasSprite } from '../../drawers/canvas/customDrawer.js';
+import { OperationType } from '../../drawers/canvas/operation.js';
 import { Vector2D } from '../../classes/vectors.js';
 import { BoxCollision } from '../collision/collision.js';
 

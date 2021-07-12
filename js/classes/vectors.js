@@ -33,8 +33,13 @@ class Vector2D {
     }
 
     Mult(a) {
-        this.x = this.x * a.x;
-        this.y = this.y * a.y;
+        if (a.x !== undefined) {
+            this.x = this.x * a.x;
+            this.y = this.y * a.y;
+        } else {
+            this.x *= a;
+            this.y *= a;
+        }
     }
 
     static Mult(a, b) {
@@ -42,8 +47,13 @@ class Vector2D {
     }
 
     Div(a) {
-        this.x /= a.x;
-        this.y /= a.y;
+        if (a.x !== undefined) {
+            this.x /= a.x;
+            this.y /= a.y;
+        } else {
+            this.x /= a;
+            this.y /= a;
+        }
     }
 
     static Div(a, b) {
@@ -85,6 +95,11 @@ class Vector2D {
     Floor() {
         this.x = Math.floor(this.x);
         this.y = Math.floor(this.y);
+    }
+
+    Abs() {
+        this.x = Math.abs(this.x);
+        this.y = Math.abs(this.y);
     }
 
     Equal(a) {
@@ -159,11 +174,25 @@ class Vector4D {
         this.a += a.a;
     }
 
+    AddF(a) {
+        this.x += a;
+        this.y += a;
+        this.z += a;
+        this.a += a;
+    }
+
     Sub(a) {
         this.x -= a.x;
         this.y -= a.y;
         this.z -= a.z;
         this.a -= a.a;
+    }
+
+    SubF(a) {
+        this.x -= a;
+        this.y -= a;
+        this.z -= a;
+        this.a -= a;
     }
 
     Mult(a) {
@@ -182,6 +211,10 @@ class Vector4D {
 
     Equal(a) {
         return this.x == a.x && this.y == a.y && this.z == a.z && this.a == a.a;
+    }
+
+    Clone() {
+        return new Vector4D(this.x, this.y, this.z, this.a);
     }
 }
 

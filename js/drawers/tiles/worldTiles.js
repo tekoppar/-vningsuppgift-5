@@ -769,10 +769,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -793,10 +793,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -817,10 +817,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -3531,9 +3531,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -3555,9 +3555,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -3605,9 +3605,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -3655,9 +3655,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -3729,9 +3729,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -3803,9 +3803,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -3877,9 +3877,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -3927,9 +3927,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -3977,9 +3977,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -4027,9 +4027,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -4077,9 +4077,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -4127,9 +4127,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -4201,9 +4201,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -4275,9 +4275,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -4349,9 +4349,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -4399,9 +4399,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -4449,9 +4449,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -4499,9 +4499,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -4549,9 +4549,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -4599,9 +4599,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -4649,9 +4649,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -4699,9 +4699,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -4749,9 +4749,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -4823,9 +4823,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -4897,9 +4897,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -4971,9 +4971,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -5021,9 +5021,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -5045,9 +5045,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -5095,9 +5095,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -5119,9 +5119,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -5169,9 +5169,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -5193,9 +5193,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -5243,9 +5243,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -5267,9 +5267,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -5317,9 +5317,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -5391,9 +5391,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -5465,9 +5465,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -5539,9 +5539,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -5589,9 +5589,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -5639,9 +5639,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -5689,9 +5689,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -5739,9 +5739,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -5789,9 +5789,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -5813,9 +5813,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -5837,9 +5837,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -7879,10 +7879,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -9897,10 +9897,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -9921,10 +9921,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -9945,10 +9945,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -9969,10 +9969,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -9993,10 +9993,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -10017,10 +10017,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -12203,10 +12203,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -12227,10 +12227,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -12251,10 +12251,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -12275,10 +12275,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -12299,10 +12299,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -12323,10 +12323,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -12347,10 +12347,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -12371,10 +12371,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -12395,10 +12395,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -12419,10 +12419,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -12443,10 +12443,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -12467,10 +12467,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -12491,10 +12491,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -12515,10 +12515,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -12539,10 +12539,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -12563,10 +12563,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -12587,10 +12587,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -12611,10 +12611,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -12635,10 +12635,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -12659,10 +12659,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -14557,10 +14557,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -14581,10 +14581,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -14605,10 +14605,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -14629,10 +14629,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -14653,10 +14653,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -14677,10 +14677,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -14701,10 +14701,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -14725,10 +14725,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -14749,10 +14749,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -14773,10 +14773,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -14797,10 +14797,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -14821,10 +14821,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -14845,10 +14845,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -14869,10 +14869,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -14893,10 +14893,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -14917,10 +14917,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -16815,10 +16815,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -16839,10 +16839,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -16863,10 +16863,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -16887,10 +16887,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -16911,10 +16911,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -16935,10 +16935,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -16959,10 +16959,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -16983,10 +16983,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -17007,10 +17007,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -18737,10 +18737,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -18761,10 +18761,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -18785,10 +18785,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -18809,10 +18809,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -18833,10 +18833,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -18857,10 +18857,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -18881,10 +18881,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -18905,10 +18905,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -18929,10 +18929,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -18953,10 +18953,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -18977,10 +18977,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -19001,10 +19001,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -19025,10 +19025,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -20779,10 +20779,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -20803,10 +20803,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -20827,10 +20827,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -20851,10 +20851,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -20875,10 +20875,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -20899,10 +20899,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -20923,10 +20923,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -20947,10 +20947,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -22725,10 +22725,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -22749,10 +22749,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -22773,10 +22773,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -22797,10 +22797,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -22821,10 +22821,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -22845,10 +22845,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -24575,10 +24575,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -24599,10 +24599,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -24623,10 +24623,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -24647,10 +24647,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -24671,10 +24671,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -24695,10 +24695,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -24719,10 +24719,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -24743,10 +24743,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -24767,10 +24767,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -24791,10 +24791,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -24815,10 +24815,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -24839,10 +24839,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -24863,10 +24863,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -24887,10 +24887,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -24911,10 +24911,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -24935,10 +24935,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -24959,10 +24959,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -26617,9 +26617,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -26641,9 +26641,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -26691,9 +26691,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -26715,9 +26715,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -26739,9 +26739,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -26763,9 +26763,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -26787,9 +26787,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -26811,9 +26811,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -26835,9 +26835,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -26859,9 +26859,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -26909,9 +26909,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -26933,9 +26933,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -26957,9 +26957,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -26981,9 +26981,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -27005,9 +27005,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -27029,9 +27029,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -27053,9 +27053,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -27077,9 +27077,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -27101,9 +27101,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -27125,9 +27125,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -27175,9 +27175,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -27199,9 +27199,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -27223,9 +27223,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -27247,9 +27247,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -27271,9 +27271,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -27295,9 +27295,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -27319,9 +27319,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -27343,9 +27343,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -27367,9 +27367,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -27441,9 +27441,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -27465,9 +27465,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -27489,9 +27489,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -27513,9 +27513,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -27537,9 +27537,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -27561,9 +27561,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -27585,9 +27585,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -27609,9 +27609,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -27633,9 +27633,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -27657,9 +27657,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -27681,9 +27681,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -27705,9 +27705,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -27729,9 +27729,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -27753,9 +27753,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -27777,9 +27777,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -27801,9 +27801,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -27825,9 +27825,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -27849,9 +27849,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -27873,9 +27873,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -27947,9 +27947,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -27971,9 +27971,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -27995,9 +27995,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -28019,9 +28019,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -28043,9 +28043,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -28067,9 +28067,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -28091,9 +28091,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -28115,9 +28115,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -28139,9 +28139,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -28163,9 +28163,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -28187,9 +28187,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -28211,9 +28211,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -33360,7 +33360,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -33410,7 +33410,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -33434,7 +33434,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -33484,7 +33484,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -33534,7 +33534,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -33584,7 +33584,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -33686,7 +33686,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -33736,7 +33736,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -34641,9 +34641,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -34665,9 +34665,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -34765,9 +34765,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -34789,9 +34789,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -34813,9 +34813,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -34837,9 +34837,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -34861,9 +34861,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -34885,9 +34885,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -34909,9 +34909,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -34933,9 +34933,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -34957,9 +34957,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -34981,9 +34981,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -35055,9 +35055,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -35079,9 +35079,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -35103,9 +35103,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -35127,9 +35127,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -35151,9 +35151,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -35175,9 +35175,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -35199,9 +35199,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -35223,9 +35223,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -35247,9 +35247,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -35271,9 +35271,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -35295,9 +35295,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -35345,9 +35345,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -35369,9 +35369,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -35393,9 +35393,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -35417,9 +35417,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -35441,9 +35441,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -35465,9 +35465,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -35489,9 +35489,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -35513,9 +35513,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -35537,9 +35537,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -35561,9 +35561,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -35585,9 +35585,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -35609,9 +35609,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -35633,9 +35633,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -35657,9 +35657,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -35681,9 +35681,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -35705,9 +35705,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -35729,9 +35729,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -35753,9 +35753,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -35803,9 +35803,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -35827,9 +35827,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -35851,9 +35851,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -35875,9 +35875,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -35899,9 +35899,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -35923,9 +35923,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -35947,9 +35947,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -35971,9 +35971,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -36338,7 +36338,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -36388,7 +36388,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -36490,7 +36490,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -36514,7 +36514,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -36538,7 +36538,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -36562,7 +36562,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -36638,7 +36638,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -36688,7 +36688,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -36712,7 +36712,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -36736,7 +36736,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -36786,7 +36786,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -36810,7 +36810,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -36860,7 +36860,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -37739,10 +37739,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -37763,10 +37763,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -37787,10 +37787,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -38406,7 +38406,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -38456,7 +38456,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -38532,7 +38532,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -38582,7 +38582,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -38632,7 +38632,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -38682,7 +38682,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -38732,7 +38732,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -38782,7 +38782,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -38832,7 +38832,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -38856,7 +38856,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -38880,7 +38880,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -38904,7 +38904,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -38954,7 +38954,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -39781,10 +39781,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -39805,10 +39805,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -39829,10 +39829,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -39853,10 +39853,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -39877,10 +39877,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -39901,10 +39901,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -39925,10 +39925,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -39949,10 +39949,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -39973,10 +39973,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -39997,10 +39997,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -40021,10 +40021,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -40045,10 +40045,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -40069,10 +40069,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -40093,10 +40093,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -40786,7 +40786,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -40836,7 +40836,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -40860,7 +40860,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -40884,7 +40884,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -40960,7 +40960,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -41010,7 +41010,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -41164,7 +41164,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -41214,7 +41214,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -41238,7 +41238,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -41262,7 +41262,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -41286,7 +41286,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -41336,7 +41336,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -41360,7 +41360,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -41384,7 +41384,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -41408,7 +41408,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -41432,7 +41432,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -41456,7 +41456,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -41506,7 +41506,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -41530,7 +41530,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -41554,7 +41554,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -41578,7 +41578,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -41602,7 +41602,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -41626,7 +41626,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -41650,7 +41650,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -41674,7 +41674,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -41698,7 +41698,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -41748,7 +41748,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -41772,7 +41772,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -41796,7 +41796,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -41820,7 +41820,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -41844,7 +41844,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -41868,7 +41868,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -41892,7 +41892,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -41916,7 +41916,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -41940,7 +41940,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -41990,7 +41990,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -42014,7 +42014,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -42038,7 +42038,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -42062,7 +42062,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -42086,7 +42086,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -42110,7 +42110,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -42134,7 +42134,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -42158,7 +42158,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -42182,7 +42182,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -42206,7 +42206,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -42230,7 +42230,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -42254,7 +42254,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -42278,7 +42278,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -42302,7 +42302,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -42352,7 +42352,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -42376,7 +42376,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -42400,7 +42400,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -42450,7 +42450,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -43095,10 +43095,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -43119,10 +43119,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -43143,10 +43143,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -43167,10 +43167,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -43191,10 +43191,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -43215,10 +43215,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -43239,10 +43239,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -43263,10 +43263,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -43287,10 +43287,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -43311,10 +43311,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -43952,7 +43952,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -44002,7 +44002,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -44052,7 +44052,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -44102,7 +44102,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -44516,7 +44516,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -44540,7 +44540,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -44564,7 +44564,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -44588,7 +44588,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -44612,7 +44612,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -44636,7 +44636,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -44660,7 +44660,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -44684,7 +44684,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -44708,7 +44708,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -45353,10 +45353,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -45377,10 +45377,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -45401,10 +45401,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -45425,10 +45425,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -45449,10 +45449,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -45473,10 +45473,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -45497,10 +45497,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -45521,10 +45521,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -45545,10 +45545,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -45569,10 +45569,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -45593,10 +45593,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -46210,7 +46210,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -46702,7 +46702,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -46726,7 +46726,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -46750,7 +46750,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -46774,7 +46774,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -46798,7 +46798,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -46822,7 +46822,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -46846,7 +46846,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -46870,7 +46870,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -46894,7 +46894,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -46918,7 +46918,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -46942,7 +46942,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -46966,7 +46966,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -46990,7 +46990,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -47014,7 +47014,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -47659,10 +47659,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -47683,10 +47683,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -47707,10 +47707,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -47731,10 +47731,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -47755,10 +47755,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -47779,10 +47779,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -47803,10 +47803,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -47827,10 +47827,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -47851,10 +47851,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -47875,10 +47875,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -47899,10 +47899,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -47923,10 +47923,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -48612,7 +48612,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -48636,7 +48636,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -48686,7 +48686,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -48710,7 +48710,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -49176,7 +49176,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -49200,7 +49200,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -49845,10 +49845,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -49869,10 +49869,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -49893,10 +49893,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -49917,10 +49917,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -49941,10 +49941,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -49965,10 +49965,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -49989,10 +49989,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -50013,10 +50013,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -50037,10 +50037,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -50728,7 +50728,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -50778,7 +50778,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -51088,7 +51088,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -51138,7 +51138,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -51162,7 +51162,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -51212,7 +51212,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -51288,7 +51288,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -51312,7 +51312,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -51362,7 +51362,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -52007,10 +52007,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -52031,10 +52031,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -52055,10 +52055,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -52079,10 +52079,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -52103,10 +52103,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -52127,10 +52127,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -52151,10 +52151,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -52175,10 +52175,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -52748,7 +52748,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -52798,7 +52798,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -52848,7 +52848,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -52872,7 +52872,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -52896,7 +52896,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -52946,7 +52946,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -52996,7 +52996,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -53046,7 +53046,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -53200,7 +53200,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -53250,7 +53250,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -53326,7 +53326,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -53376,7 +53376,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -53426,7 +53426,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -54097,10 +54097,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -54121,10 +54121,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -54145,10 +54145,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -54169,10 +54169,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -54193,10 +54193,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -54217,10 +54217,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -54241,10 +54241,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -55112,7 +55112,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -55162,7 +55162,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -55264,7 +55264,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -55314,7 +55314,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -56115,10 +56115,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -56139,10 +56139,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -56163,10 +56163,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -56187,10 +56187,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -56211,10 +56211,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -57300,7 +57300,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -57350,7 +57350,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -57374,7 +57374,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -57398,7 +57398,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -57422,7 +57422,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -57446,7 +57446,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -57470,7 +57470,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -57494,7 +57494,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -57518,7 +57518,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -57568,7 +57568,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -57592,7 +57592,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -57616,7 +57616,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -57640,7 +57640,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -57690,7 +57690,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -58517,10 +58517,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -58541,10 +58541,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -58565,10 +58565,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -58589,10 +58589,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -58613,10 +58613,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -58637,10 +58637,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -58661,10 +58661,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -58685,10 +58685,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -58709,10 +58709,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -58733,10 +58733,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -58757,10 +58757,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -58781,10 +58781,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -58805,10 +58805,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -58829,10 +58829,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -58853,10 +58853,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -58877,10 +58877,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -60871,10 +60871,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -60895,10 +60895,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -60919,10 +60919,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -60943,10 +60943,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -60967,10 +60967,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -60991,10 +60991,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -61015,10 +61015,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -61039,10 +61039,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -61063,10 +61063,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -61087,10 +61087,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -61111,10 +61111,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -61135,10 +61135,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -61159,10 +61159,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -61183,10 +61183,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -61207,10 +61207,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -61231,10 +61231,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -61255,10 +61255,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -63153,10 +63153,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -63177,10 +63177,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -63201,10 +63201,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -63225,10 +63225,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -63249,10 +63249,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -63273,10 +63273,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -63297,10 +63297,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -63321,10 +63321,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -63345,10 +63345,10 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
-                    "transparent": true,
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -63654,7 +63654,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -63834,7 +63834,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -63858,7 +63858,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -63882,7 +63882,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -63906,7 +63906,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -63930,7 +63930,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -63954,7 +63954,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -63978,7 +63978,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -64002,7 +64002,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -67403,9 +67403,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -67427,9 +67427,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -67477,9 +67477,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -67501,9 +67501,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -67525,9 +67525,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -67549,9 +67549,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -67573,9 +67573,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -67597,9 +67597,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -67647,9 +67647,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -67671,9 +67671,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -67695,9 +67695,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -67719,9 +67719,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -67743,9 +67743,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -67793,9 +67793,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -67817,9 +67817,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -67841,9 +67841,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -67865,9 +67865,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -67889,9 +67889,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -67913,9 +67913,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -67937,9 +67937,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -67961,9 +67961,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -67985,9 +67985,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -68009,9 +68009,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -68059,9 +68059,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -68083,9 +68083,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -68107,9 +68107,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -68131,9 +68131,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -68155,9 +68155,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -68179,9 +68179,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -68203,9 +68203,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -68227,9 +68227,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -68251,9 +68251,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -68275,9 +68275,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -68299,9 +68299,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -68323,9 +68323,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -68347,9 +68347,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -68397,9 +68397,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -68421,9 +68421,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -68445,9 +68445,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -68469,9 +68469,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -68493,9 +68493,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -68517,9 +68517,9 @@ export let worldTiles = {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 7,
-                    "atlas": "fence",
+                    "tileType": 3,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
                     "transparent": true,
                     "tileULDR": 4369,
                     "tileSet": "default"
@@ -69032,7 +69032,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -69212,7 +69212,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -69236,7 +69236,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -69260,7 +69260,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -69284,7 +69284,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -69308,7 +69308,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -71750,7 +71750,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -74482,7 +74482,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -74506,7 +74506,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -74530,7 +74530,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -74554,7 +74554,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -74578,7 +74578,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -74602,7 +74602,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -74626,7 +74626,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -74650,7 +74650,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -74700,7 +74700,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -74878,7 +74878,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -74902,7 +74902,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -76072,7 +76072,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -76200,7 +76200,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -76224,7 +76224,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -76248,7 +76248,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -76402,7 +76402,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -76504,7 +76504,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -77196,7 +77196,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -77220,7 +77220,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -77244,7 +77244,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -77268,7 +77268,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -77292,7 +77292,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -77316,7 +77316,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -77340,7 +77340,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -77364,7 +77364,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -77388,7 +77388,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -77412,7 +77412,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -77436,7 +77436,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -77460,7 +77460,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -77510,7 +77510,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -77534,7 +77534,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -77558,7 +77558,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -77582,7 +77582,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -77606,7 +77606,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -77656,7 +77656,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -77680,7 +77680,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -77704,7 +77704,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -77806,7 +77806,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -77830,7 +77830,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -78498,7 +78498,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -78626,7 +78626,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -78754,7 +78754,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -78804,7 +78804,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -78906,7 +78906,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -78956,7 +78956,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -79502,7 +79502,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -79526,7 +79526,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -79550,7 +79550,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -79574,7 +79574,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -79598,7 +79598,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -79622,7 +79622,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -79646,7 +79646,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -79670,7 +79670,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -79694,7 +79694,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -79718,7 +79718,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -79742,7 +79742,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -79766,7 +79766,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -79790,7 +79790,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -79814,7 +79814,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -79838,7 +79838,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -79862,7 +79862,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -79886,7 +79886,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -79910,7 +79910,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -79934,7 +79934,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -79984,7 +79984,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -80008,7 +80008,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -80032,7 +80032,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -80056,7 +80056,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -80080,7 +80080,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -80104,7 +80104,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -80128,7 +80128,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -80152,7 +80152,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -80176,7 +80176,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -80200,7 +80200,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -80224,7 +80224,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -80248,7 +80248,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -80272,7 +80272,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -80322,7 +80322,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -80346,7 +80346,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -80370,7 +80370,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -80394,7 +80394,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -80418,7 +80418,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -80442,7 +80442,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -80466,7 +80466,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -80568,7 +80568,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -80592,7 +80592,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -80616,7 +80616,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -80640,7 +80640,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -80664,7 +80664,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -80688,7 +80688,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -80712,7 +80712,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -80736,7 +80736,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -80760,7 +80760,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -80784,7 +80784,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -80808,7 +80808,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -80832,7 +80832,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -80856,7 +80856,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -80880,7 +80880,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -80904,7 +80904,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -80928,7 +80928,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -81522,7 +81522,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -81546,7 +81546,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -82660,7 +82660,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -83270,7 +83270,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -83372,7 +83372,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -83422,7 +83422,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -83628,7 +83628,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -83808,7 +83808,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -84016,7 +84016,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -84040,7 +84040,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -84064,7 +84064,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -84088,7 +84088,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -84138,7 +84138,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -84162,7 +84162,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -84186,7 +84186,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -84210,7 +84210,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -84234,7 +84234,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -84258,7 +84258,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -84282,7 +84282,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -84306,7 +84306,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -84330,7 +84330,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -84380,7 +84380,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -84404,7 +84404,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -84428,7 +84428,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -84452,7 +84452,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -84476,7 +84476,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -84500,7 +84500,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -84524,7 +84524,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -84626,7 +84626,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -84650,7 +84650,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -84674,7 +84674,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -84698,7 +84698,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -85076,7 +85076,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -85936,7 +85936,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -86038,7 +86038,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -86088,7 +86088,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -86294,7 +86294,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -86474,7 +86474,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -86498,7 +86498,7 @@ export let worldTiles = {
                     "tileType": 1,
                     "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
                 },
@@ -86601,6 +86601,250 @@ export let worldTiles = {
                     },
                     "tileType": 1,
                     "tileTerrain": 0,
+                    "atlas": "terrain",
+                    "transparent": false,
+                    "tileULDR": 4369,
+                    "tileSet": "default"
+                },
+                "drawingCanvas": "game-canvas",
+                "targetCanvas": "terrain"
+            }
+        ]
+    },
+    "34": {
+        "11": [
+            {
+                "tile": {
+                    "position": {
+                        "x": 352,
+                        "y": 1088
+                    },
+                    "tilePosition": {
+                        "x": 1,
+                        "y": 3
+                    },
+                    "size": {
+                        "x": 32,
+                        "y": 32
+                    },
+                    "tileType": 1,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
+                    "tileULDR": 4369,
+                    "tileSet": "default"
+                },
+                "drawingCanvas": "game-canvas",
+                "targetCanvas": "terrain"
+            }
+        ],
+        "12": [
+            {
+                "tile": {
+                    "position": {
+                        "x": 384,
+                        "y": 1088
+                    },
+                    "tilePosition": {
+                        "x": 1,
+                        "y": 3
+                    },
+                    "size": {
+                        "x": 32,
+                        "y": 32
+                    },
+                    "tileType": 1,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
+                    "tileULDR": 4369,
+                    "tileSet": "default"
+                },
+                "drawingCanvas": "game-canvas",
+                "targetCanvas": "terrain"
+            }
+        ],
+        "13": [
+            {
+                "tile": {
+                    "position": {
+                        "x": 416,
+                        "y": 1088
+                    },
+                    "tilePosition": {
+                        "x": 1,
+                        "y": 3
+                    },
+                    "size": {
+                        "x": 32,
+                        "y": 32
+                    },
+                    "tileType": 1,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
+                    "tileULDR": 4369,
+                    "tileSet": "default"
+                },
+                "drawingCanvas": "game-canvas",
+                "targetCanvas": "terrain"
+            }
+        ]
+    },
+    "35": {
+        "11": [
+            {
+                "tile": {
+                    "position": {
+                        "x": 352,
+                        "y": 1120
+                    },
+                    "tilePosition": {
+                        "x": 1,
+                        "y": 3
+                    },
+                    "size": {
+                        "x": 32,
+                        "y": 32
+                    },
+                    "tileType": 1,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
+                    "tileULDR": 4369,
+                    "tileSet": "default"
+                },
+                "drawingCanvas": "game-canvas",
+                "targetCanvas": "terrain"
+            }
+        ],
+        "12": [
+            {
+                "tile": {
+                    "position": {
+                        "x": 384,
+                        "y": 1120
+                    },
+                    "tilePosition": {
+                        "x": 1,
+                        "y": 3
+                    },
+                    "size": {
+                        "x": 32,
+                        "y": 32
+                    },
+                    "tileType": 1,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
+                    "tileULDR": 4369,
+                    "tileSet": "default"
+                },
+                "drawingCanvas": "game-canvas",
+                "targetCanvas": "terrain"
+            }
+        ],
+        "13": [
+            {
+                "tile": {
+                    "position": {
+                        "x": 416,
+                        "y": 1120
+                    },
+                    "tilePosition": {
+                        "x": 1,
+                        "y": 3
+                    },
+                    "size": {
+                        "x": 32,
+                        "y": 32
+                    },
+                    "tileType": 1,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
+                    "tileULDR": 4369,
+                    "tileSet": "default"
+                },
+                "drawingCanvas": "game-canvas",
+                "targetCanvas": "terrain"
+            }
+        ]
+    },
+    "36": {
+        "12": [
+            {
+                "tile": {
+                    "position": {
+                        "x": 384,
+                        "y": 1152
+                    },
+                    "tilePosition": {
+                        "x": 1,
+                        "y": 3
+                    },
+                    "size": {
+                        "x": 32,
+                        "y": 32
+                    },
+                    "tileType": 1,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
+                    "tileULDR": 4369,
+                    "tileSet": "default"
+                },
+                "drawingCanvas": "game-canvas",
+                "targetCanvas": "terrain"
+            }
+        ]
+    },
+    "37": {
+        "12": [
+            {
+                "tile": {
+                    "position": {
+                        "x": 384,
+                        "y": 1184
+                    },
+                    "tilePosition": {
+                        "x": 1,
+                        "y": 3
+                    },
+                    "size": {
+                        "x": 32,
+                        "y": 32
+                    },
+                    "tileType": 1,
+                    "tileTerrain": 1,
+                    "atlas": "terrain",
+                    "transparent": false,
+                    "tileULDR": 4369,
+                    "tileSet": "default"
+                },
+                "drawingCanvas": "game-canvas",
+                "targetCanvas": "terrain"
+            }
+        ]
+    },
+    "38": {
+        "12": [
+            {
+                "tile": {
+                    "position": {
+                        "x": 384,
+                        "y": 1216
+                    },
+                    "tilePosition": {
+                        "x": 1,
+                        "y": 3
+                    },
+                    "size": {
+                        "x": 32,
+                        "y": 32
+                    },
+                    "tileType": 1,
+                    "tileTerrain": 1,
                     "atlas": "terrain",
                     "transparent": false,
                     "tileULDR": 4369,
