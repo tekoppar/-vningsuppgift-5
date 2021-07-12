@@ -1,4 +1,4 @@
-import { Matrix } from '../classes/vectors.js';
+import { Matrix } from '../../classes/vectors.js';
 
 const ULDR = {
     UpLeft: 0x00001100,
