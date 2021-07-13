@@ -38,7 +38,7 @@ class CharacterAttachments extends GameObject {
 
 class Character extends GameObject {
     constructor(spriteSheet, spriteSheetName, drawIndex = 0) {
-        super(spriteSheetName, new Vector2D(0, 0), true, drawIndex);
+        super(spriteSheetName, new Vector2D(0, 0), false, drawIndex);
         this.characterData = new CharacterData();
         this.spriteSheet = spriteSheet;
         this.name = "NewCharacter";
@@ -48,6 +48,7 @@ class Character extends GameObject {
         this.isRunning = false;
         this.inventory = new Inventory(this);
         this.activeItem;
+        this.BlockingCollision = new BoxCollision(this.position.Clone(), new Vector2D(16, 16), true, this, true);
     }
 
     AddAttachment(atlas, name, drawIndex) {
@@ -166,6 +167,32 @@ class Character extends GameObject {
                     break;
             }
         }
+    }
+
+    UpdateMovement() {
+        if (this.Velocity.x !== 0 || this.Velocity.y !== 0) {
+            if (this.drawingOperation !== undefined)
+                this.NeedsRedraw(this.previousPosition.Clone());
+
+            this.BoxCollision.position = this.position.Clone();
+            this.BoxCollision.position.Add(Vector2D.Mult(this.MovementSpeed, this.Velocity));
+
+            this.BlockingCollision.position = this.BoxCollision.GetCenterPosition();
+            this.BlockingCollision.position.Sub({x:this.BlockingCollision.size.x + this.BlockingCollision.size.x / 2, y: this.BlockingCollision.size.y - this.BlockingCollision.size.y });
+
+            if (this.CheckCollision() === true) {
+                this.previousPosition = this.position.Clone();
+                this.position.Add(Vector2D.Mult(this.MovementSpeed, this.Velocity));
+            } else {
+                this.BoxCollision.position = this.position;
+                this.BlockingCollision.position = this.BoxCollision.GetCenterPosition();
+                this.BlockingCollision.position.Sub({x:this.BlockingCollision.size.x + this.BlockingCollision.size.x / 2, y: this.BlockingCollision.size.y - this.BlockingCollision.size.y });
+            }
+        }
+    }
+
+    CheckCollision() {
+        return CollisionHandler.GCH.CheckCollisions(this.BlockingCollision);
     }
 
     GetFacingDirection() {

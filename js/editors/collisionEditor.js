@@ -50,6 +50,12 @@ class CollisionEditor {
     }
 
     SetGridSize(spriteSize) {
+        this.canvas.setAttribute('width', spriteSize.x * 4);
+        this.canvas.setAttribute('height', spriteSize.y * 4);
+        this.canvas.nextElementSibling.setAttribute('width', this.canvas.width);
+        this.canvas.nextElementSibling.setAttribute('height', this.canvas.height);
+        this.container.setAttribute('width', spriteSize.x * 4);
+        this.container.setAttribute('height', spriteSize.y * 4);
         this.gridHTML.style.backgroundSize = this.canvas.width / spriteSize.x + 'px ' + this.canvas.height / spriteSize.y + 'px';
         this.gridSize = new Vector2D(this.canvas.width / spriteSize.x, this.canvas.height / spriteSize.y);
         this.collisionPositions = new Array(spriteSize.x * spriteSize.y);

@@ -1,5 +1,4 @@
 import { Vector2D, Vector, Vector4D } from '../classes/vectors.js';
-import { plantAnimations, femaleAnimations } from '../animations/AllAnimations.js';
 import { Tile } from '../drawers/tiles/tile.js';
 
 var AnimationType = {
@@ -31,7 +30,7 @@ class TileOffset {
     }
 }
 
-class Animation {
+class CAnimation {
     constructor(name = '', start = new Vector2D(0, 0), end = new Vector2D(0, 0), w = 32, h = 32, animationType = AnimationType.Cycle, animationSpeed = 3) {
         this.name = name;
         this.frames = [];
@@ -49,7 +48,7 @@ class Animation {
     }
 
     Clone() {
-        return new Animation(
+        return new CAnimation(
             this.name,
             this.start,
             this.end,
@@ -138,4 +137,4 @@ class Animation {
     }
 }
 
-export { CFrame, TileOffset, Animation, plantAnimations, femaleAnimations, AnimationType };
+export { CFrame, TileOffset, CAnimation, AnimationType };

@@ -548,30 +548,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 320,
-                        "y": 0
-                    },
-                    "tilePosition": {
-                        "x": 26,
-                        "y": 15
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "UpRight",
-                    "tileSet": "treePineLeaves1"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "11": [
@@ -754,78 +730,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 544,
-                        "y": 0
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 544,
-                        "y": 0
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 544,
-                        "y": 0
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "18": [
@@ -878,78 +782,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 608,
-                        "y": 0
-                    },
-                    "tilePosition": {
-                        "x": 28,
-                        "y": 19
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Left",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 608,
-                        "y": 0
-                    },
-                    "tilePosition": {
-                        "x": 27,
-                        "y": 18
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownLeft",
-                    "tileSet": "treePineLeaves2"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 608,
-                        "y": 0
-                    },
-                    "tilePosition": {
-                        "x": 27,
-                        "y": 18
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownLeft",
-                    "tileSet": "treePineLeaves2"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "20": [
@@ -976,78 +808,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 640,
-                        "y": 0
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 19
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Middle",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 640,
-                        "y": 0
-                    },
-                    "tilePosition": {
-                        "x": 28,
-                        "y": 18
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Down",
-                    "tileSet": "treePineLeaves2"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 640,
-                        "y": 0
-                    },
-                    "tilePosition": {
-                        "x": 28,
-                        "y": 18
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Down",
-                    "tileSet": "treePineLeaves2"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "21": [
@@ -1071,78 +831,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 672,
-                        "y": 0
-                    },
-                    "tilePosition": {
-                        "x": 30,
-                        "y": 19
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Right",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 672,
-                        "y": 0
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 18
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownRight",
-                    "tileSet": "treePineLeaves2"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 672,
-                        "y": 0
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 18
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownRight",
-                    "tileSet": "treePineLeaves2"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -1302,54 +990,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 864,
-                        "y": 0
-                    },
-                    "tilePosition": {
-                        "x": 28,
-                        "y": 19
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Left",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 864,
-                        "y": 0
-                    },
-                    "tilePosition": {
-                        "x": 27,
-                        "y": 18
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownLeft",
-                    "tileSet": "treePineLeaves2"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "28": [
@@ -1376,54 +1016,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 896,
-                        "y": 0
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 19
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Middle",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 896,
-                        "y": 0
-                    },
-                    "tilePosition": {
-                        "x": 28,
-                        "y": 18
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Down",
-                    "tileSet": "treePineLeaves2"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "29": [
@@ -1447,54 +1039,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 928,
-                        "y": 0
-                    },
-                    "tilePosition": {
-                        "x": 30,
-                        "y": 19
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Right",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 928,
-                        "y": 0
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 18
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownRight",
-                    "tileSet": "treePineLeaves2"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -1732,54 +1276,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1216,
-                        "y": 0
-                    },
-                    "tilePosition": {
-                        "x": 28,
-                        "y": 19
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Left",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1216,
-                        "y": 0
-                    },
-                    "tilePosition": {
-                        "x": 27,
-                        "y": 18
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownLeft",
-                    "tileSet": "treePineLeaves2"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "39": [
@@ -1806,54 +1302,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1248,
-                        "y": 0
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 19
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Middle",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1248,
-                        "y": 0
-                    },
-                    "tilePosition": {
-                        "x": 28,
-                        "y": 18
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Down",
-                    "tileSet": "treePineLeaves2"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "40": [
@@ -1877,54 +1325,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1280,
-                        "y": 0
-                    },
-                    "tilePosition": {
-                        "x": 30,
-                        "y": 19
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Right",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1280,
-                        "y": 0
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 18
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownRight",
-                    "tileSet": "treePineLeaves2"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -2084,54 +1484,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1472,
-                        "y": 0
-                    },
-                    "tilePosition": {
-                        "x": 28,
-                        "y": 19
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Left",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1472,
-                        "y": 0
-                    },
-                    "tilePosition": {
-                        "x": 27,
-                        "y": 18
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownLeft",
-                    "tileSet": "treePineLeaves2"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "47": [
@@ -2158,54 +1510,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1504,
-                        "y": 0
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 19
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Middle",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1504,
-                        "y": 0
-                    },
-                    "tilePosition": {
-                        "x": 28,
-                        "y": 18
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Down",
-                    "tileSet": "treePineLeaves2"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "48": [
@@ -2229,54 +1533,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1536,
-                        "y": 0
-                    },
-                    "tilePosition": {
-                        "x": 30,
-                        "y": 19
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Right",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1536,
-                        "y": 0
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 18
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownRight",
-                    "tileSet": "treePineLeaves2"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -2462,54 +1718,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1760,
-                        "y": 0
-                    },
-                    "tilePosition": {
-                        "x": 28,
-                        "y": 19
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Left",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1760,
-                        "y": 0
-                    },
-                    "tilePosition": {
-                        "x": 27,
-                        "y": 18
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownLeft",
-                    "tileSet": "treePineLeaves2"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "56": [
@@ -2533,54 +1741,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 0
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 19
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Middle",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 0
-                    },
-                    "tilePosition": {
-                        "x": 28,
-                        "y": 18
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Down",
-                    "tileSet": "treePineLeaves2"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -2610,78 +1770,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 0
-                    },
-                    "tilePosition": {
-                        "x": 30,
-                        "y": 19
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Right",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 0
-                    },
-                    "tilePosition": {
-                        "x": 27,
-                        "y": 16
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Left",
-                    "tileSet": "treePineLeaves2"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 0
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 18
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownRight",
-                    "tileSet": "treePineLeaves2"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "58": [
@@ -2705,30 +1793,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 0
-                    },
-                    "tilePosition": {
-                        "x": 28,
-                        "y": 16
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Middle",
-                    "tileSet": "treePineLeaves2"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -2758,27 +1822,55 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
+            }
+        ],
+        "60": [
             {
                 "tile": {
                     "position": {
-                        "x": 1888,
+                        "x": 1920,
                         "y": 0
                     },
                     "tilePosition": {
-                        "x": 29,
-                        "y": 16
+                        "x": 22,
+                        "y": 3
                     },
                     "size": {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 6,
+                    "tileType": 1,
+                    "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Right",
-                    "tileSet": "treePineLeaves2"
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
+                },
+                "drawingCanvas": "game-canvas",
+                "targetCanvas": "terrain"
+            }
+        ],
+        "61": [
+            {
+                "tile": {
+                    "position": {
+                        "x": 1952,
+                        "y": 0
+                    },
+                    "tilePosition": {
+                        "x": 22,
+                        "y": 3
+                    },
+                    "size": {
+                        "x": 32,
+                        "y": 32
+                    },
+                    "tileType": 1,
+                    "tileTerrain": 0,
+                    "atlas": "terrain",
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -3310,30 +2402,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 320,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 26,
-                        "y": 16
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Right",
-                    "tileSet": "treePineLeaves1"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "11": [
@@ -3516,54 +2584,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 544,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 0,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 544,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 0,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "18": [
@@ -3590,30 +2610,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 576,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "19": [
@@ -3637,54 +2633,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 608,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 608,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 28,
-                        "y": 20
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownLeft",
-                    "tileSet": "treePineBase"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -3714,54 +2662,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 640,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 640,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 20
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Down",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "21": [
@@ -3785,54 +2685,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 672,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 672,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 30,
-                        "y": 20
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownRight",
-                    "tileSet": "treePineBase"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -3862,30 +2714,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 704,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "23": [
@@ -3912,30 +2740,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 736,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "24": [
@@ -3962,30 +2766,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 768,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "25": [
@@ -4012,30 +2792,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 800,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "26": [
@@ -4062,30 +2818,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 832,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "27": [
@@ -4109,54 +2841,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 864,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 864,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 28,
-                        "y": 20
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownLeft",
-                    "tileSet": "treePineBase"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -4186,54 +2870,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 896,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 896,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 20
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Down",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "29": [
@@ -4257,54 +2893,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 928,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 928,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 30,
-                        "y": 20
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownRight",
-                    "tileSet": "treePineBase"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -4334,30 +2922,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 960,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "31": [
@@ -4384,30 +2948,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 992,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "32": [
@@ -4434,30 +2974,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1024,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "33": [
@@ -4484,30 +3000,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1056,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "34": [
@@ -4534,30 +3026,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1088,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "35": [
@@ -4584,30 +3052,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1120,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "36": [
@@ -4634,30 +3078,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1152,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "37": [
@@ -4684,30 +3104,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1184,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "38": [
@@ -4731,54 +3127,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1216,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1216,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 28,
-                        "y": 20
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownLeft",
-                    "tileSet": "treePineBase"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -4808,54 +3156,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1248,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1248,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 20
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Down",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "40": [
@@ -4879,54 +3179,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1280,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1280,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 30,
-                        "y": 20
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownRight",
-                    "tileSet": "treePineBase"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -4956,30 +3208,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1312,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "42": [
@@ -5006,54 +3234,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1344,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1344,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "43": [
@@ -5080,54 +3260,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1376,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1376,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "44": [
@@ -5154,54 +3286,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1408,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1408,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "45": [
@@ -5228,54 +3312,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1440,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1440,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "46": [
@@ -5299,54 +3335,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1472,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1472,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 28,
-                        "y": 20
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownLeft",
-                    "tileSet": "treePineBase"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -5376,54 +3364,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1504,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1504,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 20
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Down",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "48": [
@@ -5447,54 +3387,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1536,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1536,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 30,
-                        "y": 20
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownRight",
-                    "tileSet": "treePineBase"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -5524,30 +3416,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1568,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "50": [
@@ -5574,30 +3442,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1600,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "51": [
@@ -5624,30 +3468,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1632,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "52": [
@@ -5674,30 +3494,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1664,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "53": [
@@ -5724,30 +3520,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1696,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "54": [
@@ -5771,102 +3543,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 2,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 2,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 2,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 24,
-                        "y": 15
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "UpLeft",
-                    "tileSet": "treePineLeaves1"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -5896,30 +3572,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1760,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 25,
-                        "y": 15
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Up",
-                    "tileSet": "treePineLeaves1"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "56": [
@@ -5943,78 +3595,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 26,
-                        "y": 15
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "UpRight",
-                    "tileSet": "treePineLeaves1"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 20
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Down",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 20
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Down",
-                    "tileSet": "treePineBase"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -6044,30 +3624,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 32
-                    },
-                    "tilePosition": {
-                        "x": 27,
-                        "y": 17
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Left",
-                    "tileSet": "treePineLeaves2"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "58": [
@@ -6078,19 +3634,19 @@ export let worldTiles = {
                         "y": 32
                     },
                     "tilePosition": {
-                        "x": 28,
-                        "y": 17
+                        "x": 22,
+                        "y": 3
                     },
                     "size": {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 6,
+                    "tileType": 1,
+                    "tileTerrain": 0,
                     "atlas": "terrain",
                     "transparent": false,
                     "tileULDR": "Middle",
-                    "tileSet": "treePineLeaves2"
+                    "tileSet": "grassGreen"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -6120,27 +3676,55 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
+            }
+        ],
+        "60": [
             {
                 "tile": {
                     "position": {
-                        "x": 1888,
+                        "x": 1920,
                         "y": 32
                     },
                     "tilePosition": {
-                        "x": 29,
-                        "y": 17
+                        "x": 22,
+                        "y": 3
                     },
                     "size": {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 6,
+                    "tileType": 1,
+                    "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Right",
-                    "tileSet": "treePineLeaves2"
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
+                },
+                "drawingCanvas": "game-canvas",
+                "targetCanvas": "terrain"
+            }
+        ],
+        "61": [
+            {
+                "tile": {
+                    "position": {
+                        "x": 1952,
+                        "y": 32
+                    },
+                    "tilePosition": {
+                        "x": 22,
+                        "y": 3
+                    },
+                    "size": {
+                        "x": 32,
+                        "y": 32
+                    },
+                    "tileType": 1,
+                    "tileTerrain": 0,
+                    "atlas": "terrain",
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -6172,54 +3756,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 0,
-                        "y": 64
-                    },
-                    "tilePosition": {
-                        "x": 28,
-                        "y": 20
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownLeft",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 0,
-                        "y": 64
-                    },
-                    "tilePosition": {
-                        "x": 24,
-                        "y": 15
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "UpLeft",
-                    "tileSet": "treePineLeaves1"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "1": [
@@ -6243,54 +3779,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 32,
-                        "y": 64
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 20
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Down",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 32,
-                        "y": 64
-                    },
-                    "tilePosition": {
-                        "x": 25,
-                        "y": 15
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Up",
-                    "tileSet": "treePineLeaves1"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -6320,54 +3808,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 64,
-                        "y": 64
-                    },
-                    "tilePosition": {
-                        "x": 30,
-                        "y": 20
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownRight",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 64,
-                        "y": 64
-                    },
-                    "tilePosition": {
-                        "x": 26,
-                        "y": 15
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "UpRight",
-                    "tileSet": "treePineLeaves1"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "3": [
@@ -6394,30 +3834,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 96,
-                        "y": 64
-                    },
-                    "tilePosition": {
-                        "x": 27,
-                        "y": 17
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Left",
-                    "tileSet": "treePineLeaves2"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "4": [
@@ -6428,19 +3844,19 @@ export let worldTiles = {
                         "y": 64
                     },
                     "tilePosition": {
-                        "x": 28,
-                        "y": 17
+                        "x": 22,
+                        "y": 3
                     },
                     "size": {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 6,
+                    "tileType": 1,
+                    "tileTerrain": 0,
                     "atlas": "terrain",
                     "transparent": false,
                     "tileULDR": "Middle",
-                    "tileSet": "treePineLeaves2"
+                    "tileSet": "grassGreen"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -6467,30 +3883,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 160,
-                        "y": 64
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 17
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Right",
-                    "tileSet": "treePineLeaves2"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -6572,30 +3964,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 256,
-                        "y": 64
-                    },
-                    "tilePosition": {
-                        "x": 24,
-                        "y": 17
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownLeft",
-                    "tileSet": "treePineLeaves1"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "9": [
@@ -6622,54 +3990,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 288,
-                        "y": 64
-                    },
-                    "tilePosition": {
-                        "x": 24,
-                        "y": 18
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 288,
-                        "y": 64
-                    },
-                    "tilePosition": {
-                        "x": 25,
-                        "y": 17
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Down",
-                    "tileSet": "treePineLeaves1"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "10": [
@@ -6693,30 +4013,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 320,
-                        "y": 64
-                    },
-                    "tilePosition": {
-                        "x": 26,
-                        "y": 17
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownRight",
-                    "tileSet": "treePineLeaves1"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -7864,54 +5160,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 64
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 64
-                    },
-                    "tilePosition": {
-                        "x": 24,
-                        "y": 16
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Left",
-                    "tileSet": "treePineLeaves1"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "55": [
@@ -7922,19 +5170,19 @@ export let worldTiles = {
                         "y": 64
                     },
                     "tilePosition": {
-                        "x": 25,
-                        "y": 16
+                        "x": 22,
+                        "y": 3
                     },
                     "size": {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 6,
+                    "tileType": 1,
+                    "tileTerrain": 0,
                     "atlas": "terrain",
                     "transparent": false,
                     "tileULDR": "Middle",
-                    "tileSet": "treePineLeaves1"
+                    "tileSet": "grassGreen"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -7964,54 +5212,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 64
-                    },
-                    "tilePosition": {
-                        "x": 26,
-                        "y": 16
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Right",
-                    "tileSet": "treePineLeaves1"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 64
-                    },
-                    "tilePosition": {
-                        "x": 27,
-                        "y": 15
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "UpLeft",
-                    "tileSet": "treePineLeaves2"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "57": [
@@ -8035,54 +5235,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 64
-                    },
-                    "tilePosition": {
-                        "x": 27,
-                        "y": 18
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownLeft",
-                    "tileSet": "treePineLeaves2"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 64
-                    },
-                    "tilePosition": {
-                        "x": 28,
-                        "y": 15
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Up",
-                    "tileSet": "treePineLeaves2"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -8112,78 +5264,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 64
-                    },
-                    "tilePosition": {
-                        "x": 24,
-                        "y": 18
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 64
-                    },
-                    "tilePosition": {
-                        "x": 28,
-                        "y": 18
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Down",
-                    "tileSet": "treePineLeaves2"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 64
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 15
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "UpRight",
-                    "tileSet": "treePineLeaves2"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "59": [
@@ -8210,27 +5290,55 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
+            }
+        ],
+        "60": [
             {
                 "tile": {
                     "position": {
-                        "x": 1888,
+                        "x": 1920,
                         "y": 64
                     },
                     "tilePosition": {
-                        "x": 29,
-                        "y": 18
+                        "x": 22,
+                        "y": 3
                     },
                     "size": {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 6,
+                    "tileType": 1,
+                    "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownRight",
-                    "tileSet": "treePineLeaves2"
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
+                },
+                "drawingCanvas": "game-canvas",
+                "targetCanvas": "terrain"
+            }
+        ],
+        "61": [
+            {
+                "tile": {
+                    "position": {
+                        "x": 1952,
+                        "y": 64
+                    },
+                    "tilePosition": {
+                        "x": 22,
+                        "y": 3
+                    },
+                    "size": {
+                        "x": 32,
+                        "y": 32
+                    },
+                    "tileType": 1,
+                    "tileTerrain": 0,
+                    "atlas": "terrain",
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -8262,30 +5370,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 0,
-                        "y": 96
-                    },
-                    "tilePosition": {
-                        "x": 24,
-                        "y": 16
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Left",
-                    "tileSet": "treePineLeaves1"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "1": [
@@ -8296,19 +5380,19 @@ export let worldTiles = {
                         "y": 96
                     },
                     "tilePosition": {
-                        "x": 25,
-                        "y": 16
+                        "x": 22,
+                        "y": 3
                     },
                     "size": {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 6,
+                    "tileType": 1,
+                    "tileTerrain": 0,
                     "atlas": "terrain",
                     "transparent": false,
                     "tileULDR": "Middle",
-                    "tileSet": "treePineLeaves1"
+                    "tileSet": "grassGreen"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -8338,30 +5422,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 64,
-                        "y": 96
-                    },
-                    "tilePosition": {
-                        "x": 26,
-                        "y": 16
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Right",
-                    "tileSet": "treePineLeaves1"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "3": [
@@ -8385,30 +5445,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 96,
-                        "y": 96
-                    },
-                    "tilePosition": {
-                        "x": 27,
-                        "y": 18
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownLeft",
-                    "tileSet": "treePineLeaves2"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -8438,54 +5474,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 128,
-                        "y": 96
-                    },
-                    "tilePosition": {
-                        "x": 24,
-                        "y": 18
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 128,
-                        "y": 96
-                    },
-                    "tilePosition": {
-                        "x": 28,
-                        "y": 18
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Down",
-                    "tileSet": "treePineLeaves2"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "5": [
@@ -8509,30 +5497,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 160,
-                        "y": 96
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 18
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownRight",
-                    "tileSet": "treePineLeaves2"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -8614,30 +5578,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 256,
-                        "y": 96
-                    },
-                    "tilePosition": {
-                        "x": 28,
-                        "y": 19
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Left",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "9": [
@@ -8661,30 +5601,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 288,
-                        "y": 96
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 19
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Middle",
-                    "tileSet": "treePineBase"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -9882,174 +6798,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 96
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 96
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 96
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 96
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 96
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 96
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 96
-                    },
-                    "tilePosition": {
-                        "x": 24,
-                        "y": 17
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownLeft",
-                    "tileSet": "treePineLeaves1"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "55": [
@@ -10076,102 +6824,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1760,
-                        "y": 96
-                    },
-                    "tilePosition": {
-                        "x": 24,
-                        "y": 18
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1760,
-                        "y": 96
-                    },
-                    "tilePosition": {
-                        "x": 24,
-                        "y": 18
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1760,
-                        "y": 96
-                    },
-                    "tilePosition": {
-                        "x": 24,
-                        "y": 18
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1760,
-                        "y": 96
-                    },
-                    "tilePosition": {
-                        "x": 25,
-                        "y": 17
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Down",
-                    "tileSet": "treePineLeaves1"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "56": [
@@ -10182,8 +6834,8 @@ export let worldTiles = {
                         "y": 96
                     },
                     "tilePosition": {
-                        "x": 21,
-                        "y": 5
+                        "x": 22,
+                        "y": 3
                     },
                     "size": {
                         "x": 32,
@@ -10193,80 +6845,8 @@ export let worldTiles = {
                     "tileTerrain": 0,
                     "atlas": "terrain",
                     "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 96
-                    },
-                    "tilePosition": {
-                        "x": 26,
-                        "y": 17
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownRight",
-                    "tileSet": "treePineLeaves1"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 96
-                    },
-                    "tilePosition": {
-                        "x": 27,
-                        "y": 16
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Left",
-                    "tileSet": "treePineLeaves2"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 96
-                    },
-                    "tilePosition": {
-                        "x": 27,
-                        "y": 16
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Left",
-                    "tileSet": "treePineLeaves2"
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -10296,78 +6876,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 96
-                    },
-                    "tilePosition": {
-                        "x": 28,
-                        "y": 19
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Left",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 96
-                    },
-                    "tilePosition": {
-                        "x": 28,
-                        "y": 16
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Middle",
-                    "tileSet": "treePineLeaves2"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 96
-                    },
-                    "tilePosition": {
-                        "x": 28,
-                        "y": 16
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Middle",
-                    "tileSet": "treePineLeaves2"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "58": [
@@ -10391,78 +6899,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 96
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 19
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Middle",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 96
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 16
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Right",
-                    "tileSet": "treePineLeaves2"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 96
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 16
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Right",
-                    "tileSet": "treePineLeaves2"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -10492,27 +6928,55 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
+            }
+        ],
+        "60": [
             {
                 "tile": {
                     "position": {
-                        "x": 1888,
+                        "x": 1920,
                         "y": 96
                     },
                     "tilePosition": {
-                        "x": 30,
-                        "y": 19
+                        "x": 22,
+                        "y": 3
                     },
                     "size": {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 6,
+                    "tileType": 1,
+                    "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Right",
-                    "tileSet": "treePineBase"
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
+                },
+                "drawingCanvas": "game-canvas",
+                "targetCanvas": "terrain"
+            }
+        ],
+        "61": [
+            {
+                "tile": {
+                    "position": {
+                        "x": 1952,
+                        "y": 96
+                    },
+                    "tilePosition": {
+                        "x": 22,
+                        "y": 3
+                    },
+                    "size": {
+                        "x": 32,
+                        "y": 32
+                    },
+                    "tileType": 1,
+                    "tileTerrain": 0,
+                    "atlas": "terrain",
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -10544,30 +7008,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 0,
-                        "y": 128
-                    },
-                    "tilePosition": {
-                        "x": 24,
-                        "y": 17
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownLeft",
-                    "tileSet": "treePineLeaves1"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "1": [
@@ -10594,54 +7034,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 32,
-                        "y": 128
-                    },
-                    "tilePosition": {
-                        "x": 24,
-                        "y": 18
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 32,
-                        "y": 128
-                    },
-                    "tilePosition": {
-                        "x": 25,
-                        "y": 17
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Down",
-                    "tileSet": "treePineLeaves1"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "2": [
@@ -10665,30 +7057,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 64,
-                        "y": 128
-                    },
-                    "tilePosition": {
-                        "x": 26,
-                        "y": 17
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownRight",
-                    "tileSet": "treePineLeaves1"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -10765,30 +7133,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 128,
-                        "y": 128
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 19
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Middle",
-                    "tileSet": "treePineBase"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -12188,510 +8532,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 128
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 128
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 128
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 128
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 128
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 128
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 128
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 128
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 128
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 128
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 128
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 128
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 128
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 128
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 128
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 128
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 128
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 128
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 128
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 128
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 128
-                    },
-                    "tilePosition": {
-                        "x": 28,
-                        "y": 19
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Left",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "55": [
@@ -12715,30 +8555,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1760,
-                        "y": 128
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 19
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Middle",
-                    "tileSet": "treePineBase"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -12768,54 +8584,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 128
-                    },
-                    "tilePosition": {
-                        "x": 30,
-                        "y": 19
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Right",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 128
-                    },
-                    "tilePosition": {
-                        "x": 27,
-                        "y": 17
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Left",
-                    "tileSet": "treePineLeaves2"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "57": [
@@ -12826,19 +8594,19 @@ export let worldTiles = {
                         "y": 128
                     },
                     "tilePosition": {
-                        "x": 28,
-                        "y": 17
+                        "x": 22,
+                        "y": 3
                     },
                     "size": {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 6,
+                    "tileType": 1,
+                    "tileTerrain": 0,
                     "atlas": "terrain",
                     "transparent": false,
                     "tileULDR": "Middle",
-                    "tileSet": "treePineLeaves2"
+                    "tileSet": "grassGreen"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -12868,54 +8636,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 128
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 20
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Down",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 128
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 17
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Right",
-                    "tileSet": "treePineLeaves2"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "59": [
@@ -12942,27 +8662,55 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
+            }
+        ],
+        "60": [
             {
                 "tile": {
                     "position": {
-                        "x": 1888,
+                        "x": 1920,
                         "y": 128
                     },
                     "tilePosition": {
-                        "x": 30,
-                        "y": 20
+                        "x": 22,
+                        "y": 3
                     },
                     "size": {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 6,
+                    "tileType": 1,
+                    "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownRight",
-                    "tileSet": "treePineBase"
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
+                },
+                "drawingCanvas": "game-canvas",
+                "targetCanvas": "terrain"
+            }
+        ],
+        "61": [
+            {
+                "tile": {
+                    "position": {
+                        "x": 1952,
+                        "y": 128
+                    },
+                    "tilePosition": {
+                        "x": 22,
+                        "y": 3
+                    },
+                    "size": {
+                        "x": 32,
+                        "y": 32
+                    },
+                    "tileType": 1,
+                    "tileTerrain": 0,
+                    "atlas": "terrain",
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -13041,30 +8789,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 32,
-                        "y": 160
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 19
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Middle",
-                    "tileSet": "treePineBase"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -14542,414 +10266,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 160
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 160
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 160
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 160
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 160
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 160
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 160
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 160
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 160
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 160
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 160
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 160
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 160
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 160
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 160
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 160
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 160
-                    },
-                    "tilePosition": {
-                        "x": 28,
-                        "y": 20
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownLeft",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "55": [
@@ -14973,54 +10289,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1760,
-                        "y": 160
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 20
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Down",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1760,
-                        "y": 160
-                    },
-                    "tilePosition": {
-                        "x": 27,
-                        "y": 15
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "UpLeft",
-                    "tileSet": "treePineLeaves2"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -15050,78 +10318,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 160
-                    },
-                    "tilePosition": {
-                        "x": 30,
-                        "y": 20
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownRight",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 160
-                    },
-                    "tilePosition": {
-                        "x": 27,
-                        "y": 18
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownLeft",
-                    "tileSet": "treePineLeaves2"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 160
-                    },
-                    "tilePosition": {
-                        "x": 28,
-                        "y": 15
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Up",
-                    "tileSet": "treePineLeaves2"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "57": [
@@ -15148,78 +10344,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 160
-                    },
-                    "tilePosition": {
-                        "x": 24,
-                        "y": 18
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 160
-                    },
-                    "tilePosition": {
-                        "x": 28,
-                        "y": 18
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Down",
-                    "tileSet": "treePineLeaves2"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 160
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 15
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "UpRight",
-                    "tileSet": "treePineLeaves2"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "58": [
@@ -15230,8 +10354,8 @@ export let worldTiles = {
                         "y": 160
                     },
                     "tilePosition": {
-                        "x": 21,
-                        "y": 5
+                        "x": 22,
+                        "y": 3
                     },
                     "size": {
                         "x": 32,
@@ -15241,32 +10365,8 @@ export let worldTiles = {
                     "tileTerrain": 0,
                     "atlas": "terrain",
                     "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 160
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 18
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownRight",
-                    "tileSet": "treePineLeaves2"
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -15277,6 +10377,58 @@ export let worldTiles = {
                 "tile": {
                     "position": {
                         "x": 1888,
+                        "y": 160
+                    },
+                    "tilePosition": {
+                        "x": 22,
+                        "y": 3
+                    },
+                    "size": {
+                        "x": 32,
+                        "y": 32
+                    },
+                    "tileType": 1,
+                    "tileTerrain": 0,
+                    "atlas": "terrain",
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
+                },
+                "drawingCanvas": "game-canvas",
+                "targetCanvas": "terrain"
+            }
+        ],
+        "60": [
+            {
+                "tile": {
+                    "position": {
+                        "x": 1920,
+                        "y": 160
+                    },
+                    "tilePosition": {
+                        "x": 22,
+                        "y": 3
+                    },
+                    "size": {
+                        "x": 32,
+                        "y": 32
+                    },
+                    "tileType": 1,
+                    "tileTerrain": 0,
+                    "atlas": "terrain",
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
+                },
+                "drawingCanvas": "game-canvas",
+                "targetCanvas": "terrain"
+            }
+        ],
+        "61": [
+            {
+                "tile": {
+                    "position": {
+                        "x": 1952,
                         "y": 160
                     },
                     "tilePosition": {
@@ -16800,222 +11952,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 192
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 192
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 192
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 192
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 192
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 192
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 192
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 192
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 192
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "55": [
@@ -17039,30 +11975,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1760,
-                        "y": 192
-                    },
-                    "tilePosition": {
-                        "x": 27,
-                        "y": 16
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Left",
-                    "tileSet": "treePineLeaves2"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -17092,54 +12004,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 192
-                    },
-                    "tilePosition": {
-                        "x": 28,
-                        "y": 19
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Left",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 192
-                    },
-                    "tilePosition": {
-                        "x": 28,
-                        "y": 16
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Middle",
-                    "tileSet": "treePineLeaves2"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "57": [
@@ -17163,54 +12027,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 192
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 19
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Middle",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 192
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 16
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Right",
-                    "tileSet": "treePineLeaves2"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -17287,6 +12103,58 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
+                },
+                "drawingCanvas": "game-canvas",
+                "targetCanvas": "terrain"
+            }
+        ],
+        "60": [
+            {
+                "tile": {
+                    "position": {
+                        "x": 1920,
+                        "y": 192
+                    },
+                    "tilePosition": {
+                        "x": 22,
+                        "y": 3
+                    },
+                    "size": {
+                        "x": 32,
+                        "y": 32
+                    },
+                    "tileType": 1,
+                    "tileTerrain": 0,
+                    "atlas": "terrain",
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
+                },
+                "drawingCanvas": "game-canvas",
+                "targetCanvas": "terrain"
+            }
+        ],
+        "61": [
+            {
+                "tile": {
+                    "position": {
+                        "x": 1952,
+                        "y": 192
+                    },
+                    "tilePosition": {
+                        "x": 22,
+                        "y": 3
+                    },
+                    "size": {
+                        "x": 32,
+                        "y": 32
+                    },
+                    "tileType": 1,
+                    "tileTerrain": 0,
+                    "atlas": "terrain",
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -18722,318 +13590,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 224
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 224
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 224
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 224
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 224
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 224
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 224
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 224
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 224
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 224
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 224
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 224
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 224
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "55": [
@@ -19060,30 +13616,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1760,
-                        "y": 224
-                    },
-                    "tilePosition": {
-                        "x": 27,
-                        "y": 17
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Left",
-                    "tileSet": "treePineLeaves2"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "56": [
@@ -19094,19 +13626,19 @@ export let worldTiles = {
                         "y": 224
                     },
                     "tilePosition": {
-                        "x": 28,
-                        "y": 17
+                        "x": 22,
+                        "y": 3
                     },
                     "size": {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 6,
+                    "tileType": 1,
+                    "tileTerrain": 0,
                     "atlas": "terrain",
                     "transparent": false,
                     "tileULDR": "Middle",
-                    "tileSet": "treePineLeaves2"
+                    "tileSet": "grassGreen"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -19136,78 +13668,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 224
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 20
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Down",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 224
-                    },
-                    "tilePosition": {
-                        "x": 24,
-                        "y": 15
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "UpLeft",
-                    "tileSet": "treePineLeaves1"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 224
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 17
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Right",
-                    "tileSet": "treePineLeaves2"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "58": [
@@ -19231,54 +13691,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 224
-                    },
-                    "tilePosition": {
-                        "x": 30,
-                        "y": 20
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownRight",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 224
-                    },
-                    "tilePosition": {
-                        "x": 25,
-                        "y": 15
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Up",
-                    "tileSet": "treePineLeaves1"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -19308,27 +13720,55 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
+            }
+        ],
+        "60": [
             {
                 "tile": {
                     "position": {
-                        "x": 1888,
+                        "x": 1920,
                         "y": 224
                     },
                     "tilePosition": {
-                        "x": 26,
-                        "y": 15
+                        "x": 22,
+                        "y": 3
                     },
                     "size": {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 6,
+                    "tileType": 1,
+                    "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "UpRight",
-                    "tileSet": "treePineLeaves1"
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
+                },
+                "drawingCanvas": "game-canvas",
+                "targetCanvas": "terrain"
+            }
+        ],
+        "61": [
+            {
+                "tile": {
+                    "position": {
+                        "x": 1952,
+                        "y": 224
+                    },
+                    "tilePosition": {
+                        "x": 22,
+                        "y": 3
+                    },
+                    "size": {
+                        "x": 32,
+                        "y": 32
+                    },
+                    "tileType": 1,
+                    "tileTerrain": 0,
+                    "atlas": "terrain",
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -20764,198 +15204,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 256
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 256
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 256
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 256
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 256
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 256
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 256
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 256
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "55": [
@@ -20979,54 +15227,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1760,
-                        "y": 256
-                    },
-                    "tilePosition": {
-                        "x": 28,
-                        "y": 19
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Left",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1760,
-                        "y": 256
-                    },
-                    "tilePosition": {
-                        "x": 27,
-                        "y": 18
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownLeft",
-                    "tileSet": "treePineLeaves2"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -21056,54 +15256,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 256
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 19
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Middle",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 256
-                    },
-                    "tilePosition": {
-                        "x": 28,
-                        "y": 18
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Down",
-                    "tileSet": "treePineLeaves2"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "57": [
@@ -21130,78 +15282,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 256
-                    },
-                    "tilePosition": {
-                        "x": 30,
-                        "y": 19
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Right",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 256
-                    },
-                    "tilePosition": {
-                        "x": 24,
-                        "y": 16
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Left",
-                    "tileSet": "treePineLeaves1"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 256
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 18
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownRight",
-                    "tileSet": "treePineLeaves2"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "58": [
@@ -21212,19 +15292,19 @@ export let worldTiles = {
                         "y": 256
                     },
                     "tilePosition": {
-                        "x": 25,
-                        "y": 16
+                        "x": 22,
+                        "y": 3
                     },
                     "size": {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 6,
+                    "tileType": 1,
+                    "tileTerrain": 0,
                     "atlas": "terrain",
                     "transparent": false,
                     "tileULDR": "Middle",
-                    "tileSet": "treePineLeaves1"
+                    "tileSet": "grassGreen"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -21254,27 +15334,55 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
+            }
+        ],
+        "60": [
             {
                 "tile": {
                     "position": {
-                        "x": 1888,
+                        "x": 1920,
                         "y": 256
                     },
                     "tilePosition": {
-                        "x": 26,
-                        "y": 16
+                        "x": 22,
+                        "y": 3
                     },
                     "size": {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 6,
+                    "tileType": 1,
+                    "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Right",
-                    "tileSet": "treePineLeaves1"
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
+                },
+                "drawingCanvas": "game-canvas",
+                "targetCanvas": "terrain"
+            }
+        ],
+        "61": [
+            {
+                "tile": {
+                    "position": {
+                        "x": 1952,
+                        "y": 256
+                    },
+                    "tilePosition": {
+                        "x": 22,
+                        "y": 3
+                    },
+                    "size": {
+                        "x": 32,
+                        "y": 32
+                    },
+                    "tileType": 1,
+                    "tileTerrain": 0,
+                    "atlas": "terrain",
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -22710,150 +16818,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 288
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 288
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 288
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 288
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 288
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 288
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "55": [
@@ -22877,30 +16841,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1760,
-                        "y": 288
-                    },
-                    "tilePosition": {
-                        "x": 28,
-                        "y": 20
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownLeft",
-                    "tileSet": "treePineBase"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -22930,30 +16870,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 288
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 20
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Down",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "57": [
@@ -22964,8 +16880,8 @@ export let worldTiles = {
                         "y": 288
                     },
                     "tilePosition": {
-                        "x": 21,
-                        "y": 5
+                        "x": 22,
+                        "y": 3
                     },
                     "size": {
                         "x": 32,
@@ -22975,32 +16891,8 @@ export let worldTiles = {
                     "tileTerrain": 0,
                     "atlas": "terrain",
                     "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 288
-                    },
-                    "tilePosition": {
-                        "x": 24,
-                        "y": 17
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownLeft",
-                    "tileSet": "treePineLeaves1"
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -23030,54 +16922,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 288
-                    },
-                    "tilePosition": {
-                        "x": 24,
-                        "y": 18
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 288
-                    },
-                    "tilePosition": {
-                        "x": 25,
-                        "y": 17
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Down",
-                    "tileSet": "treePineLeaves1"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "59": [
@@ -23104,27 +16948,55 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
+            }
+        ],
+        "60": [
             {
                 "tile": {
                     "position": {
-                        "x": 1888,
+                        "x": 1920,
                         "y": 288
                     },
                     "tilePosition": {
-                        "x": 26,
-                        "y": 17
+                        "x": 22,
+                        "y": 3
                     },
                     "size": {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 6,
+                    "tileType": 1,
+                    "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownRight",
-                    "tileSet": "treePineLeaves1"
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
+                },
+                "drawingCanvas": "game-canvas",
+                "targetCanvas": "terrain"
+            }
+        ],
+        "61": [
+            {
+                "tile": {
+                    "position": {
+                        "x": 1952,
+                        "y": 288
+                    },
+                    "tilePosition": {
+                        "x": 22,
+                        "y": 3
+                    },
+                    "size": {
+                        "x": 32,
+                        "y": 32
+                    },
+                    "tileType": 1,
+                    "tileTerrain": 0,
+                    "atlas": "terrain",
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -24560,414 +18432,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 320
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 320
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 320
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 320
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 320
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 320
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 320
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 320
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 320
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 320
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 320
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 320
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 320
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 320
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 320
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 320
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 320
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "55": [
@@ -25046,30 +18510,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 320
-                    },
-                    "tilePosition": {
-                        "x": 28,
-                        "y": 19
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Left",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "58": [
@@ -25093,30 +18533,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 320
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 19
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Middle",
-                    "tileSet": "treePineBase"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -25146,27 +18562,55 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
+            }
+        ],
+        "60": [
             {
                 "tile": {
                     "position": {
-                        "x": 1888,
+                        "x": 1920,
                         "y": 320
                     },
                     "tilePosition": {
-                        "x": 30,
-                        "y": 19
+                        "x": 22,
+                        "y": 3
                     },
                     "size": {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 6,
+                    "tileType": 1,
+                    "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Right",
-                    "tileSet": "treePineBase"
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
+                },
+                "drawingCanvas": "game-canvas",
+                "targetCanvas": "terrain"
+            }
+        ],
+        "61": [
+            {
+                "tile": {
+                    "position": {
+                        "x": 1952,
+                        "y": 320
+                    },
+                    "tilePosition": {
+                        "x": 22,
+                        "y": 3
+                    },
+                    "size": {
+                        "x": 32,
+                        "y": 32
+                    },
+                    "tileType": 1,
+                    "tileTerrain": 0,
+                    "atlas": "terrain",
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -26602,54 +20046,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 0,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 0,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "55": [
@@ -26676,198 +20072,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1760,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1760,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1760,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1760,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1760,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1760,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1760,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1760,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "56": [
@@ -26894,246 +20098,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "57": [
@@ -27157,246 +20121,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 28,
-                        "y": 20
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownLeft",
-                    "tileSet": "treePineBase"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -27426,486 +20150,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 20
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Down",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "59": [
@@ -27932,315 +20176,55 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
+            }
+        ],
+        "60": [
             {
                 "tile": {
                     "position": {
-                        "x": 1888,
+                        "x": 1920,
                         "y": 352
                     },
                     "tilePosition": {
-                        "x": 1,
-                        "y": 0
+                        "x": 22,
+                        "y": 3
                     },
                     "size": {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 3,
-                    "tileTerrain": 1,
+                    "tileType": 1,
+                    "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
                 },
                 "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
+                "targetCanvas": "terrain"
+            }
+        ],
+        "61": [
             {
                 "tile": {
                     "position": {
-                        "x": 1888,
+                        "x": 1952,
                         "y": 352
                     },
                     "tilePosition": {
-                        "x": 1,
-                        "y": 0
+                        "x": 22,
+                        "y": 3
                     },
                     "size": {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 3,
-                    "tileTerrain": 1,
+                    "tileType": 1,
+                    "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1888,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1888,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1888,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1888,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1888,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1888,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1888,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1888,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1888,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1888,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1888,
-                        "y": 352
-                    },
-                    "tilePosition": {
-                        "x": 30,
-                        "y": 20
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownRight",
-                    "tileSet": "treePineBase"
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -29787,6 +21771,58 @@ export let worldTiles = {
                 "tile": {
                     "position": {
                         "x": 1888,
+                        "y": 384
+                    },
+                    "tilePosition": {
+                        "x": 22,
+                        "y": 3
+                    },
+                    "size": {
+                        "x": 32,
+                        "y": 32
+                    },
+                    "tileType": 1,
+                    "tileTerrain": 0,
+                    "atlas": "terrain",
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
+                },
+                "drawingCanvas": "game-canvas",
+                "targetCanvas": "terrain"
+            }
+        ],
+        "60": [
+            {
+                "tile": {
+                    "position": {
+                        "x": 1920,
+                        "y": 384
+                    },
+                    "tilePosition": {
+                        "x": 22,
+                        "y": 3
+                    },
+                    "size": {
+                        "x": 32,
+                        "y": 32
+                    },
+                    "tileType": 1,
+                    "tileTerrain": 0,
+                    "atlas": "terrain",
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
+                },
+                "drawingCanvas": "game-canvas",
+                "targetCanvas": "terrain"
+            }
+        ],
+        "61": [
+            {
+                "tile": {
+                    "position": {
+                        "x": 1952,
                         "y": 384
                     },
                     "tilePosition": {
@@ -31369,6 +23405,58 @@ export let worldTiles = {
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
             }
+        ],
+        "60": [
+            {
+                "tile": {
+                    "position": {
+                        "x": 1920,
+                        "y": 416
+                    },
+                    "tilePosition": {
+                        "x": 22,
+                        "y": 3
+                    },
+                    "size": {
+                        "x": 32,
+                        "y": 32
+                    },
+                    "tileType": 1,
+                    "tileTerrain": 0,
+                    "atlas": "terrain",
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
+                },
+                "drawingCanvas": "game-canvas",
+                "targetCanvas": "terrain"
+            }
+        ],
+        "61": [
+            {
+                "tile": {
+                    "position": {
+                        "x": 1952,
+                        "y": 416
+                    },
+                    "tilePosition": {
+                        "x": 22,
+                        "y": 3
+                    },
+                    "size": {
+                        "x": 32,
+                        "y": 32
+                    },
+                    "tileType": 1,
+                    "tileTerrain": 0,
+                    "atlas": "terrain",
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
+                },
+                "drawingCanvas": "game-canvas",
+                "targetCanvas": "terrain"
+            }
         ]
     },
     "14": {
@@ -32800,30 +24888,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 448
-                    },
-                    "tilePosition": {
-                        "x": 24,
-                        "y": 15
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "UpLeft",
-                    "tileSet": "treePineLeaves1"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "55": [
@@ -32850,30 +24914,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1760,
-                        "y": 448
-                    },
-                    "tilePosition": {
-                        "x": 25,
-                        "y": 15
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Up",
-                    "tileSet": "treePineLeaves1"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "56": [
@@ -32897,30 +24937,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 448
-                    },
-                    "tilePosition": {
-                        "x": 26,
-                        "y": 15
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "UpRight",
-                    "tileSet": "treePineLeaves1"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -32983,6 +24999,58 @@ export let worldTiles = {
                 "tile": {
                     "position": {
                         "x": 1888,
+                        "y": 448
+                    },
+                    "tilePosition": {
+                        "x": 22,
+                        "y": 3
+                    },
+                    "size": {
+                        "x": 32,
+                        "y": 32
+                    },
+                    "tileType": 1,
+                    "tileTerrain": 0,
+                    "atlas": "terrain",
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
+                },
+                "drawingCanvas": "game-canvas",
+                "targetCanvas": "terrain"
+            }
+        ],
+        "60": [
+            {
+                "tile": {
+                    "position": {
+                        "x": 1920,
+                        "y": 448
+                    },
+                    "tilePosition": {
+                        "x": 22,
+                        "y": 3
+                    },
+                    "size": {
+                        "x": 32,
+                        "y": 32
+                    },
+                    "tileType": 1,
+                    "tileTerrain": 0,
+                    "atlas": "terrain",
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
+                },
+                "drawingCanvas": "game-canvas",
+                "targetCanvas": "terrain"
+            }
+        ],
+        "61": [
+            {
+                "tile": {
+                    "position": {
+                        "x": 1952,
                         "y": 448
                     },
                     "tilePosition": {
@@ -34626,78 +26694,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 0,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 2,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 24,
-                        "y": 16
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Left",
-                    "tileSet": "treePineLeaves1"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "55": [
@@ -34708,19 +26704,19 @@ export let worldTiles = {
                         "y": 480
                     },
                     "tilePosition": {
-                        "x": 25,
-                        "y": 16
+                        "x": 22,
+                        "y": 3
                     },
                     "size": {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 6,
+                    "tileType": 1,
+                    "tileTerrain": 0,
                     "atlas": "terrain",
                     "transparent": false,
                     "tileULDR": "Middle",
-                    "tileSet": "treePineLeaves1"
+                    "tileSet": "grassGreen"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -34750,270 +26746,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 26,
-                        "y": 16
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Right",
-                    "tileSet": "treePineLeaves1"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "57": [
@@ -35040,270 +26772,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "58": [
@@ -35330,438 +26798,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "59": [
@@ -35788,198 +26824,58 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
+            }
+        ],
+        "60": [
             {
                 "tile": {
                     "position": {
-                        "x": 1888,
+                        "x": 1920,
                         "y": 480
                     },
                     "tilePosition": {
-                        "x": 1,
-                        "y": 0
+                        "x": 22,
+                        "y": 3
                     },
                     "size": {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 3,
-                    "tileTerrain": 1,
+                    "tileType": 1,
+                    "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
                 },
                 "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
+                "targetCanvas": "terrain"
+            }
+        ],
+        "61": [
             {
                 "tile": {
                     "position": {
-                        "x": 1888,
+                        "x": 1952,
                         "y": 480
                     },
                     "tilePosition": {
-                        "x": 1,
-                        "y": 0
+                        "x": 22,
+                        "y": 3
                     },
                     "size": {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 3,
-                    "tileTerrain": 1,
+                    "tileType": 1,
+                    "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
                 },
                 "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1888,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1888,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1888,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1888,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1888,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1888,
-                        "y": 480
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
+                "targetCanvas": "terrain"
             }
         ]
     },
@@ -37724,102 +28620,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 512
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 512
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 512
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 512
-                    },
-                    "tilePosition": {
-                        "x": 24,
-                        "y": 17
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownLeft",
-                    "tileSet": "treePineLeaves1"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "55": [
@@ -37846,54 +28646,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1760,
-                        "y": 512
-                    },
-                    "tilePosition": {
-                        "x": 24,
-                        "y": 18
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1760,
-                        "y": 512
-                    },
-                    "tilePosition": {
-                        "x": 25,
-                        "y": 17
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Down",
-                    "tileSet": "treePineLeaves1"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "56": [
@@ -37917,30 +28669,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 512
-                    },
-                    "tilePosition": {
-                        "x": 26,
-                        "y": 17
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownRight",
-                    "tileSet": "treePineLeaves1"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -38019,6 +28747,58 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
+                },
+                "drawingCanvas": "game-canvas",
+                "targetCanvas": "terrain"
+            }
+        ],
+        "60": [
+            {
+                "tile": {
+                    "position": {
+                        "x": 1920,
+                        "y": 512
+                    },
+                    "tilePosition": {
+                        "x": 22,
+                        "y": 3
+                    },
+                    "size": {
+                        "x": 32,
+                        "y": 32
+                    },
+                    "tileType": 1,
+                    "tileTerrain": 0,
+                    "atlas": "terrain",
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
+                },
+                "drawingCanvas": "game-canvas",
+                "targetCanvas": "terrain"
+            }
+        ],
+        "61": [
+            {
+                "tile": {
+                    "position": {
+                        "x": 1952,
+                        "y": 512
+                    },
+                    "tilePosition": {
+                        "x": 22,
+                        "y": 3
+                    },
+                    "size": {
+                        "x": 32,
+                        "y": 32
+                    },
+                    "tileType": 1,
+                    "tileTerrain": 0,
+                    "atlas": "terrain",
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -39766,366 +30546,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 544
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 544
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 544
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 544
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 544
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 544
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 544
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 544
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 544
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 544
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 544
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 544
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 544
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 544
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 544
-                    },
-                    "tilePosition": {
-                        "x": 28,
-                        "y": 19
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Left",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "55": [
@@ -40149,30 +30569,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1760,
-                        "y": 544
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 19
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Middle",
-                    "tileSet": "treePineBase"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -40202,30 +30598,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 544
-                    },
-                    "tilePosition": {
-                        "x": 30,
-                        "y": 19
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Right",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "57": [
@@ -40236,8 +30608,8 @@ export let worldTiles = {
                         "y": 544
                     },
                     "tilePosition": {
-                        "x": 21,
-                        "y": 5
+                        "x": 22,
+                        "y": 3
                     },
                     "size": {
                         "x": 32,
@@ -40247,32 +30619,8 @@ export let worldTiles = {
                     "tileTerrain": 0,
                     "atlas": "terrain",
                     "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 544
-                    },
-                    "tilePosition": {
-                        "x": 27,
-                        "y": 15
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "UpLeft",
-                    "tileSet": "treePineLeaves2"
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -40302,30 +30650,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 544
-                    },
-                    "tilePosition": {
-                        "x": 28,
-                        "y": 15
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Up",
-                    "tileSet": "treePineLeaves2"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "59": [
@@ -40352,27 +30676,55 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
+            }
+        ],
+        "60": [
             {
                 "tile": {
                     "position": {
-                        "x": 1888,
+                        "x": 1920,
                         "y": 544
                     },
                     "tilePosition": {
-                        "x": 29,
-                        "y": 15
+                        "x": 22,
+                        "y": 3
                     },
                     "size": {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 6,
+                    "tileType": 1,
+                    "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "UpRight",
-                    "tileSet": "treePineLeaves2"
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
+                },
+                "drawingCanvas": "game-canvas",
+                "targetCanvas": "terrain"
+            }
+        ],
+        "61": [
+            {
+                "tile": {
+                    "position": {
+                        "x": 1952,
+                        "y": 544
+                    },
+                    "tilePosition": {
+                        "x": 22,
+                        "y": 3
+                    },
+                    "size": {
+                        "x": 32,
+                        "y": 32
+                    },
+                    "tileType": 1,
+                    "tileTerrain": 0,
+                    "atlas": "terrain",
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -43080,270 +33432,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 576
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 576
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 576
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 576
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 576
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 576
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 576
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 576
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 576
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 576
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 576
-                    },
-                    "tilePosition": {
-                        "x": 28,
-                        "y": 20
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownLeft",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "55": [
@@ -43367,30 +33455,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1760,
-                        "y": 576
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 20
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Down",
-                    "tileSet": "treePineBase"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -43420,30 +33484,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 576
-                    },
-                    "tilePosition": {
-                        "x": 30,
-                        "y": 20
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownRight",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "57": [
@@ -43467,30 +33507,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 576
-                    },
-                    "tilePosition": {
-                        "x": 27,
-                        "y": 16
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Left",
-                    "tileSet": "treePineLeaves2"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -43520,30 +33536,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 576
-                    },
-                    "tilePosition": {
-                        "x": 28,
-                        "y": 16
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Middle",
-                    "tileSet": "treePineLeaves2"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "59": [
@@ -43570,27 +33562,55 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
+            }
+        ],
+        "60": [
             {
                 "tile": {
                     "position": {
-                        "x": 1888,
+                        "x": 1920,
                         "y": 576
                     },
                     "tilePosition": {
-                        "x": 29,
-                        "y": 16
+                        "x": 22,
+                        "y": 3
                     },
                     "size": {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 6,
+                    "tileType": 1,
+                    "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Right",
-                    "tileSet": "treePineLeaves2"
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
+                },
+                "drawingCanvas": "game-canvas",
+                "targetCanvas": "terrain"
+            }
+        ],
+        "61": [
+            {
+                "tile": {
+                    "position": {
+                        "x": 1952,
+                        "y": 576
+                    },
+                    "tilePosition": {
+                        "x": 22,
+                        "y": 3
+                    },
+                    "size": {
+                        "x": 32,
+                        "y": 32
+                    },
+                    "tileType": 1,
+                    "tileTerrain": 0,
+                    "atlas": "terrain",
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -45338,270 +35358,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 608
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 608
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 608
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 608
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 608
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 608
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 608
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 608
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 608
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 608
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 608
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "55": [
@@ -45625,30 +35381,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1760,
-                        "y": 608
-                    },
-                    "tilePosition": {
-                        "x": 24,
-                        "y": 15
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "UpLeft",
-                    "tileSet": "treePineLeaves1"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -45678,30 +35410,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 608
-                    },
-                    "tilePosition": {
-                        "x": 25,
-                        "y": 15
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Up",
-                    "tileSet": "treePineLeaves1"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "57": [
@@ -45728,54 +35436,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 608
-                    },
-                    "tilePosition": {
-                        "x": 26,
-                        "y": 15
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "UpRight",
-                    "tileSet": "treePineLeaves1"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 608
-                    },
-                    "tilePosition": {
-                        "x": 27,
-                        "y": 17
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Left",
-                    "tileSet": "treePineLeaves2"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "58": [
@@ -45786,19 +35446,19 @@ export let worldTiles = {
                         "y": 608
                     },
                     "tilePosition": {
-                        "x": 28,
-                        "y": 17
+                        "x": 22,
+                        "y": 3
                     },
                     "size": {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 6,
+                    "tileType": 1,
+                    "tileTerrain": 0,
                     "atlas": "terrain",
                     "transparent": false,
                     "tileULDR": "Middle",
-                    "tileSet": "treePineLeaves2"
+                    "tileSet": "grassGreen"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -45828,27 +35488,55 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
+            }
+        ],
+        "60": [
             {
                 "tile": {
                     "position": {
-                        "x": 1888,
+                        "x": 1920,
                         "y": 608
                     },
                     "tilePosition": {
-                        "x": 29,
-                        "y": 17
+                        "x": 22,
+                        "y": 3
                     },
                     "size": {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 6,
+                    "tileType": 1,
+                    "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Right",
-                    "tileSet": "treePineLeaves2"
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
+                },
+                "drawingCanvas": "game-canvas",
+                "targetCanvas": "terrain"
+            }
+        ],
+        "61": [
+            {
+                "tile": {
+                    "position": {
+                        "x": 1952,
+                        "y": 608
+                    },
+                    "tilePosition": {
+                        "x": 22,
+                        "y": 3
+                    },
+                    "size": {
+                        "x": 32,
+                        "y": 32
+                    },
+                    "tileType": 1,
+                    "tileTerrain": 0,
+                    "atlas": "terrain",
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -47644,294 +37332,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 640
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 640
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 640
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 640
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 640
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 640
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 640
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 640
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 640
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 640
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 640
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 640
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "55": [
@@ -47958,30 +37358,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1760,
-                        "y": 640
-                    },
-                    "tilePosition": {
-                        "x": 24,
-                        "y": 16
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Left",
-                    "tileSet": "treePineLeaves1"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "56": [
@@ -47992,19 +37368,19 @@ export let worldTiles = {
                         "y": 640
                     },
                     "tilePosition": {
-                        "x": 25,
-                        "y": 16
+                        "x": 22,
+                        "y": 3
                     },
                     "size": {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 6,
+                    "tileType": 1,
+                    "tileTerrain": 0,
                     "atlas": "terrain",
                     "transparent": false,
                     "tileULDR": "Middle",
-                    "tileSet": "treePineLeaves1"
+                    "tileSet": "grassGreen"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -48034,78 +37410,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 640
-                    },
-                    "tilePosition": {
-                        "x": 28,
-                        "y": 19
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Left",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 640
-                    },
-                    "tilePosition": {
-                        "x": 26,
-                        "y": 16
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Right",
-                    "tileSet": "treePineLeaves1"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 640
-                    },
-                    "tilePosition": {
-                        "x": 27,
-                        "y": 18
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownLeft",
-                    "tileSet": "treePineLeaves2"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "58": [
@@ -48129,54 +37433,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 640
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 19
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Middle",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 640
-                    },
-                    "tilePosition": {
-                        "x": 28,
-                        "y": 18
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Down",
-                    "tileSet": "treePineLeaves2"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -48206,51 +37462,55 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
+            }
+        ],
+        "60": [
             {
                 "tile": {
                     "position": {
-                        "x": 1888,
+                        "x": 1920,
                         "y": 640
                     },
                     "tilePosition": {
-                        "x": 30,
-                        "y": 19
+                        "x": 22,
+                        "y": 3
                     },
                     "size": {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 6,
+                    "tileType": 1,
+                    "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Right",
-                    "tileSet": "treePineBase"
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
+            }
+        ],
+        "61": [
             {
                 "tile": {
                     "position": {
-                        "x": 1888,
+                        "x": 1952,
                         "y": 640
                     },
                     "tilePosition": {
-                        "x": 29,
-                        "y": 18
+                        "x": 22,
+                        "y": 3
                     },
                     "size": {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 6,
+                    "tileType": 1,
+                    "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownRight",
-                    "tileSet": "treePineLeaves2"
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -49830,222 +39090,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 672
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 672
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 672
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 672
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 672
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 672
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 672
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 672
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 672
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "55": [
@@ -50069,30 +39113,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1760,
-                        "y": 672
-                    },
-                    "tilePosition": {
-                        "x": 24,
-                        "y": 17
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownLeft",
-                    "tileSet": "treePineLeaves1"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -50122,54 +39142,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 672
-                    },
-                    "tilePosition": {
-                        "x": 24,
-                        "y": 18
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 672
-                    },
-                    "tilePosition": {
-                        "x": 25,
-                        "y": 17
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Down",
-                    "tileSet": "treePineLeaves1"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "57": [
@@ -50196,54 +39168,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 672
-                    },
-                    "tilePosition": {
-                        "x": 28,
-                        "y": 20
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownLeft",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 672
-                    },
-                    "tilePosition": {
-                        "x": 26,
-                        "y": 17
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownRight",
-                    "tileSet": "treePineLeaves1"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "58": [
@@ -50254,8 +39178,8 @@ export let worldTiles = {
                         "y": 672
                     },
                     "tilePosition": {
-                        "x": 1,
-                        "y": 25
+                        "x": 22,
+                        "y": 3
                     },
                     "size": {
                         "x": 32,
@@ -50265,32 +39189,8 @@ export let worldTiles = {
                     "tileTerrain": 0,
                     "atlas": "terrain",
                     "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 672
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 20
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Down",
-                    "tileSet": "treePineBase"
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -50320,27 +39220,55 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
+            }
+        ],
+        "60": [
             {
                 "tile": {
                     "position": {
-                        "x": 1888,
+                        "x": 1920,
                         "y": 672
                     },
                     "tilePosition": {
-                        "x": 30,
-                        "y": 20
+                        "x": 22,
+                        "y": 3
                     },
                     "size": {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 6,
+                    "tileType": 1,
+                    "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownRight",
-                    "tileSet": "treePineBase"
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
+                },
+                "drawingCanvas": "game-canvas",
+                "targetCanvas": "terrain"
+            }
+        ],
+        "61": [
+            {
+                "tile": {
+                    "position": {
+                        "x": 1952,
+                        "y": 672
+                    },
+                    "tilePosition": {
+                        "x": 22,
+                        "y": 3
+                    },
+                    "size": {
+                        "x": 32,
+                        "y": 32
+                    },
+                    "tileType": 1,
+                    "tileTerrain": 0,
+                    "atlas": "terrain",
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -51992,198 +40920,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 704
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 704
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 704
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 704
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 704
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 704
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 704
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 704
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "55": [
@@ -52233,30 +40969,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 704
-                    },
-                    "tilePosition": {
-                        "x": 24,
-                        "y": 18
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -52335,6 +41047,58 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": 4369,
                     "tileSet": "default"
+                },
+                "drawingCanvas": "game-canvas",
+                "targetCanvas": "terrain"
+            }
+        ],
+        "60": [
+            {
+                "tile": {
+                    "position": {
+                        "x": 1920,
+                        "y": 704
+                    },
+                    "tilePosition": {
+                        "x": 22,
+                        "y": 3
+                    },
+                    "size": {
+                        "x": 32,
+                        "y": 32
+                    },
+                    "tileType": 1,
+                    "tileTerrain": 0,
+                    "atlas": "terrain",
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
+                },
+                "drawingCanvas": "game-canvas",
+                "targetCanvas": "terrain"
+            }
+        ],
+        "61": [
+            {
+                "tile": {
+                    "position": {
+                        "x": 1952,
+                        "y": 704
+                    },
+                    "tilePosition": {
+                        "x": 22,
+                        "y": 3
+                    },
+                    "size": {
+                        "x": 32,
+                        "y": 32
+                    },
+                    "tileType": 1,
+                    "tileTerrain": 0,
+                    "atlas": "terrain",
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -54082,174 +42846,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 736
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 736
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 736
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 736
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 736
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 736
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 736
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "55": [
@@ -54273,54 +42869,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1760,
-                        "y": 736
-                    },
-                    "tilePosition": {
-                        "x": 28,
-                        "y": 19
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Left",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1760,
-                        "y": 736
-                    },
-                    "tilePosition": {
-                        "x": 28,
-                        "y": 19
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Left",
-                    "tileSet": "treePineBase"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -54350,54 +42898,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 736
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 19
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Middle",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 736
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 19
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Middle",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "57": [
@@ -54421,54 +42921,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 736
-                    },
-                    "tilePosition": {
-                        "x": 30,
-                        "y": 19
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Right",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 736
-                    },
-                    "tilePosition": {
-                        "x": 30,
-                        "y": 19
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Right",
-                    "tileSet": "treePineBase"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -54548,27 +43000,55 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
+            }
+        ],
+        "60": [
             {
                 "tile": {
                     "position": {
-                        "x": 1888,
+                        "x": 1920,
                         "y": 736
                     },
                     "tilePosition": {
-                        "x": 28,
-                        "y": 15
+                        "x": 22,
+                        "y": 3
                     },
                     "size": {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 6,
+                    "tileType": 1,
+                    "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Up",
-                    "tileSet": "treePineLeaves2"
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
+                },
+                "drawingCanvas": "game-canvas",
+                "targetCanvas": "terrain"
+            }
+        ],
+        "61": [
+            {
+                "tile": {
+                    "position": {
+                        "x": 1952,
+                        "y": 736
+                    },
+                    "tilePosition": {
+                        "x": 22,
+                        "y": 3
+                    },
+                    "size": {
+                        "x": 32,
+                        "y": 32
+                    },
+                    "tileType": 1,
+                    "tileTerrain": 0,
+                    "atlas": "terrain",
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -56100,126 +44580,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 768
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 768
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 768
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 768
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 768
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "55": [
@@ -56320,54 +44680,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 768
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 20
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Down",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 768
-                    },
-                    "tilePosition": {
-                        "x": 29,
-                        "y": 20
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Down",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "57": [
@@ -56391,54 +44703,6 @@ export let worldTiles = {
                     "transparent": false,
                     "tileULDR": "Middle",
                     "tileSet": "grassGreen"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 768
-                    },
-                    "tilePosition": {
-                        "x": 30,
-                        "y": 20
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownRight",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 768
-                    },
-                    "tilePosition": {
-                        "x": 30,
-                        "y": 20
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownRight",
-                    "tileSet": "treePineBase"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -56468,30 +44732,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 768
-                    },
-                    "tilePosition": {
-                        "x": 27,
-                        "y": 16
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Left",
-                    "tileSet": "treePineLeaves2"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "59": [
@@ -56518,27 +44758,55 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
+            }
+        ],
+        "60": [
             {
                 "tile": {
                     "position": {
-                        "x": 1888,
+                        "x": 1920,
                         "y": 768
                     },
                     "tilePosition": {
-                        "x": 28,
-                        "y": 16
+                        "x": 22,
+                        "y": 3
                     },
                     "size": {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 6,
+                    "tileType": 1,
+                    "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": "Middle",
-                    "tileSet": "treePineLeaves2"
+                    "tileSet": "grassGreen"
+                },
+                "drawingCanvas": "game-canvas",
+                "targetCanvas": "terrain"
+            }
+        ],
+        "61": [
+            {
+                "tile": {
+                    "position": {
+                        "x": 1952,
+                        "y": 768
+                    },
+                    "tilePosition": {
+                        "x": 22,
+                        "y": 3
+                    },
+                    "size": {
+                        "x": 32,
+                        "y": 32
+                    },
+                    "tileType": 1,
+                    "tileTerrain": 0,
+                    "atlas": "terrain",
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -58502,390 +46770,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 800
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 800
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 800
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 800
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 800
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 800
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 800
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 800
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 800
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 800
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 800
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 800
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 800
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 800
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 800
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 800
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "55": [
@@ -58990,30 +46874,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 800
-                    },
-                    "tilePosition": {
-                        "x": 27,
-                        "y": 17
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Left",
-                    "tileSet": "treePineLeaves2"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "59": [
@@ -59024,19 +46884,71 @@ export let worldTiles = {
                         "y": 800
                     },
                     "tilePosition": {
-                        "x": 28,
-                        "y": 17
+                        "x": 22,
+                        "y": 3
                     },
                     "size": {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 6,
+                    "tileType": 1,
+                    "tileTerrain": 0,
                     "atlas": "terrain",
                     "transparent": false,
                     "tileULDR": "Middle",
-                    "tileSet": "treePineLeaves2"
+                    "tileSet": "grassGreen"
+                },
+                "drawingCanvas": "game-canvas",
+                "targetCanvas": "terrain"
+            }
+        ],
+        "60": [
+            {
+                "tile": {
+                    "position": {
+                        "x": 1920,
+                        "y": 800
+                    },
+                    "tilePosition": {
+                        "x": 22,
+                        "y": 3
+                    },
+                    "size": {
+                        "x": 32,
+                        "y": 32
+                    },
+                    "tileType": 1,
+                    "tileTerrain": 0,
+                    "atlas": "terrain",
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
+                },
+                "drawingCanvas": "game-canvas",
+                "targetCanvas": "terrain"
+            }
+        ],
+        "61": [
+            {
+                "tile": {
+                    "position": {
+                        "x": 1952,
+                        "y": 800
+                    },
+                    "tilePosition": {
+                        "x": 22,
+                        "y": 3
+                    },
+                    "size": {
+                        "x": 32,
+                        "y": 32
+                    },
+                    "tileType": 1,
+                    "tileTerrain": 0,
+                    "atlas": "terrain",
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -60856,414 +48768,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 832
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 832
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 832
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 832
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 832
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 832
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 832
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 832
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 832
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 832
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 832
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 832
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 832
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 832
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 832
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 832
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 832
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "55": [
@@ -61368,54 +48872,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 832
-                    },
-                    "tilePosition": {
-                        "x": 28,
-                        "y": 19
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Left",
-                    "tileSet": "treePineBase"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 832
-                    },
-                    "tilePosition": {
-                        "x": 27,
-                        "y": 18
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 4,
-                    "tileTerrain": 6,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "DownLeft",
-                    "tileSet": "treePineLeaves2"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "terrain"
             }
         ],
         "59": [
@@ -61442,51 +48898,55 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
+            }
+        ],
+        "60": [
             {
                 "tile": {
                     "position": {
-                        "x": 1888,
+                        "x": 1920,
                         "y": 832
                     },
                     "tilePosition": {
-                        "x": 29,
-                        "y": 19
+                        "x": 22,
+                        "y": 3
                     },
                     "size": {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 6,
+                    "tileType": 1,
+                    "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
+                    "transparent": false,
                     "tileULDR": "Middle",
-                    "tileSet": "treePineBase"
+                    "tileSet": "grassGreen"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
+            }
+        ],
+        "61": [
             {
                 "tile": {
                     "position": {
-                        "x": 1888,
+                        "x": 1952,
                         "y": 832
                     },
                     "tilePosition": {
-                        "x": 28,
-                        "y": 18
+                        "x": 22,
+                        "y": 3
                     },
                     "size": {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 6,
+                    "tileType": 1,
+                    "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Down",
-                    "tileSet": "treePineLeaves2"
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -63138,222 +50598,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 864
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 864
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 864
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 864
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 864
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 864
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 864
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 864
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 864
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": false,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "55": [
@@ -63508,27 +50752,55 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
+            }
+        ],
+        "60": [
             {
                 "tile": {
                     "position": {
-                        "x": 1888,
+                        "x": 1920,
                         "y": 864
                     },
                     "tilePosition": {
-                        "x": 29,
-                        "y": 20
+                        "x": 22,
+                        "y": 3
                     },
                     "size": {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 4,
-                    "tileTerrain": 6,
+                    "tileType": 1,
+                    "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": "Down",
-                    "tileSet": "treePineBase"
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
+                },
+                "drawingCanvas": "game-canvas",
+                "targetCanvas": "terrain"
+            }
+        ],
+        "61": [
+            {
+                "tile": {
+                    "position": {
+                        "x": 1952,
+                        "y": 864
+                    },
+                    "tilePosition": {
+                        "x": 22,
+                        "y": 3
+                    },
+                    "size": {
+                        "x": 32,
+                        "y": 32
+                    },
+                    "tileType": 1,
+                    "tileTerrain": 0,
+                    "atlas": "terrain",
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
@@ -67388,54 +54660,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 896
-                    },
-                    "tilePosition": {
-                        "x": 0,
-                        "y": 1
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1728,
-                        "y": 896
-                    },
-                    "tilePosition": {
-                        "x": 0,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "55": [
@@ -67462,150 +54686,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1760,
-                        "y": 896
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1760,
-                        "y": 896
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1760,
-                        "y": 896
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1760,
-                        "y": 896
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1760,
-                        "y": 896
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1760,
-                        "y": 896
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "56": [
@@ -67632,126 +54712,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 896
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 896
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 896
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 896
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1792,
-                        "y": 896
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "57": [
@@ -67778,246 +54738,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 896
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 896
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 896
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 896
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 896
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 896
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 896
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 896
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 896
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1824,
-                        "y": 896
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "58": [
@@ -68044,318 +54764,6 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 896
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 896
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 896
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 896
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 896
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 896
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 896
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 896
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 896
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 896
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 896
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 896
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1856,
-                        "y": 896
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
             }
         ],
         "59": [
@@ -68382,150 +54790,58 @@ export let worldTiles = {
                 },
                 "drawingCanvas": "game-canvas",
                 "targetCanvas": "terrain"
-            },
+            }
+        ],
+        "60": [
             {
                 "tile": {
                     "position": {
-                        "x": 1888,
+                        "x": 1920,
                         "y": 896
                     },
                     "tilePosition": {
-                        "x": 1,
-                        "y": 0
+                        "x": 22,
+                        "y": 3
                     },
                     "size": {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 3,
-                    "tileTerrain": 1,
+                    "tileType": 1,
+                    "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
                 },
                 "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
+                "targetCanvas": "terrain"
+            }
+        ],
+        "61": [
             {
                 "tile": {
                     "position": {
-                        "x": 1888,
+                        "x": 1952,
                         "y": 896
                     },
                     "tilePosition": {
-                        "x": 1,
-                        "y": 0
+                        "x": 22,
+                        "y": 3
                     },
                     "size": {
                         "x": 32,
                         "y": 32
                     },
-                    "tileType": 3,
-                    "tileTerrain": 1,
+                    "tileType": 1,
+                    "tileTerrain": 0,
                     "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
+                    "transparent": false,
+                    "tileULDR": "Middle",
+                    "tileSet": "grassGreen"
                 },
                 "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1888,
-                        "y": 896
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1888,
-                        "y": 896
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1888,
-                        "y": 896
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
-            },
-            {
-                "tile": {
-                    "position": {
-                        "x": 1888,
-                        "y": 896
-                    },
-                    "tilePosition": {
-                        "x": 1,
-                        "y": 0
-                    },
-                    "size": {
-                        "x": 32,
-                        "y": 32
-                    },
-                    "tileType": 3,
-                    "tileTerrain": 1,
-                    "atlas": "terrain",
-                    "transparent": true,
-                    "tileULDR": 4369,
-                    "tileSet": "default"
-                },
-                "drawingCanvas": "game-canvas",
-                "targetCanvas": "fence"
+                "targetCanvas": "terrain"
             }
         ]
     },

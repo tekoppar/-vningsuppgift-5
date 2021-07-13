@@ -49,8 +49,8 @@ const AllPlantData = {
 }
 
 class Plant extends Prop {
-    constructor(spriteSheet, spriteSheetName, name, position, animations, plantData, drawIndex = 0) {
-        super(spriteSheet, name, position, animations, spriteSheetName, drawIndex);
+    constructor(spriteSheetName, name, position, animations, plantData, drawIndex = 0) {
+        super(name, position, animations, spriteSheetName, drawIndex);
         this.plantData = plantData.Clone();
         this.currentAnimation = this.animations.seed.Clone();
         this.currentAnimation.SetSpeed(this.plantData.growthSpeed);

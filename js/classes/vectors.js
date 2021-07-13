@@ -121,6 +121,17 @@ class Vector2D {
     Clone() {
         return new Vector2D(this.x, this.y);
     }
+
+    ToString() {
+        return this.x + ', ' + this.y;
+    }
+
+    toJSON() {
+        return {
+            x: this.x,
+            y: this.y
+        };
+    }
 }
 
 class Vector {

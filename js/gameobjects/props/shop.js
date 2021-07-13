@@ -11,6 +11,7 @@ import { CollisionHandler, PolygonCollision } from '../collision/collision.js';
 
 let ShopCollisions = {
     seedShop: [new Vector2D(0, 0), new Vector2D(95, 0), new Vector2D(95, 105), new Vector2D(0, 105)],
+    seedShopBlocking: [new Vector2D(1, 104), new Vector2D(0, 85.33333333333333), new Vector2D(95, 85.33333333333333), new Vector2D(95, 104) ],
 }
 
 class MarketItem extends Item {
@@ -21,8 +22,8 @@ class MarketItem extends Item {
 }
 
 class Shop extends Prop {
-    constructor(spriteSheet, shopName, position, animations, canvasName) {
-        super(spriteSheet, shopName, position, animations, canvasName);
+    constructor(shopName, position, animations, canvasName) {
+        super(shopName, position, animations, canvasName);
         this.marketItems = {};
         this.isVisible = true;
         this.shopHTML;
@@ -67,7 +68,6 @@ class Shop extends Prop {
     }
 
     SetupMarket() {
-        console.log(CanvasDrawer.GCD.canvasAtlases[this.canvasName].canvas);
         //if (document.getElementById('game-panel') !== null && CanvasDrawer.GCD.canvasAtlases[this.canvasName] !== undefined && CanvasDrawer.GCD.canvasAtlases[this.canvasName].canvas !== undefined) {
             this.shopHTML = GUI.CreateContainer();
             this.shopHTML.addEventListener('mouseup', this);
@@ -127,6 +127,16 @@ class Shop extends Prop {
                 this,
                 true
             ));
+
+            this.BlockingCollision = new PolygonCollision(
+                this.position.Clone(),
+                this.size.Clone(),
+                ShopCollisions[this.name + 'Blocking'],
+                true,
+                this,
+                true
+            );
+            this.BlockingCollision.UpdatePoints();
 
             this.shopSetupDone = true;
     }

@@ -49,7 +49,7 @@ class MasterObject {
             Vector2D: false,
             CanvasSprite: false,
             DrawingOperation: false,
-            Animation: false,
+            CAnimation: false,
             InputHandler: false,
             CustomEventHandler: false,
         }
@@ -78,8 +78,8 @@ class MasterObject {
         if (typeof DrawingOperation !== undefined)
             delete this.classInitialization.DrawingOperation;
 
-        if (typeof Animation !== undefined)
-            delete this.classInitialization.Animation;
+        if (typeof CAnimation !== undefined)
+            delete this.classInitialization.CAnimation;
 
         if (typeof InputHandler !== undefined)
             delete this.classInitialization.InputHandler;
@@ -104,7 +104,6 @@ class MasterObject {
             this.objectsHasBeenInitialized = true;
         }
 
-        //console.log(this, CanvasDrawer.GCD);
         if (this.objectsHasBeenInitialized === true && (CanvasDrawer.GCD.isLoadingFinished == null || CanvasDrawer.GCD.isLoadingFinished === true)) {
             window.requestAnimationFrame(() => this.GameBegin());
         } else {
@@ -149,7 +148,7 @@ class MasterObject {
     }
 }
 
-var shopTest = new Shop('/content/sprites/farming_fishing.png', 'seedShop', new Vector2D(368, 256), undefined, 'pepoSeedShop');
+var shopTest = new Shop('seedShop', new Vector2D(368, 256), undefined, 'pepoSeedShop');
 shopTest.AddItem(new Seed('cornSeed', 420));
 shopTest.AddItems([
     new Seed('potatoSeed', 999), new Seed('watermelonSeed', 999),
@@ -167,28 +166,28 @@ shopTest.AddItems([
 CustomEventHandler.AddListener(shopTest);
 
 var AllPlants = [
-    new Plant("/content/sprites/crops.png", 'crops', 'corn', new Vector2D(576, 128), plantAnimations.corn, AllPlantData.corn),
-    new Plant("/content/sprites/crops.png", 'crops', 'potato', new Vector2D(576 + (32 * 1), 128), plantAnimations.potato, AllPlantData.potato),
-    new Plant("/content/sprites/crops.png", 'crops', 'watermelon', new Vector2D(576 + (32 * 2), 128), plantAnimations.watermelon, AllPlantData.watermelon),
-    new Plant("/content/sprites/crops.png", 'crops', 'pumpkin', new Vector2D(576 + (32 * 3), 128), plantAnimations.pumpkin, AllPlantData.pumpkin),
-    new Plant("/content/sprites/crops.png", 'crops', 'bellpepperGreen', new Vector2D(576 + (32 * 4), 128), plantAnimations.bellpepperGreen, AllPlantData.bellpepperGreen),
-    new Plant("/content/sprites/crops.png", 'crops', 'bellpepperRed', new Vector2D(576 + (32 * 5), 128), plantAnimations.bellpepperRed, AllPlantData.bellpepperRed),
-    new Plant("/content/sprites/crops.png", 'crops', 'bellpepperOrange', new Vector2D(576 + (32 * 6), 128), plantAnimations.bellpepperOrange, AllPlantData.bellpepperOrange),
-    new Plant("/content/sprites/crops.png", 'crops', 'bellpepperYellow', new Vector2D(576 + (32 * 7), 128), plantAnimations.bellpepperYellow, AllPlantData.bellpepperYellow),
-    new Plant("/content/sprites/crops.png", 'crops', 'carrot', new Vector2D(576 + (32 * 8), 128), plantAnimations.carrot, AllPlantData.carrot),
-    new Plant("/content/sprites/crops.png", 'crops', 'parsnip', new Vector2D(576 + (32 * 9), 128), plantAnimations.parsnip, AllPlantData.parsnip),
-    new Plant("/content/sprites/crops.png", 'crops', 'radish', new Vector2D(576 + (32 * 10), 128), plantAnimations.radish, AllPlantData.radish),
-    new Plant("/content/sprites/crops.png", 'crops', 'beetroot', new Vector2D(576 + (32 * 11), 128), plantAnimations.beetroot, AllPlantData.beetroot),
-    new Plant("/content/sprites/crops.png", 'crops', 'garlic', new Vector2D(576 + (32 * 12), 128), plantAnimations.garlic, AllPlantData.garlic),
-    new Plant("/content/sprites/crops.png", 'crops', 'onionYellow', new Vector2D(576 + (32 * 13), 128), plantAnimations.onionYellow, AllPlantData.onionYellow),
-    new Plant("/content/sprites/crops.png", 'crops', 'onionRed', new Vector2D(576 + (32 * 14), 128), plantAnimations.onionRed, AllPlantData.onionRed),
-    new Plant("/content/sprites/crops.png", 'crops', 'onionWhite', new Vector2D(576 + (32 * 15), 128), plantAnimations.onionWhite, AllPlantData.onionWhite),
-    new Plant("/content/sprites/crops.png", 'crops', 'onionGreen', new Vector2D(576 + (32 * 16), 128), plantAnimations.onionGreen, AllPlantData.onionGreen),
-    new Plant("/content/sprites/crops.png", 'crops', 'hotPepper', new Vector2D(576 + (32 * 17), 128), plantAnimations.hotPepper, AllPlantData.hotPepper),
-    new Plant("/content/sprites/crops.png", 'crops', 'chiliPepper', new Vector2D(576 + (32 * 18), 128), plantAnimations.chiliPepper, AllPlantData.chiliPepper),
-    new Plant("/content/sprites/crops.png", 'crops', 'lettuceIceberg', new Vector2D(576 + (32 * 19), 128), plantAnimations.lettuceIceberg, AllPlantData.lettuceIceberg),
-    new Plant("/content/sprites/crops.png", 'crops', 'cauliflower', new Vector2D(576 + (32 * 20), 128), plantAnimations.cauliflower, AllPlantData.cauliflower),
-    new Plant("/content/sprites/crops.png", 'crops', 'broccoli', new Vector2D(576 + (32 * 21), 128), plantAnimations.broccoli, AllPlantData.broccoli),
+    new Plant('crops', 'corn', new Vector2D(576, 128), plantAnimations.corn, AllPlantData.corn),
+    new Plant('crops', 'potato', new Vector2D(576 + (32 * 1), 128), plantAnimations.potato, AllPlantData.potato),
+    new Plant('crops', 'watermelon', new Vector2D(576 + (32 * 2), 128), plantAnimations.watermelon, AllPlantData.watermelon),
+    new Plant('crops', 'pumpkin', new Vector2D(576 + (32 * 3), 128), plantAnimations.pumpkin, AllPlantData.pumpkin),
+    new Plant('crops', 'bellpepperGreen', new Vector2D(576 + (32 * 4), 128), plantAnimations.bellpepperGreen, AllPlantData.bellpepperGreen),
+    new Plant('crops', 'bellpepperRed', new Vector2D(576 + (32 * 5), 128), plantAnimations.bellpepperRed, AllPlantData.bellpepperRed),
+    new Plant('crops', 'bellpepperOrange', new Vector2D(576 + (32 * 6), 128), plantAnimations.bellpepperOrange, AllPlantData.bellpepperOrange),
+    new Plant('crops', 'bellpepperYellow', new Vector2D(576 + (32 * 7), 128), plantAnimations.bellpepperYellow, AllPlantData.bellpepperYellow),
+    new Plant('crops', 'carrot', new Vector2D(576 + (32 * 8), 128), plantAnimations.carrot, AllPlantData.carrot),
+    new Plant('crops', 'parsnip', new Vector2D(576 + (32 * 9), 128), plantAnimations.parsnip, AllPlantData.parsnip),
+    new Plant('crops', 'radish', new Vector2D(576 + (32 * 10), 128), plantAnimations.radish, AllPlantData.radish),
+    new Plant('crops', 'beetroot', new Vector2D(576 + (32 * 11), 128), plantAnimations.beetroot, AllPlantData.beetroot),
+    new Plant('crops', 'garlic', new Vector2D(576 + (32 * 12), 128), plantAnimations.garlic, AllPlantData.garlic),
+    new Plant('crops', 'onionYellow', new Vector2D(576 + (32 * 13), 128), plantAnimations.onionYellow, AllPlantData.onionYellow),
+    new Plant('crops', 'onionRed', new Vector2D(576 + (32 * 14), 128), plantAnimations.onionRed, AllPlantData.onionRed),
+    new Plant('crops', 'onionWhite', new Vector2D(576 + (32 * 15), 128), plantAnimations.onionWhite, AllPlantData.onionWhite),
+    new Plant('crops', 'onionGreen', new Vector2D(576 + (32 * 16), 128), plantAnimations.onionGreen, AllPlantData.onionGreen),
+    new Plant('crops', 'hotPepper', new Vector2D(576 + (32 * 17), 128), plantAnimations.hotPepper, AllPlantData.hotPepper),
+    new Plant('crops', 'chiliPepper', new Vector2D(576 + (32 * 18), 128), plantAnimations.chiliPepper, AllPlantData.chiliPepper),
+    new Plant('crops', 'lettuceIceberg', new Vector2D(576 + (32 * 19), 128), plantAnimations.lettuceIceberg, AllPlantData.lettuceIceberg),
+    new Plant('crops', 'cauliflower', new Vector2D(576 + (32 * 20), 128), plantAnimations.cauliflower, AllPlantData.cauliflower),
+    new Plant('crops', 'broccoli', new Vector2D(576 + (32 * 21), 128), plantAnimations.broccoli, AllPlantData.broccoli),
 ];
 
 for (let i = 0; i < AllPlants.length; i++) {

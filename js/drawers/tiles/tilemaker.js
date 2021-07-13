@@ -70,6 +70,7 @@ class TileMaker {
     static GenerateCustomTiles() {
         TileMaker.CustomTiles = {
             seedStand: {
+                name: 'pepoSeedShop',
                 tiles: [
                     new Tile(new Vector2D(0, 0), new Vector2D(5, 8), new Vector2D(32, 32), true, 'farmingfishing', 0, TileType.Prop, TileTerrain.Wood),
                     new Tile(new Vector2D(0, 0), new Vector2D(5, 4), new Vector2D(32, 32), true, 'farmingfishing', 0, TileType.Prop, TileTerrain.Wood),
@@ -101,6 +102,7 @@ class TileMaker {
                 ],
             },
             treeBirch1: {
+                name: 'treeBirch1',
                 tiles: [
                     new Tile(new Vector2D(0, 0), new Vector2D(24, 12), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Leaves),
                     new Tile(new Vector2D(0, 0), new Vector2D(25, 12), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Leaves),
@@ -126,6 +128,7 @@ class TileMaker {
                 ]
             },
             treeBirch2: {
+                name: 'treeBirch2',
                 tiles: [
                     new Tile(new Vector2D(0, 0), new Vector2D(24, 12), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Leaves),
                     new Tile(new Vector2D(0, 0), new Vector2D(25, 12), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Leaves),
@@ -149,6 +152,7 @@ class TileMaker {
                 ],
             },
             treeBirchShadow: {
+                name: 'treeBirchShadow',
                 tiles: [
                     new Tile(new Vector2D(0, 0), new Vector2D(2, 32), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
                     new Tile(new Vector2D(0, 0), new Vector2D(3, 32), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
@@ -161,13 +165,183 @@ class TileMaker {
                     [0, 1, 2],
                     [3, 4, 5]
                 ]
-            }
+            },
+            treePine1: {
+                name: 'treePine1',
+                tiles: [
+                    new Tile(new Vector2D(0, 0), new Vector2D(27, 15), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(28, 15), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(29, 15), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(27, 16), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(28, 16), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(29, 16), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(27, 17), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(28, 17), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(29, 17), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(27, 18), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(28, 18), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(29, 18), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(24, 18), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(26, 19), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(32, 32), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Water),
+                ],
+                tileLayout: [
+                    [0, 1, 2],
+                    [3, 4, 5],
+                    [6, 7, 8],
+                    [9, [12, 10], 11],
+                    [14, 13, 14]
+                ]
+            },
+            treePine2: {
+                name: 'treePine2',
+                tiles: [
+                    new Tile(new Vector2D(0, 0), new Vector2D(27, 15), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(28, 15), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(29, 15), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(27, 16), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(28, 16), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(29, 16), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(27, 17), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(28, 17), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(29, 17), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(27, 18), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(28, 18), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(29, 18), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(24, 18), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(26, 19), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(32, 32), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Water),
+                ],
+                tileLayout: [
+                    [0, 1, 2],
+                    [3, 4, 5],
+                    [6, 7, 8],
+                    [9, [13, 10], 11],
+                ]
+            },
+            treePine3: {
+                name: 'treePine3',
+                tiles: [
+                    new Tile(new Vector2D(0, 0), new Vector2D(27, 15), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(28, 15), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(29, 15), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(27, 16), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(28, 16), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(29, 16), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(27, 17), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(28, 17), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(29, 17), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(27, 18), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(28, 18), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(29, 18), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(24, 18), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(26, 19), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(32, 32), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Water),
+                ],
+                tileLayout: [
+                    [0, 1, 2],
+                    [3, 4, 5],
+                    [6, 7, 8],
+                    [9, [12, 10], 11],
+                    [14, 12, 14],
+                    [14, 13, 14]
+                ]
+            },
+            treePine1v2: {
+                name: 'treePine1v2',
+                tiles: [
+                    new Tile(new Vector2D(0, 0), new Vector2D(24, 15), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(25, 15), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(26, 15), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(24, 16), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(25, 16), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(26, 16), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(24, 17), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(25, 17), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(26, 17), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(24, 18), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(26, 19), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(32, 32), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Water),
+                ],
+                tileLayout: [
+                    [0, 1, 2],
+                    [3, 4, 5],
+                    [6, [9, 7], 8],
+                    [11, 9, 11],
+                    [11, 10, 11],
+                ]
+            },
+            treePine2v2: {
+                name: 'treePine2v2',
+                tiles: [
+                    new Tile(new Vector2D(0, 0), new Vector2D(24, 15), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(25, 15), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(26, 15), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(24, 16), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(25, 16), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(26, 16), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(24, 17), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(25, 17), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(26, 17), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(24, 18), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(26, 19), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(32, 32), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Water),
+                ],
+                tileLayout: [
+                    [0, 1, 2],
+                    [3, 4, 5],
+                    [6, [9, 7], 8],
+                    [11, 10, 11],
+                ]
+            },
+            treePine3v2: {
+                name: 'treePine3v2',
+                tiles: [
+                    new Tile(new Vector2D(0, 0), new Vector2D(24, 15), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(25, 15), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(26, 15), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(24, 16), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(25, 16), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(26, 16), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(24, 17), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(25, 17), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(26, 17), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(24, 18), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(26, 19), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(32, 32), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Water),
+                ],
+                tileLayout: [
+                    [0, 1, 2],
+                    [3, 4, 5],
+                    [6, [9, 7], 8],
+                    [11, 9, 11],
+                    [11, 9, 11],
+                    [11, 10, 11],
+                ]
+            },
+            treePineShadow: {
+                name: 'treePineShadow',
+                tiles: [
+                    new Tile(new Vector2D(0, 0), new Vector2D(5, 32), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(6, 32), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(7, 32), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(11, 32), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(12, 32), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                    new Tile(new Vector2D(0, 0), new Vector2D(13, 32), new Vector2D(32, 32), true, 'terrain', 0, TileType.Prop, TileTerrain.Wood),
+                ],
+                tileLayout: [
+                    [0, 1, 2],
+                    [3, 4, 5]
+                ]
+            },
         };
 
-        this.CombineTilesToImage(TileMaker.CustomTiles.seedStand.tiles, TileMaker.CustomTiles.seedStand.tileLayout, 'pepoSeedShop');
-        this.CombineTilesToImage(TileMaker.CustomTiles.treeBirch1.tiles, TileMaker.CustomTiles.treeBirch1.tileLayout, 'treeBirch1');
-        this.CombineTilesToImage(TileMaker.CustomTiles.treeBirch2.tiles, TileMaker.CustomTiles.treeBirch2.tileLayout, 'treeBirch2');
-        this.CombineTilesToImage(TileMaker.CustomTiles.treeBirchShadow.tiles, TileMaker.CustomTiles.treeBirchShadow.tileLayout, 'treeBirchShadow');
+        let keys = Object.keys(TileMaker.CustomTiles);
+
+        for (let i = 0; i < keys.length; i++) {
+            let tileObject = TileMaker.CustomTiles[keys[i]];
+            this.CombineTilesToImage(tileObject.tiles, tileObject.tileLayout, tileObject.name);
+        }
     }
 }
 

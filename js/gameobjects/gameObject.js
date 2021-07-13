@@ -13,6 +13,7 @@ class GameObject extends Cobject {
         this.Velocity = new Vector2D(0, 0);
         this.MovementSpeed = new Vector2D(-1, -1);
         this.BoxCollision = new BoxCollision(position, this.size, enableCollision, this);
+        this.BlockingCollision = undefined;
         this.canvas;
         this.canvasName = canvasName;
         this.enableCollision = enableCollision;
@@ -59,12 +60,11 @@ class GameObject extends Cobject {
     NeedsRedraw(position) {
         if (this.drawingOperation !== undefined && this.drawingOperation.DrawState() === false) {
             this.FlagDrawingUpdate(position);
-            let overlaps = CollisionHandler.GCH.GetOverlaps(this.BoxCollision);//new BoxCollision(position, this.BoxCollision.size, this.enableCollision, this));
+            let overlaps = CollisionHandler.GCH.GetOverlaps(this.BoxCollision);
 
             for (let i = 0; i < overlaps.length; i++) {
                 if (overlaps[i].collisionOwner !== undefined && overlaps[i].collisionOwner !== false && overlaps[i].collisionOwner.drawingOperation !== undefined) {
                     overlaps[i].collisionOwner.FlagDrawingUpdate(overlaps[i].collisionOwner.position);
-                    //overlaps[i].collisionOwner.NeedsRedraw(overlaps[i].collisionOwner.position);
                 }
             }
         }
@@ -90,25 +90,8 @@ class GameObject extends Cobject {
         this.drawingOperation.Update(position);
     }
 
-    UpdateMovement() {
-        if (this.Velocity.x !== 0 || this.Velocity.y !== 0) {
-            if (this.drawingOperation !== undefined)
-                this.NeedsRedraw(this.previousPosition.Clone());
-
-            this.BoxCollision.position = this.position.Clone();
-            this.BoxCollision.position.Add(Vector2D.Mult(this.MovementSpeed, this.Velocity));
-
-            if (this.CheckCollision() === true) {
-                this.previousPosition = this.position.Clone();
-                this.position.Add(Vector2D.Mult(this.MovementSpeed, this.Velocity));
-            } else {
-                this.BoxCollision.position = this.position;
-            }
-        }
-    }
-
     CheckCollision() {
-        return CollisionHandler.GCH.CheckCollisions(this.BoxCollision);//new BoxCollision(position, this.BoxCollision.size, this.enableCollision, this));
+        return CollisionHandler.GCH.CheckCollisions(this.BoxCollision);
     }
 
     CreateDrawOperation(frame, position, clear, canvas, operationType = OperationType.GameObject) {
@@ -122,7 +105,7 @@ class GameObject extends Cobject {
                     this.canvasName,
                     this.drawIndex
                 ),
-                CanvasDrawer.GCD.frameBuffer,//document.getElementById('sprite-objects-canvas'),
+                CanvasDrawer.GCD.frameBuffer,
                 canvas
             );
 
@@ -226,12 +209,11 @@ class Shadow extends Cobject {
     NeedsRedraw(position) {
         if (this.drawingOperation !== undefined && this.drawingOperation.DrawState() === false) {
             this.FlagDrawingUpdate(position);
-            let overlaps = CollisionHandler.GCH.GetOverlaps(this.BoxCollision);//new BoxCollision(position, this.BoxCollision.size, this.enableCollision, this));
+            let overlaps = CollisionHandler.GCH.GetOverlaps(this.BoxCollision);
 
             for (let i = 0; i < overlaps.length; i++) {
                 if (overlaps[i].collisionOwner !== undefined && overlaps[i].collisionOwner !== false && overlaps[i].collisionOwner.drawingOperation !== undefined) {
                     overlaps[i].collisionOwner.FlagDrawingUpdate(overlaps[i].collisionOwner.position);
-                    //overlaps[i].collisionOwner.NeedsRedraw(overlaps[i].collisionOwner.position);
                 }
             }
         }
@@ -252,7 +234,7 @@ class Shadow extends Cobject {
                     this.canvasName,
                     this.drawIndex
                 ),
-                CanvasDrawer.GCD.frameBuffer,//document.getElementById('sprite-objects-canvas'),
+                CanvasDrawer.GCD.frameBuffer,
                 canvas
             );
 

@@ -13,6 +13,18 @@ class SpriteObject {
     }
 }
 
+Object.defineProperty(Array.prototype, 'CloneObjects', {
+    value() {
+        let arr = [];
+        for (let i = 0; i < this.length; i++) {
+                let newObject = Object.create(this[i]);
+                Object.assign(newObject, this[i]);
+                arr.push(newObject);
+        }
+        return arr;
+    }
+});
+
 Object.defineProperty(String.prototype, 'chopLeft', {
     value() {
         return this.slice(1, this.length);

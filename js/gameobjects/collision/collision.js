@@ -142,7 +142,7 @@ class Collision {
 
     GetCenterPosition() {
         let newPos = this.position.Clone();
-        newPos.x += this.size.x / 2;
+        newPos.x += this.size.x / 2 + 16;
         newPos.y += this.size.y / 2 + 16;
 
         return newPos;
@@ -281,6 +281,7 @@ class PolygonCollision extends Collision {
     constructor(position, size, points = [], enableCollision, owner = undefined, register = true) {
         super(position, size, enableCollision, owner, register);
         this.points = points;
+        this.refPoints = [...points];
         this.boundingBox = new Vector4D(1, 1, 1, 1);
         this.CalculateBoundingBox();
     }
@@ -290,6 +291,7 @@ class PolygonCollision extends Collision {
     }
 
     UpdatePoints() {
+        this.points = [...this.refPoints];
         for (let i = 0; i < this.points.length; i++) {
             this.points[i].Add(this.position);
         }
@@ -318,7 +320,7 @@ class PolygonCollision extends Collision {
     GetCenterPosition() {
         let newPos = new Vector2D(this.boundingBox.x, this.boundingBox.y);
         newPos.x += this.boundingBox.z / 2;
-        newPos.y += this.boundingBox.a / 2 + 16;
+        newPos.y += this.boundingBox.a - 8;
 
         return newPos;
     }

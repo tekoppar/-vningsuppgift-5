@@ -510,6 +510,8 @@ class CanvasDrawer {
         this.canvasOffset = new Vector2D(0, 0);
         this.Brush = new Brush();
 
+        this.gridMouse = document.getElementById('grid-mouse');
+
         this.frameBuffer = document.createElement('canvas');
         this.frameBuffer.setAttribute('width', 4096);
         this.frameBuffer.setAttribute('height', 4096);
@@ -521,6 +523,7 @@ class CanvasDrawer {
         this.frameBufferTerrain = document.createElement('canvas');
         this.frameBufferTerrain.setAttribute('width', 4096);
         this.frameBufferTerrain.setAttribute('height', 4096);
+        document.body.appendChild(this.frameBufferTerrain);
         this.frameBufferTerrainCtx = this.frameBufferTerrain.getContext('2d');
         this.frameBufferTerrainCtx.webkitImageSmoothingEnabled = false;
         this.frameBufferTerrainCtx.msImageSmoothingEnabled = false;
@@ -1025,6 +1028,7 @@ class CanvasDrawer {
                     if (this.drawingOperations[operation.tile.GetDrawPosY()][operation.tile.GetDrawPosX()] === undefined)
                         this.drawingOperations[operation.tile.GetDrawPosY()][operation.tile.GetDrawPosX()] = [];
 
+                    this.drawingOperations[operation.tile.GetDrawPosY()][operation.tile.GetDrawPosX()] = []
                     for (let i = 0; i < this.drawingOperations[operation.tile.GetDrawPosY()][operation.tile.GetDrawPosX()].length; i++) {
                         if (this.drawingOperations[operation.tile.GetDrawPosY()][operation.tile.GetDrawPosX()][i].tile.IsTransparent() === true)
                             newOperations.push(this.drawingOperations[operation.tile.GetDrawPosY()][operation.tile.GetDrawPosX()][i]);
@@ -1102,6 +1106,9 @@ class CanvasDrawer {
             case 'mousemove':
                 let objPos = MouseToScreen(e);
                 this.mousePosition = new Vector2D(objPos.x, objPos.y);
+                let gridMousePosition = this.mousePosition.Clone();
+                gridMousePosition.ToGrid(32);
+                this.gridMouse.innerHTML = gridMousePosition.ToString();
 
                 if (this.selectedSprite !== undefined && Array.isArray(this.selectedSprite) === false) {
                     this.Brush.SetBrush(brushTypes.box, this.selectedSprite);
