@@ -1,11 +1,12 @@
 import { Vector2D as Vector2D, Vector as Vector, Vector4D as Vector4D } from '../../classes/vectors.js';
-import { Tile, TileType, TileTerrain } from '../tiles/tile.js';
+import { Tile, TileType, TileTerrain, TileData } from '../tiles/tile.js';
 import { InputHandler } from '../../eventHandlers/inputEvents.js';
 import { CollisionHandler, BoxCollision, PolygonCollision, Collision } from '../../gameobjects/collision/collision.js';
 import { TileMaker } from '../tiles/tilemaker.js';
 import { worldTiles } from '../tiles/worldTiles.js';
 import { Brush, brushTypes } from './brush.js';
 import { RectOperation, TextOperation, DrawingOperation, OperationType } from './operation.js';
+import { TileLUT } from '../tiles/TileLUT.js';
 
 let mouseToAtlasRectMap = {};
 function correctMouse(event) {
@@ -605,28 +606,36 @@ class CanvasDrawer {
 
     LoadWorldTiles() {
         let keysY = Object.keys(worldTiles);
+        let tileSize = new Vector2D(32, 32);
         for (let y = 0; y < keysY.length; y++) {
             let keysX = Object.keys(worldTiles[keysY[y]]);
             for (let x = 0; x < keysX.length; x++) {
                 let tilesArr = worldTiles[keysY[y]][keysX[x]];
                 for (let i = 0; i < tilesArr.length; i++) {
-                    let newTile = tilesArr[i].tile;
+                    let newTile = tilesArr[i];
+                    let tileLUT = TileLUT[newTile.t.lut[0]][newTile.t.lut[1]][newTile.t.lut[2]];
+
+                    if (newTile.tc === undefined)
+                        newTile.tc = tileLUT.atlas;
+
+                    if (newTile.dc === undefined)
+                        newTile.dc = 'game-canvas';
 
                     if (tilesArr[i].drawingCanvas !== 'sprite-preview-canvas') {
 
                         let drawingOperationTemp = new DrawingOperation(
                             new Tile(
-                                new Vector2D(newTile.position.x, newTile.position.y),
-                                new Vector2D(newTile.tilePosition.x, newTile.tilePosition.y),
-                                new Vector2D(newTile.size.x, newTile.size.y),
-                                (newTile.isTransparent !== undefined ? newTile.isTransparent : false),
-                                newTile.canvas,
-                                newTile.drawIndex,
-                                newTile.tileType,
-                                newTile.tileTerrain
+                                new Vector2D(newTile.t.p.x, newTile.t.p.y),
+                                new Vector2D(tileLUT.tilePosition.x, tileLUT.tilePosition.y),
+                                tileLUT.size !== undefined ? new Vector2D(tileLUT.size.x, tileLUT.size.y) : tileSize,
+                                (tileLUT.transparent !== undefined ? tileLUT.transparent : false),
+                                tileLUT.atlas,
+                                0,
+                                tileLUT.tileType,
+                                tileLUT.tileTerrain
                             ),
-                            (tilesArr[i].drawingCanvas === undefined || tilesArr[i].drawingCanvas === 'game-canvas' || tilesArr[i].drawingCanvas === '' ? this.frameBufferTerrain : this.canvasAtlases[tilesArr[i].drawingCanvas].canvas),
-                            this.canvasAtlases[tilesArr[i].targetCanvas].canvas
+                            (newTile.dc === undefined || newTile.dc === 'game-canvas' || newTile.dc === '' ? this.frameBufferTerrain : this.canvasAtlases[newTile.dc].canvas),
+                            this.canvasAtlases[newTile.tc].canvas
                         );
 
                         if (this.drawingOperations[drawingOperationTemp.tile.position.y / 32] === undefined)
@@ -660,6 +669,8 @@ class CanvasDrawer {
         } else {
             this.selectedSprite = tile;
         }
+
+        TileData.tileData.SelectionLoop();
     }
 
     LoadAllAtlases() {
@@ -675,6 +686,8 @@ class CanvasDrawer {
         this.hasLoadedAllImages["fruitsveggies"] = false;
         this.LoadSpriteAtlas("/content/sprites/farming_fishing.png", 640, 640, 32, "farmingfishing");
         this.hasLoadedAllImages["farmingfishing"] = false;
+        this.LoadSpriteAtlas("/content/sprites/Collection/TerrainOutside.png", 1024, 1216, 32, "terrainoutside");
+        this.hasLoadedAllImages["terrainoutside"] = false;
     }
 
     AddAtlas(atlas, name) {
@@ -750,24 +763,25 @@ class CanvasDrawer {
 
     GameBegin() {
         this.DrawTerrain();
+        this.UIDrawer.AddUIElements();
     }
 
     DrawTerrain() {
-        let tempDrawingOperations = this.GetOperations();
+        //let tempDrawingOperations = this.GetOperations();
 
-        if (tempDrawingOperations.length > 0) {
-            //this.UpdateDrawingOperations(tempDrawingOperations);
-
-            for (let i = 0; i < tempDrawingOperations.length; i++) {
-                if (tempDrawingOperations[i].tile.needsToBeRedrawn === true)
-                    this.DrawOnCanvas(tempDrawingOperations[i]);
+        let keysY = Object.keys(this.drawingOperations);
+        for (let y = 0; y < keysY.length; y++) {
+            let keysX = Object.keys(this.drawingOperations[keysY[y]]);
+            for (let x = 0; x < keysX.length; x++) {
+                for (let i = 0; i < this.drawingOperations[keysY[y]][keysX[x]].length; i++) {
+                    if (this.drawingOperations[keysY[y]][keysX[x]][i].DrawState() === true)
+                        this.DrawOnCanvas(this.drawingOperations[keysY[y]][keysX[x]][i]);
+                }
             }
         }
     }
 
     DrawLoop(delta) {
-        this.UIDrawer.AddUIElements();
-
         this.spritePreviewCanvasCtx.clearRect(0, 0, this.spritePreviewCanvasCtx.width, this.spritePreviewCanvas.height);
         for (let i = 0; i < this.terrainPreviewOperations.length; i++) {
             this.DrawOnCanvas(this.terrainPreviewOperations[i]);
@@ -788,8 +802,8 @@ class CanvasDrawer {
         }
 
         this.gameObjectDrawingOperations.sort(function (a, b) {
-            if (a.GetDrawPosition().y > b.GetDrawPosition().y) return 1;
-            if (a.GetDrawPosition().y < b.GetDrawPosition().y) return -1;
+            if (a.GetDrawPositionY() > b.GetDrawPositionY()) return 1;
+            if (a.GetDrawPositionY() < b.GetDrawPositionY()) return -1;
             if (a.GetDrawIndex() > b.GetDrawIndex()) return 1;
             if (a.GetDrawIndex() < b.GetDrawIndex()) return -1;
             return 0;
@@ -801,9 +815,6 @@ class CanvasDrawer {
             else if (gameOperation instanceof RectOperation && gameOperation.DrawState() === true && gameOperation.oldPosition !== undefined || gameOperation.shouldDelete === true)
                 this.ClearCanvas(gameOperation);
         }
-
-        for (let operation of this.guiDrawingOperations)
-            this.ClearCanvas(operation);
 
         for (let i = 0; i < this.gameObjectDrawingOperations.length; i++) {
             if (this.gameObjectDrawingOperations[i].shouldDelete === true) {
@@ -821,6 +832,9 @@ class CanvasDrawer {
                 }
             }
         }
+
+        for (let operation of this.guiDrawingOperations)
+            this.ClearCanvas(operation);
 
         for (let i = 0; i < this.guiDrawingOperations.length; i++) {
             if (this.guiDrawingOperations[i].shouldDelete === true) {
@@ -852,7 +866,8 @@ class CanvasDrawer {
             let keysX = Object.keys(this.drawingOperations[keysY[y]]);
             for (let x = 0; x < keysX.length; x++) {
                 for (let i = 0; i < this.drawingOperations[keysY[y]][keysX[x]].length; i++) {
-                    operations.push(this.drawingOperations[keysY[y]][keysX[x]][i]);
+                    if (this.drawingOperations[keysY[y]][keysX[x]][i].DrawState() === true)
+                        operations.push(this.drawingOperations[keysY[y]][keysX[x]][i]);
                 }
             }
         }
@@ -1148,9 +1163,10 @@ class CanvasDrawer {
                     this.lastAtlasCoords = new Vector2D(atlasCoords.x, atlasCoords.y);
                 }
 
-                if (this.isPainting === true)
+                if (this.isPainting === true) {
                     this.CreatePaintOperation(e);
                     this.DrawTerrain();
+                }
                 break;
         }
     }

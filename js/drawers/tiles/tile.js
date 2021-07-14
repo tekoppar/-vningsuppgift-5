@@ -183,6 +183,8 @@ class TileData {
                                 document.getElementById('tile-lut-editor-tiles').querySelector('div[data-tileset="' + tileLUT.tileSet + '"]').appendChild(newImage);
                             }
                         } else {
+                            tileLUT.tilePosition = new Vector2D(xKeys[x], yKeys[y]);
+                            tileLUT.size = new Vector2D(32, 32);
                             document.getElementById('tile-lut-editor-tiles').appendChild(newImage);
                         }
                     }
@@ -313,8 +315,6 @@ class TileData {
 
             TileData.Selection = tile;
         }
-
-        window.requestAnimationFrame(() => this.SelectionLoop());
     }
 
     FilterTiles() {
@@ -344,7 +344,7 @@ class TileData {
                         break;
 
                     case 'tile-lut-editor-export':
-                        console.log(TileData.TileLUT);
+                        navigator.clipboard.writeText(JSON.stringify(TileData.TileLUT));
                         break;
 
                     case 'tile-lut-editor-filter-bool-tiletype-legend':

@@ -104,6 +104,10 @@ class RectOperation extends Operation {
         return Vector2D.Add(this.position, this.size);
     }
 
+    GetDrawPositionY() {
+        return this.position.y + this.size.y;
+    }
+
     GetSize() {
         return this.size;
     }
@@ -163,6 +167,10 @@ class DrawingOperation extends Operation {
         return Vector2D.Add(this.tile.position, (this.collisionSize !== undefined ? this.collisionSize : this.tile.size));
     }
 
+    GetDrawPositionY() {
+        return this.tile.position.y + (this.collisionSize !== undefined ? this.collisionSize.y : this.tile.size.y);
+    }
+
     GetPreviousPosition() {
         return this.oldPosition === undefined ? this.tile.position : this.oldPosition;
     }
@@ -172,10 +180,16 @@ class DrawingOperation extends Operation {
     }
 
     toJSON() {
-        return {
-            t: this.tile,
-            dc: this.drawingCanvas.id === undefined || this.drawingCanvas.id === '' ? 'game-canvas' : this.drawingCanvas.id,
-            tc: this.targetCanvas.id
+        if (this.drawingCanvas.id === 'game-canvas' || this.drawingCanvas.id === undefined || this.drawingCanvas.id === '') {
+            return {
+                t: this.tile
+            }
+        } else {
+            return {
+                t: this.tile,
+                dc: this.drawingCanvas.id === undefined || this.drawingCanvas.id === '' ? 'game-canvas' : this.drawingCanvas.id,
+                tc: this.targetCanvas.id
+            }
         }
     }
 }

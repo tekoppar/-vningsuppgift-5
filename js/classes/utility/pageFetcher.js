@@ -8,6 +8,7 @@ class PageFetcher {
 
     AddRequest(callFunction, url) {
         this.requests.push({ callFunction: callFunction, url: url });
+        this.ProcessRequests();
     }
 
     ProcessRequests() {
@@ -16,8 +17,6 @@ class PageFetcher {
         }
 
         this.requests = [];
-
-        window.requestAnimationFrame(() => this.ProcessRequests());
     }
 
     FetchPage(request) {

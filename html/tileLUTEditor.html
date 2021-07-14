@@ -37,11 +37,11 @@
     .tile-lut-editor-tiles-setcontainer {
         color: white;
         max-width: 110px;
-        display:flex;
+        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        margin:2px;
-        height:max-content;
+        margin: 2px;
+        height: max-content;
     }
 
     .tile-lut-editor-tiles-setcontainer[data-tileset$='Corner'] {
@@ -69,7 +69,8 @@
     }
 
     .tile-lut-editor-tiles-selected {
-        border:2px solid #f3c52f;
+        outline: 2px solid #f3c52f;
+        z-index: 1;
     }
 </style>
 <template id="template-tile-lut-editor">

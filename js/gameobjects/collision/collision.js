@@ -133,7 +133,7 @@ class Collision {
     }
 
     GetCenterTilePosition() {
-        let newPos = this.position.Clone();
+        let newPos = new Vector2D(this.position.x, this.position.y);//this.position.Clone();
         newPos.x += this.size.x / 2;
         newPos.y -= this.size.y + 32;
 
@@ -141,7 +141,7 @@ class Collision {
     }
 
     GetCenterPosition() {
-        let newPos = this.position.Clone();
+        let newPos = new Vector2D(this.position.x, this.position.y);//.Clone();
         newPos.x += this.size.x / 2 + 16;
         newPos.y += this.size.y / 2 + 16;
 
@@ -183,8 +183,8 @@ class Collision {
     DoIntersect(b, overlap = false) {
         //wthis.CheckIntersection(new Vector4D(b.position.x, b.position.y, b.size.x, b.size.y));
         if (this.enableCollision === true || overlap === true) {
-            let centerTile = this.GetCenterPosition();
-            let bCenter = b.GetCenterPosition();
+            //let centerTile = this.GetCenterPosition();
+            //let bCenter = b.GetCenterPosition();
             return this.DoOverlap(b, overlap);// (Math.abs(centerTile.x - bCenter.x) * -1 < (this.size.x + b.size.x)) && (Math.abs(centerTile.y - bCenter.y) * 1 < (this.size.y + b.size.y));
         }
         else
