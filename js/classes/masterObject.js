@@ -116,6 +116,7 @@ class MasterObject {
 
     GameBegin() {
         if (this.gameHasBegun === false) {
+            CanvasDrawer.GCD.GameBegin();
             for (let i = 0; i < AllPlants.length; i++) {
                 CustomEventHandler.AddListener(AllPlants[i]);
             }

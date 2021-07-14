@@ -173,9 +173,9 @@ class DrawingOperation extends Operation {
 
     toJSON() {
         return {
-            tile: this.tile,
-            drawingCanvas: this.drawingCanvas.id === undefined || this.drawingCanvas.id === '' ? 'game-canvas' : this.drawingCanvas.id,
-            targetCanvas: this.targetCanvas.id
+            t: this.tile,
+            dc: this.drawingCanvas.id === undefined || this.drawingCanvas.id === '' ? 'game-canvas' : this.drawingCanvas.id,
+            tc: this.targetCanvas.id
         }
     }
 }

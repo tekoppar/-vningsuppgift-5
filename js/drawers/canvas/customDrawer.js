@@ -512,28 +512,28 @@ class CanvasDrawer {
 
         this.gridMouse = document.getElementById('grid-mouse');
 
+        this.mainCanvas = mainCanvas;
+        this.mainCanvasCtx = this.mainCanvas.getContext('2d');
+        this.mainCanvasCtx.webkitImageSmoothingEnabled = false;
+        this.mainCanvasCtx.msImageSmoothingEnabled = false;
+        this.mainCanvasCtx.imageSmoothingEnabled = false;
+
         this.frameBuffer = document.createElement('canvas');
-        this.frameBuffer.setAttribute('width', 4096);
-        this.frameBuffer.setAttribute('height', 4096);
+        this.frameBuffer.setAttribute('width', this.mainCanvas.width * 5);
+        this.frameBuffer.setAttribute('height', this.mainCanvas.width * 5);
         this.frameBufferCtx = this.frameBuffer.getContext('2d');
         this.frameBufferCtx.webkitImageSmoothingEnabled = false;
         this.frameBufferCtx.msImageSmoothingEnabled = false;
         this.frameBufferCtx.imageSmoothingEnabled = false;
 
         this.frameBufferTerrain = document.createElement('canvas');
-        this.frameBufferTerrain.setAttribute('width', 4096);
-        this.frameBufferTerrain.setAttribute('height', 4096);
-        document.body.appendChild(this.frameBufferTerrain);
+        this.frameBufferTerrain.setAttribute('width', this.mainCanvas.width * 5);
+        this.frameBufferTerrain.setAttribute('height', this.mainCanvas.width * 5);
+        //document.body.appendChild(this.frameBufferTerrain);
         this.frameBufferTerrainCtx = this.frameBufferTerrain.getContext('2d');
         this.frameBufferTerrainCtx.webkitImageSmoothingEnabled = false;
         this.frameBufferTerrainCtx.msImageSmoothingEnabled = false;
         this.frameBufferTerrainCtx.imageSmoothingEnabled = false;
-
-        this.mainCanvas = mainCanvas;
-        this.mainCanvasCtx = this.mainCanvas.getContext('2d');
-        this.mainCanvasCtx.webkitImageSmoothingEnabled = false;
-        this.mainCanvasCtx.msImageSmoothingEnabled = false;
-        this.mainCanvasCtx.imageSmoothingEnabled = false;
 
         this.spriteObjectCanvas = spriteObjectCanvas;
         this.spriteObjectCanvasCtx = this.spriteObjectCanvas.getContext('2d');
@@ -748,8 +748,11 @@ class CanvasDrawer {
         }
     }
 
-    DrawLoop(delta) {
-        this.UIDrawer.AddUIElements();
+    GameBegin() {
+        this.DrawTerrain();
+    }
+
+    DrawTerrain() {
         let tempDrawingOperations = this.GetOperations();
 
         if (tempDrawingOperations.length > 0) {
@@ -760,6 +763,10 @@ class CanvasDrawer {
                     this.DrawOnCanvas(tempDrawingOperations[i]);
             }
         }
+    }
+
+    DrawLoop(delta) {
+        this.UIDrawer.AddUIElements();
 
         this.spritePreviewCanvasCtx.clearRect(0, 0, this.spritePreviewCanvasCtx.width, this.spritePreviewCanvas.height);
         for (let i = 0; i < this.terrainPreviewOperations.length; i++) {
@@ -1095,6 +1102,7 @@ class CanvasDrawer {
                 if (this.paintingEnabled === true) {
                     this.isPainting = true;
                     this.CreatePaintOperation(e);
+                    this.DrawTerrain();
                 }
                 break;
 
@@ -1142,6 +1150,7 @@ class CanvasDrawer {
 
                 if (this.isPainting === true)
                     this.CreatePaintOperation(e);
+                    this.DrawTerrain();
                 break;
         }
     }

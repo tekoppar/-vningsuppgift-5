@@ -808,15 +808,8 @@ class Tile {
 
     toJSON() {
         return {
-            position: this.position,
-            tilePosition: this.tilePosition,
-            size: this.size,
-            tileType: this.tileType,
-            tileTerrain: this.tileTerrain,
-            atlas: this.atlas,
-            transparent: this.transparent,
-            tileULDR: this.tileULDR,
-            tileSet: this.tileSet
+            p: this.position,
+            lut: [this.atlas, this.tilePosition.y, this.tilePosition.x],
         }
     }
 

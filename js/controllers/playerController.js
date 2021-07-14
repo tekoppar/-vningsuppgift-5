@@ -40,7 +40,7 @@ class PlayerController extends Controller {
                         case 'w': this.playerCharacter.UpdateDirection('y', 1); break;
                         case 'd': this.playerCharacter.UpdateDirection('x', -1); break;
                         case 's': this.playerCharacter.UpdateDirection('y', -1); break;
-                        case 'leftShift': this.playerCharacter.SetMovement('running', -3); break;
+                        case 'leftShift': this.playerCharacter.SetMovement('running', -15); break;
                         case 'leftMouse':
                             if (data.eventType === 0)
                                 this.playerCharacter.UseItem(data);
@@ -53,7 +53,7 @@ class PlayerController extends Controller {
                         case 'w': this.playerCharacter.UpdateDirection('y', 1); break;
                         case 'd': this.playerCharacter.UpdateDirection('x', -1); break;
                         case 's': this.playerCharacter.UpdateDirection('y', -1); break;
-                        case 'leftShift': this.playerCharacter.SetMovement('running', -3); break;
+                        case 'leftShift': this.playerCharacter.SetMovement('running', -15); break;
                     }
                 } else if (data.eventType == 2 || data.eventType == 3) {
                     switch (key) {
