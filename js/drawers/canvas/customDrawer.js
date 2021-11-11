@@ -11,7 +11,7 @@ import { SelectedTileEditor } from '../tiles/selectedTiles.js';
 import { UIDrawer } from '../canvas/uielements/uiDrawer.js';
  */
 
-import { Vector2D, Tile, TileData, InputHandler, CollisionHandler, BoxCollision, PolygonCollision, Collision, worldTiles, Brush, BrushDrawState, PathOperation, brushTypes, RectOperation, TextOperation, DrawingOperation, OperationType, TileLUT, CanvasAtlas, SelectedTileEditor, UIDrawer, MasterObject, Polygon } from '../../internal.js';
+import { Vector2D, Tile, TileData, LightingOperation, InputHandler, CollisionHandler, BoxCollision, PolygonCollision, Collision, worldTiles, Brush, BrushDrawState, PathOperation, brushTypes, RectOperation, TextOperation, DrawingOperation, OperationType, TileLUT, CanvasAtlas, SelectedTileEditor, UIDrawer, MasterObject, Polygon } from '../../internal.js';
 
 let mouseToAtlasRectMap = {};
 function correctMouse(event) {
@@ -267,6 +267,15 @@ class CanvasDrawer {
         this.frameBufferCtx.msImageSmoothingEnabled = false;
         this.frameBufferCtx.imageSmoothingEnabled = false;
 
+        this.lightFrameBuffer = document.createElement('canvas');
+        this.lightFrameBuffer.setAttribute('width', this.mainCanvas.width);
+        this.lightFrameBuffer.setAttribute('height', this.mainCanvas.width);
+        document.body.appendChild(this.lightFrameBuffer);
+        this.lightFrameBufferCtx = this.lightFrameBuffer.getContext('2d');
+        this.lightFrameBufferCtx.webkitImageSmoothingEnabled = false;
+        this.lightFrameBufferCtx.msImageSmoothingEnabled = false;
+        this.lightFrameBufferCtx.imageSmoothingEnabled = false;
+
         this.frameBufferTerrain = document.createElement('canvas');
         this.frameBufferTerrain.setAttribute('width', this.mainCanvas.width);
         this.frameBufferTerrain.setAttribute('height', this.mainCanvas.width);
@@ -305,6 +314,7 @@ class CanvasDrawer {
         this.gameGuiCanvasCtx.imageSmoothingEnabled = false;
 
         this.drawingOperations = {};
+        this.lightingOperations = [];
         this.terrainPreviewOperations = [];
         this.terrainNeedsRedrawOperations = [];
 
@@ -543,6 +553,8 @@ class CanvasDrawer {
     GameBegin() {
         this.DrawTerrain();
         this.UIDrawer.AddUIElements();
+
+        this.AddDrawOperation(new LightingOperation(new Vector2D(256, 256), new Vector2D(32, 32), this.lightFrameBuffer, 'orange', true, 0, 5, 1.0), OperationType.lighting);
     }
 
     DrawTerrain() {
@@ -604,6 +616,20 @@ class CanvasDrawer {
         }
     }
 
+    DrawLightingLoop(delta) {
+        this.lightFrameBufferCtx.clearRect(0, 0, this.lightFrameBuffer.width, this.lightFrameBuffer.height);
+        //this.lightFrameBufferCtx.fillStyle = 'black';
+        //this.lightFrameBufferCtx.fillRect(0, 0, this.lightFrameBuffer.width, this.lightFrameBuffer.height);
+
+        for (let i = 0; i < this.lightingOperations.length; i++) {
+            if (this.lightingOperations[i].shouldDelete === true) {
+                this.lightingOperations.splice(i, 1);
+                i--;
+            }
+                this.DrawOnCanvas(this.lightingOperations[i]);
+        }
+    }
+
     DrawGUILoop(delta) {
         for (let operation of this.guiDrawingOperations)
             this.ClearCanvas(operation);
@@ -633,6 +659,7 @@ class CanvasDrawer {
 
         this.DrawDebugLoop(delta);
         this.DrawGameObjectsLoop(delta);
+        this.DrawLightingLoop(delta);
         this.DrawGUILoop(delta);
 
         this.tileCursorPreview.Update(this.tileCursorPreview.position);
@@ -645,6 +672,11 @@ class CanvasDrawer {
         CanvasDrawer.GCD.mainCanvasCtx.clearRect(0, 0, CanvasDrawer.GCD.mainCanvas.width, CanvasDrawer.GCD.mainCanvas.height)
         CanvasDrawer.GCD.mainCanvasCtx.drawImage(CanvasDrawer.GCD.frameBufferTerrain, cameraRect.x, cameraRect.y, cameraRect.z, cameraRect.a, 0, 0, CanvasDrawer.GCD.mainCanvas.width, CanvasDrawer.GCD.mainCanvas.height);
         CanvasDrawer.GCD.mainCanvasCtx.drawImage(CanvasDrawer.GCD.frameBuffer, cameraRect.x, cameraRect.y, cameraRect.z, cameraRect.a, 0, 0, CanvasDrawer.GCD.mainCanvas.width, CanvasDrawer.GCD.mainCanvas.height);
+
+        CanvasDrawer.GCD.mainCanvasCtx.globalCompositeOperation = 'lighten';
+        CanvasDrawer.GCD.mainCanvasCtx.drawImage(CanvasDrawer.GCD.lightFrameBuffer, cameraRect.x, cameraRect.y, cameraRect.z, cameraRect.a, 0, 0, CanvasDrawer.GCD.mainCanvas.width, CanvasDrawer.GCD.mainCanvas.height);
+        CanvasDrawer.GCD.mainCanvasCtx.globalCompositeOperation = 'source-over';
+
         CanvasDrawer.GCD.mainCanvasCtx.drawImage(CanvasDrawer.GCD.gameDebugCanvas, cameraRect.x, cameraRect.y, cameraRect.z, cameraRect.a, 0, 0, CanvasDrawer.GCD.mainCanvas.width, CanvasDrawer.GCD.mainCanvas.height);
     }
 
@@ -816,6 +848,14 @@ class CanvasDrawer {
             context.stroke();
 
             context.globalAlpha = oldAlpha;
+        } else if (drawingOperation instanceof LightingOperation) {
+            drawingOperation.needsToBeRedrawn = false;
+
+            context.shadowColor = drawingOperation.color;
+            context.shadowBlur = 500;
+            context.lineWidth = 100;
+            context.strokeStyle = drawingOperation.color;
+            context.strokeRect(drawingOperation.position.x, drawingOperation.position.y, 1, 1);
         }
     }
 
@@ -931,6 +971,10 @@ class CanvasDrawer {
 
             case OperationType.gui:
                 this.guiDrawingOperations.push(operation);
+                break;
+
+            case OperationType.lighting:
+                this.lightingOperations.push(operation);
                 break;
         }
     }

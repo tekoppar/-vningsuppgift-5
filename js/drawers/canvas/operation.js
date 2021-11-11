@@ -7,6 +7,7 @@ const OperationType = {
     gameObjects: 1,
     gui: 2,
     previewTerrain: 3,
+    lighting: 4,
 }
 
 class Operation {
@@ -250,4 +251,59 @@ class PathOperation extends Operation {
     }
 }
 
-export { Operation, RectOperation, TextOperation, DrawingOperation, PathOperation, OperationType };
+class LightingOperation extends Operation {
+    constructor(pos, size = new Vector2D(32, 32), drawingCanvas, color = 'rgb(243, 197, 47)', clear, drawIndex = 0, lifetime = -1, alpha = 0.3) {
+        super(drawingCanvas);
+        this.position = pos;
+        this.clear = clear;
+        this.size = size;
+        this.color = color;
+        this.drawIndex = drawIndex;
+        this.needsToBeRedrawn = true;
+        this.lifeTime = lifetime;
+        this.alpha = alpha;
+    }
+
+    GetDrawIndex() {
+        return this.drawIndex;
+    }
+
+    GetPosition() {
+        return this.position;
+    }
+
+    GetDrawPosition() {
+        return Vector2D.Add(this.position, this.size);
+    }
+
+    GetDrawPositionY() {
+        return this.position.y + this.size.y;
+    }
+
+    GetSize() {
+        return this.size;
+    }
+
+    Update(pos) {
+        this.needsToBeRedrawn = true;
+        super.Update(pos === undefined ? this.position : pos);
+    }
+
+    GetPreviousPosition() {
+        return this.oldPosition === undefined ? this.position : this.oldPosition;
+    }
+
+    DrawState() {
+        return this.needsToBeRedrawn;
+    }
+
+    Tick(delta) {
+        this.lifeTime -= delta;
+
+        if (this.lifeTime <= 0) {
+            this.Delete();
+        }
+    }
+}
+
+export { Operation, RectOperation, TextOperation, DrawingOperation, PathOperation, LightingOperation, OperationType };

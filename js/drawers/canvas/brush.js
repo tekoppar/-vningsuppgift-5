@@ -2,7 +2,7 @@
 import { Tile } from '../tiles/tile.js';
 import { DrawingOperation } from './operation.js'; */
 
-import { Vector2D, Tile, DrawingOperation } from "../../internal.js";
+import { Vector2D, Tile, DrawingOperation, RectOperation, LightingOperation } from "../../internal.js";
 
 const brushTypes = {
     circle: 'circle',
@@ -16,7 +16,7 @@ const BrushDrawState = {
 };
 
 class Brush {
-    constructor(settings = new BrushSettings(new Vector2D(1,1), brushTypes.box), canvasSprite = undefined, drawState = BrushDrawState.Normal) {
+    constructor(settings = new BrushSettings(new Vector2D(1, 1), brushTypes.box), canvasSprite = undefined, drawState = BrushDrawState.Normal) {
         this.settings = settings;
         this.canvasSprite = canvasSprite;
         this.drawState = drawState;
@@ -51,6 +51,21 @@ class Brush {
             newSprites.push(sprite);
 
         return newSprites;
+    }
+
+    static GenerateDrawingOperation(operation, brushType = brushTypes.box) {
+        if (operation instanceof DrawingOperation) {
+
+        } else if (operation instanceof RectOperation) {
+
+        } else if (operation instanceof LightingOperation) {
+            switch (brushType) {
+                case brushType.box:
+                    break;
+                case brushType.circle:
+                    break;
+            }
+        }
     }
 
     GenerateDrawingOperations(pos, drawingCanvas, targetCanvas) {

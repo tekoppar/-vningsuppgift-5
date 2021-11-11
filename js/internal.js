@@ -16,7 +16,7 @@ export { Brush, BrushDrawState, brushTypes } from './drawers/canvas/brush.js';
 
 export { CanvasSprite } from './drawers/canvas/canvasSprite.js';
 export { CanvasAtlas, CanvasAtlasObject } from './drawers/canvas/canvasAtlas.js';
-export { DrawingOperation, OperationType, RectOperation, TextOperation, PathOperation } from './drawers/canvas/operation.js';
+export { DrawingOperation, OperationType, RectOperation, TextOperation, PathOperation, LightingOperation } from './drawers/canvas/operation.js';
 
 export { CanvasDrawer, correctMouse } from './drawers/canvas/customDrawer.js';
 
