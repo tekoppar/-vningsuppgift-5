@@ -1,4 +1,6 @@
-import { Vector2D } from '../../classes/vectors.js';
+//import { Vector2D } from '../../classes/vectors.js';
+
+import { Vector2D } from '../../internal.js';
 
 const OperationType = {
     terrain: 0,

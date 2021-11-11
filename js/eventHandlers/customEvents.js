@@ -1,4 +1,6 @@
-import { Cobject} from '../classes/baseClasses/object.js';
+//import { Cobject } from '../classes/baseClasses/object.js';
+
+import { Cobject } from '../internal.js';
 
 class CustomEventData {
     constructor(eventName, otherObject) {
@@ -20,8 +22,8 @@ class CustomEventHandler extends Cobject {
         super.FixedUpdate();
 
         if (this.customEvents.length > 0) {
-            for (let i = 0; i < this.registeredListeners.length; i++) {
-                for (let y = 0; y < this.customEvents.length; y++) {
+            for (let y = 0; y < this.customEvents.length; y++) {
+                for (let i = 0; i < this.registeredListeners.length; i++) {
                     this.registeredListeners[i].CEvent(this.customEvents[y].eventName, this.customEvents[y].otherObject);
                 }
             }

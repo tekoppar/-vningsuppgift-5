@@ -1,17 +1,20 @@
-import { CustomEventHandler } from '../eventHandlers/customEvents.js';
+/* import { CustomEventHandler } from '../eventHandlers/customEvents.js';
 import { Plant, AllPlantData } from '../gameobjects/props/plants/plants.js';
 import { MainCharacter } from '../gameobjects/characters/character.js';
 import { InputHandler } from '../eventHandlers/inputEvents.js';
 import { Vector2D } from '../classes/vectors.js';
 import { plantAnimations } from '../animations/AllAnimations.js';
-import { CanvasSprite, CanvasDrawer, CanvasAtlas } from '../drawers/canvas/customDrawer.js';
+import { CanvasDrawer } from '../drawers/canvas/customDrawer.js';
+import { CanvasSprite } from '../drawers/canvas/canvasSprite.js';
 import { Cobject } from '../classes/baseClasses/object.js';
 import { TileData } from '../drawers/tiles/tile.js';
 import { Seed } from '../gameobjects/props/plants/plantitem.js';
 import { Shop } from '../gameobjects/props/shop.js';
 import { TileMaker } from '../drawers/tiles/tilemaker.js';
 import { CollisionEditor } from '../editors/collisionEditor.js';
-import { PlayerController } from '../controllers/playerController.js';
+import { PlayerController } from '../controllers/playerController.js'; */
+
+import { ObjectsHasBeenInitialized, ToggleObjectsHasBeenInitialized, CustomEventHandler, Plant, AllPlantData, MainCharacter, InputHandler, Vector2D, plantAnimations, CanvasDrawer, CanvasSprite, Cobject, TileData, Seed, Shop, TileMaker, CollisionEditor, PlayerController } from '../internal.js';
 
 var GlobalFrameCounter = 0;
 
@@ -54,7 +57,6 @@ class MasterObject {
             CustomEventHandler: false,
         }
         this.classesHasBeenInitialized = false;
-        this.objectsHasBeenInitialized = false;
         this.playerController;
     }
 
@@ -91,8 +93,8 @@ class MasterObject {
     GameStart() {
         this.CheckIfClassesInitialized();
 
-        if (this.classesHasBeenInitialized === true && this.objectsHasBeenInitialized === false) {
-            this.playerController = new PlayerController(new MainCharacter("/content/sprites/lpcfemalelight_updated.png", 'femaleLight', 'mainP'));
+        if (this.classesHasBeenInitialized === true && ObjectsHasBeenInitialized === false) {
+            this.playerController = new PlayerController(new MainCharacter("/content/sprites/lpcfemalelight_updated.png", 'femaleLight', 'mainP', 0, new Vector2D(256, 326)));
             this.playerController.playerCharacter.AddAttachment('/content/sprites/red.png', 'redHair');
             this.playerController.playerCharacter.AddAttachment('/content/sprites/lpcfemaleunderdress.png', 'underDress');
             InputHandler.GIH.AddListener(this.playerController);
@@ -101,10 +103,10 @@ class MasterObject {
             CollisionEditor.GCEditor = new CollisionEditor();
             TileMaker.GenerateCustomTiles();
 
-            this.objectsHasBeenInitialized = true;
+            ToggleObjectsHasBeenInitialized(true);
         }
 
-        if (this.objectsHasBeenInitialized === true && (CanvasDrawer.GCD.isLoadingFinished == null || CanvasDrawer.GCD.isLoadingFinished === true)) {
+        if (ObjectsHasBeenInitialized === true && (CanvasDrawer.GCD.isLoadingFinished == null || CanvasDrawer.GCD.isLoadingFinished === true)) {
             window.requestAnimationFrame(() => this.GameBegin());
         } else {
             GlobalFrameCounter++;
@@ -123,8 +125,10 @@ class MasterObject {
 
             this.gameHasBegun = true;
 
-            for (let i = 0; i < Cobject.AllCobjects.length; i++) {
-                Cobject.AllCobjects[i].GameBegin();
+            let keys = Object.keys(Cobject.AllCobjects);
+            for (let i = 0; i < keys.length; i++) {
+                if (Cobject.AllCobjects[keys[i]] !== undefined)
+                    Cobject.AllCobjects[keys[i]].GameBegin();
             }
         }
 
@@ -132,9 +136,13 @@ class MasterObject {
     }
 
     GameLoopActions(delta) {
-        for (let i = 0; i < Cobject.AllCobjects.length; i++) {
-            Cobject.AllCobjects[i].FixedUpdate(delta);
+        let keys = Object.keys(Cobject.AllCobjects);
+        for (let i = 0; i < keys.length; i++) {
+            if (Cobject.AllCobjects[keys[i]] !== undefined)
+                Cobject.AllCobjects[keys[i]].FixedUpdate(delta);
         }
+
+        keys = null;
 
         CanvasDrawer.GCD.DrawLoop(delta);
     }

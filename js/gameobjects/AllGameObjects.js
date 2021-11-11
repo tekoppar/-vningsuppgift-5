@@ -1,7 +1,9 @@
-import { Vector2D, Vector4D } from "../classes/vectors.js";
+/* import { Vector2D, Vector4D } from "../classes/vectors.js";
 import { Tree } from "./props/tree.js";
 import { ExtendedProp } from "./props/props.js";
-import { CAnimation, AnimationType } from "../animations/animations.js";
+import { CAnimation, AnimationType } from "../animations/animations.js"; */
+
+import { Vector2D, Vector4D, Tree, ExtendedProp, CAnimation, AnimationType } from '../internal.js';
 
 let Props = [
     new Tree('treeBirch', new Vector2D(11 * 32, 14 * 32), undefined, 'treeBirch1'),
@@ -109,4 +111,4 @@ Props = Props.concat([
     new ExtendedProp('fence', new Vector2D(59 * 32, 28 * 32), new CAnimation('null', new Vector2D(1, 0), new Vector2D(1, 0), 32, 32, AnimationType.Single, 1), 'fence', 0, new Vector4D(32, 1, 0, -8)),
 ]);
 
-export { Props} ;
+export { Props } ;

@@ -1,5 +1,6 @@
-import { Vector2D, Vector, Vector4D } from '../classes/vectors.js';
-import { Tile } from '../drawers/tiles/tile.js';
+/* import { Vector2D } from '../classes/vectors.js'; */
+
+import { Vector2D } from '../internal.js';
 
 var AnimationType = {
     Idle: 0, /* Loops forever */

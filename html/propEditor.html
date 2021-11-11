@@ -1,0 +1,64 @@
+<style>
+    .prop-editor {
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+        background-color: black;
+        border-radius: 3px;
+        padding: 5px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-sizing: content-box;
+        overflow: hidden;
+        visibility: collapse;
+    }
+
+    .prop-editor-container {
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+        background-color: black;
+        border-radius: 3px;
+        padding: 5px;
+        position: relative;
+        box-sizing: content-box;
+        overflow: hidden;
+    }
+
+    .prop-editor-canvas {
+        width: 100%;
+        height: 100%;
+    }
+
+    .prop-editor-grid {
+        display: block;
+        background-size: 32px 32px;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(26, 26, 26);
+    }
+
+    .prop-editor-controls {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .prop-editor-grid img:hover {
+        outline:2px solid #f3c52f;
+        cursor:pointer;
+    }
+</style>
+
+<div class="prop-editor" id="prop-editor">
+    <div class="prop-editor-container">
+        <div id="prop-editor-grid" class="prop-editor-grid"></div>
+    </div>
+    <div class="prop-editor-controls">
+        <button id="prop-editor-copy">Copy Prop</button>
+        <button id="prop-editor-close">Close</button>
+    </div>
+</div>

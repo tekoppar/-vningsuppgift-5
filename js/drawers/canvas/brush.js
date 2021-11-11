@@ -1,16 +1,25 @@
-import { Vector2D } from '../../classes/vectors.js';
+/* import { Vector2D } from '../../classes/vectors.js';
 import { Tile } from '../tiles/tile.js';
-import { DrawingOperation } from './operation.js';
+import { DrawingOperation } from './operation.js'; */
+
+import { Vector2D, Tile, DrawingOperation } from "../../internal.js";
 
 const brushTypes = {
     circle: 'circle',
     box: 'box',
 }
 
+const BrushDrawState = {
+    Normal: 'normal',
+    DrawBeneath: 'drawbeneath',
+    DrawOntop: 'drawontop',
+};
+
 class Brush {
-    constructor(settings = new BrushSettings(new Vector2D(1,1), brushTypes.box), canvasSprite = undefined) {
+    constructor(settings = new BrushSettings(new Vector2D(1,1), brushTypes.box), canvasSprite = undefined, drawState = BrushDrawState.Normal) {
         this.settings = settings;
         this.canvasSprite = canvasSprite;
+        this.drawState = drawState;
         document.getElementById('size-x').addEventListener('input', this);
         document.getElementById('size-y').addEventListener('input', this);
     }
@@ -18,6 +27,10 @@ class Brush {
     SetBrush(type, canvasSprite) {
         this.settings.type = type;
         this.canvasSprite = canvasSprite;
+    }
+
+    SetState(newState) {
+        this.drawState = newState;
     }
 
     SplitMultiSelection(sprite) {
@@ -122,4 +135,4 @@ class BrushSettings {
     }
 }
 
-export { Brush, BrushSettings, brushTypes };
+export { Brush, BrushSettings, brushTypes, BrushDrawState };

@@ -1,10 +1,12 @@
-import { GameObject } from '../gameObject.js';
+/*import { GameObject } from '../gameObject.js';
 import { Vector2D, Vector4D } from '../../classes/vectors.js';
 import { CanvasDrawer } from '../../drawers/canvas/customDrawer.js';
 import { OperationType } from '../../drawers/canvas/operation.js';
-import { PolygonCollision, Collision, BoxCollision } from '../collision/collision.js';
+import { PolygonCollision, BoxCollision } from '../collision/collision.js';
 import { Shadow } from '../gameObject.js';
-import { CAnimation } from '../../animations/animations.js';
+import { CAnimation } from '../../animations/animations.js';*/
+
+import { GameObject, Vector2D, Vector4D, CanvasDrawer, OperationType, PolygonCollision, BoxCollision, Shadow, CAnimation } from '../../internal.js';
 
 class Prop extends GameObject {
     constructor(name, position, animations, canvasName, drawIndex = 0) {
@@ -53,14 +55,24 @@ class ExtendedProp extends Prop {
         this.isVisible = true;
         this.currentAnimation = undefined;
         this.blockingCollisionSize = blockingCollisionSize;
-        
+
         if (animations instanceof CAnimation)
             this.currentAnimation = animations.Clone();
 
         this.shadow = undefined;
     }
 
-    GameBegin(polygonCollision = undefined, position = new Vector2D(0, 0), size = new Vector2D(0, 0)) {
+    Delete() {
+        super.Delete();
+
+        if (this.shadow !== undefined) {
+            this.shadow.Delete();
+            this.shadow = undefined;
+        }
+        this.currentAnimation = undefined;
+    }
+
+    GameBegin(polygonCollision = undefined, position = new Vector2D(0, 0), size = new Vector2D(0, 0), tilePosition = new Vector2D(0, 0), createShadow = false) {
         super.GameBegin();
 
         if (polygonCollision === undefined && this.currentAnimation !== undefined) {
@@ -71,7 +83,7 @@ class ExtendedProp extends Prop {
         }
 
         this.CreateDrawOperation(
-            { x: position.x, y: position.y, w: size.x, h: size.y },
+            { x: tilePosition.x, y: tilePosition.y, w: size.x, h: size.y },
             this.position.Clone(),
             false,
             CanvasDrawer.GCD.canvasAtlases[this.canvasName].canvas,
@@ -102,10 +114,12 @@ class ExtendedProp extends Prop {
 
         this.BlockingCollision = new BoxCollision(this.position.Clone(), this.blockingCollisionSize.Clone(), true, this, true);
         this.BlockingCollision.position = this.BoxCollision.GetCenterPosition().Clone();
-        this.BlockingCollision.position.Sub({ x: this.BlockingCollision.size.x / 2 + this.blockingCollisionSize.z, y: this.BlockingCollision.size.y / 2 + this.blockingCollisionSize.a});
+        this.BlockingCollision.position.Sub({ x: this.BlockingCollision.size.x / 2 + this.blockingCollisionSize.z, y: this.BlockingCollision.size.y / 2 + this.blockingCollisionSize.a });
 
-        this.shadow = new Shadow(this, this.name + 'Shadow', new Vector2D(this.BoxCollision.position.x, this.BoxCollision.GetCenterTilePosition().y + size.y + 1));
-        this.shadow.GameBegin();
+        if (createShadow) {
+            this.shadow = new Shadow(this, this.name + 'Shadow', new Vector2D(this.BoxCollision.position.x, this.BoxCollision.GetCenterTilePosition().y + size.y + 1));
+            this.shadow.GameBegin();
+        }
     }
 
     PlayAnimation() {
@@ -118,7 +132,9 @@ class ExtendedProp extends Prop {
 
     FlagDrawingUpdate(position) {
         super.FlagDrawingUpdate(position);
-        this.shadow.FlagDrawingUpdate(position);
+
+        if (this.shadow !== undefined)
+            this.shadow.FlagDrawingUpdate(position);
     }
 }
 

@@ -1,5 +1,7 @@
-import { Cobject } from '../classes/baseClasses/object.js';
-import { Vector2D } from '../classes/vectors.js';
+/* import { Cobject } from '../classes/baseClasses/object.js';
+import { Vector2D } from '../classes/vectors.js'; */
+
+import { CanvasDrawer, Cobject, Vector2D } from '../internal.js';
 
 const InputState = {
     OnPressed: 0,
@@ -81,13 +83,15 @@ class InputHandler extends Cobject {
         this.registeredListeners.push(object);
     }
 
-    AddInput(key, state, position = new Vector2D(0, 0)) {
-        this.keysPressed[key].State(state, position);
+    RemoveListener(object) {
+        for (let i = 0; i < this.registeredListeners.length; i++) {
+            if (this.registeredListeners[i] === object)
+                this.registeredListeners.splice(i, 1);
+        }
     }
 
-    NewMousePosition(x, y) {
-        let rect = this.gameCanvas.getBoundingClientRect();
-        return new Vector2D(x - rect.x, y - rect.y);
+    AddInput(key, state, position = new Vector2D(0, 0)) {
+        this.keysPressed[key].State(state, position);
     }
 
     handleEvent(e) {
@@ -154,16 +158,16 @@ class InputHandler extends Cobject {
                 break;
             case 'mousedown':
                 switch (e.button) {
-                    case 0: this.AddInput('leftMouse', InputState.OnPressed, this.NewMousePosition(e.clientX, e.clientY)); break;
-                    case 1: this.AddInput('middleMouse', InputState.OnPressed, this.NewMousePosition(e.clientX, e.clientY)); break;
-                    case 2: this.AddInput('rightMouse', InputState.OnPressed, this.NewMousePosition(e.clientX, e.clientY)); break;
+                    case 0: this.AddInput('leftMouse', InputState.OnPressed, CanvasDrawer.GCD.tileCursorPreview.position.Clone()); break;
+                    case 1: this.AddInput('middleMouse', InputState.OnPressed, CanvasDrawer.GCD.tileCursorPreview.position.Clone()); break;
+                    case 2: this.AddInput('rightMouse', InputState.OnPressed, CanvasDrawer.GCD.tileCursorPreview.position.Clone()); break;
                 }
                 break;
             case 'mouseup':
                 switch (e.button) {
-                    case 0: this.AddInput('leftMouse', InputState.OnReleased, this.NewMousePosition(e.clientX, e.clientY)); break;
-                    case 1: this.AddInput('middleMouse', InputState.OnReleased, this.NewMousePosition(e.clientX, e.clientY)); break;
-                    case 2: this.AddInput('rightMouse', InputState.OnReleased, this.NewMousePosition(e.clientX, e.clientY)); break;
+                    case 0: this.AddInput('leftMouse', InputState.OnReleased, CanvasDrawer.GCD.tileCursorPreview.position.Clone()); break;
+                    case 1: this.AddInput('middleMouse', InputState.OnReleased, CanvasDrawer.GCD.tileCursorPreview.position.Clone()); break;
+                    case 2: this.AddInput('rightMouse', InputState.OnReleased, CanvasDrawer.GCD.tileCursorPreview.position.Clone()); break;
                 }
                 break;
         }
@@ -172,9 +176,9 @@ class InputHandler extends Cobject {
     FixedUpdate() {
         let keys = Object.keys(this.keysPressed);
 
-        for (let i = 0; i < this.registeredListeners.length; i++) {
-            for (let x = 0; x < keys.length; x++) {
-                if (this.keysPressed[keys[x]].state !== InputState.Null) {
+        for (let x = 0; x < keys.length; x++) {
+            if (this.keysPressed[keys[x]].state !== InputState.Null) {
+                for (let i = 0; i < this.registeredListeners.length; i++) {
                     switch (this.keysPressed[keys[x]].inputType) {
                         case InputType.keyboard:
                             this.registeredListeners[i].CEvent('input', keys[x], { eventType: this.keysPressed[keys[x]].state });
@@ -195,6 +199,8 @@ class InputHandler extends Cobject {
                 case InputState.Released: this.keysPressed[keys[x]].State(InputState.Null); break;
             }
         }
+
+        keys = null;
     }
 }
 

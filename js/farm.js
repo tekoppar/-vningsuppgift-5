@@ -1,6 +1,8 @@
-import { MasterObject } from './classes/masterObject.js';
+/* import { MasterObject } from './classes/masterObject.js';
 import { PageFetcher } from './classes/utility/pageFetcher.js';
-import { Props } from './gameobjects/AllGameObjects.js';
+import { Props } from './gameobjects/AllGameObjects.js'; */
+
+import { MasterObject, PageFetcher, Props } from './internal.js';
 
 class SpriteObject {
     constructor(x, y, w, h, canvas, name) {
@@ -17,9 +19,9 @@ Object.defineProperty(Array.prototype, 'CloneObjects', {
     value() {
         let arr = [];
         for (let i = 0; i < this.length; i++) {
-                let newObject = Object.create(this[i]);
-                Object.assign(newObject, this[i]);
-                arr.push(newObject);
+            let newObject = Object.create(this[i]);
+            Object.assign(newObject, this[i]);
+            arr.push(newObject);
         }
         return arr;
     }
@@ -42,6 +44,14 @@ Object.defineProperty(Node.prototype, 'appendChildren', {
         for (var i = 0; i < nodes.length; i++) {
             this.appendChild(nodes[i]);
         }
+    }
+});
+
+Object.defineProperty(Number, 'randomInt', {
+    value(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive          
     }
 });
 
@@ -78,6 +88,7 @@ let includeGUI = function appendGUI(content) {
 PageFetcher.GPF.AddRequest(includeTemplates, '/html/inventory.html');
 PageFetcher.GPF.AddRequest(includeTemplates, '/html/tileLUTEditor.html');
 PageFetcher.GPF.AddRequest(includeGUI, '/html/collisionEditor.html');
+PageFetcher.GPF.AddRequest(includeGUI, '/html/propEditor.html');
 
 window.onload = function () {
     window.requestAnimationFrame(() => MasterObject.MO.GameStart());

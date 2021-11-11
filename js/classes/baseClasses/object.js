@@ -1,39 +1,32 @@
-import { Vector2D } from '../vectors.js';
+/* import { Vector2D } from '../vectors.js'; */
+
+import { Vector2D } from '../../internal.js';
 
 class Cobject {
-    static AllCobjects = [];
-    static AllUIDs = {};
+    static AllCobjects = { };
 
     constructor() {
         this.position = new Vector2D(256, 256);
         this.size = new Vector2D(1, 1);
         this.name = '';
-        this.UID
-        
+        this.UID;
+
         Cobject.AddObject(this);
-        //MasterObject.MO.AllCobjects.push(this);
     }
 
     static GetObjectFromUID(uid) {
-        return Cobject.AllCobjects[Cobject.AllUIDs[uid]];
+        return Cobject.AllCobjects[uid];
     }
 
     static DeleteObject(object) {
-        if (Cobject.AllUIDs[object.UID] === undefined)
+        if (Cobject.AllCobjects[object.UID] === undefined)
             return;
 
-        Cobject.AllCobjects.splice(Cobject.AllUIDs[object.UID], 1);
-        delete Cobject.AllUIDs[object.UID];
-
-
-        /*for (let i = 0; i < Cobject.AllCobjects.length; i++) {
-            if (object === Cobject.AllCobjects[i])
-                Cobject.AllCobjects.splice(i, 1);    
-        }*/
+        delete Cobject.AllCobjects[object.UID];
     }
 
     static GenerateUID() {
-        let array = new Uint32Array(4);
+        let array = new Uint32Array(3);
         window.crypto.getRandomValues(array);
         let uid = '';
 
@@ -41,18 +34,16 @@ class Cobject {
             uid += array[i];
         }
 
-        if (Cobject.AllUIDs[uid] !== undefined) {
+        if (Cobject.AllCobjects[uid] !== undefined) {
             uid = Cobject.GenerateUID();
         }
-
         return uid;
     }
 
     static AddObject(object) {
         let uid = Cobject.GenerateUID();
         object.UID = uid;
-        Cobject.AllUIDs[uid] = Cobject.AllCobjects.length;
-        Cobject.AllCobjects.push(object);
+        Cobject.AllCobjects[uid] = object;
     }
 
     FixedUpdate() {
@@ -71,7 +62,7 @@ class Cobject {
         return this.position.Distance(checkPos) < range;
     }
 
-    GameBegin() {}
+    GameBegin() { }
 }
 
 export { Cobject };

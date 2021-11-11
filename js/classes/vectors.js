@@ -114,8 +114,23 @@ class Vector2D {
         return Math.sqrt(Math.pow(this.x - a.x, 2)) + Math.sqrt(Math.pow(this.y - a.y, 2));
     }
 
+    Lerp(a, t) {
+        return new Vector2D(this.x + (a.x - this.x) * t, this.y + (a.y - this.y) * t);
+    }
+
+    LerpValue(a, v) {
+        let distance = this.Distance(a);
+        let t = v / distance;
+        return this.Lerp(a, t);
+    }
+
     CheckInRange(checkPos, range = 100.0) {
         return this.Distance(checkPos) < range;
+    }
+
+    Set(a) {
+        this.x = a.x;
+        this.y = a.y;
     }
 
     Clone() {
@@ -218,6 +233,10 @@ class Vector4D {
         this.y /= a.y;
         this.z /= a.z;
         this.a /= a.a;
+    }
+
+    Inside(position) {
+        return position.x > this.x && position.x < this.x + this.z && position.y > this.y && position.y < this.y + this.a;
     }
 
     Equal(a) {
@@ -424,4 +443,21 @@ class Matrix {
     }
 }
 
-export { Vector2D, Vector, Vector4D, Matrix };
+class Rectangle {
+    constructor(x, y, w, h) {
+        this.x = x;
+        this.y = y;
+        this.w = w;
+        this.h = h;
+    }
+
+    Inside(position) {
+        return position.x > this.x && position.x < this.x + this.w && position.y > this.y && position.y < this.y + this.h;
+    }
+
+    Clone() {
+        return new Rectangle(this.x, this.y, this.w, this.h);
+    }
+}
+
+export { Vector2D, Vector, Vector4D, Matrix, Rectangle };

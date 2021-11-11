@@ -1,6 +1,8 @@
 //import { CAnimation, AnimationType } from './animations.js';
-import { CAnimation, AnimationType } from '../animations/animations.js';
-import { Vector2D } from '../classes/vectors.js';
+/* import { CAnimation, AnimationType } from '../animations/animations.js';
+import { Vector2D } from '../classes/vectors.js'; */
+
+import { CAnimation, AnimationType, Vector2D } from '../internal.js';
 
 export let femaleAnimations = {
     walkUp: new CAnimation('walkUp', new Vector2D(1, 8), new Vector2D(8, 8), 64, 64, AnimationType.Cycle, 5),

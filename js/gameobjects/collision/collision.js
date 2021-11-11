@@ -1,4 +1,32 @@
-import { Vector2D, Vector4D } from "../../classes/vectors.js";
+//import { Vector2D, Vector4D } from "../../classes/vectors.js";
+
+import { CanvasDrawer, Vector2D, Vector4D } from '../../internal.js';
+
+class QuadTree {
+    static MAX_OBJECTS = 25;
+
+    constructor() {
+        this.level = level;
+        this.objects = [];
+        this.bounds = bounds;
+        this.nodes = [];
+    }
+
+    Clear() {
+        this.objects = null;
+        this.level = null;
+        this.bounds = null;
+        
+        for (let node in this.nodes) {
+            node.Clear();
+        }
+        this.nodes = null;
+    }
+
+    Split() {
+
+    }
+}
 
 class CollisionHandler {
     static GCH = new CollisionHandler();
@@ -56,7 +84,7 @@ class CollisionHandler {
     GetInRange(collision, range) {
         let inRange = [];
         for (let i = 0; i < this.Collisions.length; i++) {
-            if (this.Collisions[i].collisionOwner !== undefined && collision.collisionOwner !== this.Collisions[i].collisionOwner && collision.position.CheckInRange(this.Collisions[i].position, range) === true) {
+            if (this.Collisions[i].collisionOwner !== undefined && collision.collisionOwner !== this.Collisions[i].collisionOwner && collision.CheckInCenterRangeB(this.Collisions[i], range) === true) {
                 inRange.push(this.Collisions[i].collisionOwner);
             }
         }
@@ -128,6 +156,20 @@ class Collision {
         return a.CheckInRange(b, range);
     }
 
+    CheckInCenterRangeB(collision, range = 25) {
+        let a = this.GetCenterPosition(),
+            b = collision.GetCenterPosition().Clone();
+
+        return a.CheckInRange(b, range);
+    }
+
+    CheckInRealRange(collision, range = 25) {
+        let a = this.GetRealCenterPosition(),
+            b = collision.GetRealCenterPosition();
+
+        return a.CheckInRange(b, range);
+    }
+
     CheckOverlap() {
         let overlapEvent = collisionHandler.CheckCollisions(this);
     }
@@ -146,6 +188,15 @@ class Collision {
         newPos.y += this.size.y / 2 + 16;
 
         return newPos;
+    }
+
+    GetRealCenterPosition() {
+        let v = this.GetCenterPosition();
+        
+        if (this.size.x > 32) 
+            v.x -= 16;
+
+        return v;
     }
 
     GetPoints() {
@@ -174,6 +225,11 @@ class Collision {
             BBB.y -= 2;
             BBB.z += 2;
             BBB.a += 2;
+
+            CanvasDrawer.GCD.AddDebugOperation(new Vector2D(ABB.x, ABB.y), 5, 'orange');
+            CanvasDrawer.GCD.AddDebugOperation(new Vector2D(ABB.z, ABB.a), 5, 'blue');
+            CanvasDrawer.GCD.AddDebugOperation(new Vector2D(BBB.x, BBB.y), 5, 'pink');
+            CanvasDrawer.GCD.AddDebugOperation(new Vector2D(BBB.z, BBB.a), 5, 'purple');
             return this.IsOverlaping1D(new Vector2D(ABB.x, ABB.z), new Vector2D(BBB.x, BBB.z)) && this.IsOverlaping1D(new Vector2D(ABB.y, ABB.a), new Vector2D(BBB.y, BBB.a));
         }
         else
@@ -260,6 +316,10 @@ class Collision {
 
     Cross(a, b, o) {
         return (a.x - o.x) * (b.y - o.y) - (a.y - o.y) * (b.x - o.x);
+    }
+
+    OnHit(damage, source) {
+        this.collisionOwner.OnHit(damage, source);
     }
 }
 

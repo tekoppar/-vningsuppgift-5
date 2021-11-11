@@ -1,11 +1,10 @@
-import { CMath } from '../../../classes/math/customMath.js';
-import { BoxCollision } from '../../collision/collision.js';
+/* import { CMath } from '../../../classes/math/customMath.js';
 import { Prop } from '../props.js';
 import { Item } from '../../items/item.js';
-import { CanvasDrawer, CanvasSprite } from '../../../drawers/canvas/customDrawer.js';
-import { Tile } from '../../../drawers/tiles/tile.js';
-import { MasterObject } from '../../../classes/masterObject.js';
-import { Vector2D } from '../../../classes/vectors.js';
+import { CanvasDrawer } from '../../../drawers/canvas/customDrawer.js';
+import { CanvasSprite } from '../../../drawers/canvas/canvasSprite.js'; */
+
+import { CMath, Prop, Item, CanvasDrawer, CanvasSprite } from '../../../internal.js'
 
 class PlantData {
     constructor(growthSpeed, regrowthSpeed, gatherRange = { low: 1, high: 4 }, plantIcon = new CanvasSprite(29, 10, 32, 32, 'fruitsveggies', true)) {

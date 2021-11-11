@@ -1,4 +1,4 @@
-import { CFrame } from '../../animations/animations.js';
+/* import { CFrame } from '../../animations/animations.js';
 import { CanvasDrawer } from '../../drawers/canvas/customDrawer.js';
 import { OperationType } from '../../drawers/canvas/operation.js';
 import { InputHandler } from '../../eventHandlers/inputEvents.js';
@@ -7,7 +7,9 @@ import { Prop } from '../props/props.js';
 import { Vector2D } from '../../classes/vectors.js';
 import { GUI } from '../../gui/gui.js';
 import { HTMLInfo } from '../../gui/htmlinfo.js';
-import { CollisionHandler, PolygonCollision } from '../collision/collision.js';
+import { PolygonCollision } from '../collision/collision.js'; */
+
+import { CFrame, CanvasDrawer, OperationType, InputHandler, Item, Prop, Vector2D, GUI, HTMLInfo, PolygonCollision } from '../../internal.js'; 
 
 let ShopCollisions = {
     seedShop: [new Vector2D(0, 0), new Vector2D(95, 0), new Vector2D(95, 105), new Vector2D(0, 105)],
@@ -99,8 +101,6 @@ class Shop extends Prop {
             this.shopHTML.appendChild(clone);
             this.shopHTML.appendChild(eventContainer);
             document.getElementById('game-gui').appendChild(this.shopHTML);
-
-            InputHandler.GIH.AddListener(this);
 
             this.shopSpriteSize = new Vector2D(CanvasDrawer.GCD.canvasAtlases[this.canvasName].width, CanvasDrawer.GCD.canvasAtlases[this.canvasName].height);
             this.CreateDrawOperation(
@@ -217,13 +217,16 @@ class Shop extends Prop {
         if (this.isVisible == true) {
             this.shopHTMLInfo.RemoveHovered();
             this.shopHTMLInfo.RemoveSelect();
+            InputHandler.GIH.AddListener(this);
+        } else {
+            InputHandler.GIH.RemoveListener(this);
         }
     }
 
     CEvent(eventType, key, data) {
         switch (eventType) {
             case 'use':
-                if (this.BoxCollision.GetCenterPosition().CheckInRange(key.BoxCollision.GetCenterPosition(), 75.0) === true) {
+                if (this.BoxCollision.CheckInCenterRangeB(key.BoxCollision, 75.0) === true) {
                     this.ShowShop();
                     key.inventory.ShowInventory(!this.isVisible);
                     this.gameObjectUsing = this.isVisible === false ? key : undefined;

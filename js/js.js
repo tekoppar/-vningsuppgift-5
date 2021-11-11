@@ -34,12 +34,10 @@ const messages = {
 }
 
 function getMessage(type, value) {
-    console.log(messages[type][value]);
     return messages[type][value];
 }
 
 function validateInputs(el) {
-    console.log(el);
     let errorMessage = "";
 
     if (el.validity.typeMismatch || el.validity.patternMismatch) {

@@ -1,4 +1,4 @@
-import { GameObject } from '../gameObject.js';
+/* import { GameObject } from '../gameObject.js';
 import { Inventory } from '../characters/inventory.js';
 import { Item } from '../items/item.js';
 import { Vector2D } from '../../classes/vectors.js';
@@ -7,7 +7,9 @@ import { BoxCollision, CollisionHandler } from '../collision/collision.js';
 import { CustomEventHandler } from '../../eventHandlers/customEvents.js';
 import { CanvasDrawer } from '../../drawers/canvas/customDrawer.js';
 import { OperationType } from '../../drawers/canvas/operation.js';
-import { MasterObject } from '../../classes/masterObject.js';
+import { MasterObject } from '../../classes/masterObject.js'; */
+
+import { GameObject, Inventory, Item, Vector2D, femaleAnimations, BoxCollision, CollisionHandler, CustomEventHandler, CanvasDrawer, OperationType, MasterObject } from '../../internal.js';
 
 const FacingDirection = {
     Left: 0,
@@ -37,8 +39,8 @@ class CharacterAttachments extends GameObject {
 
 
 class Character extends GameObject {
-    constructor(spriteSheet, spriteSheetName, drawIndex = 0) {
-        super(spriteSheetName, new Vector2D(0, 0), false, drawIndex);
+    constructor(spriteSheet, spriteSheetName, drawIndex = 0, position = new Vector2D(0,0)) {
+        super(spriteSheetName, position, false, drawIndex);
         this.characterData = new CharacterData();
         this.spriteSheet = spriteSheet;
         this.name = "NewCharacter";
@@ -279,15 +281,12 @@ class CharacterData {
 }
 
 class MainCharacter extends Character {
-    constructor(spriteSheet, spriteSheetName, name, drawIndex = 0) {
-        super(spriteSheet, spriteSheetName, drawIndex);
+    constructor(spriteSheet, spriteSheetName, name, drawIndex = 0, position = new Vector2D(0,0)) {
+        super(spriteSheet, spriteSheetName, drawIndex, position);
         this.name = name;
     }
 
     FixedUpdate() {
-        let temp = this.BoxCollision.GetCenterPosition();
-        temp.SnapToGrid(32);
-        CanvasDrawer.GCD.UpdateTilePreview(temp);
         super.FixedUpdate();
     }
 }

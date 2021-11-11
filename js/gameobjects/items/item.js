@@ -1,11 +1,13 @@
-import { Cobject } from '../../classes/baseClasses/object.js';
+/* import { Cobject } from '../../classes/baseClasses/object.js';
 import { Vector2D, Vector4D } from '../../classes/vectors.js';
 import { CustomEventHandler } from '../../eventHandlers/customEvents.js';
 import { CollisionHandler } from '../collision/collision.js';
 import { CanvasDrawer } from '../../drawers/canvas/customDrawer.js';
 import { Tile, TileType, TileF } from '../../drawers/tiles/tile.js';
 import { TileLUT } from '../../drawers/tiles/TileLUT.js';
-import { ItemValues } from '../items/itemValue.js';
+import { ItemValues } from '../items/itemValue.js'; */
+
+import { Cobject, Vector2D, Vector4D, CustomEventHandler, CollisionHandler, CanvasDrawer, Tile, TileType, TileF, TileLUT, ItemValues } from '../../internal.js';
 
 let inventoryItemIcons = {};
 
@@ -35,6 +37,8 @@ Object.assign(inventoryItemIcons, {
     broccoli: { sprite: new Vector4D(15, 5, 32, 32), atlas: new Vector2D(1024, 1536), url: '/content/sprites/fruits-veggies.png' },
     shovel: { sprite: new Vector4D(1, 8, 32, 32), atlas: new Vector2D(512, 512), url: '/content/sprites/items/items1.png' },
     hoe: { sprite: new Vector4D(4, 8, 32, 32), atlas: new Vector2D(512, 512), url: '/content/sprites/items/items1.png' },
+    axe: { sprite: new Vector4D(5, 7, 32, 32), atlas: new Vector2D(512, 512), url: '/content/sprites/items/items1.png' },
+    birchLog: { sprite: new Vector4D(5, 0, 32, 32), atlas: new Vector2D(640, 640), url: '/content/sprites/farming_fishing.png' },
 });
 
 //seeds
@@ -63,6 +67,15 @@ Object.assign(inventoryItemIcons, {
     broccoliSeed: { sprite: new Vector4D(15, 1, 32, 32), atlas: new Vector2D(1024, 256), url: '/content/sprites/fruits-veggies-seeds.png' },
 });
 
+let stackableItems = {};
+
+//products
+Object.assign(stackableItems, {
+    shovel: false,
+    axe: false,
+    hoe: false,
+});
+
 class Item extends Cobject {
     constructor(name, amount = 0) {
         super();
@@ -72,6 +85,7 @@ class Item extends Cobject {
         this.atlas = inventoryItemIcons[name].atlas;
         this.url = inventoryItemIcons[name].url;
         this.isUsableItem = this.amount > 0 ? true : false;
+        this.isStackable = stackableItems[this.name] === undefined ? true : stackableItems[this.name];
         this.value = ItemValues[this.name] !== undefined ? ItemValues[this.name] : 0;
         this.inventory;
     }
@@ -132,11 +146,12 @@ class Hoe extends Item {
         let overlap = CollisionHandler.GCH.GetOverlap(ownerCollision);
 
         if (overlap !== false) {
-            if (overlap.collisionOwner.plantData !== undefined && ownerCollision.collisionOwner.BoxCollision.CheckInRange(overlap, 64)) {
+            if (overlap.collisionOwner.plantData !== undefined && ownerCollision.collisionOwner.BoxCollision.CheckInRealRange(overlap, 112)) {
                 overlap.collisionOwner.Delete();
             }
         }
-        if (ownerCollision.CheckInRange(ownerCollision.collisionOwner.BoxCollision, 64)) {
+
+        if (ownerCollision.CheckInRealRange(ownerCollision.collisionOwner.BoxCollision, 112)) {
             let pos = ownerCollision.position.Clone();
             pos.Div(new Vector2D(32, 32));
             pos.Floor();
@@ -146,6 +161,7 @@ class Hoe extends Item {
                 if (operations[i].tile.tileType === TileType.Ground) {
                     TileF.PaintTile(new Tile(new Vector2D(0, 0), new Vector2D(6, 18), new Vector2D(32, 32), TileLUT.terrain[18][6].transparent, 'terrain'), pos);
                     operations[i].tile.ChangeSprite(new Tile(new Vector2D(0, 0), new Vector2D(6, 18), new Vector2D(32, 32), TileLUT.terrain[18][6].transparent, 'terrain'));
+                    CanvasDrawer.UpdateTerrainOperation(operations[i]);
                 }
             }
         }
@@ -170,4 +186,24 @@ class Shovel extends Item {
     }
 }
 
-export { Item, Shovel, Hoe, inventoryItemIcons };
+class Axe extends Item {
+    constructor(name, amount) {
+        super(name, amount);
+    }
+
+    UseItem(ownerCollision) {
+        let overlap = CollisionHandler.GCH.GetOverlap(ownerCollision);
+
+        if (overlap !== undefined && overlap !== false && ownerCollision.DoOverlap(overlap.collisionOwner.BlockingCollision, true)) { // ownerCollision.CheckInRealRange(ownerCollision.collisionOwner.BoxCollision, 112)) {
+            console.log(overlap.collisionOwner);
+            let objPrototype = Object.getPrototypeOf(overlap.collisionOwner);
+            if (objPrototype.constructor.name === 'Tree') {
+                overlap.OnHit(20, ownerCollision);
+            }
+        }
+        CustomEventHandler.NewCustomEvent(this.name, this);
+        super.UseItem(ownerCollision);
+    }
+}
+
+export { Item, Shovel, Hoe, Axe, inventoryItemIcons };

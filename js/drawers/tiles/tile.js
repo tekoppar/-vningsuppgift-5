@@ -1,8 +1,11 @@
-import { Matrix, Vector2D } from '../../classes/vectors.js';
+/* import { Matrix, Vector2D } from '../../classes/vectors.js';
 import { CanvasDrawer } from '../canvas/customDrawer.js';
 import { TileLUT } from '../tiles/TileLUT.js';
 import { GetAtlasTileMatrix } from './atlasTileMatrix.js';
 import { CollisionEditor } from '../../editors/collisionEditor.js';
+import { PropEditor } from '../../editors/propEditor.js'; */
+
+import { Matrix, Vector2D, CanvasDrawer, TileLUT, GetAtlasTileMatrix, CollisionEditor, PropEditor } from '../../internal.js';
 
 const TileType = {
     Water: 0,
@@ -227,6 +230,8 @@ class TileData {
 
         TileData.tileGUI.collisionEditor = clone.getElementById('tile-lut-editor-collision-editor');
 
+        TileData.tileGUI.propEditor = clone.getElementById('tile-lut-editor-prop-editor');
+
         document.body.appendChild(clone);
 
         TileData.tileGUI.tileterrain.addEventListener('change', this);
@@ -234,6 +239,7 @@ class TileData {
         TileData.tileGUI.button.addEventListener('click', this);
         TileData.tileGUI.export.addEventListener('click', this);
         TileData.tileGUI.collisionEditor.addEventListener('click', this);
+        TileData.tileGUI.propEditor.addEventListener('click', this);
 
         TileData.tileGUI.filtertileterrain.addEventListener('input', this);
         TileData.tileGUI.filtertileterrain.children[0].addEventListener('click', this);
@@ -364,6 +370,10 @@ class TileData {
                         if (CanvasDrawer.GCD.selectedSprite !== undefined)
                             CollisionEditor.GCEditor.Open(CanvasDrawer.GCD.selectedSprite);
                         break;
+
+                    case 'tile-lut-editor-prop-editor':
+                        PropEditor.GPEditor.ShowProps();
+                        break;
                 }
                 break;
 
@@ -479,6 +489,7 @@ class TileF {
             for (let i2 = 0; i2 < allTiles.length; i2++) {
                 if (newTiles[i2] !== undefined && newTiles[i2] !== null) {
                     allTiles[i2].tile.ChangeSprite(newTiles[i2]);
+                    CanvasDrawer.UpdateTerrainOperation(allTiles[i2]);
                 }
             }
         }

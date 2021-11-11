@@ -1,7 +1,7 @@
-import { InputHandler } from '../eventHandlers/inputEvents.js';
-import { Hoe, Shovel } from '../gameobjects/items/item.js';
-import { Cobject } from '../classes/baseClasses/object.js';
-import { MasterObject } from '../classes/masterObject.js';
+import { Cobject, MasterObject, Item, InputHandler } from '../internal.js';
+//import { Cobject } from '../classes/baseClasses/object.js';
+//import { MasterObject } from '../classes/masterObject.js';
+//import { Item } from '../gameobjects/items/item.js';
 
 class GameToolbar extends Cobject {
     static GGT = new GameToolbar();
@@ -11,7 +11,7 @@ class GameToolbar extends Cobject {
         this.toolbar = document.getElementById('game-gui-toolbar');
         this.toolbar.addEventListener('click', this);
         this.activeToolbar;
-        this.toolbarItems = {};
+        this.toolbarItems = { };
         this.didToolbarChange = false;
 
         this.SetupHTML();
@@ -74,7 +74,9 @@ class GameToolbar extends Cobject {
     RemoveToolbarGUIItem(index) {
         let div = this.toolbar.children[index].querySelector('div.toolbar-item-sprite');
         div.style.backgroundImage = 'unset';
-        this.activeToolbar.classList.remove('toolbar-item-active');
+
+        if (this.activeToolbar !== undefined)
+            this.activeToolbar.classList.remove('toolbar-item-active');
     }
 
     DisplayToolbar() {
@@ -105,12 +107,15 @@ class GameToolbar extends Cobject {
 
             case 'drop':
                 e.preventDefault();
+
                 const data = JSON.parse(e.dataTransfer.getData('text/plain'));
                 let droppedItem = document.getElementById(data.id);
                 let item = Cobject.GetObjectFromUID(data.item);
-                
+
                 droppedItem.id = '';
-                this.AddToolbarItem(e.target.dataset.toolbarIndex, item);
+                if (item instanceof Item) {
+                    this.AddToolbarItem(e.target.dataset.toolbarIndex, item);
+                }
                 break;
         }
     }
