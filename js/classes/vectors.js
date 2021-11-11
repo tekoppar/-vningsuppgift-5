@@ -460,4 +460,22 @@ class Rectangle {
     }
 }
 
-export { Vector2D, Vector, Vector4D, Matrix, Rectangle };
+class Polygon {
+    static CalculateBoundingBox(points) {
+        let sX = 9999999999, sY = 9999999999, lX = -1, lY = -1;
+
+        for (let pos of points) {
+            if (pos.x > lX)
+                lX = pos.x;
+            if (pos.x < sX)
+                sX = pos.x;
+            if (pos.y > lY)
+                lY = pos.y;
+            if (pos.y < sY)
+                sY = pos.y;
+        }
+        return new Vector4D(sX, sY, lX - sX, lY - sY);
+    }
+}
+
+export { Vector2D, Vector, Vector4D, Matrix, Rectangle, Polygon };

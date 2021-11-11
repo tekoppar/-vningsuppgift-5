@@ -196,4 +196,58 @@ class DrawingOperation extends Operation {
     }
 }
 
-export { Operation, RectOperation, TextOperation, DrawingOperation, OperationType };
+class PathOperation extends Operation {
+    constructor(path, drawingCanvas, color = 'rgb(243, 197, 47)', clear, drawIndex = 0, lifetime = -1, alpha = 0.3) {
+        super(drawingCanvas);
+        this.path = path;
+        this.clear = clear;
+        this.color = color;
+        this.drawIndex = drawIndex;
+        this.needsToBeRedrawn = true;
+        this.lifeTime = lifetime;
+        this.alpha = alpha;
+    }
+
+    GetDrawIndex() {
+        return this.drawIndex;
+    }
+
+    GetPosition() {
+        return this.path[0];
+    }
+
+    GetDrawPosition() {
+        return this.path[0];
+    }
+
+    GetDrawPositionY() {
+        return this.path[0].y;
+    }
+
+    GetSize() {
+        return new Vector2D(32, 32);
+    }
+
+    Update(pos) {
+        this.needsToBeRedrawn = true;
+        super.Update(pos === undefined ? this.path[0] : pos);
+    }
+
+    GetPreviousPosition() {
+        return this.oldPosition === undefined ? this.path[0] : this.oldPosition;
+    }
+
+    DrawState() {
+        return this.needsToBeRedrawn;
+    }
+
+    Tick(delta) {
+        this.lifeTime -= delta;
+
+        if (this.lifeTime <= 0) {
+            this.Delete();
+        }
+    }
+}
+
+export { Operation, RectOperation, TextOperation, DrawingOperation, PathOperation, OperationType };

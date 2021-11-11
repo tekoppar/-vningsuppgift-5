@@ -226,10 +226,10 @@ class Collision {
             BBB.z += 2;
             BBB.a += 2;
 
-            CanvasDrawer.GCD.AddDebugOperation(new Vector2D(ABB.x, ABB.y), 5, 'orange');
-            CanvasDrawer.GCD.AddDebugOperation(new Vector2D(ABB.z, ABB.a), 5, 'blue');
-            CanvasDrawer.GCD.AddDebugOperation(new Vector2D(BBB.x, BBB.y), 5, 'pink');
-            CanvasDrawer.GCD.AddDebugOperation(new Vector2D(BBB.z, BBB.a), 5, 'purple');
+            //CanvasDrawer.GCD.AddDebugOperation(new Vector2D(ABB.x, ABB.y), 5, 'orange');
+            //CanvasDrawer.GCD.AddDebugOperation(new Vector2D(ABB.z, ABB.a), 5, 'blue');
+            //CanvasDrawer.GCD.AddDebugOperation(new Vector2D(BBB.x, BBB.y), 5, 'pink');
+            //CanvasDrawer.GCD.AddDebugOperation(new Vector2D(BBB.z, BBB.a), 5, 'purple');
             return this.IsOverlaping1D(new Vector2D(ABB.x, ABB.z), new Vector2D(BBB.x, BBB.z)) && this.IsOverlaping1D(new Vector2D(ABB.y, ABB.a), new Vector2D(BBB.y, BBB.a));
         }
         else

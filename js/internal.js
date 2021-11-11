@@ -1,6 +1,6 @@
 export { ObjectsHasBeenInitialized, ToggleObjectsHasBeenInitialized } from './internalVariables.js';
 
-export { Vector2D, Vector, Vector4D, Matrix, Rectangle } from './classes/vectors.js';
+export { Vector2D, Vector, Vector4D, Matrix, Rectangle, Polygon } from './classes/vectors.js';
 export { CMath } from './classes/math/customMath.js';
 
 export { PageFetcher } from './classes/utility/pageFetcher.js';
@@ -16,7 +16,7 @@ export { Brush, BrushDrawState, brushTypes } from './drawers/canvas/brush.js';
 
 export { CanvasSprite } from './drawers/canvas/canvasSprite.js';
 export { CanvasAtlas, CanvasAtlasObject } from './drawers/canvas/canvasAtlas.js';
-export { DrawingOperation, OperationType, RectOperation, TextOperation } from './drawers/canvas/operation.js';
+export { DrawingOperation, OperationType, RectOperation, TextOperation, PathOperation } from './drawers/canvas/operation.js';
 
 export { CanvasDrawer, correctMouse } from './drawers/canvas/customDrawer.js';
 
